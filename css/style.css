@@ -1321,10 +1321,11 @@ label {
     #home.half-home h1 { margin-top: 5%; }
     
     #home .container { padding-top: 23%; }
-  }
-  
+  }  
 
-
+#feature-1 .img-responsive {
+max-width: 77%;
+}
 
 
 /*///////////////////////
