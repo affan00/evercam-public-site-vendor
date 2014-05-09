@@ -1206,13 +1206,8 @@ label {
 
 
 /*////////////////////////////
-//HOME PAGE
+//HOME PAGE - INDEX
 /////////////////////////////*/
-
-
-
-
-
 #home {
   overflow: hidden;
   height: 100%;
@@ -1321,6 +1316,7 @@ label {
     #home.half-home h1 { margin-top: 5%; }
     
     #home .container { padding-top: 23%; }
+<<<<<<< HEAD
   }  
 
 #feature-1 .img-responsive {
@@ -1331,6 +1327,13 @@ max-width: 77%;
 }
 
 
+=======
+  }
+  
+#feature-1 .img-responsive, #feature-2 .img-responsive {
+max-width: 77%;
+}
+>>>>>>> 68e4c9d95d37832fa501645bc464c8d25477b0ee
 /*///////////////////////
 //  MARKETPLACE APPS
 ////////////////////////*/
