@@ -16,7 +16,7 @@ get_header(); ?>
           <h3><a href="/help">evercam.io<span class="bold">/help</span></a></h3> Sometimes you just need a little help.
 			     </div>
 			     <div class="new-help-nav">
-			     <p><a href="/docs/help">Back to help pages</a><p>
+			     <p><a href="/develop/help">Back to help pages</a><p>
 			     </div>
 					<!--<?php
                   // output quick links list of help categories
