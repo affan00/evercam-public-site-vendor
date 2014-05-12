@@ -22,7 +22,7 @@
 </ul>
 <ul>
   <li class="doc-categories">
-  <a href='/docs/help'>Help Pages</a>
+  <a href='/develop/help'>Help Pages</a>
     <ul class="sub-menu">
       <li><a href='/develop/help'>Common Issues</a></li>
       <li><a href='/develop/help'>Using Evercam</a></li>
