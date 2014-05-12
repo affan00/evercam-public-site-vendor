@@ -1804,12 +1804,14 @@ HOME
   background: #f1f1f1;
 } 
 .service {
-  text-align: center;
-  padding: 20px 20px;
-  background: none repeat scroll 0 0 #FFFFFF;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-  border-radius: 2px;
-  margin-bottom: 26px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    padding: 35px 20px;
+    text-align: center;
+}
+#services .section {
+  padding-top: 60px;
 }
 .service .icon-wrapper .circle { background-color: #ccc; }
 .service:hover .icon-wrapper .circle { background-color: #ddd; }
@@ -1817,7 +1819,7 @@ HOME
   color: #414042; 
 }
 .service h3 {
-  padding: 25px 0; 
+  padding: 0px 0 15px; 
   margin: 0;
   text-align: center;
   }
@@ -1831,7 +1833,9 @@ HOME
   margin-left: 5px;
   color:#e5e5e5;
 }
-
+#services .fa-arrow-right:hover {
+  color:#428bca;
+}
   #services h3 { font-size: 20px; }
   
   #services .service-icon {
