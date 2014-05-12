@@ -172,10 +172,10 @@
       <div class="row text-center">
       <div class="col-md-12">
       <p class="develop-features">It's free to get started</p>                   
-      <p>AND all our plans our free while we're in <em>beta</em> !</p>
+      <p>AND all our plans are free while we're in <em>beta</em> !</p>
       <a class="btn btn-primary" href="https://dashboard.evercam.io/signup" target="_blank">Create a Free Account</a>
 
-      <p class="margin-top-15 size-12">View Our Future<a href="#" target="_blank"> Pricing Plans</a></p>
+      <!--<p class="margin-top-15 size-12">View Our Future<a href="#" target="_blank"> Pricing Plans</a></p>-->
       </div>
       </div> 
 
