@@ -14,7 +14,6 @@
 <body class="connect-blue">
 <? include 'header.php'; ?>  
 
-    
 <!-- Home Section -->
 <div id="connect">      
 <div class="wrapper">
@@ -61,71 +60,47 @@
 
                   </div><!--  Col-12 -->
 
-              </div><!--  row -->
-
-              
+              </div><!--  row -->              
 
               <div class="row" id="connect-features">
 
                   <div class="col-md-12">
-                      
-                      <!--<h3 class="text-center">Features</h3>-->
 
                       <div class="row split-features-top">
-
                           <div class="col-md-6">
                              <p class="develop-features">Connect an IP Camera</p>                             
-                             <p class="margin-right-30">Once you've created an account you can add your own IP camera to your account using the cameras credentials to fill out the 'Add a Camera' form. If you don't have your own IP camera you can add one from <a href="http://PublicCams.io" target="_blank">PublicCams.io</a> by following the same method.</p>
+                             <p class="margin-right-30">Once you've created an account and logged into the Dashboard you can add any IP camera to your account using the camera's credentials to fill out the 'Add IP Camera' form.</p>
+                             <a href="https://dashboard.evercam.io/signup" target="_blank"><span class="bold">Create an Account</span></a>
                           </div>
                           <div class="col-md-6">
                             <p class="develop-features">Connect your Camera Phone</p>                   
-                              <p class="margin-right-30">If you don't have an IP camera, you can also use your Android phone cameras. Simply download our App, Evercam Capture and the app will add your camera to your Evercam account for you! All you need to do is sign in and select the cameras you would like to add.</p>
+                              <p class="margin-right-30">You can also use your Android phone's cameras. Simply download our App, Evercam Capture and the app will add your camera to your Evercam account for you! All you need to do is sign in and select the cameras you would like to add.</p>
                               <a href="https://play.google.com/store/apps/details?id=io.evercam.capture" target="_blank">Evercam<span class="bold"> Capture</span></a>
-                          </div>
-       
-                          
-
+                          </div>       
                       </div><!--  row  split -->
                       
                         <div class="row split-features">
                           <div class="col-md-6">
+                              <p class="develop-features">Connect a Public Camera</p>   
+                              
+                                    <p>From the Evercam dashboard click 'Add Public Camera' in the sidebar. You will then be able to browse the repository of Public Cameras and add any of the cameras to your dashboard at the click of a button.</p>   
+                          </div>   
+                          <div class="col-md-6">
                              <p class="develop-features">We Can Connect your Camera for you</p>                   
                                 <p class="margin-right-30">If your having difficulty connecting a camera to Evercam.io, just contact us and for $15, we can do it for you.</p>
                           </div>
-                          <div class="col-md-6">
-                              <p class="develop-features">Have a Camera Shared with you</p>   
-                              
-                                    <p>From the evercam dashboard, anyone can choose to share access to their camera with you. This camera will then automatically be added to your Camera Dashboard allowing you to view the Cameras image and work with that camera. You can also choose to share access to any of your cameras with anyone you wish via an email address.</p>   
-                          </div>   
                         </div>   
-
-                      
-
 
                    </div><!--  Col-12 -->
 
-
-
-
-
-
-
-
-
-
-
-
-                <div class="col-md-12">                
-
-
-                 
+                <div class="col-md-12">                                 
                   <div class="row split-features text-center">
                     <div class="col-md-12">
                         <p class="develop-features">It's free to get started</p>                   
-                        <p>AND all our plans our free while we're in <em>beta</em> !</p>
+                        <p>AND all our plans are free while we're in <em>beta</em> !</p>
                         <a class="btn btn-primary" href="https://dashboard.evercam.io/signup" target="_blank">Create a Free Account</a>
                         
-                        <p class="margin-top-15 size-12">View Our Future<a href="#" target="_blank"> Pricing Plans</a></p>
+                       <!-- <p class="margin-top-15 size-12">View Our Future<a href="#" target="_blank"> Pricing Plans</a></p>-->
                     </div>
                   </div> 
 
@@ -133,10 +108,6 @@
 
               </div><!--  row -->
               
-              <!--<div class="row buttom">
-              <a class="btn-blue scroll" href="#account">Why Develop with Evercam.io?</a>
-              </div><!--  row -->
-
             </div><!-- /.content -->
 
           </div>        
@@ -150,17 +121,6 @@
 </div><!-- Wrapper container -->
 </div><!-- Develop -->
   
-
-
-
-
-        
-
-    
-    
-  
-    
-    
 
 
     <? include 'footer.php'; ?>
