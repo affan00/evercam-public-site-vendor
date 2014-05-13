@@ -1624,6 +1624,7 @@ pre {
 
 .iframe-container {
    overflow: hidden;
+   padding-left: 39px;
 }
 
 .support {
