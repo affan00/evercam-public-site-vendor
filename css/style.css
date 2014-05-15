@@ -1624,7 +1624,11 @@ pre {
 
 .iframe-container {
    overflow: hidden;
+<<<<<<< HEAD
+   padding-left: 39px;
+=======
    padding-left: 38px;
+>>>>>>> FETCH_HEAD
 }
 
 .support {
