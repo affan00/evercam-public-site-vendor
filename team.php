@@ -138,7 +138,7 @@
                   <a href="http://ie.linkedin.com/in/ciaranhanrahan" target="_blank" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
                     </small>
                 </h3>                
-                <h4>UX &amp; Front End<small> - New Addition.</small></h4>                       
+                <h4>UX &amp; Front End<small> - New Addition..</small></h4>                       
               </div>
             </div>
 
