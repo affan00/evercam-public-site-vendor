@@ -10,7 +10,7 @@
 <title>evercam.io/develop</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap.css" rel="stylesheet">
     <!-- Proxima Nova -->
 <link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.css">   
 <link rel="stylesheet" href="/fonts/proxima-nova/promina-nova.css">
