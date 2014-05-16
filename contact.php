@@ -13,20 +13,30 @@
     <? include 'styles.php'; ?>
 </head>
 
-  <body class="red-blue">
+  <body onload="initialize()" class="red-blue">
    
    <? include 'header.php'; ?>  
 
         <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
+    <div class="container" id="contact">
+
+    <div class="row">      
       
-       <div id="map"></div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div id="map"></div>
+      </div>
 
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div id="map2"></div>
+      </div>
 
-
-     <div class="container" id="contact">
+    </div>
+    
+    
    
     <div class="row address">
           <div class="col-md-6 col-sm-6 col-xs-12">
+            
             <h3>Dublin</h3>
             <p>The Ierne Ballroom, 12 Parnell Square East,<br />
               Dublin 1, Ireland</p>
@@ -36,6 +46,7 @@
               
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
+            
             <h3>Mountain View, California</h3>
             <p>800 W. El Camino Real, Suite 350, Mountain View,<br />
              CA 94040, USA</p>
@@ -85,6 +96,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/google-maps.js"></script>
-    
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
   </body>
 </html>
