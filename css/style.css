@@ -2357,12 +2357,7 @@ border-bottom: 1px solid #E5E5E5;
   padding: 25px 30px;
 }
 .help .article{
- padding: 18px 48px 40px;
-}
-
-
-
-
+ padding: 18px 48px 40px} 
 
 
 /*  Contact Page
@@ -2371,19 +2366,17 @@ border-bottom: 1px solid #E5E5E5;
 #contact {
   margin-top: 40px;
 }
-
 #contact h3 {
   text-align: left;
 }
 .row .address {
 padding-top: 20px;
 }
- #map {
-   width: 100%;
-    height: 500px;
-            }
-
-
+#map, #map2 {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
 
 
 @media (max-width: 768px) {

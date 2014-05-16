@@ -1,58 +1,44 @@
 ///////////////////////////////////////
 // Contact Page Map
 ///////////////////////////////////////
-function initialize() {
-    var locations = [
-        ['Dublin', 53.354393, -6.263232, 2],
-        ['Mountain View', 37.3864953,-122.0841289, 1]
-    ];
-    var mapOptions = {
-    
-    
-    scrollwheel: false      
-    }
- 
+ function initialize()
+{
+    var latlng = new google.maps.LatLng(53.354393, -6.263232);
+    var latlng2 = new google.maps.LatLng(37.3864953,-122.0841289);
+    var myOptions =
+    {
+        zoom: 14,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
 
-    window.map = new google.maps.Map(document.getElementById('map'), {
+    };
+    
+    var image = '/img/evercam-location.png';
+
+    var myOptions2 =
+    {
+        zoom: 10,
+        center: latlng2,
         mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
+    };
 
-    var infowindow = new google.maps.InfoWindow();
+    var map = new google.maps.Map(document.getElementById("map"), myOptions);
+    
+    var map2 = new google.maps.Map(document.getElementById("map2"), myOptions2);
 
-    var bounds = new google.maps.LatLngBounds();
+    var myMarker = new google.maps.Marker(
+    {
+        position: latlng,
+        map: map,
+        icon: image,
+        title:"Dublin"
+   });
 
-    for (i = 0; i < locations.length; i++) {
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            map: map
-        });
-
-        bounds.extend(marker.position);
-
-        google.maps.event.addListener(marker, 'click', (function (marker, i) {
-            return function () {
-                infowindow.setContent(locations[i][0]);
-                infowindow.open(map, marker);
-            }
-        })(marker, i));
-    }
-
-    map.fitBounds(bounds);
-
-    var listener = google.maps.event.addListener(map, "idle", function () {
-        map.panTo(curmarker.position);
-        map.setZoom(3);
-        google.maps.event.removeListener(listener);
+    var myMarker2 = new google.maps.Marker(
+    {
+        position: latlng2,
+        map: map2,
+        icon: image,   
+        title:"California"
     });
 }
-
-function loadScript() {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-    document.body.appendChild(script);
-
-
-}
-
-window.onload = loadScript;
