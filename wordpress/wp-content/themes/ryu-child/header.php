@@ -65,7 +65,7 @@
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="navigation-main clear" role="navigation">
 <div class="wrap">
-<div class="branding"><a class="logo" href="/"><img src="http://www.evercam.io/blog/wp-content/themes/ryu/img/logo.png"></a></div>
+<div class="branding"><a class="logo" href="/"><img src="http://www.evercam.io/img/logo.png"></a></div>
 
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'ryu' ); ?></h1>
 				<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'ryu' ); ?>"><?php _e( 'Skip to content', 'ryu' ); ?></a></div>
