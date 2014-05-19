@@ -1,4 +1,4 @@
-<?php require('blog/wp-blog-header.php');?>
+<?php require('wordpress/wp-blog-header.php');?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,8 +28,8 @@
       $postslist = get_posts( $args );
       foreach ($postslist as $post) : setup_postdata($post); ?>
          <div class="row article">
-            <!--<h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>-->
-                    <!--<p><?php the_date(); ?></p>-->
+            <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                    <p><?php the_date(); ?></p>
                      <p><?php the_excerpt(); ?></p>
         </div>
       <?php endforeach; ?> 
