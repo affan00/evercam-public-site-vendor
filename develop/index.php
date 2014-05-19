@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-<title>evercam.io/develop</title>
+<title>evercam.io/notfound</title>
 
 <!-- Bootstrap core CSS -->
 <link href="../css/bootstrap.css" rel="stylesheet">
