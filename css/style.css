@@ -2490,12 +2490,15 @@ background-color: #f1f1f1
 background-color: #428BCA;
 
 }
-.error h1 {
-color:#ffffff;
-margin-top: 100px;
-margin-bottom: 40px;
+.error {
+  margin-top: 100px;
 }
-.error .btn {
+.error h2 {
+color:#ffffff;
+margin-bottom: 40px;
+text-align: left;
+}
+#not-found .btn {
   margin-bottom: 150px;
 }
 

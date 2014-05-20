@@ -18,21 +18,22 @@
     <?php include_once("analyticstracking.php") ?>
     <? include 'header.php'; ?>
      
-     
-
-        <!-- Home Section -->
+  
+      <!-- Home Section -->
     
       <div class="wrapper">
         <div class="container">
           <div class="row">
             <div class="col-md-6 error">
-              <h1>Something's gone very very wrong :(</h1>
+              <h2>Either we broke something or you can't type!</h2>
+              <h2>Let's not point fingers here and just start over.</h2>
+              <h3></h3>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 error">
+            <div class="col-md-6">
               
-                    <a class="btn" href="/">Let's just go Home</a>
+                    <a class="btn" href="/">Home</a>
               
           </div>
         </div>        
@@ -42,7 +43,7 @@
    
     
 
-    <? include 'footer.php'; ?>
+    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
