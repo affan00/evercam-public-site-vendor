@@ -2481,6 +2481,26 @@ background-color: #f1f1f1
     }
   }
 
+/*  404
+ *    stylings for about us section
+ *    
+ *
+ */
+#not-found {
+background-color: #428BCA;
+
+}
+.error {
+  margin-top: 100px;
+}
+.error h2 {
+color:#ffffff;
+margin-bottom: 40px;
+text-align: left;
+}
+#not-found .btn {
+  margin-bottom: 150px;
+}
 
 /*  FOOTER
  *    stylings for footer

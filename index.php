@@ -200,7 +200,7 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
         <p>The worlds first App store for Cameras. Connect your camera to Evercam.io and take 
             advantage of a marketplace for apps. Build and add 
             amazing new functionality to your camera.</p>
-            <p>Over 2,000 cameres connected to evercam.io and more very day.</p>
+            <p>Over 2,000 cameras connected to evercam.io and more every day.</p>
         <a href="/apps"><h5 class="title">evercam.io<span class="bold">/apps</span><i class="fa fa-arrow-right"></i></h5></a>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">
