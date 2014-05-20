@@ -53,7 +53,7 @@
                       
                       <div class="col-md-4">
                           <div class="col-md-3"><i class="fa fa-camera fa-3x"></i></div>
-                          <div class="col-md-9">Get your client to connect their Camera to Evercam<br><a href="/connect" target="_blank">evercam.io<span class="bold">/connect</span></a></div>
+                          <div class="col-md-9">Get your client to connect their Camera to Evercam<br><a href="/connect">evercam.io<span class="bold">/connect</span></a></div>
                           <!--<div class="row buttom">
                             <a class="btn-blue scroll" href="/connect">evercam.io/connect</a>
                           </div><!  row -->
@@ -61,7 +61,7 @@
 
                       <div class="col-md-4">
                         <div class="col-md-3"><i class="fa fa-code fa-3x"></i></div>
-                         <div class="col-md-9">Start developing with our beautifully documented API<br><a href="/develop" target="_blank">evercam.io<span class="bold">/develop</span></a></div>
+                         <div class="col-md-9">Start developing with our beautifully documented API<br><a href="/develop/docs">evercam.io<span class="bold">/develop</span></a></div>
                           <!--<div class="row buttom">
                             <a class="btn-blue scroll" href="/develop">evercam.io/develop</a>
                           </div>  row -->
@@ -70,7 +70,7 @@
                       <div class="col-md-4">
                         <div class="col-md-3"><i class="fa fa-money fa-3x"></i></div>
                         <div class="col-md-9">Put your App in our store &amp; start selling
-                          <br><a href="/apps" target="_blank">evercam.io<span class="bold">/apps</span></a></div>
+                          <br><a href="/apps">evercam.io<span class="bold">/apps</span></a></div>
                         
                           <!--<div class="row buttom">
                             <a class="btn-blue scroll" href="/develop">evercam.io/apps</a>
