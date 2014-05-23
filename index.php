@@ -18,34 +18,6 @@
   <body class="red-blue">
     <?php include_once("analyticstracking.php") ?>
     <? include 'header.php'; ?>
-     
-     <div class="modals">
-      <div class="modal fade" id="contact-form" tabindex="-1" role="dialog">
-        <div class="wrapper">
-
-          <div class="container text-center">
-            <a class="close" data-dismiss="modal" href=""><i class="icon-remove"></i></a>            
-            <h1 class="text-center">Login</h1>
-
-            <form role="form">
-              <div class="form-group">
-                <label for="exampleInputName"><i class="icon-tag"></i></label>
-                <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" required>
-                <div class="clearfix"></div>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1"><i class="icon-inbox"></i></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
-                <div class="clearfix"></div>
-              </div>
-        
-
-              <button type="submit" class="btn">Login</button>
-            </form>
-          </div>
-          </div>
-          </div>
-          </div>
 
         <!-- Home Section -->
     <div id="home" class="section half-home">      
@@ -60,7 +32,7 @@
             </div>
             <div class="col-md-1 col-sm-1 col-xs-12"></div>
           <div class="col-md-12 col-sm-12 col-xs-12">
-             <a class="btn" href="http://dashboard.evercam.io/signup">Create An Account</a>
+             <a class="btn" id="create-account" href="http://dashboard.evercam.io/signup">Create An Account</a>
            </div>
 
           </div>
@@ -340,7 +312,27 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
     <script src="js/init.js"></script>
     <script src="js/mine.js"></script>
     <script src="/assets/prettify/prettify.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-48470473-1', 'evercam.io');
+  ga('send', 'pageview');
+
+    // Using jQuery Event API v1.3
+$('#create-account').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'nav-buttons');
+});
+$('#sign-in').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'nav-buttons');
+});
+ga('create', 'UA-48470473-1', {
+  'cookieDomain': 'none'
+});
+
+</script> 
   
 </body>
 </html>
