@@ -1502,7 +1502,7 @@ develop
   padding: 15px 0 0px;
 }
 .develop-features {
-  color: #428bca;
+  color: #414042;
   font-size: 16px;
 }
 .split-features {
@@ -1517,6 +1517,12 @@ padding: 10px 0 0;
 .sep {
   margin-left: -15px;
   margin-top: -10px;
+}
+.code-icon {
+    color: #414042; 
+    font-family: 'Proxima-Nova-bld', corbel, sans-serif;
+    font-size: 42px;
+    line-height: 42px;
 }
 /*  Docs
  */

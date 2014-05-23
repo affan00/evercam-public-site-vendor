@@ -60,7 +60,7 @@
                       </div>
 
                       <div class="col-md-4">
-                        <div class="col-md-3"><i class="fa fa-code fa-3x"></i></div>
+                        <div class="col-md-3"><span class="code-icon">{ }</div>
                          <div class="col-md-9">Start developing with our beautifully documented API<br><a href="/develop/docs">evercam.io<span class="bold">/develop</span></a></div>
                           <!--<div class="row buttom">
                             <a class="btn-blue scroll" href="/develop">evercam.io/develop</a>
