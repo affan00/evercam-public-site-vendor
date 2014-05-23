@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-<title>Evercam.io/help</title>
+<title>evercam.io/develop/help</title>
  <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
 
@@ -33,62 +33,9 @@
   
   <!-- SIDEBAR
     ================================================== -->
-<div class='col-md-2 col-xs-12 left-nav'>
-
-<ul>
-  <li class="doc-categories">
-    API V1
-    <ul class="sub-menu">
-      <li><a href='/docs/'>Getting Started</a></li>
-      <li><a href='/docs/authentication'>Authentication</a></li>
-      <!--<li><a href='/docs/swagger'>Docs</a></li>-->
-      <li><a href='/docs/evercamjs'>Evercam.js</a></li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li class="doc-categories">
-  Client Bindings
-    <ul class="sub-menu">
-      <li><a href='/docs/client-bindings'>Current Clients</a></li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li class="doc-categories">
-  <a href='/docs/help'>Help Pages</a>
-    <ul class="sub-menu">
-      <li><a href='/docs/help#common-issues' class="scroll">Common Issues</a></li>
-      <li><a href='/docs/help#using-evercam' class="scroll">Using Evercam</a></li>
-      <li><a href='/docs/help#camera-setup' class="scroll">Camera Setup</a></li>
-      <li><a href='/docs/help#user-accounts' class="scroll">Accounts</a></li>
-      <li><a href='/docs/help#pricing' class="scroll">Pricing</a></li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li class="doc-categories">
-  Widgets
-    <ul class="sub-menu">
-      <li><a href='/docs/widget-live'>Live View</a></li>
-      <li><a href='/docs/widget-recorded'>Recorded Images</a></li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li class="doc-categories">
-    Connect
-    <ul class="sub-menu">
-      <li><a href="http://blog.evercam.io/blog/evercam-connect/" target="_blank">Android Connect</a></li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li class="doc-categories">
-    <a href="/docs/changelog">Changelog</a>
-  </li>
-</ul>
-</div>
+<!-- SIDEBAR
+  ================================================== -->
+<? include 'sidebar.php'; ?> 
   
 
   <!-- DOCS
@@ -97,7 +44,7 @@
     <div class="doc">
 
       <div class="row header">
-          <h3>evercam.io<span class="bold">help</span></h3>
+          <h3>develop<span class="bold">/help</span></h3>
           <p>Sometimes you just need a little help.</p><p> If you can&apos;t find what you&apos;re looking for here, drop us an email at <span class="bold">support@evercam.io</span> and we&apos;ll get straight back to you.</p>
       </div>
        
