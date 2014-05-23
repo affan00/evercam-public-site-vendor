@@ -15,7 +15,7 @@ window.onload = function (){
 }
 
 ///////////////////////////////////////
-// Contact Page Map
+// 
 ///////////////////////////////////////
 
 
@@ -29,5 +29,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-48470473-1', 'evercam.io');
 ga('send', 'pageview');
+
 
 
