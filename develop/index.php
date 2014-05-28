@@ -141,7 +141,7 @@
                                   <a href="https://github.com/evercam/evercam.net" target="_blank" title=".Net"><img src="/img/net.png" height="40" alt=".Net"></a>
                                 </div>
                               </div>
-                            <a href="/docs/client-bindings" target="_blank">evercam.io<span class="bold">/docs/client-bindings</span></a>
+                            <a href="/develop/client-bindings" target="_blank">evercam.io<span class="bold">/develop/client-bindings</span></a>
                         </div>         
                         
                         <div class="col-md-6">
