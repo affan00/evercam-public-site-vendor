@@ -46,7 +46,7 @@
     <p>We want to make it fast and easy for you to start building with our API. You can execute live API calls from our current list of Endpoints below.</p>
     <div class='iframe-container'>
        <div class='iframe'>
-        <iframe src="https://dashboard.evercam.io/swagger"  scrolling="yes" frameborder="0" allowtransparency="true" width="870" height="2600"></iframe>
+        <iframe src="https://dashboard.evercam.io/swagger"  scrolling="yes" frameborder="0" allowtransparency="true" width="870" height="3720"></iframe>
       </div>
     </div>
   </div>

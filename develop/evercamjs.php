@@ -42,7 +42,7 @@
     <div class="doc">
 
       <div class="row header">
-          <h3>Evercam.io/help</h3>
+          <h3>Evercam.js</h3>
           <p>Evercam.js allows you to easily access all evercam.io APIs and also works as jQuery plugin which can easily show image from any evercam-enabled camera on a website. jQuery is dependency and it has to be included before evercam.js.</p>
       </div>
        
