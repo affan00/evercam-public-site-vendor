@@ -27,7 +27,7 @@
             <div class="col-md-1 col-sm-1 col-xs-12 empty"></div>
             <div class="col-md-10 col-sm-10 col-xs-12">
               <h1 class="welcome">We make it easier to write software for cameras.</h1> 
-              <h3 class="welcome">Beautiful APIs. Easy to Support. Worlds first App Store for Cameras.</h3> 
+              <h3 class="welcome">Beautiful APIs. Easy to Support. World's first App Store for Cameras.</h3> 
 
             </div>
             <div class="col-md-1 col-sm-1 col-xs-12"></div>
@@ -67,36 +67,54 @@
           <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="service">
-                <h3>For Camera Owners</h3>
-                <p>Connect your camera to Evercam and take 
-                  advantage of our marketplace apps and add 
-                  amazing new functionality to your camera 
-                  stream in seconds</p>
-                  <div class="button">
-                    <a href="/connect"><h5 class="title">evercam.io<span class="bold">/connect</span><i class="fa fa-arrow-right"></i></h5></a>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-12"><i class="fa fa-camera fa-3x"></i></div>
+                    <div class="col-md-12"><h3>Get your client to connect their Camera to Evercam</h3></div>
                   </div>
+                </div>
+                 <div class="row">
+                  <div class="col-md-12">
+                    <div class="button">
+                      <a href="/connect"><h5 class="title">evercam.io<span class="bold">/connect</span><i class="fa fa-arrow-right"></i></h5></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="service">
-                <h3>For Developers</h3>
-                <p>With Evercam, you write software once and
-                 it works with over 1,600 cameras. OAuth 2.0
-                  RESTful JSON API's use the standards you
-                   already know..</p>
-                  <div class="button">
-                    <a href="/develop"><h5 class="title">evercam.io<span class="bold">/develop</span><i class="fa fa-arrow-right"></i></h5></a>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-12"><span class="code-icon-home">{ }</span></div>
+                    <div class="col-md-12"><h3>Start developing with our beautifully documented API</h3></div>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="button">
+                      <a href="/develop"><h5 class="title">evercam.io<span class="bold">/develop</span><i class="fa fa-arrow-right"></i></h5></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="service">
-                <h3>For Manufacturers</h3>
-                <p>Cameras connected to Evercam do more. 
-                  Give your customers more reasons to buy your cameras. Talk to 
-                  us about integration options.</p>
-                <div class="button">
-                  <a href="/contact"><h5 class="title">evercam.io<span class="bold">/contact</span><i class="fa fa-arrow-right"></i></h5></a>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-12"><div class="basket"></div></div>
+                    <div class="col-md-12"><h3>Put your App in our store &amp; start selling</h3></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="button">
+                      <a href="/apps"><h5 class="title">evercam.io<span class="bold">/apps</span><i class="fa fa-arrow-right"></i></h5></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

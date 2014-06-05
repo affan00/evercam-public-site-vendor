@@ -1817,6 +1817,7 @@ HOME
     padding: 35px 20px;
     text-align: center;
 }
+
 #services .section {
   padding-top: 60px;
 }
@@ -1826,7 +1827,7 @@ HOME
   color: #414042; 
 }
 .service h3 {
-  padding: 0px 0 15px; 
+  padding: 15px 0 25px; 
   margin: 0;
   text-align: center;
   }
@@ -1843,11 +1844,25 @@ HOME
 #services .fa-arrow-right:hover {
   color:#428bca;
 }
+.code-icon-home {
+    color: #414042; 
+    font-family: 'Proxima-Nova-bld', corbel, sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+}
   #services h3 { font-size: 20px; }
   
   #services .service-icon {
     text-align: center;
     color: #fff;
+  }
+  .basket {
+    background-image: url("/img/basket-download.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 17% auto;
+    height: 49px;
+    margin-bottom: -7px;
   }
     #services .service-icon i:hover  {
       color: #fff;
