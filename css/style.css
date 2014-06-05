@@ -1923,6 +1923,15 @@ color: #888;
 padding-top: 60px;
 background-color: #ffffff;
 }
+#feature-1  pre.prettyprint {
+  margin-top: 0px;
+}
+.concerns img {
+  width: 50%;
+}
+.concerns {
+  width: 50%;
+}
 @media (max-width: 420px) { 
   #feature-1, #feature-2 {
     padding-top: 0px;

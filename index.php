@@ -94,7 +94,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="button">
-                      <a href="/develop"><h5 class="title">evercam.io<span class="bold">/develop</span><i class="fa fa-arrow-right"></i></h5></a>
+                      <a href="/develop/docs"><h5 class="title">evercam.io<span class="bold">/develop</span><i class="fa fa-arrow-right"></i></h5></a>
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@
         <p>We built Evercam with Developers in mind and offer wrappers in Ruby, Python, Nodejs, Java & .Net to help get you started in minutes.</p>
         <p>Write Software using our API and we guarantee it will work with <strong>any</strong> camera connectable to the internet.</p>
          
-         <a href="/develop"><h5 class="title">evercam.io<span class="bold">/develop</span><i class="fa fa-arrow-right"></i></h5></a>
+         <a href="/develop/docs"><h5 class="title">evercam.io<span class="bold">/develop</span><i class="fa fa-arrow-right"></i></h5></a>
 
       </div>
 
@@ -180,17 +180,44 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
   </div><!-- container -->
 </div><!-- feature -->
 
+<div id="feature-2">  
+  <div class="container">
+    <div class="row left">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <h3>Seperation of Concerns</h3>
+         <p>
+          Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.
+         </p>
+        <a href="/apps"><h5 class="title">evercam.io<span class="bold">/apps</span><i class="fa fa-arrow-right"></i></h5></a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <img class="img-responsive concerns" src="img/sepofconcerns.png">
+      </div>
+    </div><!-- row right -->
+  </div><!-- container -->
+</div><!-- feature -->
 
+<div id="feature-1">  
+  <div class="container">
+   <div class="row left">
+      <div class="col-md-6 col-sm-6 col-xs-12" id="agnostic">
+        <h3>Lots of Wrappers</h3>
+        <p>We have wrappers around the Evercam API in all your favourite languages - Ruby, Nodejs, Python, Java &amp; .Net with installation instructions and basic usage examples.</p>
+        <!--<a class="btn" href="#"><span class="icon-resize-full"></span>MORE DETAILS</a>-->
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+       <img class="img-responsive" src="img/wrappers.png">
+      </div>
+    </div><!-- row left -->
+  </div><!-- container -->
+</div><!-- feature -->
 
 <div id="feature-2">  
   <div class="container">
-    <div class="row right">
+    <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12">
         <h3>Add Apps from the marketplace.</h3>
-        <p>The worlds first App store for Cameras. Connect your camera to Evercam.io and take 
-            advantage of a marketplace for apps. Build and add 
-            amazing new functionality to your camera.</p>
-            <p>Over 2,000 cameras connected to evercam.io and more every day.</p>
+        <p>The world's first App store for Cameras. With over 2,000 cameres connected to evercam.io and more very day - we bring customers to you.</p>
         <a href="/apps"><h5 class="title">evercam.io<span class="bold">/apps</span><i class="fa fa-arrow-right"></i></h5></a>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">
