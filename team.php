@@ -153,21 +153,6 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
-                    <img src="/img/maciej.png" alt="Tomasz Jama" style="border-radius:50%;">              
-                </div>
-              <h3>Maciej Goszczycki
-                    <small>              
-                   <a href="https://twitter.com/mgoszcz2" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
-                   <a href="https://github.com/jaibles" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
-                    </small>
-                </h3>                
-                <h4>Programmer<small> &amp; Full time awkward person.</small></h4> 
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="team-portrait">              
-                <div class="portrait">
                     <img src="https://en.gravatar.com/userimage/61680326/09ed07edab70f0f883e453aac6d1332c.jpg?size=230" alt="Ciaran" style="border-radius:50%;">              
                 </div>
                 <h3>Ciarán Hanrahan
@@ -208,6 +193,38 @@
                     </small>
                 </h3>                
                 <h4>Developer<small> - Speaks Spanish &amp; Ruby natively </small></h4>                       
+              </div>
+            </div>
+            
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait">              
+                <div class="portrait">
+                    <img src="/img/zac.jpg" alt="Tomasz Jama" style="border-radius:50%;">              
+                </div>
+              <h3>Zac Campbell
+                    <small>              
+                   <a href="https://twitter.com/mgoszcz2" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                  <a href="http://ie.linkedin.com/in/zacharycampbell" target="_blank" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
+                    </small>
+                </h3>                
+                <h4>Developer Evangelist<small> - Lumberjack turned programmer</small></h4> 
+              </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait">              
+                <div class="portrait">
+                    <img src="/img/maciej.png" alt="Tomasz Jama" style="border-radius:50%;">              
+                </div>
+              <h3>Maciej Goszczycki
+                    <small>              
+                   <a href="https://twitter.com/mgoszcz2" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                   <a href="https://github.com/jaibles" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
+                    </small>
+                </h3>                
+                <h4>Programmer<small> &amp; Full time awkward person.</small></h4> 
               </div>
             </div>
 
