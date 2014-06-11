@@ -5,7 +5,7 @@
  */
 
 html, body {
-  font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+  font-family: 'proxima-nova-regular', Arial, Helvetica, sans-serif;
   background-color: #f5f5f5;
   height: 100%;
 }
@@ -53,7 +53,7 @@ body {
 .navbar .navbar-nav li a {
 color: #414042;
 display: block;
-font-family: "Proxima-Nova",Helvetica,Arial,sans-serif;
+font-family: "proxima-nova-regular",Helvetica,Arial,sans-serif;
 font-size: 16px;
 font-weight: normal;
 height: 41px;
@@ -177,7 +177,7 @@ ul { margin: 0; padding: 0; }
 ul li { list-style: none; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+  font-family: 'proxima-nova-regular', Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
 h1 {
@@ -293,7 +293,7 @@ span.valign {
   margin-top:21px; 
 }
 .bold {
-  font-family: 'Proxima-Nova-Bld';
+  font-family: 'proxima-nova-bold';
   color: #428BCA;
 }
 
@@ -406,7 +406,7 @@ span.valign {
 
 /* button styles */
 .btn {
-  font-family: "Proxima-Nova", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova-regular", Helvetica, Arial, sans-serif;
   font-weight: normal;
   position: relative;
   font-size: 13px;
@@ -870,7 +870,7 @@ label {
     font-size: 15px;
   }
   .navbar .container a.navbar-brand {
-    font-family: "Proxima-Nova", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova-regular", Helvetica, Arial, sans-serif;
     text-align: center;
     color: #414042;
     font-weight: normal;
@@ -1143,7 +1143,7 @@ label {
     color: #414042;
   }    
     .section h2.title {
-      font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+      font-family: 'proxima-nova-regular', Arial, Helvetica, sans-serif;
       padding-bottom: 5px;
     }
     .section h2 span {
@@ -1398,7 +1398,7 @@ max-width: 77%;
 }
   
 #single-app h4 {
-  font-family: 'Proxima-Nova-Bld', Arial, Helvetica, sans-serif;
+  font-family: 'proxima-nova-bold', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   float: left;
       margin-right: 5px;
@@ -1482,10 +1482,10 @@ develop
 }
 #develop-features a {
   font-size:16px;
-  font-family: 'Proxima-Nova-Bld';
+  font-family: 'proxima-nova-bold';
 }
 .develop-how a {
- font-family: 'Proxima-Nova-Bld';
+ font-family: 'proxima-nova-bold';
 }
 #develop h4 {
     color: #414042;
@@ -1520,7 +1520,7 @@ padding: 10px 0 0;
 }
 .code-icon {
     color: #414042; 
-    font-family: 'Proxima-Nova-bld', corbel, sans-serif;
+    font-family: 'proxima-nova-bold', corbel, sans-serif;
     font-size: 42px;
     line-height: 42px;
 }
@@ -1542,7 +1542,7 @@ padding: 10px 0 0;
   margin: 10px 0px;
 }
 #docs h4 {
-  font-family: 'Proxima-Nova-Bld';
+  font-family: 'proxima-nova-bold';
   font-size: 18px;
   margin: 25px 0 10px;
 }
@@ -1646,7 +1646,7 @@ pre {
 
 
 .changelog-date {
-  font-family: 'Proxima-Nova-Bld';
+  font-family: 'proxima-nova-bold';
   margin-top:15px;
   margin-bottom: -8px;
 }
@@ -1685,7 +1685,7 @@ pre {
 
 #connect-features h4 {
       color: #414042;
-  font-family: 'Proxima-Nova-Bld';
+  font-family: 'proxima-nova-bold';
     font-size: 16px;
     margin: -5px 0 10px;
   }
@@ -1776,7 +1776,7 @@ padding: 10px 0 0;
   background-color: #f1f1f1;
 }
 #details h4, #form h4 {
-  font-family: "Proxima-Nova-Bld";
+  font-family: "proxima-nova-bold";
   font-size:16px;
   margin-bottom: 4px;
 }
@@ -1846,7 +1846,7 @@ HOME
 }
 .code-icon-home {
     color: #414042; 
-    font-family: 'Proxima-Nova-bld', corbel, sans-serif;
+    font-family: 'proxima-nova-bold', corbel, sans-serif;
     font-size: 42px;
     line-height: 42px;
 }
@@ -1926,8 +1926,16 @@ background-color: #ffffff;
 #feature-1  pre.prettyprint {
   margin-top: 0px;
 }
+#feature-grey {
+padding-top: 60px;
+background-color: #f5f5f5;
+}
+
 .concerns img {
   width: 50%;
+}
+.lots img {
+  width: 70%;
 }
 .concerns {
   width: 50%;
@@ -1941,13 +1949,21 @@ background-color: #ffffff;
 
 #feature-2 {
   padding-top: 60px;
-  background-color: #f5f5f5;
+  background-color: #428bca;
 }
+#feature-2 p {
+  color: #ffffff;
+}
+#feature-2 .bold, #feature-2 h5, #feature-2 h3 {
+  color: #ffffff;
+}
+
+
 #feature-2 h5, #feature-1 h5 {
   margin-top: 25px;
 }
 #features .row {
-margin: 0 0 100px 0;
+margin: 0 0 60px 0;
 }
 #features .row [class*="col-"] { margin-bottom: 0; }
 #features .row img { padding: 0 20px; }
@@ -2246,7 +2262,7 @@ padding-bottom: 90px;
     padding: 30px 10px;
     margin: 0;
     font-size: 23px;
-    font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+    font-family: 'proxima-nova-regular', Arial, Helvetica, sans-serif;
     color: #fff;
     background-color: #414042;
   }
@@ -2371,7 +2387,7 @@ border-bottom: 1px solid #E5E5E5;
 }
 
 #help-home h3 {
-   font-family: 'proxima-nova-bld';
+   font-family: 'proxima-nova-bold';
     font-size: 18px;
     letter-spacing: 0.5px;
     margin: 26px 0 5px;
@@ -2469,7 +2485,13 @@ background-color: #f1f1f1
  .team-portrait .icon-twitter,  .team-portrait .icon-linkedin {
     color: #aaaaaa;
   }
+  .team-portrait .icon-github {
+   color: #aaaaaa; 
+  }
  .icon-twitter:hover, .icon-linkedin:hover {
+    color: #428BCA;
+  }
+  .icon-github:hover {
     color: #428BCA;
   }
 
@@ -2562,7 +2584,7 @@ text-align: left;
   #footer h3 {
     color: #fff;
     font-weight: normal;
-    font-family: 'Proxima-Nova', Arial, Helvetica, sans-serif;
+    font-family: 'proxima-nova-regular', Arial, Helvetica, sans-serif;
     text-align: left;
     margin: 10px 0;
     font-size: 16px;
@@ -2585,7 +2607,7 @@ text-align: left;
   #footer a { color: #f1f1f1; }
   #footer a:hover { color: #ccc; }
   #footer a.logo {
-    font-family: "Proxima-Nova", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova-regular", Helvetica, Arial, sans-serif;
     color: #fff;
     font-weight: bold;
     font-size: 30px;
