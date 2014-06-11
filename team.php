@@ -56,6 +56,21 @@
               </div>
             </div>
 
+             <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait">              
+                <div class="portrait">
+                    <img src="/img/aoifemcdonnell.png" alt="Aoife McDonnell" style="border-radius:50%;"> 
+                </div>
+                <h3>Aoife McDonnell
+                    <small>              
+                   <a href="https://twitter.com/aoifemcd" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                  <a href="http://ie.linkedin.com/in/aoifemcdonnell" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
+                    </small>
+                </h3>                
+                <h4>Product Manager<small></small></h4>  
+              </div>
+            </div>
+
 
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
@@ -99,20 +114,6 @@
               </div>
             </div>
 
-     <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="team-portrait">              
-                <div class="portrait">
-                    <img src="https://secure.gravatar.com/avatar/cc024f0ae73608a3d00e77cd54373c82?s=230" alt="Ronan Byrne" style="border-radius:50%;">              
-                </div>
-                <h3>Ronan Byrne
-                    <small>              
-                   <a href="https://twitter.com/ronnbyrne" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
-                  <a href="http://ie.linkedin.com/pub/ronan-byrne/64/a32/61a" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
-                    </small>
-                </h3>                
-                <h4>Intern Developer<small> - Big JavaScript book read.</small></h4>  
-              </div>
-            </div>
 
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
@@ -131,6 +132,35 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
+                    <img src="/img/edleamy.png" alt="Ed Leamy" style="border-radius:50%;">              
+                </div>
+              <h3>Ed Leamy
+                    <small>              
+                   <a href="http://linkedin.com/in/edleamy" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
+                   <a href="https://twitter.com/edleamy" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                    </small>
+                </h3>                
+                <h4>Enterprise Dev<small> - Obsessed with National Anthems</small></h4> 
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait">              
+                <div class="portrait">
+                    <img src="/img/maciej.png" alt="Tomasz Jama" style="border-radius:50%;">              
+                </div>
+              <h3>Maciej Goszczycki
+                    <small>              
+                   <a href="https://twitter.com/mgoszcz2" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                    </small>
+                </h3>                
+                <h4>Programmer<small> &amp; Full time awkward person.</small></h4> 
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait">              
+                <div class="portrait">
                     <img src="https://en.gravatar.com/userimage/61680326/09ed07edab70f0f883e453aac6d1332c.jpg?size=230" alt="Ciaran" style="border-radius:50%;">              
                 </div>
                 <h3>Ciarán Hanrahan
@@ -138,7 +168,21 @@
                   <a href="http://ie.linkedin.com/in/ciaranhanrahan" target="_blank" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
                     </small>
                 </h3>                
-                <h4>UX &amp; Front End<small> - New Addition..</small></h4>                       
+                <h4>UX &amp; Front End<small> - The right space is whitespace.</small></h4>                       
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait">              
+                <div class="portrait">
+                    <img src="/img/miguel.png" alt="Tomasz Jama" style="border-radius:50%;">              
+                </div>
+                <h3>Miguel Tineo
+                    <small>              
+                  <a href="http://ie.linkedin.com/pub/mike-tineo/31/490/3a0/" target="_blank" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
+                    </small>
+                </h3>                
+                <h4>Developer<small></small></h4>                       
               </div>
             </div>
 
