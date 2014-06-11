@@ -1926,8 +1926,16 @@ background-color: #ffffff;
 #feature-1  pre.prettyprint {
   margin-top: 0px;
 }
+#feature-grey {
+padding-top: 60px;
+background-color: #f5f5f5;
+}
+
 .concerns img {
   width: 50%;
+}
+.lots img {
+  width: 70%;
 }
 .concerns {
   width: 50%;
@@ -1941,13 +1949,21 @@ background-color: #ffffff;
 
 #feature-2 {
   padding-top: 60px;
-  background-color: #f5f5f5;
+  background-color: #428bca;
 }
+#feature-2 p {
+  color: #ffffff;
+}
+#feature-2 .bold, #feature-2 h5, #feature-2 h3 {
+  color: #ffffff;
+}
+
+
 #feature-2 h5, #feature-1 h5 {
   margin-top: 25px;
 }
 #features .row {
-margin: 0 0 100px 0;
+margin: 0 0 60px 0;
 }
 #features .row [class*="col-"] { margin-bottom: 0; }
 #features .row img { padding: 0 20px; }

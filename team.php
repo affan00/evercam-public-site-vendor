@@ -204,7 +204,7 @@
                   <a href="https://github.com/miketineo" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
-                <h4>Developer<small></small></h4>                       
+                <h4>Developer<small> - Speaks Spanish &amp; Ruby natively </small></h4>                       
               </div>
             </div>
 
