@@ -2466,10 +2466,16 @@ background-color: #f1f1f1
       margin-bottom: 0px;
     }
 
- .team-portrait .icon-twitter,  .team-portrait .icon-linkedin, .team-portrait .icon-github {
+ .team-portrait .icon-twitter,  .team-portrait .icon-linkedin {
     color: #aaaaaa;
   }
- .icon-twitter:hover, .icon-linkedin:hover, .team-portrait .icon-github:hover {
+  .team-portrait .icon-github {
+   color: #aaaaaa; 
+  }
+ .icon-twitter:hover, .icon-linkedin:hover {
+    color: #428BCA;
+  }
+  .icon-github:hover {
     color: #428BCA;
   }
 
