@@ -67,7 +67,7 @@
                   <a href="http://ie.linkedin.com/in/aoifemcdonnell" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
                     </small>
                 </h3>                
-                <h4>Product Manager<small></small></h4>  
+                <h4>Product Manager<small> - Cat herder, will work for chocolate</small></h4>  
               </div>
             </div>
 
@@ -81,6 +81,8 @@
                     <small>              
                   <a href="https://twitter.com/liutingdu" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
                   <a href="https://ie.linkedin.com/in/liutingdu" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
+                 <a href="https://github.com/liutingdu" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
+
                     </small>
                 </h3>                
                 <h4>Hacker<small> - Beijing's candidate for Rose of Tralee.</small></h4>            
@@ -123,6 +125,7 @@
               <h3>Tomasz Jama
                     <small>              
                    <a href="http://ie.linkedin.com/in/tomaszjama" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
+                   <a href="https://github.com/GvS666" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
                 <h4>Hacker<small> - Dreams in code.</small></h4> 
@@ -152,6 +155,7 @@
               <h3>Maciej Goszczycki
                     <small>              
                    <a href="https://twitter.com/mgoszcz2" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                   <a href="https://github.com/jaibles" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
                 <h4>Programmer<small> &amp; Full time awkward person.</small></h4> 
@@ -166,9 +170,26 @@
                 <h3>Ciarán Hanrahan
                     <small>              
                   <a href="http://ie.linkedin.com/in/ciaranhanrahan" target="_blank" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
+                 <a href="https://twitter.com/ciaranhan" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                 <a href="https://github.com/jaibles" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
+
                     </small>
                 </h3>                
                 <h4>UX &amp; Front End<small> - The right space is whitespace.</small></h4>                       
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait">              
+                <div class="portrait">
+                    <img src="/img/milos.png" alt="Tomasz Jama" style="border-radius:50%;">              
+                </div>
+                <h3>Miloš Mošić
+                    <small>              
+                 <a href="https://github.com/mosic" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
+                    </small>
+                </h3>                
+                <h4>Developer<small> - Keeping afloat while working remote</small></h4>                       
               </div>
             </div>
 
@@ -180,6 +201,7 @@
                 <h3>Miguel Tineo
                     <small>              
                   <a href="http://ie.linkedin.com/pub/mike-tineo/31/490/3a0/" target="_blank" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
+                  <a href="https://github.com/miketineo" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
                 <h4>Developer<small></small></h4>                       
@@ -201,7 +223,11 @@
                 <div class="portrait">
                     <img src="https://secure.gravatar.com/avatar/bc5816bd84db9de699f207423d55db18?s=230" alt="Shakeel Anjum" style="border-radius:50%;">              
                 </div>
-                <h3>Shakeel Anjum</h3>
+                <h3>Shakeel Anjum
+                <small>
+                <a href="https://github.com/mshakeelanjum" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
+                </small>
+                </h3>
                 <h4>Hacker<small> - Malaria survivor and gentle soul.</small></h4>   
                 
                 

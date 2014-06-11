@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Proxima-Nova';
+    font-family: 'proxima-nova-regular';
     src: url('proximanova-regular-webfont.eot');
     src: url('proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('proximanova-regular-webfont.woff') format('woff'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'Proxima-Nova-Bld';
+    font-family: 'proxima-nova-bold';
     src: url('proximanova-bold-webfont.eot');
     src: url('proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('proximanova-bold-webfont.woff') format('woff'),
