@@ -50,6 +50,7 @@
                     <small>              
                      <a href="https://twitter.com/marcoherbst" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
                     <a href="http://www.linkedin.com/in/marcoherbst" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
+                    <a href="https://github.com/marcoherbst" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
                 <h4>Hustler<small> - Failed piano player</small></h4>            
@@ -65,6 +66,7 @@
                     <small>              
                    <a href="https://twitter.com/aoifemcd" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
                   <a href="http://ie.linkedin.com/in/aoifemcdonnell" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
+                  <a href="https://github.com/aoifemcd" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
                 <h4>Product Manager<small> - Cat herder, will work for chocolate</small></h4>  
@@ -141,6 +143,7 @@
                     <small>              
                    <a href="http://linkedin.com/in/edleamy" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
                    <a href="https://twitter.com/edleamy" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                   <a href="https://github.com/edleamy" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
                 <h4>Enterprise Dev<small> - Obsessed with National Anthems</small></h4> 
