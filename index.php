@@ -170,7 +170,7 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
                     <option value="snapshotOption">Grab a Snapshot</option>
                   </select>
                   <span class="using">using</span>
-                  <select name="lang" class='lang select-special'>
+                  <select name="lang" class='lang select-special '>
                   <option value="curl">curl</option>
                   </select>
                 </div>
@@ -184,7 +184,7 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
   <div class="container">
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12">
-        <h3>Separation of Concerns</h3>
+        <h3>Seperation of Concerns</h3>
          <p>
           Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.
          </p>
@@ -217,7 +217,7 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12">
         <h3>A Marketplace for Apps</h3>
-        <p>The world's first App store for Cameras. With over 2,000 cameres connected to evercam.io and more every day - we bring customers to you.</p>
+        <p>The world's first App store for Cameras. With over 2,000 cameres connected to evercam.io and more very day - we bring customers to you.</p>
         <a href="/apps"><h5 class="title">evercam.io<span class="bold">/apps</span><i class="fa fa-arrow-right"></i></h5></a>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">
