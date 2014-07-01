@@ -204,7 +204,6 @@
                 </div>
               <h3>Zac Campbell
                     <small>              
-                   <a href="https://twitter.com/mgoszcz2" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
                   <a href="http://ie.linkedin.com/in/zacharycampbell" target="_blank" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
                     </small>
                 </h3>                
@@ -221,7 +220,7 @@
               <h3>Maciej Goszczycki
                     <small>              
                    <a href="https://twitter.com/mgoszcz2" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
-                   <a href="https://github.com/jaibles" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
+                   <a href="https://github.com/mgoszcz2" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
                 <h4>Programmer<small> &amp; Full time awkward person.</small></h4> 

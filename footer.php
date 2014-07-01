@@ -16,7 +16,7 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
           <ul class="social">
-          <li><a href="/about">© evercam.io 2015</a></li>
+          <li><a href="/about">© evercam.io 2014</a></li>
           <li><a href="https://github.com/evercam" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
           <li><a href="http://www.linkedin.com/company/evercam" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>              
           <li><a href="https://twitter.com/evrcm" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>  

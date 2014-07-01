@@ -45,7 +45,7 @@
       <p><i class="fa fa-github fa-2x"></i>  <i class="fa fa-arrow-right"></i></p></a>
     </div>
     <div class="col-sm-4 text-center">
-      <a href="https://github.com/evercam/evercam.node" target="_blank" title="Node"><img src="/img/node.png" height="120" alt="Nodejs"><p><i class="fa fa-github fa-2x"></i>  <i class="fa fa-arrow-right"></i></p></a>
+      <a href="https://github.com/evercam/evercam-node" target="_blank" title="Node"><img src="/img/node.png" height="120" alt="Nodejs"><p><i class="fa fa-github fa-2x"></i>  <i class="fa fa-arrow-right"></i></p></a>
     </div>
       <div class="col-sm-4 text-center">
         <a href="https://github.com/evercam/evercam.java" target="_blank" title="Java"><img src="/img/java.png" height="120" alt="Java"><p><i class="fa fa-github fa-2x"></i>  <i class="fa fa-arrow-right"></i></p></a>
