@@ -16,7 +16,6 @@
   </head>
 
   <body class="red-blue">
-    <?php include_once("analyticstracking.php") ?>
     <? include 'header.php'; ?>
 
         <!-- Home Section -->
