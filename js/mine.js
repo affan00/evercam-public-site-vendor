@@ -6,19 +6,19 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-48470473-1', 'evercam.io');
+  ga('create', 'UA-48470473-1', 'auto', {'allowLinker': true});
+  ga('require', 'linker');
+  ga('linker:autoLink', ['dashboard.evercam.io', 'api.evercam.io'] );
   ga('send', 'pageview');
 
-    // Using jQuery Event API v1.3
+// Using jQuery Event API v1.3
 $('#create-account').on('click', function() {
   ga('send', 'event', 'create-accont-button', 'click', 'nav-buttons');
 });
 $('#sign-in').on('click', function() {
   ga('send', 'event', 'sign-in-menu', 'click', 'nav-buttons');
 });
-ga('create', 'UA-48470473-1', {
-  'cookieDomain': 'none'
-});
+
  
 function admSelectCheck(nameSelect){
     if(nameSelect.value){
