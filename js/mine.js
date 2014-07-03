@@ -11,14 +11,6 @@
   ga('linker:autoLink', ['dashboard.evercam.io', 'api.evercam.io'] );
   ga('send', 'pageview');
 
-// Using jQuery Event API v1.3
-$('#create-account').on('click', function() {
-  ga('send', 'event', 'create-accont-button', 'click', 'nav-buttons');
-});
-$('#sign-in').on('click', function() {
-  ga('send', 'event', 'sign-in-menu', 'click', 'nav-buttons');
-});
-
  
 function admSelectCheck(nameSelect){
     if(nameSelect.value){
