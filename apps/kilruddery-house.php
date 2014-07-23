@@ -54,8 +54,8 @@
             <div class="row col-md-12">
               <p>A live view with audio from the webcam on top of Killruddery House and Gardens in Bray.</p>
             </div>
-            <div class="row col-md-12">
-              
+            <div class="row margin-top-15 col-md-12">
+              <a href="https://play.google.com/store/apps/details?id=com.camba.app_killruddery" target="_blank"><img src="http://developer.android.com/images/brand/en_app_rgb_wo_60.png" width="100" /></a>
             </div>
       </div><!-- md-7 --> 
 

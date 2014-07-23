@@ -54,7 +54,7 @@
               <span id="hover-arrow" class="icon-arrow-right"></span>
             </div>
           </a>
-          <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.androidapp" target="_blank"> Google Play Store</a></p>
+          <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.androidapp" target="_blank"> Google Play Store <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li>
 
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_1" data-cat="1">
@@ -67,7 +67,7 @@
               <span id="hover-arrow" class="icon-arrow-right"></span>
             </div>
           </a>
-          <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.capture&hl=en" target="_blank"> Google Play Store</a></p>
+          <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.capture&hl=en" target="_blank"> Google Play Store <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li>
 
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_1" data-cat="1">
@@ -80,7 +80,7 @@
               <span id="hover-arrow" class="icon-arrow-right"></span>
             </div>
           </a>
-          <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.bigredsnapshot&hl=en" target="_blank"> Google Play Store</a></p>        
+          <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.bigredsnapshot&hl=en" target="_blank"> Google Play Store <span class="glyphicon glyphicon-new-window"></span></a></p>        
         </li>
 
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_1" data-cat="1">
@@ -93,7 +93,7 @@
             <a href="#"><span id="hover-arrow" class="icon-arrow-right"></span></a>
           </div>
           </a>
-          <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.connect&hl=en" target="_blank"> Google Play Store</a></p>
+          <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.connect&hl=en" target="_blank"> Google Play Store <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li>
 
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_3 category_4" data-cat="3">
@@ -106,7 +106,7 @@
            <a href="#"><span id="hover-arrow" class="icon-arrow-right"></span></a>
           </div>
           </a>
-            <p><a href="http://selfies.ever.camera/" target="_blank">Visit #Cam</a></p>
+            <p><a href="http://selfies.ever.camera/" target="_blank">Visit #Cam <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li> 
 
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_3" data-cat="3">
@@ -119,7 +119,7 @@
             <a href="#"><span id="hover-arrow" class="icon-arrow-right"></span></a>
           </div>
           </a>
-          <p><a href="http://astimegoes.by" target="_blank">Visit Site</a></p>
+          <p><a href="http://astimegoes.by" target="_blank">Visit Site <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li>
 
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_3" data-cat="3">
@@ -132,7 +132,7 @@
               <a href="#"><span id="hover-arrow" class="icon-arrow-right"></span></a>
           </div>
           </a>
-          <p><a href="http://1button.info/" target="_blank">Visit Site</a></p>
+          <p><a href="http://1button.info/" target="_blank">Visit Site <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li>
 
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_4" data-cat="1">
@@ -145,7 +145,7 @@
             <a href="#"><span id="hover-arrow" class="icon-arrow-right"></span></a>
           </div>
           </a>
-          <p><a href="https://play.google.com/store/apps/details?id=com.camba.app_killruddery&hl=en" target="_blank">Google Play Store</a></p>
+          <p><a href="https://play.google.com/store/apps/details?id=com.camba.app_killruddery&hl=en" target="_blank">Google Play Store <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li>
 
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_3 category_4" data-cat="3">
@@ -159,7 +159,7 @@
               <a href="#"><span id="hover-arrow" class="icon-arrow-right"></span></a>
           </div>
           </a>
-          <p><a href="/wordpress/tunstall-emergency-response-develop-an-evercam-solution/" target="_blank">Read More</a></p>
+          <p><a href="/wordpress/tunstall-emergency-response-develop-an-evercam-solution/" target="_blank">Read More <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li>
 
 

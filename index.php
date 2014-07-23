@@ -217,7 +217,7 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12">
         <h3>A Marketplace for Apps</h3>
-        <p>The world's first App store for Cameras. With over 2,000 cameres connected to evercam.io and more every day - we bring customers to you.</p>
+        <p>The world's first App store for cameras. With over 2000 cameras connected to evercam.io and more every day - we bring customers to you.</p>
         <a href="/apps"><h5 class="title">evercam.io<span class="bold">/apps</span><i class="fa fa-arrow-right"></i></h5></a>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">
@@ -234,7 +234,7 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
       <div class="col-md-6 col-sm-6 col-xs-12" id="agnostic">
         <h3>Bring your own Device</h3>
         <p>Our software is hardware agnostic. We work with over 1,600 cameras and counting..</p>
-        <p>If we don't already support it, let us know and we'll add it.</p>
+        <p>If we don't already support it, just let us know and we'll add it.</p>
         <!--<a class="btn" href="#"><span class="icon-resize-full"></span>MORE DETAILS</a>-->
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">

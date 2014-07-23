@@ -8,7 +8,7 @@
       <li><a href='/develop/docs'>Interactive Docs</a></li>
       <li><a href='/develop/authentication'>Authentication</a></li>
       <!--<li><a href='/docs/swagger'>Docs</a></li>-->
-      <li><a href='/develop/evercamjs'>Evercam.js</a></li>
+      <!--<li><a href='/develop/evercamjs'>Evercam.js</a></li>-->
     </ul>
   </li>
 </ul>
@@ -45,7 +45,7 @@
   <li class="doc-categories">
     Connect
     <ul class="sub-menu">
-      <li><a href="http://blog.evercam.io/blog/evercam-connect/" target="_blank">Android Connect</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=io.evercam.capture&hl=en" target="_blank">Evercam Capture <span class="glyphicon glyphicon-new-window"></span></a></li>
     </ul>
   </li>
 </ul>

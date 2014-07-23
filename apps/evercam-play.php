@@ -66,8 +66,8 @@
                 </ul>
               </p>
             </div>
-            <div class="row col-md-12">
-              
+            <div class="row margin-top-15 col-md-12">
+              <a href="https://play.google.com/store/apps/details?id=io.evercam.androidapp" target="_blank"><img src="http://developer.android.com/images/brand/en_app_rgb_wo_60.png" width="100" /></a>
             </div>
       </div><!-- md-7 --> 
 

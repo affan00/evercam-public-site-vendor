@@ -42,18 +42,21 @@
   <div class="row article">
     <div class="col-sm-4 text-center">
       <a href="https://github.com/evercam/evercam.py" target="_blank" title="Python"><img src="/img/python.png" height="120" alt="Python">
-      <p><i class="fa fa-github fa-2x"></i>  <i class="fa fa-arrow-right"></i></p></a>
+      <p><i class="fa fa-github fa-2x"></i>  <span class="glyphicon glyphicon-new-window"></span></p></a>
     </div>
     <div class="col-sm-4 text-center">
-      <a href="https://github.com/evercam/evercam-node" target="_blank" title="Node"><img src="/img/node.png" height="120" alt="Nodejs"><p><i class="fa fa-github fa-2x"></i>  <i class="fa fa-arrow-right"></i></p></a>
+      <a href="https://github.com/evercam/evercam-node" target="_blank" title="Node"><img src="/img/node.png" height="120" alt="Nodejs"><p><i class="fa fa-github fa-2x"></i>  <span class="glyphicon glyphicon-new-window"></span></p></a>
     </div>
       <div class="col-sm-4 text-center">
-        <a href="https://github.com/evercam/evercam.java" target="_blank" title="Java"><img src="/img/java.png" height="120" alt="Java"><p><i class="fa fa-github fa-2x"></i>  <i class="fa fa-arrow-right"></i></p></a>
+        <a href="https://github.com/evercam/evercam.java" target="_blank" title="Java"><img src="/img/java.png" height="120" alt="Java"><p><i class="fa fa-github fa-2x"></i>  <span class="glyphicon glyphicon-new-window"></span></p></a>
     </div>
   </div>
   <div class="row article">
     <div class="col-sm-4 text-center">
-      <a href="https://github.com/evercam/evercam.net" target="_blank" title=".Net"><img src="/img/net.png" height="120" alt=".Net"><p><i class="fa fa-github fa-2x"></i>  <i class="fa fa-arrow-right"></i></p></a>
+      <a href="https://github.com/evercam/evercam-ruby" target="_blank" title="Ruby"><img src="/img/ruby.svg.png" height="120" alt="Ruby"><p><i class="fa fa-github fa-2x"></i>  <span class="glyphicon glyphicon-new-window"></span></p></a>
+    </div>
+    <div class="col-sm-4 text-center">
+      <a href="https://github.com/evercam/evercam.net" target="_blank" title=".Net"><img src="/img/net.png" height="120" alt=".Net"><p><i class="fa fa-github fa-2x"></i>  <span class="glyphicon glyphicon-new-window"></span></p></a>
     </div>
   </div>      
   <div class="row article">

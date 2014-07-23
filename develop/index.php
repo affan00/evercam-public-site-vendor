@@ -61,7 +61,7 @@
 
                       <div class="col-md-4">
                         <div class="col-md-3"><span class="code-icon">{ }</div>
-                         <div class="col-md-9">Start developing with our beautifully documented API<br><a href="/develop/docs">evercam.io<span class="bold">/develop</span></a></div>
+                         <div class="col-md-9">Start developing with our beautifully documented API<br><a href="/develop/docs">evercam.io<span class="bold">/develop/docs</span></a></div>
                           <!--<div class="row buttom">
                             <a class="btn-blue scroll" href="/develop">evercam.io/develop</a>
                           </div>  row -->
@@ -97,7 +97,7 @@
                           </div>
                           
                           <div class="col-md-6">
-                              <p class="develop-features">Seperation of concerns</p>   
+                              <p class="develop-features">Separation of concerns</p>   
                               <div class="row">                     
                                   <div class="col-md-8">
                                     <p>Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.</p>
@@ -115,7 +115,7 @@
                       <div class="row split-features">
                         <div class="col-md-6">
                            <p class="develop-features">App Store</p>                   
-                              <p class="margin-right-30">With over 2,000 cameres connected to evercam.io and more very day - we bring customers to you.</p>
+                              <p class="margin-right-30">With over 2,000 cameres connected to evercam.io and more every day - we bring customers to you.</p>
                               <a href="/docs" target="_blank">evercam.io<span class="bold">/apps</span></a>
                         </div>
                         <div class="col-md-6">
