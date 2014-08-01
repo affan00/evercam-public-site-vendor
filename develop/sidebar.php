@@ -5,7 +5,7 @@
     API V1
     <ul class="sub-menu">
       <li><a href='/develop/'>Develop</a></li>
-      <li><a href='/develop/docs'>Interactive Docs</a></li>
+      <li><a href='/develop/docs'>API Docs</a></li>
       <li><a href='/develop/authentication'>Authentication</a></li>
       <!--<li><a href='/docs/swagger'>Docs</a></li>-->
       <!--<li><a href='/develop/evercamjs'>Evercam.js</a></li>-->

@@ -36,7 +36,7 @@
 
   <div class="row header">
     <h3>Client Bindings</h3>
-    <p>We have wrappers around the Evercam API in Python, NodeJS, Java and .Net. You'll find installation instructions and basic usage examples for your preffered wrapper from the Github links below.</p>
+    <p>We have wrappers around the evercam API in Python, NodeJS, Java and .NET. You'll find installation instructions and basic usage examples for your preffered wrapper from the Github links below.</p>
   </div>
 
   <div class="row article">

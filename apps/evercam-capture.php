@@ -26,7 +26,7 @@
     <div class="row">
       <div class="col-md-2 col-sm-2 col-xs-12"></div>
       <div class="col-md-8 col-sm-8 col-xs-12">
-        <p>The Evercam API makes it easy for Developers to develop Apps for Cameras and offer them to users right here in our App store. Create and account and get your Camera connected to Evercam and you can easily add functionality to your camera through this exciting and growing range of Apps - or <a href="https://dashboard.evercam.io/signup">start developing one yourself!</a> Below is our current list of Android, iOS and Web Apps. </p>
+        <p>The Evercam API makes it easy for developers to develop apps for cameras and offer them to users right here in our App Store. Create and account and get your Camera connected to Evercam and you can easily add functionality to your camera through this exciting and growing range of Apps - or <a href="https://dashboard.evercam.io/signup">start developing one yourself!</a> Below is our current list of Android, iOS and web apps. </p>
       </div>
       <div class="col-md-2 col-sm-2 col-xs-12"></div>
     </div>

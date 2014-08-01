@@ -27,7 +27,7 @@
             <div class="col-md-1 col-sm-1 col-xs-12 empty"></div>
             <div class="col-md-10 col-sm-10 col-xs-12">
               <h1 class="welcome">We make it easier to write software for cameras.</h1> 
-              <h3 class="welcome">Beautiful APIs. Easy to Support. World's first App Store for Cameras.</h3> 
+              <h3 class="welcome">Beautiful APIs. Easy to support. World's first App Store for cameras.</h3> 
 
             </div>
             <div class="col-md-1 col-sm-1 col-xs-12"></div>
@@ -136,7 +136,7 @@
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12" id="developers">
         <h3>A Beautiful REST API.</h3>
-        <p>We built Evercam with Developers in mind and offer wrappers in Ruby, Python, Nodejs, Java & .Net to help get you started in minutes.</p>
+        <p>We built Evercam with developers in mind and offer wrappers in Ruby, Python, Nodejs, Java & .NET to help get you started in minutes.</p>
         <p>Write Software using our API and we guarantee it will work with <strong>any</strong> camera connectable to the internet.</p>
          
          <a href="/develop/docs"><h5 class="title">evercam.io<span class="bold">/develop</span><i class="fa fa-arrow-right"></i></h5></a>
@@ -202,7 +202,8 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
    <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12" id="agnostic">
         <h3>Lots of Wrappers</h3>
-        <p>We have wrappers around the Evercam API in all your favourite languages - Ruby, Nodejs, Python, Java &amp; .Net with installation instructions and basic usage examples.</p>
+        <p>We have wrappers around the Evercam API in all your favourite languages - Ruby, Nodejs, Python, Java &amp; .NET with installation instructions and basic usage examples.</p>
+        <a href="/develop/client-bindings"><h5 class="title">evercam.io<span class="bold">/develop/client-bindings</span><i class="fa fa-arrow-right"></i></h5></a>
         <!--<a class="btn" href="#"><span class="icon-resize-full"></span>MORE DETAILS</a>-->
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12 lots">
@@ -217,7 +218,7 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12">
         <h3>A Marketplace for Apps</h3>
-        <p>The world's first App store for cameras. With over 2000 cameras connected to evercam.io and more every day - we bring customers to you.</p>
+        <p>The world's first App Store for cameras. With over 2000 cameras connected to evercam.io and more every day - we bring customers to you.</p>
         <a href="/apps"><h5 class="title">evercam.io<span class="bold">/apps</span><i class="fa fa-arrow-right"></i></h5></a>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">

@@ -28,7 +28,7 @@
     <div class="row">
       <div class="col-md-2 col-sm-2 col-xs-12"></div>
       <div class="col-md-8 col-sm-8 col-xs-12">
-        <p>The Evercam API makes it easy for Developers to develop Apps for Cameras and offer them to users right here in our App store. Create and account and get your Camera connected to Evercam and you can easily add functionality to your camera through this exciting and growing range of Apps - or <a href="/develop">start developing one yourself!</a> Below is our current list of Android, iOS and Web Apps. </p>
+        <p>The evercam API makes it easy for developers to develop apps for cameras and offer them to users right here in our App Store. Create an account and get your camera connected to evercam and you can easily add functionality to your camera through this exciting and growing range of apps - or <a href="/develop">start developing one yourself!</a> Below is our current list of Android, iOS and web apps. </p>
       </div>
       <div class="col-md-2 col-sm-2 col-xs-12"></div>
     </div>
@@ -50,7 +50,7 @@
               <i class="fa fa-android app-cat-logo"></i>        
               <img class="img-responsive" src="/img/evercam-play.png">
               <h4>Evercam Play</h4>
-              <p>Access to all your IP Cameras connected to Evercam</p>
+              <p>Access to all your IP Cameras connected to evercam</p>
               <span id="hover-arrow" class="icon-arrow-right"></span>
             </div>
           </a>
@@ -63,7 +63,7 @@
               <i class="fa fa-android app-cat-logo"></i>        
               <img class="img-responsive" src="/img/evercam-capture.png">
               <h4>Evercam Capture</h4>
-              <p>Turn your phone into an IP Camera</p>
+              <p>Turn your phone into an IP camera</p>
               <span id="hover-arrow" class="icon-arrow-right"></span>
             </div>
           </a>
@@ -76,7 +76,7 @@
               <i class="fa fa-android app-cat-logo"></i>    
               <img class="img-responsive" src="/img/bigredbutton.png">
               <h4>Big Red Button</h4>
-              <p>Capture snapshots from Evercam connected cameras</p>
+              <p>Capture snapshots from evercam connected cameras</p>
               <span id="hover-arrow" class="icon-arrow-right"></span>
             </div>
           </a>

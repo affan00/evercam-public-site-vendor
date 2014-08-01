@@ -45,7 +45,7 @@
                 
                   <div class="text-center">
                       <h3 class="title">evercam.io<span class="bold">/develop</span></h3>
-                        <h4>We make it easier to write software for Cameras</h4>
+                        <h4>We make it easier to write software for cameras.</h4>
                   </div>              
 
                   <div class="row develop-how">
@@ -53,7 +53,7 @@
                       
                       <div class="col-md-4">
                           <div class="col-md-3"><i class="fa fa-camera fa-3x"></i></div>
-                          <div class="col-md-9">Get your client to connect their Camera to Evercam<br><a href="/connect">evercam.io<span class="bold">/connect</span></a></div>
+                          <div class="col-md-9">Get your client to connect their camera to evercam.<br><a href="/connect">evercam.io<span class="bold">/connect</span></a></div>
                           <!--<div class="row buttom">
                             <a class="btn-blue scroll" href="/connect">evercam.io/connect</a>
                           </div><!  row -->
@@ -61,7 +61,7 @@
 
                       <div class="col-md-4">
                         <div class="col-md-3"><span class="code-icon">{ }</div>
-                         <div class="col-md-9">Start developing with our beautifully documented API<br><a href="/develop/docs">evercam.io<span class="bold">/develop/docs</span></a></div>
+                         <div class="col-md-9">Start developing with our beautifully documented API.<br><a href="/develop/docs">evercam.io<span class="bold">/develop/docs</span></a></div>
                           <!--<div class="row buttom">
                             <a class="btn-blue scroll" href="/develop">evercam.io/develop</a>
                           </div>  row -->
@@ -69,7 +69,7 @@
 
                       <div class="col-md-4">
                         <div class="col-md-3"><i class="fa fa-money fa-3x"></i></div>
-                        <div class="col-md-9">Put your App in our store &amp; start selling
+                        <div class="col-md-9">Put your app in our store &amp; start selling.
                           <br><a href="/apps">evercam.io<span class="bold">/apps</span></a></div>
                         
                           <!--<div class="row buttom">
@@ -93,7 +93,7 @@
 
                           <div class="col-md-6">
                              <p class="develop-features">Universal API</p>                             
-                             <p class="margin-right-30">Write Software using our API and we guarantee it will work with <strong>any</strong> camera connectable to the internet.</p>
+                             <p class="margin-right-30">Write software using our API and we guarantee it will work with <strong>any</strong> camera connectable to the internet.</p>
                           </div>
                           
                           <div class="col-md-6">
@@ -115,12 +115,12 @@
                       <div class="row split-features">
                         <div class="col-md-6">
                            <p class="develop-features">App Store</p>                   
-                              <p class="margin-right-30">With over 2,000 cameres connected to evercam.io and more every day - we bring customers to you.</p>
+                              <p class="margin-right-30">With over 2,000 cameras connected to evercam.io and more every day - we bring customers to you.</p>
                               <a href="/docs" target="_blank">evercam.io<span class="bold">/apps</span></a>
                         </div>
                         <div class="col-md-6">
                            <p class="develop-features">Beautiful Documentation</p>                   
-                              <p class="margin-right-30">We have beautiful, comphrensive documentation that allows you to run requests from all of our Endpoints right in your browser. You'll be able to quickly get an understanding of how to use our API.</p>
+                              <p class="margin-right-30">We have beautiful, comprehensive documentation that allows you to run requests from all of our endpoints right in your browser. You'll be able to quickly get an understanding of how to use our API.</p>
                               <a href="/develop" target="_blank">evercam.io<span class="bold">/develop</span></a>
                         </div>
                       </div>
@@ -130,7 +130,7 @@
                            <p class="develop-features">Lots of Wrappers</p>   
                             <div class="row">                     
                                 <div class="col-md-8">                                                  
-                                    <p>We have wrappers around the Evercam API in all your favourite languages - Ruby, Nodejs, Java &amp; .Net with installation instructions and basic usage examples<br></p>
+                                    <p>We have wrappers around the evercam API in all your favourite languages - Ruby, Nodejs, Java &amp; .NET with installation instructions and basic usage examples<br></p>
                                 </div>
                                 <div class="col-md-2 sep">
                                    <a href="https://github.com/evercam/evercam.py" target="_blank" title="Python"><img src="/img/python.png" height="40" alt="Python"></a>
@@ -138,7 +138,7 @@
                                   </div>
                                   <div class="col-md-2 sep">
                                   <a href="https://github.com/evercam/evercam.java" target="_blank" title="Java"><img src="/img/java.png" height="40" alt="Java"></a>
-                                  <a href="https://github.com/evercam/evercam.net" target="_blank" title=".Net"><img src="/img/net.png" height="40" alt=".Net"></a>
+                                  <a href="https://github.com/evercam/evercam.net" target="_blank" title=".Net"><img src="/img/net.png" height="40" alt=".NET"></a>
                                 </div>
                               </div>
                             <a href="/develop/client-bindings" target="_blank">evercam.io<span class="bold">/develop/client-bindings</span></a>

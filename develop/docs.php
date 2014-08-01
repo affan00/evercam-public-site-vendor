@@ -39,7 +39,7 @@
 
   <div class="row header">
     <h3>Getting Started</h3>
-    <p>Welcome to the Evercam V1 API documentation. </p>
+    <p>Welcome to the evercam API documentation. </p>
   </div>
 
   <div class="row article">
