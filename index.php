@@ -69,7 +69,7 @@
               <div class="service">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="col-md-12"><i class="fa fa-camera fa-3x"></i></div>
+                    <div class="col-md-12 text-center"><i class="fa fa-camera fa-3x"></i></div>
                     <div class="col-md-12"><h3>Get your client to connect their Camera to Evercam</h3></div>
                   </div>
                 </div>
@@ -87,7 +87,7 @@
               <div class="service">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="col-md-12"><span class="code-icon-home">{ }</span></div>
+                    <div class="col-md-12 text-center"><span class="code-icon-home">{ }</span></div>
                     <div class="col-md-12"><h3>Start developing with our beautifully documented API</h3></div>
                   </div>
                 </div>
