@@ -133,6 +133,11 @@ margin-right: 15px;
 #blog-home h3 {
 clear: both;
 }
+@media (max-width: 420px) {
+  #blog h3 {
+  margin-top: 20px;
+  }
+}
 #blog-home {
 margin-top: 40px;
 }
@@ -1292,7 +1297,9 @@ label {
     bottom: 40px;
     margin: 0;
   }
-  
+  .google a{
+    color: #ffffff !important;
+  }
   /* browser preview */ 
   #home .browser {
     width: 100%;
