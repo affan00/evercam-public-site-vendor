@@ -342,11 +342,13 @@ https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
           </div>
           
         </div><!-- /.content -->
-            <div class="google">
+<div class="google">
     <a href="https://plus.google.com/+Evercam" rel="publisher">Google+</a>
     </div>
       </div><!-- /.container -->
+        
     </div>
+
     <? include 'footer.php'; ?>
 
     <!-- Bootstrap core JavaScript

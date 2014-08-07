@@ -44,6 +44,7 @@
 
   <div class="row article">
     <p>We want to make it fast and easy for you to start building with our API. You can execute live API calls from our current list of Endpoints below.</p>
+    <p>To use the evercam API you need to <a href="https://dashboard.evercam.io/signup">create an account</a> in order to get an API key.</p>
     <div class='iframe-container'>
        <div class='iframe'>
         <iframe src="https://dashboard.evercam.io/swagger"  scrolling="yes" frameborder="0" allowtransparency="true" width="870" height="3720"></iframe>
