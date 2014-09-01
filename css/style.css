@@ -1311,7 +1311,11 @@ label {
   #home .container {
     padding-top: 65px;
   }
-
+@media (max-width: 420px) {
+  #home .container {
+    padding-top: 0px;
+  }
+}
   @media (max-width: 992px) {
     .carousel { margin-bottom: 30px; }
     
@@ -1329,7 +1333,7 @@ label {
     #home h1 { line-height: 35px; }
     #home.half-home h1 { margin-top: 5%; }
     
-    #home .container { padding-top: 23%; }
+    #home .container { padding-top: 3%; }
 
   }  
 
@@ -1916,9 +1920,9 @@ HOME
     text-align: center;
   }
 }
-@media (max-width: 420x) {
+@media (max-width: 420px) {
   #services .row [class*="col-"] {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     text-align: center;
   }
 }
