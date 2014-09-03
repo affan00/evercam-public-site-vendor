@@ -3,8 +3,8 @@
 ///////////////////////////////////////
  function initialize()
 {
-    var latlng = new google.maps.LatLng(53.354393, -6.263232);
-    var latlng2 = new google.maps.LatLng(37.3864953,-122.0841289);
+    var latlng = new google.maps.LatLng(53.346025, -6.242425);  // Dublin 
+    var latlng2 = new google.maps.LatLng(37.3864953,-122.0841289); // San Fran
     var myOptions =
     {
         zoom: 14,

@@ -37,21 +37,23 @@
     <div class="row address">
           <div class="col-md-6 col-sm-6 col-xs-12">
             
-            <h3>Dublin</h3>
-            <p>The Ierne Ballroom, 12 Parnell Square East,<br />
-              Dublin 1, Ireland</p>
+            <h3>Dublin, Ireland</h3>
+            <p>Wayra Ireland<br />
+              29 Sir John Rogerson's Quay<br />
+              Dublin 2<br />
+              Ireland</p>
               <p>Telephone: +353 (1) 538 3333</p>
-              <p>E-Mail: howrya@evercam.io</p>
+              <p>Email: howrya@evercam.io</p>
               
               
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
             
             <h3>Mountain View, California</h3>
-            <p>800 W. El Camino Real, Suite 350, Mountain View,<br />
-             CA 94040, USA</p>
+            <p>800 W. El Camino Real, Suite 350<br />Mountain View<br />
+             CA 94040<br />USA</p>
               <p>Telephone: +1 (650) 419 3588</p>
-              <p>E-Mail: whassup@evercam.io</p>
+              <p>Email: whassup@evercam.io</p>
           </div>
          <!-- <div class="col-md-4 col-sm-4 col-xs-12">
             <h3>Contact Us</h3>
