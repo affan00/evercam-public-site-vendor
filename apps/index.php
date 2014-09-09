@@ -96,6 +96,19 @@
           <p>View in <a href="https://play.google.com/store/apps/details?id=io.evercam.connect&hl=en" target="_blank"> Google Play Store <span class="glyphicon glyphicon-new-window"></span></a></p>
         </li>
 
+        <li class="col-md-3 col-sm-3 col-xs-12 mix category_3" data-cat="3">
+          <a href="http://snapmails.cloudapp.net/login.html" target="_blank">
+          <div class="apps">
+            <i class="fa fa-globe app-cat-logo"></i>
+            <img class="img-responsive" src="/img/snapmail.png">
+            <h4>Snapmail</h4>
+            <p>Schedule email notifications from your camera</p>
+            <a href="#"><span id="hover-arrow" class="icon-arrow-right"></span></a>
+          </div>
+          </a>
+          <p>Visit <a href="http://snapmails.cloudapp.net/login.html" target="_blank"> the App Site <span class="glyphicon glyphicon-new-window"></span></a></p>
+        </li>
+
         <li class="col-md-3 col-sm-3 col-xs-12 mix category_3 category_4" data-cat="3">
           <a href="http://selfies.ever.camera/" target="_blank">
           <div class="apps">
