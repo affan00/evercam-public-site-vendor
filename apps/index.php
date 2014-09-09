@@ -103,7 +103,7 @@
             <img class="img-responsive" src="/img/snapmail.png">
             <h4>Snapmail</h4>
             <p>Schedule email notifications from your camera</p>
-            <a href="#"><span id="hover-arrow" class="icon-arrow-right"></span></a>
+            <a href="http://snapmails.cloudapp.net/login.html"><span id="hover-arrow" class="icon-arrow-right"></span></a>
           </div>
           </a>
           <p>Visit <a href="http://snapmails.cloudapp.net/login.html" target="_blank"> the App Site <span class="glyphicon glyphicon-new-window"></span></a></p>
