@@ -119,7 +119,7 @@
             </div>
 
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <!--<div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
                     <img src="https://secure.gravatar.com/avatar/f9d00d8b4490efed402f29184fbe25db?s=230" alt="Tomasz Jama" style="border-radius:50%;">              
@@ -132,21 +132,19 @@
                 </h3>                
                 <h4>Hacker<small> - Dreams in code.</small></h4> 
               </div>
-            </div>
+            </div>-->
 
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
-                    <img src="/img/edleamy.png" alt="Ed Leamy" style="border-radius:50%;">              
+                    <img src="/img/milos.png" alt="Tomasz Jama" style="border-radius:50%;">              
                 </div>
-              <h3>Ed Leamy
+                <h3>Miloš Mošić
                     <small>              
-                   <a href="http://linkedin.com/in/edleamy" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
-                   <a href="https://twitter.com/edleamy" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
-                   <a href="https://github.com/edleamy" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
+                 <a href="https://github.com/mosic" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
-                <h4>Enterprise Dev<small> - Obsessed with National Anthems</small></h4> 
+                <h4>Developer<small> - Keeping afloat while working remote</small></h4>                       
               </div>
             </div>
 
@@ -170,18 +168,22 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
-                    <img src="/img/milos.png" alt="Tomasz Jama" style="border-radius:50%;">              
+                    <img src="/img/edleamy.png" alt="Ed Leamy" style="border-radius:50%;">              
                 </div>
-                <h3>Miloš Mošić
+              <h3>Ed Leamy
                     <small>              
-                 <a href="https://github.com/mosic" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
+                   <a href="http://linkedin.com/in/edleamy" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
+                   <a href="https://twitter.com/edleamy" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
+                   <a href="https://github.com/edleamy" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
                     </small>
                 </h3>                
-                <h4>Developer<small> - Keeping afloat while working remote</small></h4>                       
+                <h4>Enterprise Dev<small> - Obsessed with National Anthems</small></h4> 
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+
+
+            <!--<div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
                     <img src="/img/miguel.png" alt="Tomasz Jama" style="border-radius:50%;">              
@@ -194,10 +196,10 @@
                 </h3>                
                 <h4>Developer<small> - Speaks Spanish &amp; Ruby natively </small></h4>                       
               </div>
-            </div>
+            </div>-->
             
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <!--<div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
                     <img src="/img/zac.jpg" alt="Tomasz Jama" style="border-radius:50%;">              
@@ -209,10 +211,10 @@
                 </h3>                
                 <h4>Developer Evangelist<small> - Lumberjack turned programmer</small></h4> 
               </div>
-            </div>
+            </div>-->
 
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <!--<div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
                     <img src="/img/maciej.png" alt="Tomasz Jama" style="border-radius:50%;">              
@@ -225,7 +227,7 @@
                 </h3>                
                 <h4>Programmer<small> &amp; Full time awkward person.</small></h4> 
               </div>
-            </div>
+            </div>-->
 
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
