@@ -77,7 +77,7 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
                 <div class="portrait">
-                    <img src="https://secure.gravatar.com/avatar/e029df6e2669b71cfc28dff9061e66b9?s=230" alt="Vinnie Quinn" style="border-radius:50%;">              
+                    <img src="/img/liuting.jpg" alt="Liuting Du" style="border-radius:50%;">              
                 </div>
                 <h3>Liuting Du
                     <small>              

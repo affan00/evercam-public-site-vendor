@@ -160,7 +160,7 @@ curl https://api.evercam.io:443/v1/cameras \
 -d  "auth=null"</code></pre>
 <pre class="snapshotOption prettyprint curl" style="display: none;"><code>
 WGET 
-https://api.evercam.io:443/v1/cameras/marcoscam/snapshot.jpg
+https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
               </code></pre>
 
                 <div id="example-controls" class="change form-control">
