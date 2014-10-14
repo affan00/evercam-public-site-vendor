@@ -83,7 +83,7 @@
                           <div class="col-md-6">
                               <p class="develop-features">Connect a Public Camera</p>   
                               
-                                    <p>From the Evercam dashboard click 'Add Public Camera' in the sidebar. You will then be able to browse the repository of Public Cameras and add any of the cameras to your dashboard at the click of a button.</p>   
+                                    <p>From the Evercam dashboard go to 'Public Cameras' from the sidebar. From here you can browse the repository of Public Cameras and add any of the cameras to your dashboard at the click of a button.</p>   
                           </div>   
                           <div class="col-md-6">
                              <p class="develop-features">We Can Connect your Camera for you</p>                   
@@ -96,9 +96,8 @@
                 <div class="col-md-12">                                 
                   <div class="row split-features text-center">
                     <div class="col-md-12">
-                        <p class="develop-features">It's free to get started</p>                   
-                        <p>AND all our plans are free while we're in <em>beta</em> !</p>
-                        <a class="btn btn-primary" href="https://dashboard.evercam.io/signup" target="_blank">Create a Free Account</a>
+                        <p class="develop-features">It's free to get started!</p>                   
+                        <a class="btn btn-primary" href="https://dashboard.evercam.io/signup" target="_blank">Create an Account</a>
                         
                        <!-- <p class="margin-top-15 size-12">View Our Future<a href="#" target="_blank"> Pricing Plans</a></p>-->
                     </div>

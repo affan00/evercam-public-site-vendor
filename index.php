@@ -257,14 +257,14 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
       
       <div class="container">
         <div class="text-center">
-          <h2 class="title"><span class="icon-dollar"></span>Flexible Pricing</h2>            
+          <h2 class="title">Flexible Pricing</h2>            
         </div>        
         <div class="content">          
           <div class="pricing">
             <div class="row">
               <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="wrapper">
-                  <h3 class="text-center"><i class="icon-circle-blank"></i>Free API</h3>
+                  <h3 class="text-center"></i>Free API</h3>
                   <table class="table">
                     <thead>
                       <tr><th><span class="price">$0</span></th></tr>
@@ -282,7 +282,7 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
               <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="wrapper">
                   <div class="promo"></div>
-                  <h3 class="text-center"><i class="icon-star"></i>Pay As You Go</h3>
+                  <h3 class="text-center"></i>Pay As You Go</h3>
                   <table class="table">
                     <tr><td>For 10,000 additional requests</td></tr>
                     <thead>
@@ -298,7 +298,7 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
               <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="wrapper">   
                 <div class="promo"></div>             
-                  <h3 class="text-center"><i class="icon-trophy"></i>All You Can Eat</h3>
+                  <h3 class="text-center">All You Can Eat</h3>
                   <table class="table">
                     <thead>
                       <tr><th><span class="price">$15</span></th></tr>

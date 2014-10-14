@@ -2374,6 +2374,11 @@ padding-bottom: 90px;
   border-radius: 0 0 2px 2px;
   height: auto;
 }
+@media (max-width: 420px) {
+  .change {
+  padding: 5px;
+  }
+}
 
 .example-controls {
 }
