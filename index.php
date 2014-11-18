@@ -130,8 +130,32 @@
 <!-- Features Section -->
 <div id="features" class="section">
   
-    
 <div id="feature-1">  
+  <div class="container">
+    <div class="row left">
+      <div class="col-md-6 col-sm-6 col-xs-12" id="developers">
+        <h3>Our partners</h3>
+        
+
+      </div>
+
+      <div class="col-md-6 col-sm-6 col-xs-12">
+      <!-- Set up your HTML -->
+<div class="owl-carousel">
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+  <div> Your Content </div>
+</div>
+      </div>
+    </div><!-- row left -->
+  </div><!-- container -->
+</div><!-- feature -->    
+
+<div id="feature-2">  
   <div class="container">
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12" id="developers">
@@ -180,7 +204,7 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
   </div><!-- container -->
 </div><!-- feature -->
 
-<div id="feature-2">  
+<div id="feature-1">  
   <div class="container">
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12">
@@ -361,6 +385,7 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
     <script src="js/bootstrap.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/mine.js"></script>
+    <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
     <script src="/assets/prettify/prettify.js"></script>
 
 </body>

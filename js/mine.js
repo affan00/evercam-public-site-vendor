@@ -22,7 +22,9 @@ window.onload = function (){
 
 
 ///////////////////////////////////////
-// Google Analytics
+// OWL SLIDER
 ///////////////////////////////////////
 
-
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});

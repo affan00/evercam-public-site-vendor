@@ -12,6 +12,9 @@
     <link  rel="stylesheet" href="/css/style.css">
     <link href="/css/prettify.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--Owl Slider -->
+    <link rel="stylesheet" href="plugins/owlcarousel/assets/owl.carousel.css">
+    
     <!--[if lt IE 9]>
       <script src="js/respond.min.js"></script>
     <![endif]-->
