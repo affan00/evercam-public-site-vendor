@@ -9,11 +9,12 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen:300, 600' rel='stylesheet' type='text/css'>-->
     
     <!-- Stylesheet -->
-    <link  rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="/css/prettify.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <!--Owl Slider -->
-    <link rel="stylesheet" href="plugins/owlcarousel/assets/owl.carousel.css">
+        <!-- Owl Carousel Assets -->
+    <link href="/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="js/respond.min.js"></script>

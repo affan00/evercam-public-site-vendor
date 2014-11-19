@@ -133,23 +133,62 @@
 <div id="feature-1">  
   <div class="container">
     <div class="row left">
-      <div class="col-md-6 col-sm-6 col-xs-12" id="developers">
-        <h3>Our partners</h3>
-        
+      <div class="col-md-12 col-sm-12 col-xs-12" id="developers">
+        <h3 class="margin-bottom-30">Building the next generation of Camera applications</h3>
+          <div id="demo">
+            
+              <div class="row">
+                <div class="span12">
+                  <div id="owl-slider" class="owl-carousel">
 
-      </div>
+                    <div class="item">
+                      <div class="row left">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <h5>SAP</h5>
+                           <p>
+                            Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.
+                           </p>
+                          <a href="/apps"><h5 class="title">evercam.io<span class="bold">/gallery</span><i class="fa fa-arrow-right"></i></h5></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <img class="img-responsive concerns" src="img/sap-logo.png">
+                        </div>
+                      </div><!-- row right -->
+                    </div>
+                    <div class="item">
+                      <div class="row left">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <h5>SAP</h5>
+                           <p>
+                            Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.
+                           </p>
+                          <a href="/apps"><h5 class="title">evercam.io<span class="bold">/gallery</span><i class="fa fa-arrow-right"></i></h5></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <img class="img-responsive concerns" src="img/sap-logo.png">
+                        </div>
+                      </div><!-- row right -->
+                    </div>
+                    <div class="item">
+                      <div class="row left">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <h5>SAP</h5>
+                           <p>
+                            Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.
+                           </p>
+                          <a href="/apps"><h5 class="title">evercam.io<span class="bold">/gallery</span><i class="fa fa-arrow-right"></i></h5></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <img class="img-responsive concerns" src="img/sap-logo.png">
+                        </div>
+                      </div><!-- row right -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
 
-      <div class="col-md-6 col-sm-6 col-xs-12">
-      <!-- Set up your HTML -->
-<div class="owl-carousel">
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-</div>
       </div>
     </div><!-- row left -->
   </div><!-- container -->
@@ -204,7 +243,7 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
   </div><!-- container -->
 </div><!-- feature -->
 
-<div id="feature-1">  
+<div id="feature-grey">  
   <div class="container">
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12">
@@ -221,7 +260,7 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
   </div><!-- container -->
 </div><!-- feature -->
 
-<div id="feature-grey">  
+<div id="feature-1">  
   <div class="container">
    <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12" id="agnostic">
@@ -237,7 +276,7 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
   </div><!-- container -->
 </div><!-- feature -->
 
-<div id="feature-1">  
+<div id="feature-2">  
   <div class="container">
     <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12">
@@ -253,7 +292,7 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
 </div><!-- feature -->
 
 
-<div id="feature-2">  
+<div id="feature-1">  
   <div class="container">
    <div class="row left">
       <div class="col-md-6 col-sm-6 col-xs-12" id="agnostic">
@@ -366,9 +405,9 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
           </div>
           
         </div><!-- /.content -->
-<div class="google">
-    <a href="https://plus.google.com/+Evercam" rel="publisher">Google+</a>
-    </div>
+      <div class="google">
+        <a href="https://plus.google.com/+Evercam" rel="publisher">Google+</a>
+      </div>
       </div><!-- /.container -->
         
     </div>
@@ -385,8 +424,29 @@ https://api.evercam.io/v1/cameras/evercam-remembrance-camera/snapshot.jpg
     <script src="js/bootstrap.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/mine.js"></script>
-    <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/assets/prettify/prettify.js"></script>
+    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/prettify/prettify.js"></script>
+    <script type="text/javascript">
+      ///////////////////////////////////////
+      // OWL SLIDER
+      ///////////////////////////////////////
+
+      $(document).ready(function() {
+
+        $("#owl-slider").owlCarousel({
+            autoPlay : 5000,
+            goToFirstSpeed : 2000,
+            stopOnHover : true,
+            navigation : false, // Show next and prev buttons
+            slideSpeed : 1000,
+            paginationSpeed : 400,
+            singleItem:true
+
+        });
+
+      });
+
+    </script>
 
 </body>
 </html>
