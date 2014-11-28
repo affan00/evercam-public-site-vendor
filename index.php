@@ -130,69 +130,7 @@
 <!-- Features Section -->
 <div id="features" class="section">
   
-<div id="feature-1">  
-  <div class="container">
-    <div class="row left">
-      <div class="col-md-12 col-sm-12 col-xs-12" id="developers">
-        <h3 class="margin-bottom-30">Building the next generation of Camera applications</h3>
-          <div id="demo">
-            
-              <div class="row">
-                <div class="span12">
-                  <div id="owl-slider" class="owl-carousel">
-
-                    <div class="item">
-                      <div class="row left">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <h5>SAP</h5>
-                           <p>
-                            Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.
-                           </p>
-                          <a href="/apps"><h5 class="title">evercam.io<span class="bold">/gallery</span><i class="fa fa-arrow-right"></i></h5></a>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <img class="img-responsive concerns" src="img/sap-logo.png">
-                        </div>
-                      </div><!-- row right -->
-                    </div>
-                    <div class="item">
-                      <div class="row left">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <h5>SAP</h5>
-                           <p>
-                            Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.
-                           </p>
-                          <a href="/apps"><h5 class="title">evercam.io<span class="bold">/gallery</span><i class="fa fa-arrow-right"></i></h5></a>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <img class="img-responsive concerns" src="img/sap-logo.png">
-                        </div>
-                      </div><!-- row right -->
-                    </div>
-                    <div class="item">
-                      <div class="row left">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <h5>SAP</h5>
-                           <p>
-                            Don't get bogged down supporting local network issues. Get the camera owner (your client) to take care of getting their camera connected - and keeping it connected.
-                           </p>
-                          <a href="/apps"><h5 class="title">evercam.io<span class="bold">/gallery</span><i class="fa fa-arrow-right"></i></h5></a>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <img class="img-responsive concerns" src="img/sap-logo.png">
-                        </div>
-                      </div><!-- row right -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-        </div>
-
-      </div>
-    </div><!-- row left -->
-  </div><!-- container -->
-</div><!-- feature -->    
+  
 
 <div id="feature-2">  
   <div class="container">
