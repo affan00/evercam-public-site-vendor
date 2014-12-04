@@ -20,7 +20,7 @@
     </ul>
   </li>
 </ul>
-<ul>
+<!--<ul>
   <li class="doc-categories">
   <a href='/develop/help'>Help Pages</a>
     <ul class="sub-menu">
@@ -31,8 +31,8 @@
       <li><a href='/develop/help'>Pricing</a></li>
     </ul>
   </li>
-</ul>
-<ul>
+</ul>-->
+<!--<ul>
   <li class="doc-categories">
   Widgets
     <ul class="sub-menu">
@@ -40,7 +40,7 @@
       <li><a href='/develop/widget-recorded'>Recorded Images</a></li>
     </ul>
   </li>
-</ul>
+</ul>-->
 <ul>
   <li class="doc-categories">
     Connect
