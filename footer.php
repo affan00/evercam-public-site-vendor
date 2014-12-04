@@ -7,7 +7,7 @@
           <li><a href="/blog">/blog</a></li>
           <li><a href="/jobs">/jobs</a></li>
           <li><a href="/terms">/terms</a></li>
-          <li><a href="/develop/help">/help</a></li>
+          <!--<li><a href="/develop/help">/help</a></li>-->
           <li><a href="/contact">/contact</a></li>
         </ul>
       </div>
