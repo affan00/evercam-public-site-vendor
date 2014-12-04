@@ -67,21 +67,6 @@
   </div>
   
   
-    <div class="row footer">
-      <div class='col-sm-12'>
-          <div class='col-sm-8'>
-            <h5>Need Help?</h5> 
-            <p>We&apos;re here to support you. If your having trouble getting started or have any questions about our API or our service - please <a href="mailto:ciaran@evercam.io" data-uv-trigger>get in touch.</a> We're here to help you and would love to get any feedback from you about your experience getting started.</p>
-            <br />
-            <h5>Get my Camera Connected</h5>
-            <p> Sometimes its difficult to get your camera connected. We know that better than anyone. We&apos;ve done our best to ensure getting your camera connected is as easy as possible but if your still having trouble getting your camera connected - we can do it for you. For €20 we&apos;ll get you connected and if we can&apos;t, we&apos;ll give you your money back. Simple as that.
-          </div>
-            <!--<div class='col-sm-4 support'>
-          <p><a href="#"><i class="fa fa-ticket fa-5x ticket"></i></a></p>
-          <p>Click the ticket to get your camera connected</p>
-          </div>-->
-      </div>
-    </div>
 
 
 
