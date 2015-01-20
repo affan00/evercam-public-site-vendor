@@ -58,22 +58,6 @@
               </div>
             </div>
 
-             <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="team-portrait">              
-                <div class="portrait">
-                    <img src="/img/aoifemcdonnell.png" alt="Aoife McDonnell" style="border-radius:50%;"> 
-                </div>
-                <h3>Aoife McDonnell
-                    <small>              
-                   <a href="https://twitter.com/aoifemcd" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
-                  <a href="http://ie.linkedin.com/in/aoifemcdonnell" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
-                  <a href="https://github.com/aoifemcd" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
-                    </small>
-                </h3>                
-                <h4>Product Manager<small> - Cat herder, will work for chocolate</small></h4>  
-              </div>
-            </div>
-
 
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
@@ -91,22 +75,6 @@
                 <h4>Hacker<small> - Beijing's candidate for Rose of Tralee.</small></h4>            
               </div>
             </div>                
-
-
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="team-portrait">              
-                <div class="portrait">
-                    <img src="https://secure.gravatar.com/avatar/c263360d8bbeec33d510e9acd4c11ab0?s=230" alt="Vinnie Quinn" style="border-radius:50%;">              
-                </div>
-                <h3>Lisa Craddock
-                    <small>              
-                    <a href="#" data-toggle="tooltip" title="twitter"><i class="icon-twitter" target="_blank"></i></a>
-                  <a href="#" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin" target="_blank"></i></a>
-                    </small>
-                </h3>                
-                <h4>Mission Controller<small> - World champion hip hop dancer.</small></h4>            
-              </div>
-            </div>
 
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="team-portrait">              
@@ -166,21 +134,6 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="team-portrait">              
-                <div class="portrait">
-                    <img src="/img/edleamy.png" alt="Ed Leamy" style="border-radius:50%;">              
-                </div>
-              <h3>Ed Leamy
-                    <small>              
-                   <a href="http://linkedin.com/in/edleamy" data-toggle="tooltip" title="linkedin" target="_blank"><i class="icon-linkedin"></i></a>
-                   <a href="https://twitter.com/edleamy" data-toggle="tooltip" title="twitter" target="_blank"><i class="icon-twitter"></i></a>
-                   <a href="https://github.com/edleamy" data-toggle="tooltip" title="github" target="_blank"><i class="icon-github"></i></a>
-                    </small>
-                </h3>                
-                <h4>Enterprise Dev<small> - Obsessed with National Anthems</small></h4> 
-              </div>
-            </div>
 
 
 
