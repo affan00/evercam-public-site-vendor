@@ -1,0 +1,75 @@
+0000.050 (0) Opened log file at time: Thu, 20 Feb 2014 15:36:39 +0000
+0000.101 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.8.8 WP: 3.8.1 PHP: 5.4.23 (Windows NT RD00155D3A0B83 6.2 build 9200 (Unknown Windows version Datacenter Edition) i586) MySQL: 5.5.21-log Server: Microsoft-IIS/8.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.4M | 3.5M) multisite: N mcrypt: Y ZipArchive::addFile: Y W3TC/ObjectCache: N
+0000.137 (0) Free space on disk containing Updraft's temporary directory: 8596.7 Mb
+0000.311 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 0 (schedule: unset)
+0000.889 (0) Requesting semaphore lock (f)
+0001.194 (0) Set semaphore last lock (f) time to 2014-02-20 15:36:40
+0001.234 (0) Semaphore lock (f) complete
+0001.418 (0) Backup run: resumption=0, nonce=42feae234a95, begun at=1392910599 (1s ago), job type=backup
+0001.498 (0) Scheduling a resumption (1) after 300 seconds (1392910900) in case this run gets aborted
+0002.104 (0) Checking if we have a zip executable available
+0002.318 (0) Creation of backups of directories: beginning
+0002.634 (0) Beginning creation of dump of plugins (split every: 800 Mb)
+0015.157 (0) Total entities for the zip file: 100 directories, 561 files, 7.8 Mb
+0015.271 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (0 Mb, 1 (1) files added so far); re-opening (prior size: 0 Kb)
+0016.189 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-plugins.zip.tmp: 100 files added (on-disk size: 27.5 Kb)
+0017.332 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-plugins.zip.tmp: 200 files added (on-disk size: 27.5 Kb)
+0017.545 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (5.8 Mb, 205 (206) files added so far); re-opening (prior size: 27.5 Kb)
+0026.476 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-plugins.zip.tmp: 300 files added (on-disk size: 1977 Kb)
+0026.553 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (0.4 Mb, 95 (301) files added so far); re-opening (prior size: 1977 Kb)
+0030.063 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-plugins.zip.tmp: 400 files added (on-disk size: 2180.8 Kb)
+0030.539 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (0.1 Mb, 119 (420) files added so far); re-opening (prior size: 2180.8 Kb)
+0032.941 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-plugins.zip.tmp: 500 files added (on-disk size: 2248.4 Kb)
+0033.535 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (0.7 Mb, 126 (546) files added so far); re-opening (prior size: 2248.4 Kb)
+0037.282 (0) Created plugins zip (0) - 3172.8 Kb in 34.4 s (92.1 Kb/s) (SHA1 checksum: a6ecf3654f07aea2859681d512951176a63bcb39)
+0037.402 (0) Beginning creation of dump of themes (split every: 800 Mb)
+0046.211 (0) Total entities for the zip file: 69 directories, 542 files, 4.5 Mb
+0046.331 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (0 Mb, 1 (1) files added so far); re-opening (prior size: 0 Kb)
+0047.044 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-themes.zip.tmp: 100 files added (on-disk size: 9.3 Kb)
+0048.517 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-themes.zip.tmp: 200 files added (on-disk size: 9.3 Kb)
+0048.626 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (0.7 Mb, 200 (201) files added so far); re-opening (prior size: 9.3 Kb)
+0053.237 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-themes.zip.tmp: 300 files added (on-disk size: 508 Kb)
+0053.534 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (1.4 Mb, 134 (335) files added so far); re-opening (prior size: 508 Kb)
+0056.885 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-themes.zip.tmp: 400 files added (on-disk size: 1394.9 Kb)
+0057.537 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (1.6 Mb, 133 (468) files added so far); re-opening (prior size: 1394.9 Kb)
+0060.506 (0) Zip: backup_2014-02-20-1536_Evercam_Blog_42feae234a95-themes.zip.tmp: 500 files added (on-disk size: 2486.3 Kb)
+0063.563 (0) Created themes zip (0) - 3076.3 Kb in 26.1 s (117.9 Kb/s) (SHA1 checksum: b1e965fca14431312d710bd30299fa6af0896e9b)
+0063.774 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*
+0063.802 (0) Looking for candidates to back up in: D:\home\site\wwwroot/wp-content/uploads
+0063.876 (0) finding files: 2014: adding to list
+0063.927 (0) Beginning creation of dump of uploads (split every: 800 Mb)
+0065.688 (0) Total entities for the zip file: 3 directories, 63 files, 2.7 Mb
+0065.750 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1.5 seconds have passed since the last write (0 Mb, 1 (1) files added so far); re-opening (prior size: 0 Kb)
+0071.332 (0) Created uploads zip (0) - 2474.4 Kb in 7.3 s (339.2 Kb/s) (SHA1 checksum: 4e3dbdbb8e1f9d94ebe0bae434a473e1612c8957)
+0071.541 (0) Beginning backup of other directories found in the content directory (index: 0)
+0071.590 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups
+0071.664 (0) Looking for candidates to back up in: D:\home\site\wwwroot/wp-content
+0071.871 (0) finding files: index.php: adding to list
+0071.972 (0) finding files: plugins: skipping: this is the plugins directory
+0072.041 (0) finding files: themes: skipping: this is the themes directory
+0072.097 (0) finding files: updraft: skipping: this is the updraft directory
+0072.161 (0) finding files: upgrade: skipping: excluded by options
+0072.230 (0) finding files: uploads: skipping: this is the uploads directory
+0072.335 (0) Total entities for the zip file: 0 directories, 1 files, 0 Mb
+0072.718 (0) Created others zip (0) - 0.1 Kb in 0.4 s (0.4 Kb/s) (SHA1 checksum: dbbc71ff3bb7bc670af1b96fc9a3d91228e9dbb7)
+0073.170 (0) Saving backup status to database (elements: 8)
+0073.376 (0) No database backup - not part of this run
+0073.452 (0) Saving backup history
+0073.513 (0) backup_2014-02-20-1536_Evercam_Blog_42feae234a95-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0073.571 (0) backup_2014-02-20-1536_Evercam_Blog_42feae234a95-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0073.622 (0) backup_2014-02-20-1536_Evercam_Blog_42feae234a95-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0073.714 (0) backup_2014-02-20-1536_Evercam_Blog_42feae234a95-others.zip: others: This file has not yet been successfully uploaded: will queue
+0074.010 (0) Requesting upload of the files that have not yet been successfully uploaded (4)
+0074.237 (0) Cloud backup selection: 
+0074.291 (0) No remote despatch: user chose no remote backup service
+0074.444 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0074.502 (0) Number of backup sets in history: 1
+0074.545 (0) Examining backup set with datestamp: 1392910599 (Feb 20 2014 15:36:39)
+0074.651 (0) 1392910599: this backup set remains non-empty (1/0); will retain in history
+0074.703 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0074.774 (0) Resume backup (42feae234a95, 0): finish run
+0074.979 (0) Decremented the semaphore (f) by 1
+0075.145 (0) Semaphore (f) unlocked
+0075.182 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0075.389 (0) No email will/can be sent - the user has not configured an email address.
+0075.428 (0) The backup apparently succeeded and is now complete

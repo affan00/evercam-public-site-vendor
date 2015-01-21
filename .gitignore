@@ -1,2 +1,3 @@
 # Keep these files out of the repo
-wordpress
+wordpress/wp-config.php
+wordpress/wp-content/uploads
