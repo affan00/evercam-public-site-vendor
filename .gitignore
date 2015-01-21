@@ -1,13 +1,2 @@
 # Keep these files out of the repo
-wordpress/wp-content/themes/twenty*
-wordpress/wp-content/upgrade
-wordpress/wp-content/uploads
-wordpress/sitemap.*
-wordpress/wp-config.php
-wordpress/*.sql
-
-# Hidden files
-wordpress/*.DS_Store
-wordpress/*Thumbs.db
-wordpress/*.sass-cache*
-wordpress/*~imageoptim*
+wordpress
