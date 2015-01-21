@@ -1,9 +1,9 @@
 # Keep these files out of the repo
-wordpress//wp-content/themes/twenty*
-wordpress//wp-content/upgrade
-wordpress//wp-content/uploads
-wordpress//sitemap.*
-wordpress//wp-config.php
+wordpress/wp-content/themes/twenty*
+wordpress/wp-content/upgrade
+wordpress/wp-content/uploads
+wordpress/sitemap.*
+wordpress/wp-config.php
 wordpress/*.sql
 
 # Hidden files
