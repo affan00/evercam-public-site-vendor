@@ -1,0 +1,3 @@
+[01/21/2015 10:51 AM] - FAILURE : Unable to write to .htaccess - server type not supported!
+[01/21/2015 10:54 AM] - FAILURE : Unable to write to .htaccess - server type not supported!
+[01/21/2015 10:57 AM] - FAILURE : Error inserting record into wp_aiowps_login_activity
