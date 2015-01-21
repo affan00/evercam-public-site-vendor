@@ -49,9 +49,9 @@
     </ul>
   </li>
 </ul>
-<ul>
+<!--<ul>
   <li class="doc-categories">
     <a href="/develop/changelog">Changelog</a>
   </li>
-</ul>
+</ul>-->
 </div>
