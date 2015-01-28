@@ -1,4 +1,4 @@
-<?php require('wordpress/wp-blog-header.php');?>
+<?php require('blog/wp-blog-header.php');?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
