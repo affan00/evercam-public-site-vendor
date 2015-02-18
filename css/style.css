@@ -305,9 +305,11 @@ span.valign {
 }
 .bold {
   font-family: 'proxima-nova-bold';
+
+}
+.blue {
   color: #428BCA;
 }
-
 /* tooltip styles */
 .tooltip.top {
   margin-top: -5px;
@@ -2582,6 +2584,133 @@ background-color: #f1f1f1
       padding-top: 3px;
     }
   }
+
+
+
+
+/*/////////////////////////  
+USE CASES
+/////////////////////////*/
+#use-cases img {
+  max-width: 100%;
+}
+#use-cases h3 {
+  font-size: 28px
+}
+#use-cases h5 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'proxima-nova-it';
+}
+#use-cases h4 {
+  font-size: 18px  
+}
+.paragraph-section {
+  margin: 20px 0 40px;
+}
+.paragraph-section p {
+  line-height: 1.6;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+}
+.image-section {
+  padding: 30px 0 5px;
+  overflow: hidden;
+  width: 100%;
+}
+.quote {
+  border-left: 2px solid #6d6d6d;
+  font-family: 'Proxima-Nova-It';
+  padding-left: 20px;
+  margin: 40px 0 50px;
+  color: #6d6d6d;
+}
+.p-italic {
+  font-family: 'Proxima-Nova-It';
+  margin-top: -5px;
+}
+.use-case-img {
+  max-height: 450px;
+  overflow: hidden;
+  margin: 0px 0 10px; 
+}
+.img-info p {
+  color: #aaaaaa;
+  font-family: 'Proxima-Nova-It';
+}
+.download {
+  padding: 15px 0 48px;
+  margin: 10px 0px;
+}
+img.crane_left {
+  width: 424px;
+  position: absolute;
+  top: 699px;
+  right: -19px;
+  }
+@media (max-width: 1654px) { 
+  img.crane_left {
+    width: 324px;
+    right: -33px;
+  } 
+}
+@media (max-width: 1354px) { 
+  img.crane_left {
+    width: 224px;
+    right: -33px;
+  } 
+}
+@media (min-width: 992px) { 
+  .download {
+    margin-left: -15px;
+  }
+}
+@media (max-width: 992px) { 
+  .image-section {
+    padding: 15px 0 0px;
+  }
+  img.crane_left {
+    top: initial;
+    bottom: -269px;
+    right: 0px;
+    width: 313px
+  }
+  #use-cases {
+    margin-bottom: 300px;
+  }
+}
+@media print {
+  #use-cases {
+    margin-top: -60px;
+  }
+  #use-cases h4 {
+    font-size: 16px;
+    margin-bottom:5px;
+  }
+  .print-logo {
+    max-width: 100px;
+  }
+  .paragraph-section {
+    margin: 0px 0 15px;
+  }
+  .quote {
+    margin: 0px 0 30px;
+  }
+  .use-case-img {
+    max-height: 300px;
+  }
+  .paragraph-section p {
+    line-height: 1.4;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+  .image-section {
+    padding: 20px 0 0px;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+}/*end print styles*/
 
 /*  404
  *    stylings for about us section

@@ -28,7 +28,7 @@
             <div class="content">
               
               <div class="text-center">
-                  <h3 class="title">evercam.io<span class="bold">/connect</span></h3>
+                  <h3 class="title">evercam.io<span class="bold blue">/connect</span></h3>
                     <h4>Get your camera connected to evercam and open up a world of possibilities for your camera.</h4>
               </div>              
 
@@ -71,12 +71,12 @@
                           <div class="col-md-6">
                              <p class="develop-features">Connect an IP Camera</p>                             
                              <p class="margin-right-30">Once you've created an account and logged into the Dashboard you can add any IP camera to your account using the camera's credentials to fill out the 'Add IP Camera' form.</p>
-                             <a href="https://dashboard.evercam.io/signup" target="_blank"><span class="bold">Create an Account</span></a>
+                             <a href="https://dashboard.evercam.io/signup" target="_blank"><span class="bold blue">Create an Account</span></a>
                           </div>
                           <div class="col-md-6">
                             <p class="develop-features">Connect your Camera Phone</p>                   
                               <p class="margin-right-30">You can also use your Android phone's cameras. Simply download our App, Evercam Capture and the app will add your camera to your Evercam account for you! All you need to do is sign in and select the cameras you would like to add.</p>
-                              <a href="https://play.google.com/store/apps/details?id=io.evercam.capture" target="_blank">Evercam<span class="bold"> Capture</span></a>
+                              <a href="https://play.google.com/store/apps/details?id=io.evercam.capture" target="_blank">Evercam<span class="blue bold"> Capture</span></a>
                           </div>       
                       </div><!--  row  split -->
                       

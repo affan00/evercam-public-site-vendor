@@ -48,7 +48,7 @@
         
         <div class="row header">
           <div class="col-md-12">
-            <h3><a href="/help">evercam.io<span class="bold">/help</span></a></h3><p>Sometimes you just need a little help. If you can&apos;t find what you&apos;re looking for here, <a href="mailto:ciaran@evercam.io" data-uv-trigger position="bottom">get in touch</a> and we&apos;ll get straight back to you with an answer.</p>
+            <h3><a href="/help">evercam.io<span class="blue bold">/help</span></a></h3><p>Sometimes you just need a little help. If you can&apos;t find what you&apos;re looking for here, <a href="mailto:ciaran@evercam.io" data-uv-trigger position="bottom">get in touch</a> and we&apos;ll get straight back to you with an answer.</p>
           </div>
 
       

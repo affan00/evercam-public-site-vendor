@@ -1,4 +1,4 @@
-<div id="footer" class="section">
+<div id="footer" class="section hidden-print">
   <div class="container">        
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">

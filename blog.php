@@ -41,7 +41,7 @@
     <div class="col-md-10 developer">
       <div class="row header">
           <div class="col-md-12">
-            <h3><a href="/blog">evercam.io<span class="bold">/blog</span></a></h3><p>The latest News, Events and Tech from Evercam.io</p>
+            <h3><a href="/blog">evercam.io<span class="bold blue">/blog</span></a></h3><p>The latest News, Events and Tech from Evercam.io</p>
           </div>
 
       
