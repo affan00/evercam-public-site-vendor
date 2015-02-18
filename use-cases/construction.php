@@ -139,15 +139,18 @@
             </ul>
             </p>
           </div>        
+          <div class="divider"></div>
       
-          <div class="paragraph-section footer-section">
+          <div class="paragraph-section callout">
             <p>
-              For more information or to discuss a project you can <strong>call Vinnie +353 87 000 0000</strong> or
-            
-            <a href="/contact" class="print-hidden btn btn-primary" type="submit">Get in Touch</a>
+              <i>To discuss a project</i>
             </p>
+            <p>
+             <strong>Call Vinnie +353 87 000 0000</strong>              
+            </p>
+            <a href="/contact" class="print-hidden btn btn-primary btn-callout" type="submit">Get in Touch</a>            
           </div>
-
+          
         </div>
       </div>
     </div>

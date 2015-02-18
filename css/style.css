@@ -43,6 +43,9 @@ b, strong {
 .text-center {
 text-align: center;
 }
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
 /*/////////////////////////  
 //MY MENU Styles
 /////////////////////////*/
@@ -2648,11 +2651,40 @@ USE CASES
   padding: 15px 0 48px;
   margin: 10px 0px;
 }
+.callout {
+  text-align: center;
+  background-color: white;
+  padding: 35px 0 40px;
+}
+.callout p {
+  width: 50%;
+  margin: 0 auto 10px;
+}
+.divider {
+  display: block;
+  width: 100px;
+  margin: 51px auto 51px auto;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+.btn-callout {
+  margin: 20px auto 0;
+  width: 220px;
+  display: block;
+}
 .footer-section {
   border-top: 1px solid #ffffff;
   margin-top: 0px;
   padding: 30px 0 0px;
 }
+
+@media (max-width: 692px) { 
+  .callout p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 img.crane_left {
   width: 424px;
   position: absolute;
