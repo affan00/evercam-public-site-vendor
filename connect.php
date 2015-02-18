@@ -71,7 +71,7 @@
                           <div class="col-md-6">
                              <p class="develop-features">Connect an IP Camera</p>                             
                              <p class="margin-right-30">Once you've created an account and logged into the Dashboard you can add any IP camera to your account using the camera's credentials to fill out the 'Add IP Camera' form.</p>
-                             <a href="https://dash.evercam.io/signup" target="_blank"><span class="bold blue">Create an Account</span></a>
+                             <a href="https://dash.evercam.io/v1/users/signup" target="_blank"><span class="bold blue">Create an Account</span></a>
                           </div>
                           <div class="col-md-6">
                             <p class="develop-features">Connect your Camera Phone</p>                   
@@ -98,7 +98,7 @@
                   <div class="row split-features text-center">
                     <div class="col-md-12">
                         <p class="develop-features">It's free to get started!</p>                   
-                        <a class="btn btn-primary" href="https://dash.evercam.io/signup" target="_blank">Create an Account</a>
+                        <a class="btn btn-primary" href="https://dash.evercam.io/v1/users/signup" target="_blank">Create an Account</a>
                         
                        <!-- <p class="margin-top-15 size-12">View Our Future<a href="#" target="_blank"> Pricing Plans</a></p>-->
                     </div>
