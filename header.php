@@ -15,7 +15,7 @@
               <li><a href="/develop/">/develop</a></li>
               <li><a href="/apps">/apps</a></li>
               <!--<li><a href="https://dashboard.evercam.io/signup">create account</a></li>-->
-              <li><a class="create-menu" id="sign-in" href="https://dashboard.evercam.io/signin">sign in</a></li>
+              <li><a class="create-menu" id="sign-in" href="https://dash.evercam.io/signin">sign in</a></li>
         
             </ul>
           </div><!--/.nav-collapse -->

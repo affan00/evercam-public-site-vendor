@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-1 col-sm-1 col-xs-12"></div>
           <div class="col-md-12 col-sm-12 col-xs-12">
-             <a class="btn" id="create-account" href="http://dashboard.evercam.io/signup">Create an Account</a>
+             <a class="btn" id="create-account" href="http://dash.evercam.io/signup">Create an Account</a>
            </div>
 
           </div>
