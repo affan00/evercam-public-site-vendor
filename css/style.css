@@ -13,7 +13,10 @@ html, body {
 body {
   color: #333;
 }
-
+b, strong {
+  font-family: 'proxima-nova-bold';
+  font-weight: normal;
+}
 .white {
   background-color: #ffffff;
 }
@@ -2605,6 +2608,9 @@ USE CASES
 #use-cases h4 {
   font-size: 18px  
 }
+#use-cases .btn {
+  font-size: 16px  
+}
 .paragraph-section {
   margin: 20px 0 40px;
 }
@@ -2642,22 +2648,27 @@ USE CASES
   padding: 15px 0 48px;
   margin: 10px 0px;
 }
+.footer-section {
+  border-top: 1px solid #ffffff;
+  margin-top: 0px;
+  padding: 30px 0 0px;
+}
 img.crane_left {
   width: 424px;
   position: absolute;
   top: 699px;
-  right: -19px;
+  right: 0px;
   }
 @media (max-width: 1654px) { 
   img.crane_left {
     width: 324px;
-    right: -33px;
+    right: 0px;
   } 
 }
 @media (max-width: 1354px) { 
   img.crane_left {
     width: 224px;
-    right: -33px;
+    right: 0px;
   } 
 }
 @media (min-width: 992px) { 

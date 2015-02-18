@@ -140,6 +140,14 @@
             </p>
           </div>        
       
+          <div class="paragraph-section footer-section">
+            <p>
+              For more information or to discuss a project you can <strong>call Vinnie +353 87 000 0000</strong> or
+            
+            <a href="/contact" class="print-hidden btn btn-primary" type="submit">Get in Touch</a>
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
