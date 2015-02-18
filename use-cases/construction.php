@@ -141,12 +141,12 @@
           </div>        
           <div class="divider"></div>
       
-          <div class="paragraph-section callout">
+          <div class="callout">
             <p>
               <i>To discuss a project</i>
             </p>
             <p>
-             <strong>Call Vinnie +353 87 000 0000</strong>              
+             <strong>Call Vinnie +353 87 987 1869</strong>              
             </p>
             <a href="/contact" class="print-hidden btn btn-primary btn-callout" type="submit">Get in Touch</a>            
           </div>
