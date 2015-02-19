@@ -115,14 +115,14 @@ $(function() {
         },
         messages: {
             name: {
-                required: "Name is required",
+                required: "Name required",
                 minlength: "Min 2 characters"
             },
             email: {
-                required: "Email is required"
+                required: "Email required"
             },
             message: {
-                required: "Message is required",
+                required: "Message required",
                 minlength: "thats all? really?"
             },
             answer: {

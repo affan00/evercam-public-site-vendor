@@ -730,7 +730,7 @@ textarea.form-control,
 textarea.form-control:focus {
   height: 100px;
   resize: none;
-  padding-top: 18px;
+  padding-top: 15px;
 }
   
 label {
