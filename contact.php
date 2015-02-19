@@ -13,77 +13,62 @@
     <? include 'styles.php'; ?>
 </head>
 
-  <body onload="initialize()" class="red-blue">
-   
-   <? include 'header.php'; ?>  
+<body onload="initialize()" class="red-blue">
+<? include 'header.php'; ?>  
 
-        <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
-    <div class="container" id="contact">
+<div class="container" id="contact">
 
-    <div class="row">      
-      
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <div id="map"></div>
-      </div>
-
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <div id="map2"></div>
-      </div>
-
-    </div>
+  <div class="row">
     
-    
-   
-    <div class="row address">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            
-            <h3>Dublin, Ireland</h3>
-            <p>Wayra Ireland<br />
-              29 Sir John Rogerson's Quay<br />
-              Dublin 2<br />
-              Ireland</p>
-              <p>Telephone: +353 86 196 0451</p>
-              <p>Email: howrya@evercam.io</p>
-              
-              
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            
-            <h3>Mountain View, California</h3>
-            <p>800 W. El Camino Real, Suite 350<br />Mountain View<br />
-             CA 94040<br />USA</p>
-              <p>Telephone: +1 (650) 419 3588</p>
-              <p>Email: whassup@evercam.io</p>
-          </div>
-         <!-- <div class="col-md-4 col-sm-4 col-xs-12">
-            <h3>Contact Us</h3>
-            <form role="form">
-              <div class="form-group">
-             <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" required>
-                <div class="clearfix"></div>
-              </div>
-              <div class="form-group">
-               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
-                <div class="clearfix"></div>
-              </div>
-              <div class="form-group textarea">
-                <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
-                <div class="clearfix"></div>
-              </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <div id="map"></div>
+      <div class="address">
+      <p>Wayra Ireland<br />
+        29 Sir John Rogerson's Quay<br />
+        Dublin 2<br />
+        Ireland</p>
+        <p>Telephone: +353 86 196 0451</p>
+        <p>Email: howrya@evercam.io</p>              
+      </div>
+    </div>   
 
-              <button type="submit" class="btn">SEND MESSAGE</button>
-            </form>-->
+    <div class="col-md-6 col-sm-6 col-xs-12">
+       <h3>Contact Us</h3>
+       <form id="contact2" name="contact2" method="post" novalidate="novalidate">
+          <fieldset>
+            <div class="form-group">
+              <input type="text" name="name" id="name" class="form-control" required="" placeholder="Full Name">
+              <div class="clearfix"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="email" id="email" size="30" value="" required="" placeholder="Email Address">
+              <div class="clearfix"></div>
+            </div>
+            <div class="form-group textarea">
+            <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
+            <div class="clearfix"></div>
+            </div>
+            <input class="btn" id="submit" type="submit" name="submit" value="Send">
+          </fieldset>
+        </form>
+
+        <div id="success">
+          <span class="green textcenter">
+              <p>Your message was sent successfully.</p>
+          </span>
         </div>
 
+        <div id="error">
+          <span>
+              <p>Something went wrong, try refreshing and submitting the form again.</p>
+          </span>
         </div>
-      
-
-        
-
-      
-    
 
     </div>
+
+  </div>
+    
+</div>
 
     
     <? include 'footer.php'; ?>
@@ -98,7 +83,74 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/google-maps.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+<script type="text/javascript">
+jQuery.validator.addMethod('answercheck', function (value, element) {
+        return this.optional(element) || /^\bcat\b$/.test(value);
+    }, "type the correct answer -_-");
+
+// validate contact form
+$(function() {
+    $('#contact2').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true
+            },
+            answer: {
+                required: true,
+                answercheck: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Name is required",
+                minlength: "Min 2 characters"
+            },
+            email: {
+                required: "Email is required"
+            },
+            message: {
+                required: "Message is required",
+                minlength: "thats all? really?"
+            },
+            answer: {
+                required: "sorry, wrong answer!"
+            }
+        },
+        submitHandler: function(form) {
+            $(form).ajaxSubmit({
+                type:"POST",
+                data: $(form).serialize(),
+                url:"process.php",
+                success: function() {
+                    $('#contact2 :input').attr('disabled', 'disabled');
+                    $('#contact2').fadeTo( "slow", 0.15, function() {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor','default');
+                        $('#success').fadeIn();
+                    });
+                },
+                error: function() {
+                    $('#contact2').fadeTo( "slow", 0.15, function() {
+                        $('#error').fadeIn();
+                    });
+                }
+            });
+        }
+    });
+});
 </script>
-  </body>
+</body>
 </html>
