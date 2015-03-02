@@ -1,0 +1,54 @@
+.cards {
+		@extend .row;
+		margin-top: 40px;
+		margin-bottom:30px;
+		h3 {
+			color:$header-text;
+			//font-family: $font-stack-bold;
+		}
+	}
+	.card {
+		@extend .col-md-4;
+		@extend .col-sm-6;
+		@extend .col-xs-12;
+		text-align: center;
+		margin-bottom: 30px;
+		cursor:pointer;
+		.ti-arrow-right, .ti-arrow-top-right {
+			color:$off-white;
+		}
+	}
+.card-inner {
+	@include border-radius(2px);
+	background-color: $white;
+	padding:20px 10px 10px;
+	box-shadow:0 1px 0 rgba(0,0,0,.05);
+	@include transition(all, 0.3s, ease-in-out);
+	min-height: 287px;
+}
+.card:hover {
+	.card-inner {
+		box-shadow:2px 4px 4px rgba(0, 0, 0, 0.1);	
+	}
+	.ti-arrow-right, .ti-arrow-top-right {
+		@include transition(all, 0.3s, ease-in-out);
+		color:$grey;
+	}
+}
+.card-inner .app-logo {
+	max-width:135px;
+}
+
+
+.icon {
+	width:24px;
+}
+.icon-arrow {
+	margin-top:-3px;
+}
+
+.circle-icon {
+	border: 1px solid;
+	border-radius:50%;
+	padding:10px;
+}

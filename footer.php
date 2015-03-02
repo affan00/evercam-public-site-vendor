@@ -1,29 +1,48 @@
-<div id="footer" class="section hidden-print">
-  <div class="container">        
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <ul class="footer-nav">
-          <li><a href="/team">/team</a></li>
-          <li><a href="/blog">/blog</a></li>
-          <li><a href="/jobs">/jobs</a></li>
-          <li><a href="/terms">/terms</a></li>
-          <!--<li><a href="/develop/help">/help</a></li>-->
-          <li><a href="/contact">/contact</a></li>
-        </ul>
+  <footer>      
+      <div class="container">
+      <div class="row">
+        <div class="footer-menu">
+          <ul>
+            <h3>Company</h3>
+            <li><a href="http://www.evercam.io/blog" target="_blank">Blog <span class="ti-arrow-top-right"></span></a></li>
+            <!--<li><a href="#">About</a></li>-->
+            <!--<li><a href="#">Policy</a></li>-->
+            <li><a href="/team">Team</a></li>
+            <!--<li><a href="#">Jobs</a></li>-->
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+          <ul>
+            <h3>Developer</h3>
+            <li><a href="/develop">Develop</a></li>
+            <li><a href="https://dash.evercam.io/swagger" target="_blank">Documentation <span class="ti-arrow-top-right"></span></a></li>
+            <!--<li><a href="#">Pricing</a></li>-->
+            <!--<li><a href="/uses">Use Cases</a></li>-->
+            <!--<li><a href="#">Help</a></li>-->
+          </ul>
+          <ul>
+            <h3>Camera Owner</h3>
+            <li><a href="/apps">App Store</a></li>
+            <li><a href="/uses">Use Cases</a></li>
+            <!--<li><a href="#">Help</a></li>-->
+          </ul>
+        </div>
+        <div class="footer-about">
+          <a class="" href="https://dash.evercam.io/v1/users/signup">Create an Account</a>
+          <div class="social-icons">
+            <a href="#"><span class="circle-icon ti-github"></span></a>
+            <a href="#"><span class="circle-icon ti-twitter-alt"></span></a>
+            <a href="#"><span class="circle-icon ti-facebook"></span></a>
+          </div>
+
+        </div>
       </div>
-    </div><!-- End Row -->
-    <hr />
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-          <ul class="social">
-          <!--<li><a href="/about">© evercam.io 2014</a></li>-->
-          <li><a href="https://github.com/evercam" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-          <li><a href="http://www.linkedin.com/company/evercam" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>              
-          <li><a href="https://twitter.com/evrcm" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>  
-          <li><a href="https://www.facebook.com/evrcm" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li> 
-          <li><a href="https://plus.google.com/+Evercam" rel="publisher" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li> 
-        </ul>
       </div>
-    </div><!-- End Row -->
-  </div><!-- End Container -->  
-</div><!-- End Footer Section -->
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/custom.js"></script>

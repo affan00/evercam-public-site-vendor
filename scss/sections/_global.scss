@@ -1,0 +1,30 @@
+html,body {
+	width: auto;
+	overflow-x: hidden;	
+}
+main {
+	@extend .container;
+}
+section {
+	@extend .container;
+	padding: $section-padding-60;
+}
+
+.alt-color {
+	background-color:$section-background;
+}
+.title {
+	@extend .row;
+}
+.apps, .use-cases, .add-camera, .team, .contact, .developer-feature {
+	@extend .col-md-12;
+}
+.use-card-inner {
+	@extend .col-md-3;
+}
+
+#map {
+	@include size (100%, 400px);
+	margin-bottom: 40px;
+}
+

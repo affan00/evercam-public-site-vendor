@@ -1,0 +1,25 @@
+@mixin size($width, $height: $width) {
+      width: $width;
+      height: $height;
+}
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate($degrees);        /* FF */
+  -o-transform: rotate($degrees);          /* Opera */
+  -ms-transform: rotate($degrees);         /* IE9 */
+  transform: rotate($degrees);
+}
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}

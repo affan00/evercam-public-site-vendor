@@ -1,0 +1,74 @@
+//header
+header {
+	@extend .container;
+	margin-top: 70px;
+	margin-bottom:30px;
+}
+.banner {
+	@extend .row;
+	margin-bottom: 30px;
+	position: relative;
+	.btn-primary {
+		margin: 20px 0px 10px;
+	}
+}
+.banner-content {
+	@extend .col-md-6;	
+	margin-top:40px;
+	margin-bottom:25px;
+}
+.banner-image {
+@extend .col-md-6;	
+	img {
+		position: absolute;
+		width: 733px;
+		right: -235px;
+		z-index: 10;
+		top: 10px;
+	}
+}
+.browser {
+	position: absolute;
+	right: -225px;
+	top: 46px;
+}
+.browser img {
+	width:98%;
+	z-index:1000000;
+}
+.dash-scroll {
+	position:fixed;
+	right:0;
+	z-index:-1;
+}
+.dash-scroll img {
+	width:600px;
+
+}
+.app-image img {
+	position: absolute;
+	right: 47px;
+	width: 249px;
+	top: 19px;
+}
+.construction-image img {
+	position: absolute;
+	right: -568px;
+	width: 100%;
+	top: 0px;
+	z-index:10000;
+}
+.weighbridge-image img {
+	position: absolute;
+	right: -132px;
+	width: 53%;
+	top: 26px;
+	z-index: 10000;
+	border-radius: 4px;
+}
+
+@media (max-width: $screen-md-min) { 
+	.banner-image img, .construction-image img, .app-image img, .browser img, .weighbridge-image img {
+		display:none;
+	}
+}

@@ -1,0 +1,55 @@
+body {
+	color:$body-text;
+	font-family: $font-stack;
+	font-size:$font-size-r;
+	line-height:1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:$header-text;
+	letter-spacing:0.01em;
+}
+h1 {
+	font-size:$h1-size;
+	font-family: $font-stack-bold;	
+}
+h2 {
+	font-size:20px;
+	line-height:28px;
+	color:$h2-color;
+}
+h3 {
+	font-family: $font-stack-bold;	
+	font-size:$font-size-l;
+}
+h5, .link-text {
+	font-family:$font-stack;
+	text-transform:uppercase;
+	font-size:$font-size-r;
+	letter-spacing:.1em;
+}
+h6 {
+	color:$primary-blue;
+	text-transform:uppercase;
+	margin-bottom:-10px;
+	font-family: $font-stack-bold;	
+	font-size:13px;
+}
+b, strong .bold {
+	font-family: $font-stack-bold;
+	letter-spacing:0.1em;
+}
+p {
+	color:$body-text;
+}
+h3 span.ti-arrow-right {
+	color:$light-grey;
+	font-size:14px;
+	margin-left:4px;
+}
+h3:hover span.ti-arrow-right {
+	color:$grey;
+}
+h1 small, h1 .small, .h1 small, .h1 .small, h2 small, h2 .small, .h2 small, .h2 .small, h3 small, h3 .small, .h3 small, .h3 .small {
+	color:inherit;
+	font-size:83%;
+}

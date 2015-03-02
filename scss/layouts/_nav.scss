@@ -1,0 +1,39 @@
+nav {
+	background:rgba(255,255,255,.9);
+	border-bottom:none;
+	height:70px;
+	margin-bottom:0px;
+	padding:10px 0 0;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 10000000000;
+}
+.navbar-brand {
+	padding:8px 0px;
+}
+.navbar-brand img {
+	max-width:170px;
+}
+.menu {
+	ul {
+		@extend .nav;
+		@extend .navbar-nav;
+		@extend .navbar-right;
+		li a {
+			font-family: $font-stack-bold;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			color:$abbey;
+			font-size: 14px;
+			}
+		li a:hover {
+			background:rgba(255,255,255,0.0);
+		}
+	}
+}
+
+.nav-up {
+  top: -70px; // same as header height. use variables in LESS/SASS
+}
