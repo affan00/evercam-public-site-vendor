@@ -4,7 +4,7 @@
         <div class="footer-menu">
           <ul>
             <h3>Company</h3>
-            <li><a href="http://www.evercam.io/blog" target="_blank">Blog <span class="ti-arrow-top-right"></span></a></li>
+            <li><a href="http://www.evercam.io/blog/" target="_blank">Blog <span class="ti-arrow-top-right"></span></a></li>
             <!--<li><a href="#">About</a></li>-->
             <!--<li><a href="#">Policy</a></li>-->
             <li><a href="/team">Team</a></li>
@@ -30,9 +30,9 @@
         <div class="footer-about">
           <a class="" href="https://dash.evercam.io/v1/users/signup">Create an Account</a>
           <div class="social-icons">
-            <a href="#"><span class="circle-icon ti-github"></span></a>
-            <a href="#"><span class="circle-icon ti-twitter-alt"></span></a>
-            <a href="#"><span class="circle-icon ti-facebook"></span></a>
+            <a href="https://github.com/evercam" target="_blank"><span class="circle-icon ti-github"></span></a>
+            <a href="https://twitter.com/evrcm" target="_blank"><span class="circle-icon ti-twitter-alt"></span></a>
+            <a href="https://www.facebook.com/evrcm" target="_blank"><span class="circle-icon ti-facebook"></span></a>
           </div>
 
         </div>

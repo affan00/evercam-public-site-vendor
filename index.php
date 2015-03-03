@@ -19,11 +19,11 @@
       <div class="banner-content">
         <h1>Apps for Cameras</h1>
         <h2>Get more from your CCTV system with our Apps and Developer tools.</h2>
-        <h2>Check out our <a href="#Use-Cases">Use Cases</a></h2>
+        <h2>Check out our <a href="/uses">Use Cases</a></h2>
         <a class="btn btn-primary" href="https://dash.evercam.io/v1/users/signup" role="button">Create a Free Account</a>
       </div>
       <div class="banner-image">
-        <img src="img/browser.svg">          
+        <img src="img/browser.png">          
       </div>
       <!--<div class="dash-scroll"><img src="img/dash.png"></div>-->
       <div class="browser"><img src="img/switch.gif"></div>
@@ -60,7 +60,7 @@
               </div>
             </div>
 
-          <a href="https://play.google.com/store/apps/details?id=io.evercam.capture" target="_blank">
+          <a href="http://timelapse.evercam.io/" target="_blank">
           <div class="card">
             <div class="card-inner">
               <img class="app-logo" class="app-logo" src="img/timelapse.png">
@@ -104,7 +104,7 @@
           </div>
 
         </div>
-        <a class="btn pull-right btn-grey-outline" href="/uses/construction" role="button">View All Use Cases</a>
+        <a class="btn pull-right btn-grey-outline" href="/uses" role="button">View All Use Cases</a>
       </div>
     </section>
     <!--<div id="add-camera" class="alt-color">

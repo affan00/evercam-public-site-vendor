@@ -81,7 +81,7 @@
             Get in touch
           </h3>
           <p>
-            Call Vinnie on +353 87 207 8222 or drop us an email sales@evercam.io
+            Call Vinnie on +353 87 987 1869 or drop us an email sales@evercam.io
           </p>
         </div>
       </div>

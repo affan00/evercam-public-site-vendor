@@ -54,7 +54,7 @@
         </div>
       </div>
       </section>
-      <section>
+      <!--<section>
       <div class="use-cases">        
         <div class="title">
           <div class="text-content">
@@ -68,7 +68,7 @@
           </div>      
         </div>
       </div>
-      </section>
+      </section>-->
     </div>
   
     <? include '../footer.php'; ?>
