@@ -1,3 +1,4 @@
+<?php include_once("analyticstracking.php") ?>    
 <nav>
   <div class="container">
     <div class="navbar-header">

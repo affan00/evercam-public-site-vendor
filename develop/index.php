@@ -8,8 +8,8 @@
     <meta name="author" content="evercam.io">
     <title>Evercam.io/develop</title>
     <? include '../styles.php'; ?>
-    <script src="http://api.html5media.info/1.1.6/html5media.min.js"></script>
     <meta property="twitter:account_id" content="4503599630778866" />
+    <script type="text/javascript" src="../js/hotjar-tracking.js"></script>
   </head>
   <body id="develop">
   
@@ -20,7 +20,7 @@
       <div class="banner-content">
         <h1>A RESTful API for Cameras</h1>
         <h2>Write Software using our API and we guarantee it will work with any camera connectable to the internet.</h2>
-        <a class="btn btn-primary" href="https://dash.evercam.io/v1/users/signup" role="button">Create a Free Account</a>
+        <a class="btn btn-grey-outline btn--inverted" href="https://dash.evercam.io/v1/users/signup" role="button">Create Account</a>
       </div>
       <!--<div class="banner-image">
         <img src="../img/header-banner.pngs">
@@ -40,31 +40,20 @@
         <img src="../img/icon-feature-api.svg">
           <h3>Beautiful Documentation</h3>
           <p>Run requests from our endpoints with our interactive documentation.</p>
-          <p><a class="btn btn-grey-outline" href="https://dash.evercam.io/swagger" target="_blank">Interactive docs <span class="ti-arrow-top-right"></span></a></p>
+          <a class="btn btn-grey-outline" href="https://dash.evercam.io/swagger" target="_blank">Interactive docs <span class="ti-arrow-top-right"></span></a>
         </div>
         <div class="develop-feature">
           <img src="../img/wrappers.svg">
           <h3>Lots of Wrappers</h3>
           <p>We have wrappers around the Evercam API in <a href="https://github.com/evercam/evercam-ruby">Ruby</a>, <a href="https://github.com/evercam/evercam-node">Nodejs</a>, <a href="https://github.com/evercam/evercam.java">Java</a> &amp; <a href="https://github.com/evercam/evercam.net">.NET</a>.</p>
-          <p><a class="btn btn-grey-outline" href="https://github.com/evercam" target="_blank">Client Bindings <span class="ti-arrow-top-right"></span></a></p>
+          <a class="btn btn-grey-outline" href="https://github.com/evercam" target="_blank">Client Bindings <span class="ti-arrow-top-right"></span></a>
         </div>
       </div>
       </div>
     </section>
-  </div>
+  </div> 
 
-
-
-   
-
-<? include '../footer.php'; ?>
-  
-  
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.js"></script>
+  <? include '../footer.php'; ?>
+    
   </body>
 </html>

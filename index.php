@@ -7,26 +7,27 @@
     <meta name="description" content="Unleash the power of your camera. A developer platform for cameras with an app store for camera owners.">
     <meta name="author" content="evercam.io">
     <title>Evercam.io</title>
-    <? include 'styles.php'; ?>
+    <? include 'styles.php'; ?>    
     <script src="http://api.html5media.info/1.1.6/html5media.min.js"></script>
     <meta property="twitter:account_id" content="4503599630778866" />
+    <script type="text/javascript" src="../js/hotjar-tracking.js"></script>
   </head>
   <body id="home">
-  
-<? include 'nav.php'; ?>
+  <? include 'nav.php'; ?>
   <header>
     <div class="banner">
       <div class="banner-content">
         <h1>Apps for Cameras</h1>
         <h2>Get more from your CCTV system with our Apps and Developer tools.</h2>
-        <h2>Check out our <a href="/uses">Use Cases</a></h2>
-        <a class="btn btn-primary" href="https://dash.evercam.io/v1/users/signup" role="button">Create a Free Account</a>
+        <h2>Check out our <a href="/uses">Use Cases</a></h2>        
+        <a class="btn btn-grey-outline btn--inverted" href="https://dash.evercam.io/v1/users/signup" role="button">Create Account</a>
       </div>
       <div class="banner-image">
-        <img src="img/browser.png">          
+        <img src="img/browser.svg">          
       </div>
       <!--<div class="dash-scroll"><img src="img/dash.png"></div>-->
-      <div class="browser"><img src="img/switch.gif"></div>
+      <div class="phone"><img src="img/phone.png"></div>
+      <div class="desktop"><img src="img/switch.gif"></div>
     </div>
   </header>
   <div class="alt-color">
@@ -42,7 +43,7 @@
           <a href="http://snapmail.evercam.io" target="_blank">  
           <div class="card">
             <div class="card-inner">
-              <img class="app-logo" src="img/snapmail.png">
+              <img class="app-logo" src="img/snapmail-circle.svg">
               <h3>Snapmail</h3>
               <p>Schedule email notifications from your camera</p>
               <span class="ti-arrow-top-right"></span>
@@ -50,39 +51,50 @@
           </div>
           </a>
           
-            <div class="card">
-              <div class="card-inner">
-                <img class="app-logo" src="img/remote-storage2.svg">
-                <h3>Remote Storage</h3>
-                <p>Footage from your camera is safely stored and easy to access and share</p>
-
-                
-              </div>
+          <div class="card">
+            <div class="card-inner">
+              <img class="app-logo" src="img/remote-storage2.svg">
+              <h3>Remote Storage</h3>
+              <p>Camera footage is safely stored and easy to access</p>
             </div>
+          </div>
 
-          <a href="http://timelapse.evercam.io/" target="_blank">
+          <!--<a href="http://timelapse.evercam.io/" target="_blank">
           <div class="card">
             <div class="card-inner">
               <img class="app-logo" class="app-logo" src="img/timelapse.png">
+              <h3>Sharing</h3>
+              <p>Share access to your camera with different access rights</p>
+              <span class="ti-arrow-top-right"></span>
+            </div>
+          </div>
+          </a>-->
+          <a href="http://timelapse.evercam.io/" target="_blank">
+          <div class="card">
+            <div class="card-inner">
+            <div class="app-circle-animate"></div>
+              <img class="app-logo" class="app-logo" src="img/timelapse2.gif">
               <h3>Timelapse</h3>
               <p>Create and share timelapses from your camera</p>
               <span class="ti-arrow-top-right"></span>
             </div>
           </div>
           </a>
+        </div>
+        <a class="pull-right btn btn-grey-outline" href="/apps" role="button">View all Apps</a>
+
       </div>
-      <a class="pull-right btn btn-grey-outline" href="/apps" role="button">View all Apps</a>
     </section>
   </div>
     <section>
       <div class="use-cases">        
         <div class="title">
           <div class="text-content">
-            <h6>Use Case<h6>
+            <h6>Use Case</h6>
             <h1>Construction Camera</h1>
             <h2>Keep an eye on your site and manage access to the camera.</h2>
-            <h2>Sharing, Remote Recording, Snapmail, Timelapse..<br><i><small>..works with any camera</i></small></h2>
-            <a class="btn btn-grey-outline" href="/uses/construction" role="button">View Use Case</a>
+            <h2>Sharing, Remote Recording, Snapmail, Timelapse..<br><i><small>..works with any camera</small></i></h2>            
+            <a class="btn btn-grey-outline pull-left" href="/uses/construction" role="button">View Use Case</a>
           </div>
           <div class="title-image">
             <img src="img/stephens-green.jpg">
@@ -104,22 +116,26 @@
           </div>
 
         </div>
-        <a class="btn pull-right btn-grey-outline" href="/uses" role="button">View All Use Cases</a>
+        <a class="btn btn-grey-outline pull-right" href="/uses" role="button">View All Use Cases</a>
       </div>
     </section>
-    <!--<div id="add-camera" class="alt-color">
+    
+    <!--
+    <div id="add-camera" class="alt-color">
       <section>
         <div class="add-camera">        
           <div class="text-content">
             <h1>Add a Camera</h1>
           </div>
           
-          <div class="add-a-camera">
+          <div class="add-a-camera own-camera">
             <h3>
               I have my own Camera
             </h3>
             <div class="card-inner">
-                
+                <div class="widget">
+                  <div evercam="add-camera-public"></div><script type="text/javascript" src="https://dash.evercam.io/widgets/add.camera.js"></script>
+                </div>
             </div>
           </div>
           <div class="add-a-camera">
@@ -128,7 +144,6 @@
             </h3>
             <div class="card-inner">
               <div class="public-map">
-                <input type="text" class="form-control" placeholder="Search">
                 <img src="http://placehold.it/560x350">
               </div>
               <div class="public-description">
@@ -158,8 +173,8 @@
             </div> 
           </div>
       </section>
-    </div>-->
-  <? include 'footer.php'; ?>
-  
+    </div>
+    -->
+    <? include 'footer.php'; ?>
   </body>
 </html>

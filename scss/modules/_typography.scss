@@ -4,7 +4,7 @@ body {
 	font-size:$font-size-r;
 	line-height:1.6;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,h1 a, h2, h3, h4, h5, h6 {
 	color:$header-text;
 	letter-spacing:0.01em;
 }
@@ -18,7 +18,7 @@ h2 {
 	color:$h2-color;
 }
 h3 {
-	font-family: $font-stack-bold;	
+	font-family: $font-stack-semibold;	
 	font-size:$font-size-l;
 }
 h5, .link-text {
@@ -31,11 +31,11 @@ h6 {
 	color:$primary-blue;
 	text-transform:uppercase;
 	margin-bottom:-10px;
-	font-family: $font-stack-bold;	
+	font-family: $font-stack-semibold;	
 	font-size:13px;
 }
 b, strong .bold {
-	font-family: $font-stack-bold;
+	font-family: $font-stack-semibold;
 	letter-spacing:0.1em;
 }
 p {

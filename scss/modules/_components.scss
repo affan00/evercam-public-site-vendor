@@ -1,14 +1,17 @@
 .cards {
 		@extend .row;
 		margin-top: 40px;
-		margin-bottom:30px;
+		margin-bottom:20px;
 		h3 {
 			color:$header-text;
 			//font-family: $font-stack-bold;
 		}
 	}
-	.card {
+	#home .card {
 		@extend .col-md-4;
+	}
+	.card {
+		@extend .col-md-3;
 		@extend .col-sm-6;
 		@extend .col-xs-12;
 		text-align: center;
@@ -24,7 +27,7 @@
 	padding:20px 10px 10px;
 	box-shadow:0 1px 0 rgba(0,0,0,.05);
 	@include transition(all, 0.3s, ease-in-out);
-	min-height: 287px;
+	min-height: 302px;
 }
 .card:hover {
 	.card-inner {

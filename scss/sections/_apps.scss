@@ -1,6 +1,8 @@
 .apps {
+	margin-top: 60px;
+
 	.text-content {		
-		@extend .col-md-6;
+		@extend .col-md-5;
 	}
 	.btn {
 		margin-top: -15px;

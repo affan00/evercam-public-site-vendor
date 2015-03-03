@@ -13,7 +13,7 @@ header {
 	}
 }
 .banner-content {
-	@extend .col-md-6;	
+	@extend .col-md-4;	
 	margin-top:40px;
 	margin-bottom:25px;
 }
@@ -21,20 +21,35 @@ header {
 @extend .col-md-6;	
 	img {
 		position: absolute;
-		width: 733px;
-		right: -235px;
-		z-index: 10;
-		top: 10px;
+width: 1065px;
+right: -548px;
+z-index: 10;
+top: 8px;
 	}
 }
-.browser {
-	position: absolute;
-	right: -225px;
-	top: 46px;
+@media only screen and (max-width: $screen-lg-min) {
+	.banner-image img {
+		right: -531px;	
+	}
 }
-.browser img {
-	width:98%;
+.desktop {
+position: absolute;
+right: -127px;
+top: 52px;
+}
+.desktop img {
+	width:120%;
 	z-index:1000000;
+}
+.phone {
+position: absolute;
+right: 279px;
+top: 251px;
+z-index: 100;
+}
+.phone img {
+width: 50%;
+z-index: 1000000;
 }
 .dash-scroll {
 	position:fixed;
@@ -48,7 +63,7 @@ header {
 .app-image img {
 	position: absolute;
 	right: 47px;
-	width: 249px;
+	width: 268px;
 	top: 19px;
 }
 .construction-image img {
@@ -68,7 +83,7 @@ header {
 }
 
 @media (max-width: $screen-md-min) { 
-	.banner-image img, .construction-image img, .app-image img, .browser img, .weighbridge-image img {
+	.banner-image img, .construction-image img, .app-image img, .desktop img,.phone img, .weighbridge-image img {
 		display:none;
 	}
 }

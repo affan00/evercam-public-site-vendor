@@ -1,5 +1,8 @@
 # Keep these files out of the repo
 wp-config.php
-blog/wp-content/uploads
-blog/wp-content/plugins
-blog/wp-content/updraft
+blog/wp-content/uploads/*
+blog/wp-content/plugins/*
+blog/wp-content/updraft/*
+wp-content/cache/*
+wp-content/upgrade/*
+wp-content/uploads/*
