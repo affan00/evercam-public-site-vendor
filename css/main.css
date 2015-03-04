@@ -3760,6 +3760,16 @@ section {
   .apps .btn {
     margin-top: -15px; }
 
+.app-circle-animate {
+  padding: 40px;
+  background-color: #000000;
+  border-radius: 50%; }
+
+#app-circle-animate {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite; }
+
 .use-cases .title-image {
   max-height: 310px;
   overflow: hidden; }
