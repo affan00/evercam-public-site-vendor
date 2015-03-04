@@ -1,0 +1,203 @@
+/*
+Theme Name: tdMinimal Child Theme
+Author URI: http://tasko.us/
+Author: Taras Dashkevych
+Description: This is a child theme for tdMinimal Theme
+Template: tdminimal
+Version: 1.0
+*/
+
+@import url('../tdminimal/style.css');
+@font-face {
+    font-family: 'proxima-nova-regular';
+    src: url('/fonts/proximanova-regular-webfont.eot');
+    src: url('/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('/fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima-nova-bold';
+    src: url('/fonts/proximanova-bold-webfont.eot');
+    src: url('/fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('/fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima-Nova-It';
+    src: url('/fonts/proximanova-regitalic-webfont.eot');
+    src: url('/fonts/proximanova-regitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-regitalic-webfont.woff') format('woff'),
+         url('/fonts/proximanova-regitalic-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-regitalic-webfont.svg#proxima_novaregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima-nova-semibold';
+    src: url('/fonts/proximanova-semibold-webfont.eot');
+    src: url('/fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('/fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-semibold-webfont.svg#proxima_novasemi_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: 'proxima-nova-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 17px;
+}
+h1, h2, h3, h4, h5, h6, .main-navigation, .paging-navigation, .slicknav_menu, .post-navigation, #submit-comment, input[type="submit"], a.button, .bbp-submit-wrapper button, .author-social-links a, .archive.author .author-archive-social a, .share-buttons-inner .share-btns a, .bbpress #bbpress-forums li.bbp-header, .widget .widget-social-list li a, #portfolio-container .portfolio-filter-list a, #page .wp-playlist .wp-playlist-caption {
+	font-family: 'proxima-nova-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+}
+a {
+	font-family: 'proxima-nova-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;	
+	color: #515254;
+}
+/*nav*/
+.main-navigation a {
+  font-family: "proxima-nova-semibold", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #515254;
+  font-size: 16px;
+}
+.main-navigation a:hover {
+	border-bottom: none;
+}
+.website-logo {
+	max-width: 220px;
+	margin-top: 2px;
+}
+#masthead {
+	padding: 15px 0 0px;
+	line-height: 0;
+	margin-bottom: 40px;
+}
+.main-navigation {
+	margin-top: 4px;
+}
+@media screen and ( min-width: 782px ) {
+	#masthead.site-header-2 .header-search-button {
+		display: none;
+	}
+}
+
+
+#standard-blog-layout .hentry-inner {
+	font-size: 17px;
+}
+
+.entry-title a:hover {
+  color: #666666;
+}
+
+#standard-blog-layout .entry-title, #standard-blog-layout .entry-title a {
+	font-family: 'proxima-nova-bold',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;	
+}
+/*titles*/
+.blog #standard-blog-layout .entry-title, .hentry .entry-title, .archive .page-header .page-title, .search .page-header .page-title, .no-results .page-header .page-title {
+	font-family: 'proxima-nova-bold',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: left;
+	
+	font-size: 38px;
+	color:#515254;
+	line-height: 48px;
+	letter-spacing: 0.01em;
+	text-transform: inherit;
+	font-weight: normal;
+}
+.hentry .entry-title {
+	margin: 15px auto;
+}
+header.entry-header {
+	margin-bottom: 40px;
+}
+.hentry {
+	padding: 15px 15px 25px;
+}
+.layout-has-sidebar .hentry .hentry-inner {
+	max-width: 700px;
+}
+
+/*sidebar*/
+#secondary .widget a:hover, .footer-widget-section .widget a:hover {
+	color: #666666;
+	border-bottom:none;
+}
+#secondary .widget {
+	font-size: 17px;
+}
+#secondary .widget-title {
+	font-family: 'proxima-nova-bold',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;	
+	border-bottom:1px solid #ecf0f1;
+}
+.widget ul li {
+margin-bottom: 20px;
+}
+/*TITLES*/
+ {
+	font-size: 38px;
+	line-height: 48px;
+}
+/*single*/
+span.posted-on {
+	float: left;
+	margin-right: 15px;
+}
+.entry-header .entry-title, .entry-meta {
+	text-align: left;
+}
+.entry-meta {
+	font-size: 16px;
+	text-transform: inherit;
+}
+.share-btns a {
+  border-radius: 50%;
+}
+.share-buttons-title {
+	border-radius:30px;
+	margin-right: 6px;
+}
+
+/*footer*/
+.social-icon-section a.td-tooltip {
+	border-radius:50%;
+}
+.social-icon-section li a {
+
+}
+.entry-meta .fa {
+	display: none;
+}
+/*buttons*/
+#submit-comment:hover, input[type="submit"]:hover, .more-link-container a:hover, a.button:hover, .bbp-submit-wrapper button:hover {
+	background:#e5e5e5;
+	border:1px solid #515254;
+}
+#secondary .search-submit {
+  line-height: 2;
+  border: 1px solid #aaaaaa !Important;
+  padding: 8px 24px;
+  border-radius: 30px;
+}
+#submit-comment, input[type="submit"], a.button, .bbp-submit-wrapper button {
+	background:none;
+	border:1px solid #aaaaaa;
+color: #515254;
+border-radius: 30px;
+}
+/*links*/
+.entry-content a, .entry-meta.bottom a, #comments a, #colophon .site-info a, .author-section .author-name a, .continue-reading-link {
+	border-bottom:1px solid #e5e5e5;
+}
