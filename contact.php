@@ -21,7 +21,7 @@
   
   
     <main>
-      </section>
+      <section>
         <div class="address">
           <p>Wayra Ireland<br />
           29 Sir John Rogerson's Quay<br />
