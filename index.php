@@ -25,7 +25,6 @@
       <div class="banner-image">
         <img src="img/browser.svg">          
       </div>
-      <!--<div class="dash-scroll"><img src="img/dash.png"></div>-->
       <div class="phone"><img src="img/phone.png"></div>
       <div class="desktop"><img src="img/switch.gif"></div>
     </div>

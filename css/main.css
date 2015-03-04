@@ -3881,12 +3881,6 @@ section {
 
 .four-o-four {
   margin-top: 100px; }
-  .four-o-four .big {
-    opacity: .4;
-    position: absolute;
-    top: 100px; }
-  .four-o-four h6 {
-    font-size: 320px; }
 
 nav {
   background: rgba(255, 255, 255, 0.9);

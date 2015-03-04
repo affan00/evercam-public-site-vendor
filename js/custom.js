@@ -1,3 +1,4 @@
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;

@@ -23,9 +23,9 @@
 
 .terms {
 	a {
-		color: $header-text;
-	}
-	h5 {
+		color: $header-text;}
+
+		h5 {
 		margin-top: 50px;
 	}
 	section:first-child {
@@ -46,6 +46,7 @@
 .develop {
 	@extend .container;
 	margin: 20px 0 0;
+
 }
 .develop-feature {
 	@extend .col-md-4;
@@ -55,6 +56,7 @@
 		width: 100px;
 		margin-bottom:10px;
 	}
+
 	h3 {
 		margin-bottom:20px; 
 	}
