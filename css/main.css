@@ -3912,6 +3912,15 @@ nav {
 .nav-up {
   top: -70px; }
 
+.navbar-toggle .icon-bar {
+  background-color: #515254; }
+
+.navbar-collapse {
+  background-color: #ffffff; }
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand img {
+    padding-left: 15px; } }
 header {
   margin-top: 70px;
   margin-bottom: 30px; }
