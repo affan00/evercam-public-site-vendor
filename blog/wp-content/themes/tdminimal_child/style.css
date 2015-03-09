@@ -52,6 +52,7 @@ Version: 1.0
 body {
 	font-family: 'proxima-nova-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 17px;
+	background-color: #f5f5f5;
 }
 h1, h2, h3, h4, h5, h6, .main-navigation, .paging-navigation, .slicknav_menu, .post-navigation, #submit-comment, input[type="submit"], a.button, .bbp-submit-wrapper button, .author-social-links a, .archive.author .author-archive-social a, .share-buttons-inner .share-btns a, .bbpress #bbpress-forums li.bbp-header, .widget .widget-social-list li a, #portfolio-container .portfolio-filter-list a, #page .wp-playlist .wp-playlist-caption {
 	font-family: 'proxima-nova-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -81,6 +82,7 @@ a {
 	padding: 15px 0 0px;
 	line-height: 0;
 	margin-bottom: 40px;
+	background-color: #f5f5f5;
 }
 .main-navigation {
 	margin-top: 4px;
