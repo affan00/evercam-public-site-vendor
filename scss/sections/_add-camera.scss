@@ -17,8 +17,10 @@
 	}
 }
 .add-camera-mobile-app {
-@extend .col-md-3;
-@extend .col-md-offset-1;
+	@extend .col-md-3;
+	img  {
+		max-width: 138px;
+	}
 }
 .add-camera-mobile-description {
 	@extend .col-md-6;

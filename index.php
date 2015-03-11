@@ -119,7 +119,7 @@
       </div>
     </section>
     
-    <!--
+    
     <div id="add-camera" class="alt-color">
       <section>
         <div class="add-camera">        
@@ -133,11 +133,10 @@
             </h3>
             <div class="card-inner">
                 <div class="widget">
-                  <div evercam="add-camera-public"></div><script type="text/javascript" src="https://dash.evercam.io/widgets/add.camera.js"></script>
                 </div>
             </div>
           </div>
-          <div class="add-a-camera">
+          <!--<div class="add-a-camera">
             <h3>
               Browse Public Cameras
             </h3>
@@ -150,10 +149,10 @@
                   Any camera added to Evercam can be made public and becomes accessible through our Public Camera page in the Evercam dashboard.<br>
                   You can search through Public Cameras and and find cameras located nearby.
                 </p>
-                <a class="btn btn-primary" href="#" role="button">View Map in Dashboard</a>
+                
               </div>
             </div>
-            </div>
+            </div>-->
             <div class="add-a-camera">
               <h3>
                 Use your mobile device as a Camera
@@ -173,7 +172,7 @@
           </div>
       </section>
     </div>
-    -->
+    
     <? include 'footer.php'; ?>
   </body>
 </html>

@@ -1188,7 +1188,7 @@ pre {
   .col-md-offset-0 {
     margin-left: 0%; }
 
-  .col-md-offset-1, .use-cases .title-image, .add-camera-mobile-app {
+  .col-md-offset-1, .use-cases .title-image {
     margin-left: 8.33333%; }
 
   .col-md-offset-2 {
@@ -3819,6 +3819,9 @@ section {
   margin: 40px 0px 60px; }
   .add-camera .add-a-camera h3 {
     padding-bottom: 10px; }
+
+.add-camera-mobile-app img {
+  max-width: 138px; }
 
 .add-camera-mobile-description {
   padding: 20px 40px; }
