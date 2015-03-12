@@ -133,6 +133,7 @@
             </h3>
             <div class="card-inner">
                 <div class="widget">
+                  <div evercam="add-camera-public"></div><script type="text/javascript" src="http://localhost:3000/widgets/add.camera.js"></script>
                 </div>
             </div>
           </div>

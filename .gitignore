@@ -1,6 +1,7 @@
 blog/.htaccess
 wp-config.php
 blog/wp-content/*
+blog/wp-includes/version.php*
 !blog/wp-content/themes/tdminimal_child
 blog/sitemap.xml
 *blog/.log
