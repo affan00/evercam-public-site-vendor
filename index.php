@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Unleash the power of your camera. A developer platform for cameras with an app store for camera owners.">
+    <meta name="description" content="Get more from you camera. Connect you camera to Evercam and add apps and functionality in minutes.">
     <meta name="author" content="evercam.io">
     <title>Evercam.io</title>
     <? include 'styles.php'; ?>    
