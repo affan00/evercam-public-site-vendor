@@ -14,27 +14,16 @@
   <meta content="4503599630778866">
   
 </head>
-
+<? header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found"); ?>
 <body>
-  <? include 'nav.php'; ?>          
-    
-  
-  
-  
-    <main>
-      <section>
-        <div class="four-o-four">
-          <h1>404 page not found</h1>
-          <a class="btn btn-grey-outline" href="http://www.evercam.io" role="button">Back to home</a>
-        </div>
-
-      </section>
-    </main>
-  
-  
-
-   
-   
-
+  <? include 'nav.php'; ?>              
+  <main>
+    <section>
+      <div class="four-o-four">
+        <h1>404 page not found</h1>
+        <a class="btn btn-grey-outline" href="http://www.evercam.io" role="button">Back to home</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

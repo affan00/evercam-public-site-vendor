@@ -749,7 +749,7 @@ pre {
   .row:after, .cards:after, .title:after, .gallery:after, #use-case .use-case-features:after, #use-case .use-case-callout:after, .banner:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .card, .use-card-inner, .add-camera-mobile-app, .footer-about, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, #home .card, .use-case, .team-individual, .develop-feature, .banner-content, .footer-menu ul, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .apps .text-content, .use-cases .title-image, .col-lg-5, .col-xs-6, .col-sm-6, .card, .col-md-6, .use-cases .text-content, #use-case .use-case-feature, #use-case .use-case-callout, .add-camera-mobile-description, .address, .contact-form, .banner-image, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, #develop .banner-content, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .add-camera .public-map, .footer-menu, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .card, .col-sm-12, #use-case .use-case-feature, .col-md-12, .apps, .use-cases, .add-camera, .team, .contact, .developer-feature, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .card, .use-card-inner, .add-camera-mobile-app, .footer-about, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, #home .card, .use-case, .team-individual, .develop-feature, .banner-content, .footer-menu ul, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .apps .text-content, .use-cases .title-image, .col-lg-5, .col-xs-6, .col-sm-6, .card, .col-md-6, .use-cases .text-content, #use-case .use-case-feature, #use-case .use-case-callout, .add-camera-mobile-description, .address, .contact-form, .banner-image, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, #develop .banner-content, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .add-camera .public-map, .footer-menu, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .card, .col-sm-12, #use-case .use-case-feature, .col-md-12, .apps, .use-cases, .add-camera, .team, .contact, .developer-feature, .wordpress-page, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1068,7 +1068,7 @@ pre {
   .col-sm-offset-12 {
     margin-left: 100%; } }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .card, .use-card-inner, .add-camera-mobile-app, .footer-about, .col-md-4, #home .card, .use-case, .team-individual, .develop-feature, .banner-content, .footer-menu ul, .col-md-5, .apps .text-content, .use-cases .title-image, .col-md-6, .use-cases .text-content, #use-case .use-case-feature, #use-case .use-case-callout, .add-camera-mobile-description, .address, .contact-form, .banner-image, .col-md-7, #develop .banner-content, .col-md-8, .add-camera .public-map, .footer-menu, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .apps, .use-cases, .add-camera, .team, .contact, .developer-feature {
+  .col-md-1, .col-md-2, .col-md-3, .card, .use-card-inner, .add-camera-mobile-app, .footer-about, .col-md-4, #home .card, .use-case, .team-individual, .develop-feature, .banner-content, .footer-menu ul, .col-md-5, .apps .text-content, .use-cases .title-image, .col-md-6, .use-cases .text-content, #use-case .use-case-feature, #use-case .use-case-callout, .add-camera-mobile-description, .address, .contact-form, .banner-image, .col-md-7, #develop .banner-content, .col-md-8, .add-camera .public-map, .footer-menu, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .apps, .use-cases, .add-camera, .team, .contact, .developer-feature, .wordpress-page {
     float: left; }
 
   .col-md-1 {
@@ -1104,7 +1104,7 @@ pre {
   .col-md-11 {
     width: 91.66667%; }
 
-  .col-md-12, .apps, .use-cases, .add-camera, .team, .contact, .developer-feature {
+  .col-md-12, .apps, .use-cases, .add-camera, .team, .contact, .developer-feature, .wordpress-page {
     width: 100%; }
 
   .col-md-pull-0 {
@@ -3739,6 +3739,9 @@ h1 small, h1 .small, .h1 small, .h1 .small, h2 small, h2 .small, .h2 small, .h2 
   border: 1px solid;
   border-radius: 50%;
   padding: 10px; }
+
+#home img.app-logo {
+  border-radius: 50%; }
 
 html, body {
   width: auto;

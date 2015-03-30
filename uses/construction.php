@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Evercam -  Keep an eye on your site and manage access to cameras.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Unleash the power of your camera. A developer platform for cameras with an app store for camera owners.">
-    <meta name="author" content="evercam.io">
+    <meta name="author" content="Evercam">
     <title>Evercam.io</title>
     <!-- Bootstrap -->
     <? include '../styles.php'; ?>

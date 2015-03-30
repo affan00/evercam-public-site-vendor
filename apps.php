@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Evercam -  App store for Cameras. Get more from your camera.</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Unleash the power of your camera. A developer platform for cameras with an app store for camera owners.">
-    <meta name="author" content="evercam.io">
-    <title>Evercam.io</title>
+    <meta name="keywords" content="cameras, apps, android, integration, recording, remote storage, sharing, api, developer platform">
+    <meta name="description" content="Add email notification, remote storage, sharing, timelapses, logs and more to your camera and access from any mobile device.">
+    <meta name="author" content="Evercam">
     <? include 'styles.php'; ?>
-    <script src="http://api.html5media.info/1.1.6/html5media.min.js"></script>
     <meta property="twitter:account_id" content="4503599630778866" />
   </head>
   <body id="app-store">

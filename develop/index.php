@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Evercam -  Developer platform for IP Cameras with a RESTful API</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Unleash the power of your camera. A developer platform for cameras with an app store for camera owners.">
-    <meta name="author" content="evercam.io">
-    <title>Evercam.io/develop</title>
+    <meta name="keywords" content="api, developer platform, cameras, software, apps, android, node, php, .net, java, integration">
+    <meta name="description" content="Write Software using our API and we guarantee it will work with any camera connectable to the internet.">
+    <meta name="author" content="Evercam">
     <? include '../styles.php'; ?>
-    <meta property="twitter:account_id" content="4503599630778866" />
     <script type="text/javascript" src="../js/hotjar-tracking.js"></script>
   </head>
   <body id="develop">

@@ -2,8 +2,9 @@ blog/.htaccess
 wp-config.php
 blog/wp-content/*
 blog/wp-includes/version.php*
-!blog/wp-content/themes/tdminimal_child
+!blog/wp-content/themes/tdminimal_child/*
 blog/sitemap.xml
 *blog/.log
 blog/sitemap.xml
 blog/sitemap.xml.gz
+I

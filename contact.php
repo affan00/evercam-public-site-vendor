@@ -3,14 +3,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <title>Evercam -  get in touch with us.</title>
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content=
-  "Unleash the power of your camera. A developer platform for cameras with an app store for camera owners."
-  name="description">
-  <meta content="evercam.io" name="author">
+  <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
+    <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
+    <meta name="author" content="Evercam">
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-  <title>Evercam.io</title><? include 'styles.php'; ?>
+  <title>Evercam.io</title>
+  <? include 'styles.php'; ?>
   <meta content="4503599630778866">
 </head>
 

@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Evercam -  Apps for IP Cameras. Get more from your camera.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Unleash the power of your camera. A developer platform for cameras with an app store for camera owners.">
-    <meta name="author" content="evercam.io">
+    <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
+    <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
+    <meta name="author" content="Evercam">
     <title>Evercam.io</title>
     <!-- Bootstrap -->
     <? include '../styles.php'; ?>

@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Evercam -  Apps for IP Cameras. Get more from your camera.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Get more from you camera. Connect you camera to Evercam and add apps and functionality in minutes.">
-    <meta name="author" content="evercam.io">
-    <title>Evercam.io</title>
+    <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
+    <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
+    <meta name="author" content="Evercam">
     <? include 'styles.php'; ?>    
-    <script src="http://api.html5media.info/1.1.6/html5media.min.js"></script>
     <meta property="twitter:account_id" content="4503599630778866" />
-    <script type="text/javascript" src="../js/hotjar-tracking.js"></script>
+    <script type="text/javascript" src="../js/hotjar-tracking.js" async></script>
   </head>
   <body id="home">
   <? include 'nav.php'; ?>
@@ -20,7 +20,7 @@
         <h1>Apps for Cameras</h1>
         <h2>Get more from your CCTV system with our Apps and Developer tools.</h2>
         <h2>Check out our <a href="/uses">Use Cases</a></h2>        
-        <a class="btn btn-grey-outline btn--inverted" href="https://dash.evercam.io/v1/users/signup" role="button">Create Account</a>
+        <a class="btn btn-grey-outline btn--inverted" href="#add-camera" role="button">Add a Camera</a>
       </div>
       <div class="banner-image">
         <img src="img/browser.svg">          
@@ -52,7 +52,7 @@
           
           <div class="card">
             <div class="card-inner">
-              <img class="app-logo" src="img/remote-storage2.svg">
+              <img class="app-logo" src="img/remote-storage.svg">
               <h3>Remote Storage</h3>
               <p>Camera footage is safely stored and easy to access</p>
             </div>
@@ -72,7 +72,7 @@
           <div class="card">
             <div class="card-inner">
             
-              <img class="app-logo" class="app-logo" src="img/timelapse-2.gif">
+              <img class="app-logo" class="app-logo" src="img/timelapse.gif">
               <h3>Timelapse</h3>
               <p>Create and share timelapses from your camera</p>
               <span class="ti-arrow-top-right"></span>
@@ -133,7 +133,7 @@
             </h3>
             <div class="card-inner">
                 <div class="widget">
-                  <div evercam="add-camera-public"></div><script type="text/javascript" src="http://localhost:3000/widgets/add.camera.js"></script>
+                  <div evercam="add-camera-public"></div><script type="text/javascript" src="http://dash.evercam.io/widgets/add.camera.js"></script>
                 </div>
             </div>
           </div>
