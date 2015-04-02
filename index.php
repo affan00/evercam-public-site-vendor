@@ -116,7 +116,7 @@
             </h3>
             <div class="card-inner">
                 <div class="widget">
-                  <div evercam="add-camera-public"></div><script type="text/javascript" src="http://dash.evercam.io/widgets/add.camera.js" async></script>
+                  <div evercam="add-camera-public"></div><script type="text/javascript" src="https://dash.evercam.io/widgets/add.camera.js" async></script>
                 </div>
             </div>
           </div>
