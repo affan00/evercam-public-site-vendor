@@ -20,6 +20,17 @@
 		.ti-arrow-right, .ti-arrow-top-right {
 			color:$off-white;
 		}
+		i {
+		 	border-radius: 60px;
+		  border: 2px solid $primary-blue;
+		  padding: 20px;
+		}
+		i.fa-history {
+			padding: 20px 23px;
+		}
+		.fa {
+			color: $primary-blue;
+		}
 	}
 .card-inner {
 	@include border-radius(2px);
@@ -27,7 +38,15 @@
 	padding:20px 10px 10px;
 	box-shadow:0 1px 0 rgba(0,0,0,.05);
 	@include transition(all, 0.3s, ease-in-out);
-	min-height: 302px;
+	min-height: 202px;
+}
+#home .apps .card-inner {
+	@include border-radius(2px);
+	background-color: $white;
+	padding:40px 20px 0px;
+	box-shadow:0 1px 0 rgba(0,0,0,.05);
+	@include transition(all, 0.3s, ease-in-out);
+	min-height: 280px;
 }
 .card:hover {
 	.card-inner {
@@ -39,7 +58,7 @@
 	}
 }
 .card-inner .app-logo {
-	max-width:135px;
+	max-width:83px;
 }
 .icon {
 	width:24px;

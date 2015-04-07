@@ -42,7 +42,8 @@
           <a href="http://snapmail.evercam.io" target="_blank">  
           <div class="card">
             <div class="card-inner">
-              <img class="app-logo" src="img/snapmail-circle.svg">
+              <i class="fa fa-send fa-2x"></i>
+
               <h3>Snapmail</h3>
               <p>Schedule email notifications from your camera</p>
               <span class="ti-arrow-top-right"></span>
@@ -52,27 +53,17 @@
           
           <div class="card">
             <div class="card-inner">
-              <img class="app-logo" src="img/remote-storage.svg">
+              <i class="fa fa-cloud-download fa-2x"></i>
               <h3>Remote Storage</h3>
               <p>Camera footage is safely stored and easy to access</p>
             </div>
           </div>
 
-          <!--<a href="http://timelapse.evercam.io/" target="_blank">
-          <div class="card">
-            <div class="card-inner">
-              <img class="app-logo" class="app-logo" src="img/timelapse.png">
-              <h3>Sharing</h3>
-              <p>Share access to your camera with different access rights</p>
-              <span class="ti-arrow-top-right"></span>
-            </div>
-          </div>
-          </a>-->
+      
           <a href="http://timelapse.evercam.io/" target="_blank">
           <div class="card">
             <div class="card-inner">
-            
-              <img class="app-logo" class="app-logo" src="img/timelapse.gif">
+              <i class="fa fa-history fa-2x"></i>
               <h3>Timelapse</h3>
               <p>Create and share timelapses from your camera</p>
               <span class="ti-arrow-top-right"></span>
@@ -80,7 +71,7 @@
           </div>
           </a>
         </div>
-        <a class="pull-right btn btn-grey-outline" href="/apps" role="button">View all Apps</a>
+        <a class="pull-right btn btn-grey-outline" href="/apps" role="button">View all our Apps</a>
 
       </div>
     </section>

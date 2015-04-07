@@ -93,7 +93,7 @@
             <a href="http://timelapse.evercam.io/" target="_blank">
             <div class="card">
               <div class="card-inner">
-                <img class="app-logo" src="img/timelapse.png">
+                <i class="fa fa-history fa-2x"></i>
                 <h3>Timelapse</h3>
                 <p>Create and share timelapses from your camera</p>
                 <span class="ti-arrow-top-right"></span>
