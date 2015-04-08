@@ -10,15 +10,11 @@
       </button>
       <a class="navbar-brand" href="/"><img alt="evercam.io" src="/img/logo.png"></a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    
       <div class="menu">
         <ul>
           <li><a href="/apps">Apps</a></li>
           <li><a href="/uses/">Use Cases</a></li>
-          <!--<li><a href="/#add-camera">Add Camera</a></li>-->
           <li><a class="btn btn-grey-outline sign-in" href="http://dash.evercam.io">Sign In</a></li>
         </ul>
       </div>
