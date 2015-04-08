@@ -25,7 +25,7 @@
       <div class="banner-image">
         <img src="img/browser.svg">          
       </div>
-      <div class="phone"><img src="img/phone.png"></div>
+      <div class="phone"><img src="img/phone.jpg"></div>
       <div class="desktop"><img src="img/switch.gif"></div>
     </div>
   </header>
@@ -49,17 +49,14 @@
               <span class="ti-arrow-top-right"></span>
             </div>
           </div>
-          </a>
-          
+          </a>        
           <div class="card">
             <div class="card-inner">
               <i class="fa fa-cloud-download fa-2x"></i>
               <h3>Remote Storage</h3>
               <p>Camera footage is safely stored and easy to access</p>
             </div>
-          </div>
-
-      
+          </div>    
           <a href="http://timelapse.evercam.io/" target="_blank">
           <div class="card">
             <div class="card-inner">
@@ -72,7 +69,6 @@
           </a>
         </div>
         <a class="pull-right btn btn-grey-outline" href="/apps" role="button">View all our Apps</a>
-
       </div>
     </section>
   </div>
@@ -90,7 +86,6 @@
             <img src="img/stephens-green.jpg">
           </div>
         </div>
-
         <div class="gallery">          
           <div class="use-case">
             <a href="/uses/weighbridge"><h3>Weighbridge <span class="ti-arrow-right"></span></h3></a>
@@ -104,13 +99,10 @@
             <h3>Community CCTV <!--<span class="ti-arrow-right"></span>--></h3>
             <p>Allow multiple people to securely share cameras</p>
           </div>
-
         </div>
         <a class="btn btn-grey-outline pull-right" href="/uses" role="button">View All Use Cases</a>
       </div>
     </section>
-    
-    
     <div id="add-camera" class="alt-color">
       <section>
         <div class="add-camera">        
@@ -124,27 +116,10 @@
             </h3>
             <div class="card-inner">
                 <div class="widget">
-                  <div evercam="add-camera-public"></div><script type="text/javascript" src="http://dash.evercam.io/widgets/add.camera.js"></script>
+                  <div evercam="add-camera-public"></div><script type="text/javascript" src="http://dash.evercam.io/widgets/add.camera.js" async></script>
                 </div>
             </div>
           </div>
-          <!--<div class="add-a-camera">
-            <h3>
-              Browse Public Cameras
-            </h3>
-            <div class="card-inner">
-              <div class="public-map">
-                <img src="http://placehold.it/560x350">
-              </div>
-              <div class="public-description">
-                <p>
-                  Any camera added to Evercam can be made public and becomes accessible through our Public Camera page in the Evercam dashboard.<br>
-                  You can search through Public Cameras and and find cameras located nearby.
-                </p>
-                
-              </div>
-            </div>
-            </div>-->
             <div class="add-a-camera">
               <h3>
                 Use your mobile device as a Camera
@@ -155,16 +130,12 @@
                     <p>Evercam Capture turns your phone into a camera (actually 2 cameras if you have 2 cameras on your phone) and connects them securely to your account on Evercam.</p><br>
                     <a href="https://play.google.com/store/apps/details?id=io.evercam.capture&hl=en" target="_blank"><img src="img/google_play_download.png" alt="Get it on Google Play"></a>
                   </div>
-                  <div class="add-camera-mobile-app">
-                  <img src="img/evercam-caprture-02.svg" class="">
-                  </div>
                 </div>
               </div>
             </div> 
           </div>
       </section>
     </div>
-    
     <? include 'footer.php'; ?>
   </body>
 </html>

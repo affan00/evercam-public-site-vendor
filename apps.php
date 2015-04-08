@@ -11,10 +11,8 @@
     <? include 'styles.php'; ?>
     <meta property="twitter:account_id" content="4503599630778866" />
   </head>
-  <body id="app-store">
-  
+  <body id="app-store">  
   <? include 'nav.php'; ?>
-    
     <header>
       <div class="banner">
         <div class="banner-content">
@@ -100,23 +98,10 @@
               </div>
             </div>
             </a>
-            <a href="http://1button.evercam.io" target="_blank">                             
-            <div class="card">
-              <div class="card-inner">
-                <img class="app-logo" src="img/single-button-app.png">
-                <h3>Single Button App</h3>
-                <p>Create an Android app of your camera in 1 click</p>
-                <span class="ti-arrow-top-right"></span>
-              </div>
-            </div>
-            </a>
           </div>
         </div>
       </main>
-    </div>
-
-   
-
+    </div>   
     <? include 'footer.php'; ?>
   </body>
 </html>

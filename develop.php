@@ -8,12 +8,12 @@
     <meta name="keywords" content="api, developer platform, cameras, software, apps, android, node, php, .net, java, integration">
     <meta name="description" content="Write Software using our API and we guarantee it will work with any camera connectable to the internet.">
     <meta name="author" content="Evercam">
-    <? include '../styles.php'; ?>
-    <script type="text/javascript" src="../js/hotjar-tracking.js"></script>
+    <? include 'styles.php'; ?>
+    <script type="text/javascript" src="js/hotjar-tracking.js" async></script>
   </head>
   <body id="develop">
   
-  <? include '../nav.php'; ?>
+  <? include 'nav.php'; ?>
   
   <header>
     <div class="banner">
@@ -53,8 +53,8 @@
     </section>
   </div> 
 
-  <? include '../footer.php'; ?>
-<script src="../js/vivus.js"></script>
+  <? include 'footer.php'; ?>
+<script src="js/vivus.js"></script>
 
 <script>
 var myVivus = new Vivus('svg');
