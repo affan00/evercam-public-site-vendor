@@ -26,7 +26,15 @@
         <img src="img/browser.svg">          
       </div>
       <div class="phone"><img src="img/phone.jpg"></div>
-      <div class="desktop"><img src="img/switch.gif"></div>
+      <div class="desktop">
+      <video width="778" height="438" autoplay loop>
+          <source src="img/dash.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <!--<iframe src="//player.vimeo.com/video/119594541?autoplay=1&loop=1" frameborder="0" width="777" height="454" id="fitvid605717"></iframe>-->
+
+
+      </div>
     </div>
   </header>
   <div class="alt-color">
