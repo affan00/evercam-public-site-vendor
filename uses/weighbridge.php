@@ -9,12 +9,10 @@
     <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
     <meta name="author" content="Evercam">
     <!-- Bootstrap -->
-    <? include '../styles.php'; ?>
+    <link href="/css/main.css" rel="stylesheet">
   </head>
   <body id="use-case">
-  
-<? include '../nav.php'; ?>
-    
+  <? include '../nav.php'; ?>
     <div class="alt-color">
       <header>
         <div class="banner">
@@ -25,13 +23,11 @@
             <h2>Resolve disputes with visual confirmation for any event.</h2>
           </div>
           <div class="weighbridge-image">
-            <img class="bottom" src="/img/weighbridge-herbst-insight-invoice.png">
-             
+            <img class="bottom" src="/img/weighbridge-herbst-insight-invoice.jpg">
           </div>
         </div>
       </header>
     </div>
-    
     <section>
       <div class="use-case-features">
       <div class="row">
@@ -39,8 +35,6 @@
           <h3>
             How it works
           </h3>
-
-
           <p>
             Herbst Insight is a powerful ERP system popular in industries such as distribution, logistics, oil, quarries and agricultural produce which has integrated cameras into critical control points within the software.</p>
           <p>
@@ -53,17 +47,11 @@
             <p>
               A user can quickly move from any event to the video of that event as it happened:
             </p>
-            <img src="../img/weighbridge-event-video.svg">
+            <img src="../img/weighbridge-event.jpg">
           </div>
-          
         </div>
-          
-
-
-        
       </div>
     </section>
-
     <div class="alt-color">
       <section>
         <div class="develop">
@@ -97,12 +85,6 @@
       </p>
     </div>
     </section>
-
-  
-
-  
-
-    <? include '../footer.php'; ?>
-  
+    <? include '../footer.php'; ?> 
   </body>
 </html>

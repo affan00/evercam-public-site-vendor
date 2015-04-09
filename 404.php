@@ -10,7 +10,8 @@
   name="description">
   <meta content="evercam.io" name="author">
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-  <title>Evercam.io</title><? include 'styles.php'; ?>
+  <title>Evercam.io</title>
+  <link href="css/main.css" rel="stylesheet">
   <meta content="4503599630778866">
   
 </head>

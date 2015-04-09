@@ -10,7 +10,7 @@
     <meta name="author" content="Evercam">
     <title>Evercam.io</title>
     <!-- Bootstrap -->
-    <? include '../styles.php'; ?>
+    <link href="/css/main.css" rel="stylesheet">
   </head>
   <body>
   
@@ -51,7 +51,7 @@
             <a class="btn btn-grey-outline" href="/uses/weighbridge" role="button">View Use Case</a>
           </div>
           <div class="title-image">
-            <img src="../img/weighbridge-herbst-insight-invoice.png">
+            <img src="../img/weighbridge-use-home.jpg">
           </div>      
         </div>
       </div>

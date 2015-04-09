@@ -9,10 +9,10 @@
   <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
     <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
     <meta name="author" content="Evercam">
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false" async></script>
   <title>Evercam.io</title>
-  <? include 'styles.php'; ?>
-  <meta content="4503599630778866">
+  <link href="css/main.css" rel="stylesheet">
+  
 </head>
 
 <body>

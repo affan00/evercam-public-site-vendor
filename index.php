@@ -8,7 +8,7 @@
     <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
     <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
     <meta name="author" content="Evercam">
-    <? include 'styles.php'; ?>    
+    <link href="css/main.css" rel="stylesheet">
     <meta property="twitter:account_id" content="4503599630778866" />
     <script type="text/javascript" src="../js/hotjar-tracking.js" async></script>
   </head>

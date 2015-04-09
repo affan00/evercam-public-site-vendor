@@ -13,7 +13,7 @@ name="description">
 <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
 <meta name="description" content="About the Evercam team.">
 <meta name="author" content="Evercam">
-<? include 'styles.php'; ?>
+<link href="css/main.css" rel="stylesheet">
 </head>
 
 <body id="team">

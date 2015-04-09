@@ -9,7 +9,7 @@
     <meta name="author" content="evercam.io">
     <title>Evercam.io</title>
     <!-- Bootstrap -->
-    <? include 'styles.php'; ?>
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
   
