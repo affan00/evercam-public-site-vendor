@@ -8,7 +8,7 @@
     <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
     <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
     <meta name="author" content="Evercam">
-    <? include 'styles.php'; ?>    
+    <link href="css/main.css" rel="stylesheet">
     <meta property="twitter:account_id" content="4503599630778866" />
     <script type="text/javascript" src="../js/hotjar-tracking.js" async></script>
   </head>
@@ -23,10 +23,15 @@
         <a class="btn btn-grey-outline btn--inverted" href="#add-camera" role="button">Add a Camera</a>
       </div>
       <div class="banner-image">
-        <img src="img/browser.svg">          
+        <img src="img/browser-border.svg">          
       </div>
       <div class="phone"><img src="img/phone.jpg"></div>
-      <div class="desktop"><img src="img/switch.gif"></div>
+      <div class="desktop">
+        <video width="778" height="438" autoplay loop>
+        <source src="img/dash.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   </header>
   <div class="alt-color">

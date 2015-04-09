@@ -30,14 +30,14 @@
       <div class="footer-about">
         <a class="" href="https://dash.evercam.io/v1/users/signup">Create an Account</a>
         <div class="social-icons">
-          <a href="https://github.com/evercam" target="_blank"><span class="circle-icon ti-github"></span></a>
-          <a href="https://twitter.com/evrcm" target="_blank"><span class="circle-icon ti-twitter-alt"></span></a>
-          <a href="https://www.facebook.com/evrcm" target="_blank"><span class="circle-icon ti-facebook"></span></a>
+          <a href="https://github.com/evercam" target="_blank"><span class="circle-icon fa fa-github-alt"></span></a>
+          <a href="https://twitter.com/evrcm" target="_blank"><span class="circle-icon fa fa-twitter"></span></a>
+          <a href="https://www.facebook.com/evrcm" target="_blank"><span class="circle-icon fa fa-facebook-f"></span></a>
         </div>
       </div>
     </div>
   </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/custom.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+<script src="../js/bootstrap.min.js" async></script>
+<script src="../js/custom.min.js" async></script>

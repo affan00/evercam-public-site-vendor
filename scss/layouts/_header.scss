@@ -26,22 +26,22 @@ header {
 .banner-image {
 @extend .col-md-6;	
 	img {
-		position: absolute;
-width: 1065px;
-right: -459px;
-z-index: 10;
-top: 8px;
+	position: absolute;
+  width: 897px;
+  right: -373px;
+  z-index: 10;
+  top: 8px;
 	}
 }
 @media only screen and (max-width: $screen-lg-min) {
 	.banner-image img {
-		right: -450px;	
+		right: -366px;	
 	}
 }
 .desktop {
-position: absolute;
-right: -127px;
-top: 52px;
+  position: absolute;
+  right: -257px;
+  top: 52px;
 }
 .desktop img {
 	width:120%;
@@ -50,7 +50,7 @@ top: 52px;
 .phone {
   position: absolute;
   right: 428px;
-  top: 251px;
+  top: 250px;
   z-index: 100;
 }
 .phone img {
@@ -89,7 +89,7 @@ z-index: 1000000;
 }
 
 @media (max-width: $screen-md-min) { 
-	.banner-image img, .construction-image img, .app-image img, .desktop img,.phone img, .weighbridge-image img {
+	.banner-image img, video, .construction-image img, .app-image img, .desktop img,.phone img, .weighbridge-image img {
 		display:none;
 	}
 }

@@ -8,7 +8,7 @@
     <meta name="keywords" content="cameras, apps, android, integration, recording, remote storage, sharing, api, developer platform">
     <meta name="description" content="Add email notification, remote storage, sharing, timelapses, logs and more to your camera and access from any mobile device.">
     <meta name="author" content="Evercam">
-    <? include 'styles.php'; ?>
+    <link href="css/main.css" rel="stylesheet">
     <meta property="twitter:account_id" content="4503599630778866" />
   </head>
   <body id="app-store">  

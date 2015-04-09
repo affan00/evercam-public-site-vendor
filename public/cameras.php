@@ -10,7 +10,7 @@
     <meta name="author" content="Evercam">
     <title>Evercam.io</title>
     <!-- Bootstrap -->
-    <? include '../styles.php'; ?>
+    <link href="/css/main.css" rel="stylesheet">
   </head>
   <body>
     <? include '../nav.php'; ?>

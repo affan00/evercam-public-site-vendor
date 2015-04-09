@@ -11,8 +11,8 @@
     <meta name="author" content="Evercam">
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
   <title>Evercam.io</title>
-  <? include 'styles.php'; ?>
-  <meta content="4503599630778866">
+  <link href="css/main.css" rel="stylesheet">
+  
 </head>
 
 <body>

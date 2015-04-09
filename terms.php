@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Unleash the power of your camera. A developer platform for cameras with an app store for camera owners.">
-    <meta name="author" content="evercam.io">
-    <title>Evercam.io</title>
-    <? include 'styles.php'; ?>
-    <script src="http://api.html5media.info/1.1.6/html5media.min.js"></script>
-    <meta property="twitter:account_id" content="4503599630778866" />
-  </head>
+<head>
+<title>Evercam -  About the Evercam team.</title>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content=
+"Unleash the power of your camera. A developer platform for cameras with an app store for camera owners."
+name="description">
+<meta content="evercam.io" name="author">
+<meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
+<meta name="description" content="About the Evercam team.">
+<meta name="author" content="Evercam">
+<link href="css/main.css" rel="stylesheet">
+</head>
   <body id="terms">
   
     <? include 'nav.php'; ?>
