@@ -36,7 +36,7 @@
             <a class="btn btn-grey-outline" href="/uses/construction" role="button">View Use Case</a>
           </div>
           <div class="title-image">
-            <img src="../img/stephens-green.jpg">
+            <img src="../img/stephens-green-cam.jpg">
           </div>
         </div>
       </div>
