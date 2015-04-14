@@ -5,8 +5,8 @@
     <title>Evercam -  Apps for IP Cameras. Get more from your camera.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
-    <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
+    <meta name="keywords" content="cameras, CCTV, apps, integration, recording, remote storage, sharing, api, developer platform">
+    <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device to your CCTV or IP camera. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
     <meta name="author" content="Evercam">
     <link href="css/main.css" rel="stylesheet">
     <meta property="twitter:account_id" content="4503599630778866" />
@@ -51,7 +51,7 @@
 
               <h3>Snapmail</h3>
               <p>Schedule email notifications from your camera</p>
-              <span class="ti-arrow-top-right"></span>
+              <i class="fa fa-external-link-square"></i>
             </div>
           </div>
           </a>        
@@ -68,7 +68,7 @@
               <i class="fa fa-history fa-2x"></i>
               <h3>Timelapse</h3>
               <p>Create and share timelapses from your camera</p>
-              <span class="ti-arrow-top-right"></span>
+              <i class="fa fa-external-link-square"></i>
             </div>
           </div>
           </a>
@@ -88,7 +88,7 @@
             <a class="btn btn-grey-outline pull-left" href="/uses/construction" role="button">View Use Case</a>
           </div>
           <div class="title-image">
-            <img src="img/stephens-green.jpg">
+            <img src="img/stephens-green-cam.jpg">
           </div>
         </div>
         <div class="gallery">          

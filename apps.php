@@ -20,7 +20,7 @@
           <h2>Easily add functionality to your camera with our growing range of apps.</h2>
         </div>
         <div class="app-image">
-          <img src="img/app-circle.png">
+          <img src="img/apps-circle.png">
         </div>
       </div>
     </header>
@@ -28,10 +28,10 @@
       <main>
         <div class="apps">
           <div class="cards">
-            <a href="https://play.google.com/store/apps/details?id=io.evercam.androidapp" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=io.evercam.androidapp&referrer=utm_source%3DEvercam%2520Apps%2520Page%26utm_medium%3DOrganic%26utm_term%3DNone%26utm_content%3DNone%26utm_campaign%3DEvercam%2520Apps%2520Page" target="_blank">
               <div class="card">
                 <div class="card-inner">
-                  <img class="app-logo" src="img/evercam-play.png">
+                  <img class="app-logo" src="img/evercam-play.svg">
                   <h3>Evercam Play</h3>
                   <p>Access to all your IP Cameras from anywhere.</p>
                   <span class="ti-arrow-top-right"></span>
@@ -41,7 +41,7 @@
             <a href="https://play.google.com/store/apps/details?id=io.evercam.capture" target="_blank">
             <div class="card">
               <div class="card-inner">
-                <img class="app-logo" src="img/evercam-capture.png">
+                <img class="app-logo" src="img/evercam-capture.svg">
                 <h3>Evercam Capture</h3>
                 <p>Turn your mobile device into an IP camera</p>
                 <span class="ti-arrow-top-right"></span>
@@ -61,7 +61,7 @@
             <a href="https://play.google.com/store/apps/details?id=io.evercam.connect" target="_blank">  
             <div class="card">
               <div class="card-inner">
-                <img class="app-logo" src="img/evercam-discover.png">
+                <img class="app-logo" src="img/evercam-discover.svg">
                 <h3>Evercam Discover</h3>
                 <p>Discover your cameras in the local network</p>
                 <span class="ti-arrow-top-right"></span>

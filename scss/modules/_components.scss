@@ -17,7 +17,7 @@
 		text-align: center;
 		margin-bottom: 30px;
 		cursor:pointer;
-		.ti-arrow-right, .ti-arrow-top-right {
+		.ti-arrow-right, .fa-external-link-square {
 			color:$off-white;
 		}
 		i {
@@ -52,7 +52,7 @@
 	.card-inner {
 		box-shadow:2px 4px 4px rgba(0, 0, 0, 0.1);	
 	}
-	.ti-arrow-right, .ti-arrow-top-right {
+	.ti-arrow-right, .fa-external-link-square {
 		@include transition(all, 0.3s, ease-in-out);
 		color:$grey;
 	}
