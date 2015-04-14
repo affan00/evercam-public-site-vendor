@@ -47,7 +47,7 @@
           <a href="http://snapmail.evercam.io" target="_blank">  
           <div class="card">
             <div class="card-inner">
-              <i class="fa fa-send fa-2x"></i>
+              <i class="fa fa-send fa-2x circle"></i>
 
               <h3>Snapmail</h3>
               <p>Schedule email notifications from your camera</p>
@@ -57,7 +57,7 @@
           </a>        
           <div class="card">
             <div class="card-inner">
-              <i class="fa fa-cloud-download fa-2x"></i>
+              <i class="fa fa-cloud-download fa-2x circle"></i>
               <h3>Remote Storage</h3>
               <p>Camera footage is safely stored and easy to access</p>
             </div>
@@ -65,7 +65,7 @@
           <a href="http://timelapse.evercam.io/" target="_blank">
           <div class="card">
             <div class="card-inner">
-              <i class="fa fa-history fa-2x"></i>
+              <i class="fa fa-history fa-2x circle"></i>
               <h3>Timelapse</h3>
               <p>Create and share timelapses from your camera</p>
               <i class="fa fa-external-link-square"></i>

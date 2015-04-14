@@ -25,10 +25,8 @@ footer {
 }
 .footer-menu {
 	@extend .col-md-8;
-	
 	ul {
 		@extend .col-md-4;
-		font-size: $font-size-s;
 		h3 {
 			text-transform: uppercase;
 			letter-spacing:.04em;
@@ -38,6 +36,7 @@ footer {
 		}
 		li {
 			list-style: none;
+			font-size: $font-size-s;
 		}
 	}
 }
