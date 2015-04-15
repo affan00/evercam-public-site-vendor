@@ -18,7 +18,7 @@
         <div class="banner">
           <div class="banner-content">
           <h6>Use Case</h6>
-            <h1>Weighbridge</h1>
+            <h1>Insight Weighbridge</h1>
             <h2>Embeded CCTV images in transaction documents.</h2>
             <h2>Resolve disputes with visual confirmation for any event.</h2>
           </div>

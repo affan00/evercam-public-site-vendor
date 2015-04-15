@@ -78,8 +78,12 @@
 .terms {
 	margin-top: 70px;
 }
+#four-o-four {
+	height: 100vh;
+}
 .four-o-four {
-	margin-top: 100px;
+	@include vertical-align;
+	margin-top: -100px;
 }
 .wordpress-page {
 	@extend .col-md-12;

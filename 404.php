@@ -18,9 +18,9 @@
 <? header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found"); ?>
 <body>
   <? include 'nav.php'; ?>              
-  <main>
-    <section>
-      <div class="four-o-four">
+  <main id="four-o-four">
+    <section class="four-o-four">
+      <div>
         <h1>404 page not found</h1>
         <a class="btn btn-grey-outline" href="http://www.evercam.io" role="button">Back to home</a>
       </div>

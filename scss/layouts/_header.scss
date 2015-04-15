@@ -6,6 +6,7 @@ header {
 }
 .banner {
 	@extend .row;
+	margin-top: 30px;
 	margin-bottom: 30px;
 	position: relative;
 	.btn-primary {
@@ -18,7 +19,12 @@ header {
 	margin-top:40px;
 	margin-bottom:25px;
 }
-#public-cameras {
+.manufacturers {
+	.banner-content {
+		@extend .col-md-8;		
+	}
+}
+#public-cameras	 {
 	.banner-content {
 		@extend .col-md-12;		
 	}
@@ -54,8 +60,7 @@ header {
   z-index: 100;
 }
 .phone img {
-
-z-index: 1000000;
+	z-index: 1000000;
 }
 .dash-scroll {
 	position:fixed;
@@ -64,7 +69,6 @@ z-index: 1000000;
 }
 .dash-scroll img {
 	width:600px;
-
 }
 .app-image img {
 	position: absolute;
@@ -78,6 +82,14 @@ z-index: 1000000;
 	width: 100%;
 	top: 0px;
 	z-index:10000;
+}
+.manufacturers-image img {
+  width: 100%;
+  z-index: 10000;
+  position: absolute;
+  right: 0px;
+  max-width: 490px;
+  top: 20px;
 }
 .weighbridge-image img {
 	position: absolute;

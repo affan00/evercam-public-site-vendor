@@ -14,11 +14,13 @@
         </ul>
         <ul>
           <h3>Developer</h3>
-          <li><a href="/develop.php">Develop</a></li>
+          <li><a href="/develop">Develop</a></li>
           <li><a href="https://dash.evercam.io/swagger" target="_blank">Documentation <span class="ti-arrow-top-right"></span></a></li>
           <!--<li><a href="#">Pricing</a></li>-->
           <!--<li><a href="/uses">Use Cases</a></li>-->
           <!--<li><a href="#">Help</a></li>-->
+          <br>
+          <li><a href="/camera-manufacturers">Camera Manufacturers</a></li>
         </ul>
         <ul>
           <h3>Camera Owner</h3>
