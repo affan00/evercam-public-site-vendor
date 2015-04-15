@@ -22,7 +22,7 @@ name="description">
 <div class="banner">
   <div class="banner-content">
       <h1>Meet the team!</h1>
-      <h2>Making it happen from Ireland, Serbia and Pakistan.</h2>
+      <h2>Making it happen from Ireland, <br>Serbia &amp; Pakistan.</h2>
   </div>
 </div>
 </header>
@@ -35,10 +35,10 @@ name="description">
       style="border-radius:50%;">
       <h2>Vinnie Quinn <a data-toggle="tooltip" href=
       "https://twitter.com/vinniequinn" target="_blank" title=
-      "twitter"><span class="ti-twitter-alt"></span></a>
+      "twitter"><span class="fa fa-twitter-alt"></span></a>
       <a data-toggle="tooltip" href=
       "http://ie.linkedin.com/in/vinniequinn" target="_blank" title=
-      "linkedin"><span class="ti-linkedin"></span></a></h2>
+      "linkedin"><span class="fa fa-linkedin"></span></a></h2>
       <h4>Hustler <small>- Former Christmas tree
       salesman.</small></h4>
     </div>
@@ -48,13 +48,13 @@ name="description">
       style="border-radius:50%;">
       <h2>Marco Herbst <a data-toggle="tooltip" href=
       "https://twitter.com/marcoherbst" target="_blank" title=
-      "twitter"><span class="ti-twitter-alt"></span></a>
+      "twitter"><span class="fa fa-twitter-alt"></span></a>
       <a data-toggle="tooltip" href=
       "http://www.linkedin.com/in/marcoherbst" target="_blank" title=
-      "linkedin"><span class="ti-linkedin"></span></a>
+      "linkedin"><span class="fa fa-linkedin"></span></a>
       <a data-toggle="tooltip" href="https://github.com/marcoherbst"
       target="_blank" title="github"><span class=
-      "ti-github"></span></a></h2>
+      "fa fa-github"></span></a></h2>
       <h4>Hustler <small>- Failed piano player</small></h4>
     </div>
     <div class="team-individual">
@@ -62,13 +62,13 @@ name="description">
       "border-radius:50%;">
       <h2>Liuting Du <a data-toggle="tooltip" href=
       "https://twitter.com/liutingdu" target="_blank" title=
-      "twitter"><span class="ti-twitter-alt"></span></a>
+      "twitter"><span class="fa fa-twitter-alt"></span></a>
       <a data-toggle="tooltip" href=
       "https://ie.linkedin.com/in/liutingdu" target="_blank" title=
-      "linkedin"><span class="ti-linkedin"></span></a>
+      "linkedin"><span class="fa fa-linkedin"></span></a>
       <a data-toggle="tooltip" href="https://github.com/liutingdu"
       target="_blank" title="github"><span class=
-      "ti-github"></span></a></h2>
+      "fa fa-github"></span></a></h2>
       <h4>Hacker <small>- Beijing's candidate for Rose of
       Tralee.</small></h4>
     </div>
@@ -84,7 +84,7 @@ name="description">
       "border-radius:50%;">
       <h2>Miloš Mošić <small><a data-toggle="tooltip" href=
       "https://github.com/mosic" target="_blank" title=
-      "github"><span class="ti-github"></span></a></small></h2>
+      "github"><span class="fa fa-github"></span></a></small></h2>
       <h4>Developer <small>- Keeping afloat while working
       remote</small></h4>
     </div>
@@ -94,12 +94,12 @@ name="description">
       style="border-radius:50%;">
       <h2>Ciarán Hanrahan <small><a data-toggle="tooltip" href=
       "http://ie.linkedin.com/in/ciaranhanrahan" target="_blank"
-      title="linkedin"><span class="ti-linkedin"></span></a>
+      title="linkedin"><span class="fa fa-linkedin"></span></a>
       <a data-toggle="tooltip" href="https://twitter.com/ciaranhan"
       target="_blank" title="twitter"><span class=
-      "ti-twitter-alt"></span></a> <a data-toggle="tooltip" href=
+      "fa fa-twitter-alt"></span></a> <a data-toggle="tooltip" href=
       "https://github.com/jaibles" target="_blank" title=
-      "github"><span class="ti-github"></span></a></small></h2>
+      "github"><span class="fa fa-github"></span></a></small></h2>
       <h4>UX &amp; Front End <small>- The right space is
       whitespace.</small></h4>
     </div>
@@ -117,7 +117,7 @@ name="description">
       style="border-radius:50%;">
       <h2>Shakeel Anjum <small><a data-toggle="tooltip" href=
       "https://github.com/mshakeelanjum" target="_blank" title=
-      "github"><span class="ti-github"></span></a></small></h2>
+      "github"><span class="fa fa-github"></span></a></small></h2>
       <h4>Hacker <small>- Malaria survivor and gentle
       soul.</small></h4>
     </div>

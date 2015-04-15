@@ -11,6 +11,7 @@
           <!--<li><a href="#">Jobs</a></li>-->
           <li><a href="/terms">Terms</a></li>
           <li><a href="/contact">Contact</a></li>
+          <li><a href="/values">Values</a></li>
         </ul>
         <ul>
           <h3>Developer</h3>
@@ -20,7 +21,8 @@
           <!--<li><a href="/uses">Use Cases</a></li>-->
           <!--<li><a href="#">Help</a></li>-->
           <br>
-          <li><a href="/camera-manufacturers">Camera Manufacturers</a></li>
+          <h3>Manufacturer</h3>
+          <li><a href="/camera-manufacturers">Why OEM Evercam? </a></li>
         </ul>
         <ul>
           <h3>Camera Owner</h3>

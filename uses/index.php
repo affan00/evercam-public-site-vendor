@@ -56,13 +56,13 @@
       <div class="use-cases">        
         <div class="title">       
           <div class="text-content">          
-            <h1><a href="/uses/sap">SAP - MII</a></h1>
+            <h1>SAP - MII</h1>
             <h2>MII’s simple goal is to provide a 360 degree view of your manufacturing processes. </h2>
             <h2>We’ve integrated video into the MII dashboard so that users not only have access to sensor data, but also to visual data enabling a whole new level of transparency.</h2>
             <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->
           </div>
           <div class="title-image">
-            <img src="../img/weighbridge-use-home.jpg">
+            <img src="../img/sap-logo.jpg">
           </div>      
         </div>
       </div>
@@ -71,8 +71,8 @@
       <div class="use-cases">        
         <div class="title">       
           <div class="text-content">          
-            <h1><a href="/uses/sap">Carroll’s Irish Gifts</a></h1>
-            <h2>Carroll’s Irish Gifts wanted an original social media campaign. Evercam hooked them up with Twittercam. Customers can take a selfie via twitter at the statue in the Westmoreland St. store.</h2>
+            <h1>Carroll’s Irish Gifts</h1>
+            <h2>Carroll’s Irish Gifts wanted an original social media campaign. Evercam hooked them up with <a href="http://selfies.evercam.io/login.html" target="_blank">Twittercam</a>. Customers can take a selfie via twitter at the statue in the Westmoreland St. store.</h2>
             <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->
           </div>
           <div class="title-image">
@@ -85,9 +85,10 @@
       <div class="use-cases">        
         <div class="title">       
           <div class="text-content">          
-            <h1><a href="/uses/the-zipyard">The Zipyard</a></h1>
-            <h2>The Zipyard have over 40 Franchises all over Ireland. They’ve connected to Evercam to make use of Snapmail, a simple yet powerful tool that emails a snapshot of each franchise at opening and closing time. Managers have visibility that all shops are operating consistently and that everything is as it should be. </h2>
-            <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->
+            <h1>The Zipyard</h1>
+            <h2>The Zipyard have over 40 Franchises all over Ireland. A number of their franchises have connected to Evercam to make use of <a href="http://snapmail.evercam.io/login.html" target="_blank">Snapmail</a>, a simple yet powerful tool that emails a snapshot of each franchise at opening and closing time. </h2>
+            <h2>Managers have visibility that all shops are operating consistently and that everything is as it should be. </h2>
+            
           </div>
           <div class="title-image">
             <img src="../img/the-zipyard.jpg">

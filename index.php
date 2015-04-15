@@ -82,7 +82,7 @@
         <div class="title">
           <div class="text-content">
             <h6>Use Case</h6>
-            <h1>Construction Camera</h1>
+            <h1><a href="/uses/construction">Construction Camera</a></h1>
             <h2>Keep an eye on your site and manage access to the camera.</h2>
             <h2>Sharing, Remote Recording, Snapmail, Timelapse..<br><i><small>..works with any camera</small></i></h2>            
             <a class="btn btn-grey-outline pull-left" href="/uses/construction" role="button">View Use Case</a>
@@ -112,13 +112,9 @@
       <section>
         <div class="add-camera">        
           <div class="text-content">
-            <h1>Add a Camera</h1>
+            <h1>Add your Camera</h1>
           </div>
-          
           <div class="add-a-camera own-camera">
-            <h3>
-              I have my own Camera
-            </h3>
             <div class="card-inner">
                 <div class="widget">
                   <div evercam="add-camera-public"></div><script type="text/javascript" src="https://dash.evercam.io/widgets/add.camera.js" async></script>
@@ -127,7 +123,7 @@
           </div>
             <div class="add-a-camera">
               <h3>
-                Use your mobile device as a Camera
+                Or, use your mobile device as a Camera
               </h3>
               <div class="card-inner">
                 <div class="row">

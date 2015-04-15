@@ -80,16 +80,28 @@
 		border-radius: 50%;
 	}
 }
-
+#use-case .card-inner {
+		box-shadow: none !important;
+}
+#use-case .circle {
+margin-bottom: 20px;
+}
+.develop-feature {
+	i.circle{
+		 	border-radius: 60px;
+		  border: 2px solid #aaaaaa;
+		  padding: 20px;
+		}
+}
 i.fa.fa-dollar.fa-2x.circle {
 	padding: 20px 28px;
 }
 i.fa.fa-github.fa-2x.circle {
   padding: 20px 23px;
 }
-#use-case .card-inner {
-		box-shadow: none !important;
+i.fa.fa-file-image-o.fa-2x.circle {
+padding: 20px 24px;	
 }
-#use-case .circle {
-margin-bottom: 20px;
+span.circle-icon.fa.fa-facebook-f {
+	padding: 10px 13px;
 }

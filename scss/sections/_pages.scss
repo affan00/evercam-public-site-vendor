@@ -88,3 +88,27 @@
 .wordpress-page {
 	@extend .col-md-12;
 }
+#values {
+	h1 {
+		font-size: 38px;
+		margin-bottom: -5px;
+	}
+	section {
+		h2 {
+			margin-top: 0px;
+			padding-bottom: 40px;
+		}
+	}
+}
+#team {
+	h1 {
+		font-size: 38px;
+		margin-bottom: -5px;
+	}
+}
+.team-individual img {
+  max-width: 236px;
+}
+.team .fa {
+	font-size: 16px;
+}
