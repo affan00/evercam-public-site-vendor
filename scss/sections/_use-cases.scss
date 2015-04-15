@@ -55,12 +55,14 @@
 		}
 
 	}
+
 	.use-case-callout {
 		clear: both;
 		padding: 40px 15px;
 	}
 	h3 {
 			margin-top: 0px;
+			color: #888888;
 		}
 }
 #construction, #weighbridge {
@@ -72,4 +74,14 @@
 	.use-case-feature {
 		@extend .col-md-8;
 	}
+	img.connect {
+		max-width: 300px;
+		margin:0px 0px 20px;
+	}
+	.circle {
+		padding-bottom: 10px;
+	}
+}
+.manufacturers section {
+		padding: 0px;
 }

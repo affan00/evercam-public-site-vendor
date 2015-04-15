@@ -9,13 +9,10 @@
     <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
     <meta name="author" content="Evercam">
     <title>Evercam.io</title>
-    <!-- Bootstrap -->
     <link href="/css/main.css" rel="stylesheet">
   </head>
   <body>
-  
-    <? include '../nav.php'; ?>
-    
+    <? include '../nav.php'; ?> 
     <div class="alt-color">
       <header>
         <div class="banner">
@@ -45,9 +42,8 @@
       <div class="use-cases">        
         <div class="title">       
           <div class="text-content">          
-            <h1><a href="/uses/weighbridge">Weighbridge</a></h1>
-            <h2>Embeded CCTV images in transaction documents from footage at a Weighbridge.</h2>
-            <h2>Dispute resolution &amp; credibility through visual confirmation for any event.</h2>
+            <h1><a href="/uses/weighbridge">Insight - Weighbridge</a></h1>
+            <h2>Insight supplies software for weighbridge stations. They’ve integrated images into their invoices which has provided accountability for all parties involved.</h2>
             <a class="btn btn-grey-outline" href="/uses/weighbridge" role="button">View Use Case</a>
           </div>
           <div class="title-image">
@@ -56,23 +52,50 @@
         </div>
       </div>
       </section>
-      <!--<section>
+      <section>
       <div class="use-cases">        
-        <div class="title">
-          <div class="text-content">
-            <h1><a href="/uses/sap">SAP</a></h1>
-            <h2>Keep an eye on your site and manage access to the camera.</h2>
-            <h2>Sharing, Remote Recording, Snapmail, Timelapse..<br /><i><small>..works with any camera</small></i></h2>
-            <a class="btn btn-grey-outline" href="/uses/construction" role="button">View Use Case</a>
+        <div class="title">       
+          <div class="text-content">          
+            <h1><a href="/uses/sap">SAP - MII</a></h1>
+            <h2>MII’s simple goal is to provide a 360 degree view of your manufacturing processes. </h2>
+            <h2>We’ve integrated video into the MII dashboard so that users not only have access to sensor data, but also to visual data enabling a whole new level of transparency.</h2>
+            <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->
           </div>
           <div class="title-image">
-            <img src="../img/stephens-green.jpg">
+            <img src="../img/weighbridge-use-home.jpg">
           </div>      
         </div>
       </div>
-      </section>-->
+      </section>
+      <section>
+      <div class="use-cases">        
+        <div class="title">       
+          <div class="text-content">          
+            <h1><a href="/uses/sap">Carroll’s Irish Gifts</a></h1>
+            <h2>Carroll’s Irish Gifts wanted an original social media campaign. Evercam hooked them up with Twittercam. Customers can take a selfie via twitter at the statue in the Westmoreland St. store.</h2>
+            <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->
+          </div>
+          <div class="title-image">
+            <img src="../img/carrolls-twittercam.jpg">
+          </div>      
+        </div>
+      </div>
+      </section>
+      <section>
+      <div class="use-cases">        
+        <div class="title">       
+          <div class="text-content">          
+            <h1><a href="/uses/the-zipyard">The Zipyard</a></h1>
+            <h2>The Zipyard have over 40 Franchises all over Ireland. They’ve connected to Evercam to make use of Snapmail, a simple yet powerful tool that emails a snapshot of each franchise at opening and closing time. Managers have visibility that all shops are operating consistently and that everything is as it should be. </h2>
+            <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->
+          </div>
+          <div class="title-image">
+            <img src="../img/the-zipyard.jpg">
+          </div>      
+        </div>
+      </div>
+      </section>
     </div>
-  
     <? include '../footer.php'; ?>
   </body>
 </html>
