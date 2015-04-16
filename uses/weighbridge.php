@@ -57,17 +57,17 @@
         <div class="develop">
         <div class="row">
           <div class="develop-feature">
-          <!--<img src="../img/sep-of-concerns.svg">-->
+          <i class="fa fa-file-image-o fa-2x circle"></i>
             <h3>Resolve Disputes</h3>
             <p>The right image taken at the right time can resolve any dispute.</p>
           </div>
           <div class="develop-feature">
-          <!--<img src="../img/icon-feature-api.svg">-->
+          <i class="fa fa-users fa-2x circle"></i>
             <h3>Sharing</h3>
             <p>Easily share an image from the camera with concerned parties from a specific point in time</p>
           </div>
           <div class="develop-feature">
-            <!--<img src="../img/wrappers.svg">-->
+            <i class="fa fa-camera fa-2x circle"></i>
             <h3>Works with any Camera</h3>
             <p>We can specify requirements or complete the camera installation for you.</p>
           </div>
@@ -76,7 +76,7 @@
       </section>
     </div>
     <section>
-    <div class="text-center">
+    <div class="text-center use-case-callout">
       <h3>
         Get in touch
       </h3>

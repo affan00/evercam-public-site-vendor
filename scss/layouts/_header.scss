@@ -13,7 +13,6 @@ header {
 		margin: 20px 0px 10px;
 	}
 }
-
 .banner-content {
 	@extend .col-md-5;	
 	margin-top:40px;
@@ -24,7 +23,7 @@ header {
 		@extend .col-md-8;		
 	}
 }
-#public-cameras	 {
+#public-cameras, #values {
 	.banner-content {
 		@extend .col-md-12;		
 	}
@@ -71,10 +70,8 @@ header {
 	width:600px;
 }
 .app-image img {
-	position: absolute;
-	right: 47px;
-	width: 268px;
-	top: 40px;
+	float: right;
+	width: 358px;
 }
 .construction-image img {
 	position: absolute;
@@ -88,7 +85,7 @@ header {
   z-index: 10000;
   position: absolute;
   right: 0px;
-  max-width: 490px;
+  max-width: 347px;
   top: 20px;
 }
 .weighbridge-image img {
@@ -101,7 +98,7 @@ header {
 }
 
 @media (max-width: $screen-md-min) { 
-	.banner-image img, video, .construction-image img, .app-image img, .desktop img,.phone img, .weighbridge-image img {
+	.banner-image img, video, .construction-image img, .app-image img, .desktop img,.phone img, .weighbridge-image img,.manufacturers-image img {
 		display:none;
 	}
 }

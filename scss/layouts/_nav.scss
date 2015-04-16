@@ -16,7 +16,6 @@ nav {
 .navbar-brand img {
 	max-width:170px;
 }
-
 .menu {
 	ul {
 		@extend .nav;
@@ -34,20 +33,20 @@ nav {
 		}
 	}
 }
-
 .nav-up {
   top: -70px; // same as header height. use variables in LESS/SASS
 }
-
-	.navbar-toggle .icon-bar {
-		background-color: $header-text;
-	}
-	.navbar-collapse {
-		background-color: (255,255,255,0.0);
-	}
-
+.navbar-toggle .icon-bar {
+	background-color: $header-text;
+}
+.navbar-collapse {
+	background-color: (255,255,255,0.0);
+}
 @media only screen and (max-width: $screen-sm-min) {  
 	.navbar-brand img {
 		padding-left:15px;
 	}
+	div#bs-example-navbar-collapse-1 {
+	background-color: #ffffff;
+}
 }

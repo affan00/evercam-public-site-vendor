@@ -2,6 +2,9 @@
 	@extend .col-md-4;
 	text-align:center;
 	margin-bottom:30px;
+	img {
+		border-radius: 50%;
+	}
 	h2 {
 		color: $header-text;
 	}
@@ -87,4 +90,28 @@
 }
 .wordpress-page {
 	@extend .col-md-12;
+}
+#values {
+	h1 {
+		font-size: 38px;
+		margin-bottom: -5px;
+	}
+	section {
+		h2 {
+			margin-top: 0px;
+			padding-bottom: 40px;
+		}
+	}
+}
+#team {
+	h1 {
+		font-size: 38px;
+		margin-bottom: -5px;
+	}
+}
+.team-individual img {
+  max-width: 236px;
+}
+.team .fa {
+	font-size: 16px;
 }

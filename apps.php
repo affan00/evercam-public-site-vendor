@@ -20,7 +20,7 @@
           <h2>Easily add functionality to your camera with our growing range of apps.</h2>
         </div>
         <div class="app-image">
-          <img src="img/apps-circle.png">
+          <img src="../img/connected-camera.svg">
         </div>
       </div>
     </header>
@@ -91,7 +91,7 @@
             <a href="http://timelapse.evercam.io/" target="_blank">
             <div class="card">
               <div class="card-inner">
-                <i class="fa fa-history fa-2x"></i>
+                <i class="fa fa-history fa-2x circle"></i>
                 <h3>Timelapse</h3>
                 <p>Create and share timelapses from your camera</p>
                 <span class="ti-arrow-top-right"></span>
