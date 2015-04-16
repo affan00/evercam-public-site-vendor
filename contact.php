@@ -13,27 +13,30 @@
 <title>Evercam.io</title>
 <link href="css/main.css" rel="stylesheet">  
 </head>
-<body id="contact">
+<body>
 <? include 'nav.php'; ?>          
 <div id="map"></div>
   <section>
-    <div class="contact-form">
-  <form accept-charset="UTF-8" action="https://formkeep.com/f/3295d2de6a4c" method="POST">
-  <input type="hidden" name="utf8" value="✓">
-  <input type="email" name="email" placeholder="Your Email">
-  <input type="text" name="name" placeholder="Your Name">
-  <textarea type="textarea" rows="4" name="message" placeholder="Your message"></textarea>
-  <button class="btn btn-grey-outline" type="submit">Submit</button>
-  </form>
+   <div id="contact">
+    <div class="address">
+  <h1>Contact</h1>
+    <p>Wayra Ireland<br />
+    29 Sir John Rogerson's Quay<br />
+    Dublin 2<br />
+    Ireland</p>
+    <p>+353 86 196 0451</p>
+    <p>hello@evercam.io</p>  
+    <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/evrcm" target="_blank">@evrcm</a></p>              
   </div>
-  <div class="address">
-  <p>Wayra Ireland<br />
-  29 Sir John Rogerson's Quay<br />
-  Dublin 2<br />
-  Ireland</p>
-  <p>+353 86 196 0451</p>
-  <p>hello@evercam.io</p>  
-  <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/evrcm" target="_blank">@evrcm</a></p>              
+  <div class="contact-form">
+    <form accept-charset="UTF-8" action="https://formkeep.com/f/3295d2de6a4c" method="POST">
+    <input type="hidden" name="utf8" value="✓">
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="email" name="email" placeholder="Your Email">
+    <textarea type="textarea" rows="4" name="message" placeholder="Your message"></textarea>
+    <button class="btn btn-grey-outline" type="submit">Submit</button>
+    </form>
+  </div>
   </div>
   </section>
  <? include 'footer.php'; ?>

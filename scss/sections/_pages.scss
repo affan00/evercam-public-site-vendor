@@ -23,7 +23,6 @@
 	margin:0 auto;
 	display:block;	
 }
-
 .terms {
 	a {
 		color: $header-text;}
@@ -67,15 +66,6 @@
 		margin-bottom:25px;
 	}
 }
-
-#map {
-	@include size (100%, 400px);
-	margin: 70px 0px 40px;
-}
-
-.address {
-	margin-bottom: 40px;
-}
 .terms {
 	margin-top: 70px;
 }
@@ -90,10 +80,6 @@
 	@extend .col-md-12;
 }
 #values {
-	h1 {
-		font-size: 38px;
-		margin-bottom: -5px;
-	}
 	section {
 		h2 {
 			margin-top: 0px;
@@ -113,6 +99,25 @@
 .team .fa {
 	font-size: 16px;
 }
-.contact-form, .address {
+#contact {
+	p {
+		font-size:$font-size-l; 
+	}
+	h1 {
+		margin-top: 0px;
+	}
+}
+.contact-form {
 	@extend .col-md-6;
+}
+
+#map {
+	@include size (100%, 400px);
+	margin: 70px 0px 40px;
+}
+.address {
+	@extend .col-md-6;
+	float: left;
+	min-width: 300px;
+	margin-bottom: 50px;
 }

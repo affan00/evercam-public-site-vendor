@@ -16,6 +16,7 @@
           <h3>Developer</h3>
           <li><a href="/develop">Develop</a></li>
           <li><a href="https://dash.evercam.io/swagger" target="_blank">Documentation <span class="ti-arrow-top-right"></span></a></li>
+          <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
           <!--<li><a href="#">Pricing</a></li>-->
           <!--<li><a href="#">Help</a></li>-->
           
@@ -26,6 +27,7 @@
           <h3>Camera Owner</h3>
           <li><a href="/apps">App Store</a></li>
           <li><a href="/uses">Use Cases</a></li>
+          <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
 
         </ul>
       </div>

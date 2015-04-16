@@ -137,6 +137,9 @@
           </div>
       </section>
     </div>
+    <div class="create-account">
+      <a class="btn btn-grey-outline" href="https://dash.evercam.io/v1/users/signup">Create a Free Account</a>
+    </div>
     <? include 'footer.php'; ?>
   </body>
 </html>

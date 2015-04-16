@@ -3,7 +3,7 @@ input, textarea {
 	border: 1px solid $light-grey;
 	padding: 3px 10px;
 }
-#contact input, button, textarea {
+.contact-form input, .contact-form button, .contact-form textarea {
 	width: 300px;
 	float: left;
 	clear: both;
