@@ -67,9 +67,7 @@
 		margin-bottom:25px;
 	}
 }
-.address, .contact-form {
-	@extend .col-md-6;
-}
+
 #map {
 	@include size (100%, 400px);
 	margin: 70px 0px 40px;
@@ -114,4 +112,7 @@
 }
 .team .fa {
 	font-size: 16px;
+}
+.contact-form, .address {
+	@extend .col-md-6;
 }

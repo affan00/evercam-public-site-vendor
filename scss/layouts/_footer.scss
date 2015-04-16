@@ -27,6 +27,9 @@ footer {
 		font-size: $font-size-s;
 		line-height: 1.8em;
 	}
+	.fa {
+		width: 18px;
+	}
 }
 .footer-about {
 	@extend .col-sm-4;
@@ -49,6 +52,9 @@ footer {
 		margin-right: 5px;
 	}
 }
+.social-links {
+	@extend .row;
+}
 div.sendgrid-subscription-widget label input {
   background: transparent;
   border-radius: 2px;
@@ -58,12 +64,14 @@ div.sendgrid-subscription-widget label input {
   padding: 3px 7px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  font-family: $font-stack;
+  font-weight: normal;
 }
 div.sendgrid-subscription-widget input {
   border-radius: 2px;
   padding: 3px 9px;
   margin-top: 3px;
-  color: #515254;
+  color: #ffffff;
   border: 1px solid #aaa;
   background: #aaa;
   border-top-left-radius: 0px;

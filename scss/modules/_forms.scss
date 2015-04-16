@@ -1,0 +1,14 @@
+input, textarea {
+	@include border-radius(2px);
+	border: 1px solid $light-grey;
+	padding: 3px 10px;
+}
+#contact input, button, textarea {
+	width: 300px;
+	float: left;
+	clear: both;
+	margin-bottom: 15px;
+}
+input:focus, textarea:focus{
+	outline:none;
+}
