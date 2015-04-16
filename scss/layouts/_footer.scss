@@ -13,32 +13,34 @@ footer {
 		font-size: $font-size-s;
 		}
 	h3 {
-		margin-top: 0px;
+		text-transform: uppercase;
+		letter-spacing:.04em;
+		font-size: $font-size-xs;
+		color:darken($body-text, 25%);
+		font-family: $font-stack-bold;
+	}
+	ul {
+		padding: 0px;
+	}
+	li {
+		list-style: none;
 		font-size: $font-size-s;
+		line-height: 1.8em;
 	}
 }
 .footer-about {
-	@extend .col-md-3;
-	@extend .pull-right;
-	text-align:right;
-	border-left: 1px solid darken($body-text, 25%);
+	@extend .col-sm-4;
+		ul {
+		@extend .col-sm-6;
+	}
+	.footer-connect {
+		@extend .col-sm-12;
+	}
 }
 .footer-menu {
-	@extend .col-md-8;
+	@extend .col-sm-8;
 	ul {
-		@extend .col-md-4;
-		h3 {
-			text-transform: uppercase;
-			letter-spacing:.04em;
-			font-size: $font-size-xs;
-			color:darken($body-text, 25%);
-			font-family: $font-stack-bold;
-		}
-		li {
-			list-style: none;
-			font-size: $font-size-s;
-			line-height: 1.8em;
-		}
+		@extend .col-sm-4;
 	}
 }
 .social-icons {
@@ -47,4 +49,32 @@ footer {
 		margin-right: 5px;
 	}
 }
-
+div.sendgrid-subscription-widget label input {
+  background: transparent;
+  border-radius: 2px;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+  float: left;
+  padding: 3px 7px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+div.sendgrid-subscription-widget input {
+  border-radius: 2px;
+  padding: 3px 9px;
+  margin-top: 3px;
+  color: #515254;
+  border: 1px solid #aaa;
+  background: #aaa;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.sendgrid-subscription-widget label>span {
+	display: none !Important;
+}
+.subscribe {
+	margin-bottom: 25px;
+	p {
+		margin-bottom: 0px;
+	}
+}
