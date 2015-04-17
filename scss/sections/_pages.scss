@@ -155,7 +155,7 @@
 	padding-bottom: 40px;
 }
 .press-item {
-	.fa-arrow-right {
+	.fa {
 		font-size:12px;
 	}
 }
@@ -167,7 +167,7 @@
 .speaker-card {
 	@extend .col-md-4;
 	margin-bottom: 50px;
-		.fa-arrow-right {
+		.fa-external-link {
 		font-size:12px;
 	}
 }
@@ -188,11 +188,17 @@
 #brand {
 	section {
 		padding-bottom: 80px;
+		img {
+			border: 1px solid #e5e5e5;
+		}
 	}
-.btn {
-			text-align: left;
-			padding: 0;
-			color: $primary-blue;
-			min-width: 280px;
-	}
+}
+#brand section .btn {
+	text-align: left;
+	padding: 0;
+	color: $primary-blue;
+	min-width: 280px;
+}
+.red-dot {
+	@extend .col-md-12;
 }
