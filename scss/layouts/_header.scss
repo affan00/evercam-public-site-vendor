@@ -18,7 +18,7 @@ header {
 	margin-top:40px;
 	margin-bottom:25px;
 }
-.manufacturers {
+.manufacturers, #press, #brand {
 	.banner-content {
 		@extend .col-md-8;		
 	}
@@ -26,6 +26,12 @@ header {
 #public-cameras, #values {
 	.banner-content {
 		@extend .col-md-12;		
+	}
+}
+#values, #press {
+	h1 {
+		font-size: 38px;
+		margin-bottom: -5px;
 	}
 }
 .banner-image {
