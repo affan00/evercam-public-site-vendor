@@ -17,14 +17,14 @@
       <div class="banner">
         <div class="banner-content">
           <h1>Press</h1>
-          <h2>Welcome to the Evercam press page. <br>Here you can download a press kit &amp; view our latest press releases.</h2>
-          <h2>For press enquiries, speaking requests, or if your working on a story <br>please contact press@evercam.io.</h2>
-          <h2></h2>
+          <h2>Our latest press releases and speaker events.</h2>
+          <h2>For press enquiries, speaking requests, or if your working on a story please contact marco@evercam.io.</h2>
+          <h2>You can download Evercam brand assets from <a href="/brand">evercam.io/brand</a></h2>
         </div>
       </div>
     </header>
     <div class="alt-color">
-      <main>
+      
       <section>
         <h3>In the Press</h3>
         <div class="in-the-press">          
@@ -32,7 +32,7 @@
             <div class="press-item">
               <h2>
                 <a href="http://startupireland.ie/easy-way-integrate-camera-platform/" target="_blank">
-                The Easy Way to Integrate a Camera into <br>any Platform <i class="fa fa-arrow-right"></i>
+                The Easy Way to Integrate a Camera into <br>any Platform <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -42,7 +42,7 @@
             <div class="press-item">
               <h2>
                 <a href="http://www.hybridtp.ie/herbst-insight-erp-system-integrates-cameras-using-evercam/" target="_blank">
-                Herbst Insight ERP System Integrates Cameras Using Evercam <i class="fa fa-arrow-right"></i>
+                Herbst Insight ERP System Integrates Cameras Using Evercam <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -52,7 +52,7 @@
             <div class="press-item">
               <h2>
                 <a href="http://www.programmableweb.com/news/today-apis-evercams-api-brings-new-control-over-surveillance-cameras-and-data/brief/2014/08/04" target="_blank">
-                Today in APIs: Evercam's API Brings New Control Over <br>Surveillance Cameras and Data <i class="fa fa-arrow-right"></i>
+                Today in APIs: Evercam's API Brings New Control Over <br>Surveillance Cameras and Data <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -62,7 +62,7 @@
             <div class="press-item">
               <h2>
                 <a href="http://www.independent.ie/business/small-business/latest-news/watch-out-as-evercam-eyes-the-us-30472415.html" target="_blank">
-                Watch out as Evercam eyes the US <i class="fa fa-arrow-right"></i>
+                Watch out as Evercam eyes the US <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -72,7 +72,7 @@
             <div class="press-item">
               <h2>
                 <a href="http://techcrunch.com/2014/05/05/evercam-makes-it-easy-to-integrate-cameras-into-any-project/" target="_blank">
-                Evercam Makes It Easy To Integrate Cameras Into Any Project <i class="fa fa-arrow-right"></i>
+                Evercam Makes It Easy To Integrate Cameras Into Any Project <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -82,7 +82,7 @@
             <div class="press-item">            
               <h2>
                 <a href="http://techcrunch.com/video/evercam-lets-you-put-cameras-to-work/518220489/" target="_blank">
-                Evercam Lets You Put Cameras to Work <i class="fa fa-arrow-right"></i>
+                Evercam Lets You Put Cameras to Work <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -92,7 +92,7 @@
             <div class="press-item">
               <h2>
                 <a href="http://apievangelist.com/2014/04/07/adding-evercamio-to-the-api-commons/" target="_blank">
-                Adding Evercam.io To The API Commons <i class="fa fa-arrow-right"></i>
+                Adding Evercam.io To The API Commons <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -102,7 +102,7 @@
             <div class="press-item">
               <h2>
                 <a href="http://www.verifyrecruitment.com/blog/index.php/evercam-kinesense-cloud-camera-action/" target="_blank">
-                Evercam &amp; Kinesense - Cloud, Camera Action! <i class="fa fa-arrow-right"></i>
+                Evercam &amp; Kinesense - Cloud, Camera Action! <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -113,7 +113,7 @@
             <div class="press-item">
               <h2>
                 <a href="http://apievangelist.com/2014/01/21/a-world-where-every-camera-is-connected-to-the-internet-via-apis/" target="_blank">
-                A World Where Every Camera Is Connected To The Internet Via APIs <i class="fa fa-arrow-right"></i>
+                A World Where Every Camera Is Connected To The Internet Via APIs <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -137,7 +137,7 @@
              <img src="../img/techcrunch.jpg">
               <h2>
                 <a href="http://techcrunch.com/2014/05/05/evercam-makes-it-easy-to-integrate-cameras-into-any-project/" target="_blank">
-                Evercam Makes It Easy To Integrate Cameras Into Any Project <i class="fa fa-arrow-right"></i>
+                Evercam Makes It Easy To Integrate Cameras Into Any Project <i class="fa fa-external-link"></i>
                 </a>
               </h2>
               <p class="dark-text">
@@ -158,7 +158,7 @@
             <img src="../img/elixir-conf.jpg">
             <h2>
               <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
-              Elixir Conf <i class="fa fa-arrow-right"></i>
+              Elixir Conf <i class="fa fa-external-link"></i>
               </a>
             </h2>
             <p class="dark-text">
@@ -169,38 +169,58 @@
           <h6>Past</h6>      
             <img src="../img/tech-insight.jpg">
             <h2>
-              <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
-              Tech Insight <i class="fa fa-arrow-right"></i>
+              <a href="http://www.slideshare.net/MarcoHerbst/techinsight-berlin-march-2015-cameras-in-smart-cities-by-evercam" target="_blank">
+              Cameras in Smart Cities <i class="fa fa-slideshare"></i>
               </a>
             </h2>
+            <p>
+              <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
+              Tech Insight <i class="fa fa-external-link"></i>
+              </a>
+            </p>
             <p class="dark-text">
               Berlin, March 2015
             </p>
           </div>
+          <!--<div class="speaker-card">
+          <h6>Past</h6>   
+            <img src="../img/apistrat.jpg">
+            <h2 class="dark-text">
+               <a href="http://www.slideshare.net/programmableweb/pivoting-your-business-from-product-to-platform" target="_blank">Pivoting Your Business From Product to Platform <i class="fa fa-slideshare"></i></a>
+            </h2>           
+            <p>
+             <a href="http://www.programmableweb.com/news/relive-apicon-uk-slides-and-videos/2014/10/06" target="_blank">APICon UK <i class="fa fa-external-link"></i></a>         
+
+            </p>
+            <p class="dark-text">
+              London, October 2014
+            </p>
+          </div>-->
+          
           <div class="speaker-card">
           <h6>Past</h6>   
             <img src="../img/apistrat.jpg">
             <h2>
-              <a href="http://amsterdam2014.apistrat.com/speakers.phpap" target="_blank">
-             API Strategy &amp; Practice <i class="fa fa-arrow-right"></i> <a href="https://www.youtube.com/watch?v=r5jUMu_p-eo"><i class="fa fa-youtube text-right pull-right"></i></a>
-              </a>
+              <a href="http://www.slideshare.net/MarcoHerbst/rules-for-success-when-developing-for-cameras" target="_blank">
+             Rules for success when developing for cameras <i class="fa fa-slideshare"></i> 
+             
             </h2>
+            <p>
+              <a href="http://amsterdam2014.apistrat.com/speakers.php" target="_blank">
+             API Strategy &amp; Practice <i class="fa fa-external-link"></i> 
+              </a>
+            </p>
             <p class="dark-text">
               Amsterdam, March 2014
             </p>
           </div>
-           <div class="press-item">            
-            <a class="btn btn-grey-outline" href="http://www.slideshare.net/MarcoHerbst/presentations" target="_blank">
-            View Presentations  <i class="fa fa-slideshare"></i>
-            </a>
-          </div>
-          
+           
 
 
          
         </div>
       </section>
-      </main>
+    
     
     <div class="press-kit">
       <a class="btn btn-grey-outline" href="/brand"><span>Browse our Brand Assets <i class="fa fa-arrow-right"></i></span></a>

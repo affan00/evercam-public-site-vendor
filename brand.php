@@ -21,78 +21,101 @@
         </div>
       </div>
     </header>
-    <div class="alt-color">
+      <div class="alt-color">
+      <section>      
       
-      <section>
-      <a class="pull-right btn text-right" href="../brand-assets/brand-assets.zip">Download All Assets <i class="fa fa-download"></i></a>
+
         <h1>Evercam Logos</h1>
-        <a class="btn" href="../brand-assets/evercam_logo.eps.zip">EPS Evercam Logo  <i class="fa fa-download"></i></a>
-        <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed.eps.zip">EPS Evercam Logo with Slogan  <i class="fa fa-download"></i></a>
+        <a class="btn" href="../brand-assets/brand-assets" download>Download All Assets <i class="fa fa-download"></i></a>
+        <a class="btn" href="../brand-assets/evercam_logo.eps" download>EPS Evercam Logo  <i class="fa fa-download"></i></a>
+        <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed.eps" download>EPS Evercam Logo with Slogan  <i class="fa fa-download"></i></a>
         <div class="logos">
           <div class="logo-card">
             <a class="btn" href="../brand-assets/evercam_logo-500x113.png"><img alt="evercam.io" src="/brand-assets/evercam_logo-500x113.png" style="width:500px;"></a>
-            <a class="btn" href="../brand-assets/evercam_logo-500x113.png.zip">PNG 500x113px <i class="fa fa-download"></i></a>
+            <a class="btn" href="../brand-assets/evercam_logo-500x113.png" download>PNG 500x113px <i class="fa fa-download"></i></a>
           </div>
           <div class="logo-card">
             <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-500x113.png"><img alt="evercam.io" src="/brand-assets/evercam_logo_cameras_unleashed-500x113.png" style="width:500px;"></a>
-            <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-500x113.png.zip">Download 500x113px <i class="fa fa-download"></i></a> 
+            <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-500x113.png" download>PNG 500x113px <i class="fa fa-download"></i></a> 
           </div>
         </div>
         <div class="logos">
            <div class="logo-card">
             <a class="btn" href="../brand-assets/evercam_logo-300x68.png"><img alt="evercam.io" src="/brand-assets/evercam_logo-300x68.png" style="width:300px;"></a>
-            <a class="btn" href="../brand-assets/evercam_logo-300x68.png.zip">PNG 300x68px <i class="fa fa-download"></i></a> 
+            <a class="btn" href="../brand-assets/evercam_logo-300x68.png" download>PNG 300x68px <i class="fa fa-download"></i></a> 
           </div>
           <div class="logo-card">
             <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-300x68.png"><img alt="evercam.io" src="/brand-assets/evercam_logo_cameras_unleashed-300x68.png" style="width:300px;"></a>
-            <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-300x68.png.zip">PNG 300x68px <i class="fa fa-download"></i></a> 
+            <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-300x68.png" download>PNG 300x68px <i class="fa fa-download"></i></a> 
           </div>
         </div>
         <div class="logos">
           <div class="logo-card">
             <a class="btn" href="../brand-assets/evercam_logo-150x34.png"><img alt="evercam.io" src="/brand-assets/evercam_logo-150x34.png" style="width:150px;"></a>
-            <a class="btn" href="../brand-assets/evercam_logo-150x34.png.zip">PNG 150x34px <i class="fa fa-download"></i></a> 
+            <a class="btn" href="../brand-assets/evercam_logo-150x34.png" download>PNG 150x34px <i class="fa fa-download"></i></a> 
           </div>
            <div class="logo-card">
             <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-150x34.png"><img alt="evercam.io" src="/brand-assets/evercam_logo_cameras_unleashed-150x34.png" style="width:150px;"></a>
-            <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-150x34.png.zip">PNG 150x34px <i class="fa fa-download"></i></a> 
+            <a class="btn" href="../brand-assets/evercam_logo_cameras_unleashed-150x34.png" download>PNG 150x34px <i class="fa fa-download"></i></a> 
           </div>
         </div>
+      </div>
       </section>
       </div>
+
       <section>
+        <div class="red-dot">
+        
         <h1>Evercam Red Dot</h1>
-        <a class="btn" href="../brand-assets/evercam_logo.eps.zip">Evercam Red Dot EPS <i class="fa fa-download"></i></a>
-        <div class="logos">
-          <div class="logo-card">
-            <a class="btn" href="../brand-assets/evercam_red_dot-64x64.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-64x64.png" style="width:64px;"></a>
-            <a class="btn" href="../brand-assets/evercam_red_dot-64x64.png.zip">PNG 64x64px <i class="fa fa-download"></i></a>
-          </div>
-
-        </div>
-        <div class="logos">
-           <div class="logo-card">
-            <a class="btn" href="../brand-assets/evercam_red_dot-128x128.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-128x128.png" style="width:128px;"></a>
-            <a class="btn" href="../brand-assets/evercam_red_dot-128x128.png.zip">PNG 128x128px <i class="fa fa-download"></i></a> 
-          </div>
-
-        </div>
-        <div class="logos">
-          <div class="logo-card">
-            <a class="btn" href="../brand-assets/evercam_red_dot-300x300.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-300x300.png" style="width:300px;"></a>
-            <a class="btn" href="../brand-assets/evercam_red_dot-300x300.png.zip">PNG 300x300px <i class="fa fa-download"></i></a> 
-          </div>
-
-        </div>
-        <div class="logos">
-          <div class="logo-card">
-            <a class="btn" href="../brand-assets/evercam_red_dot-300x300.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-300x300.png" style="width:500px;"></a>
-            <a class="btn" href="../brand-assets/evercam_red_dot-300x300.png.zip">PNG 500x500px <i class="fa fa-download"></i></a> 
-          </div>
-        </div>
+        <a class="btn" href="../brand-assets/evercam_logo.eps" download>Evercam Red Dot EPS <i class="fa fa-download"></i></a>
         
+        <div class="row">
+          
+          
+
+              <div class="logo-card">
+                <a class="btn" href="../brand-assets/evercam_red_dot-300x300.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-300x300.png" style="width:500px;"></a>
+                <a class="btn" href="../brand-assets/evercam_red_dot-300x300.png" download>PNG 500x500px <i class="fa fa-download"></i></a> 
+              </div>
+            
+            
+            <div class="logo-card">
+             
+              <div class="col-md-12">
+                      
+                <div class="logo-card">
+                  <a class="btn" href="../brand-assets/evercam_red_dot-300x300.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-300x300.png" style="width:300px;"></a>
+                  <a class="btn" href="../brand-assets/evercam_red_dot-300x300.png" download>PNG 300x300px <i class="fa fa-download"></i></a> 
+                </div>
+
+              </div>
+
+              <div class="col-md-4">
+                 <div class="logo-card">
+                  <a class="btn" href="../brand-assets/evercam_red_dot-128x128.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-128x128.png" style="width:128px;"></a>
+                  <a class="btn" href="../brand-assets/evercam_red_dot-128x128.png" download>PNG 128x128px <i class="fa fa-download"></i></a> 
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="logo-card">
+                  <a class="btn" href="../brand-assets/evercam_red_dot-64x64.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-64x64.png" style="width:64px;"></a>
+                  <a class="btn" href="../brand-assets/evercam_red_dot-64x64.png" download>PNG 64x64px <i class="fa fa-download"></i></a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
         
+      
+      
       </section>
+
+
+
+
       
     
     <? include 'footer.php'; ?>
