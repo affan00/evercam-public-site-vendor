@@ -87,6 +87,7 @@
 		}
 	}
 }
+/*team*/
 #team {
 	h1 {
 		font-size: 38px;
@@ -99,6 +100,7 @@
 .team .fa {
 	font-size: 16px;
 }
+/*contact*/
 #contact {
 	p {
 		font-size:$font-size-l; 
@@ -119,5 +121,34 @@
 	@extend .col-md-6;
 	float: left;
 	min-width: 300px;
+	margin-bottom: 50px;
+}
+/*press*/
+#press {
+	section h3 {
+		margin-bottom: 45px;	
+	}
+}
+.press-kit {
+	padding: 55px 0px 40px;
+	background-color: #ffffff;
+}
+.press-kit {
+	.btn {
+		min-width: 224px;
+		margin-bottom: 15px;
+		margin:0 auto;
+	}
+	p {
+		padding-top: 25px;
+		text-align: center;
+		font-size:$font-size-r;
+	}
+}
+.in-the-press {
+@extend .row;
+}
+.press-card {
+	@extend .col-md-3;
 	margin-bottom: 50px;
 }

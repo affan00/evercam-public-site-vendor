@@ -8,9 +8,9 @@
           <!--<li><a href="#">About</a></li>-->
           <li><a href="/team">Team</a></li>
           <li><a href="/values">Values</a></li>
-          <!--<li><a href="#">Jobs</a></li>-->
+          <li><a href="/press">Press</a></li>          
           <li><a href="/terms">Terms</a></li>
-          <li><a href="/contact">Contact</a></li>          
+          <li><a href="/contact">Contact</a></li>  
         </ul>
         <ul>
           <h3>Developer</h3>
