@@ -28,111 +28,122 @@
       <section>
         <h3>In the Press</h3>
         <div class="in-the-press">          
-          <div class="press-card">
-            <img src="../img/carrolls-twittercam.jpg">
-            <h2>
-              <a href="http://motherboard.vice.com/read/cctv-selfies-a-portrait-of-surveillance-around-dublin" target="_blank">
-              CCTV Selfies: I Turned City Surveillance into My Personal Photographer</a>
-            </h2>
-            <p class="dark-text">
-              Vice Magazine, April 2015
-            </p>
+          <div class="list"> 
+            <div class="press-item">
+              <h2>
+                <a href="http://startupireland.ie/easy-way-integrate-camera-platform/" target="_blank">
+                The Easy Way to Integrate a Camera into <br>any Platform <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               Startup Ireland, February 2015
+              </p>
+            </div>
+            <div class="press-item">
+              <h2>
+                <a href="http://www.hybridtp.ie/herbst-insight-erp-system-integrates-cameras-using-evercam/" target="_blank">
+                Herbst Insight ERP System Integrates Cameras Using Evercam <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               Hybrid Technology Partners, December 2014
+              </p>
+            </div>
+            <div class="press-item">
+              <h2>
+                <a href="http://www.programmableweb.com/news/today-apis-evercams-api-brings-new-control-over-surveillance-cameras-and-data/brief/2014/08/04" target="_blank">
+                Today in APIs: Evercam's API Brings New Control Over <br>Surveillance Cameras and Data <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               Programmable Web, August 2014
+              </p>
+            </div>
+            <div class="press-item">
+              <h2>
+                <a href="http://www.independent.ie/business/small-business/latest-news/watch-out-as-evercam-eyes-the-us-30472415.html" target="_blank">
+                Watch out as Evercam eyes the US <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+                Irish Independent, July 2014
+              </p>
+            </div>
+            <div class="press-item">
+              <h2>
+                <a href="http://techcrunch.com/2014/05/05/evercam-makes-it-easy-to-integrate-cameras-into-any-project/" target="_blank">
+                Evercam Makes It Easy To Integrate Cameras Into Any Project <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+                TechCrunch, May 2014
+              </p>
+            </div>
+            <div class="press-item">            
+              <h2>
+                <a href="http://techcrunch.com/video/evercam-lets-you-put-cameras-to-work/518220489/" target="_blank">
+                Evercam Lets You Put Cameras to Work <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+                TechCrunch, May 2014
+              </p>
+            </div>
+            <div class="press-item">
+              <h2>
+                <a href="http://apievangelist.com/2014/04/07/adding-evercamio-to-the-api-commons/" target="_blank">
+                Adding Evercam.io To The API Commons <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               API Evangelist, April 2014
+              </p>
+            </div>
+            <div class="press-item">
+              <h2>
+                <a href="http://www.verifyrecruitment.com/blog/index.php/evercam-kinesense-cloud-camera-action/" target="_blank">
+                Evercam &amp; Kinesense - Cloud, Camera Action! <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               Verify Recruitment, April 2014
+              </p>
+            </div>
+            
+            <div class="press-item">
+              <h2>
+                <a href="http://apievangelist.com/2014/01/21/a-world-where-every-camera-is-connected-to-the-internet-via-apis/" target="_blank">
+                A World Where Every Camera Is Connected To The Internet Via APIs <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               API Evangelist, January 2014
+              </p>
+            </div>
           </div>
-          <div class="press-card">
-            <img src="../img/indo.jpg">
-            <h2>
-              <a href="http://www.independent.ie/business/small-business/latest-news/watch-out-as-evercam-eyes-the-us-30472415.html" target="_blank">
-              Watch out as Evercam eyes the US
-              </a>
-            </h2>
-            <p class="dark-text">
-              Irish Independent, July 2014
-            </p>
-          </div>
-          <div class="press-card">
-            <img src="../img/techcrunch.jpg">
-            <h2>
-              <a href="http://techcrunch.com/2014/05/05/evercam-makes-it-easy-to-integrate-cameras-into-any-project/" target="_blank">
-              Evercam Makes It Easy To Integrate Cameras Into Any Project
-              </a>
-            </h2>
-            <p class="dark-text">
-              TechCrunch, May 2014
-            </p>
-          </div>
-          <div class="press-card">
-            <img src="../img/techcrunch2.jpg">
-            <h2>
-              <a href="http://techcrunch.com/video/evercam-lets-you-put-cameras-to-work/518220489/" target="_blank">
-              Evercam Lets You Put Cameras to Work
-              </a>
-            </h2>
-            <p class="dark-text">
-              TechCrunch, May 2014
-            </p>
-          </div>
-
-
-          <div class="press-item">
-            <h2>
-              <a href="http://startupireland.ie/easy-way-integrate-camera-platform/" target="_blank">
-              The easy way to integrate a camera into any platform
-              </a>
-            </h2>
-            <p class="dark-text">
-             Startup Ireland, February 2015
-            </p>
-          </div>
-          <div class="press-item">
-            <h2>
-              <a href="http://www.hybridtp.ie/herbst-insight-erp-system-integrates-cameras-using-evercam/" target="_blank">
-              Herbst Insight ERP System Integrates Cameras Using Evercam
-              </a>
-            </h2>
-            <p class="dark-text">
-             Hybrid Technology Partners, December 2014
-            </p>
-          </div>
-          <div class="press-item">
-            <h2>
-              <a href="http://www.programmableweb.com/news/today-apis-evercams-api-brings-new-control-over-surveillance-cameras-and-data/brief/2014/08/04" target="_blank">
-              Today in APIs: Evercam's API Brings New Control Over Surveillance Cameras and Data
-              </a>
-            </h2>
-            <p class="dark-text">
-             Programmable Web, August 2014
-            </p>
-          </div>
-          <div class="press-item">
-            <h2>
-              <a href="http://apievangelist.com/2014/04/07/adding-evercamio-to-the-api-commons/" target="_blank">
-              Adding Evercam.io To The API Commons
-              </a>
-            </h2>
-            <p class="dark-text">
-             API Evangelist, April 2014
-            </p>
-          </div>
-          <div class="press-item">
-            <h2>
-              <a href="http://www.verifyrecruitment.com/blog/index.php/evercam-kinesense-cloud-camera-action/" target="_blank">
-              Evercam &amp; Kinesense - Cloud, Camera Action!
-              </a>
-            </h2>
-            <p class="dark-text">
-             Verify Recruitment, April 2014
-            </p>
-          </div>
-          
-          <div class="press-item">
-            <h2>
-              <a href="http://apievangelist.com/2014/01/21/a-world-where-every-camera-is-connected-to-the-internet-via-apis/" target="_blank">
-              A World Where Every Camera Is Connected To The Internet Via APIs
-              </a>
-            </h2>
-            <p class="dark-text">
-             API Evangelist, January 2014
-            </p>
+          <div class="featured">
+            <div class="press-card">
+            <h6>Featured</h6>      
+              <img src="../img/carrolls-twittercam.jpg">
+              <h2>
+                <a href="http://motherboard.vice.com/read/cctv-selfies-a-portrait-of-surveillance-around-dublin" target="_blank">
+                CCTV Selfies: I Turned City Surveillance into My Personal Photographer </a>
+              </h2>
+              <p class="dark-text">
+                Vice Magazine, April 2015
+              </p>
+            </div>
+             <div class="press-card">
+             <img src="../img/techcrunch.jpg">
+              <h2>
+                <a href="http://techcrunch.com/2014/05/05/evercam-makes-it-easy-to-integrate-cameras-into-any-project/" target="_blank">
+                Evercam Makes It Easy To Integrate Cameras Into Any Project <i class="fa fa-arrow-right"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+                TechCrunch, May 2014
+              </p>
+            </div>
           </div>
 
         </div>
@@ -143,10 +154,23 @@
         <h3>Speaker Events</h3>
         <div class="in-the-press">          
           <div class="speaker-card">
+          <h6>Upcoming</h6>      
+            <img src="../img/elixir-conf.jpg">
+            <h2>
+              <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
+              Elixir Conf <i class="fa fa-arrow-right"></i>
+              </a>
+            </h2>
+            <p class="dark-text">
+              Krakow, April 2015
+            </p>
+          </div>
+          <div class="speaker-card">
+          <h6>Past</h6>      
             <img src="../img/tech-insight.jpg">
             <h2>
               <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
-              Cameras in Future Cities
+              Tech Insight <i class="fa fa-arrow-right"></i>
               </a>
             </h2>
             <p class="dark-text">
@@ -154,14 +178,15 @@
             </p>
           </div>
           <div class="speaker-card">
-            <img src="../img/tech-insight.jpg">
+          <h6>Past</h6>   
+            <img src="../img/apistrat.jpg">
             <h2>
-              <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
-              Cameras in Future Cities
+              <a href="http://amsterdam2014.apistrat.com/speakers.phpap" target="_blank">
+             API Strategy &amp; Practice <i class="fa fa-arrow-right"></i> <a href="https://www.youtube.com/watch?v=r5jUMu_p-eo"><i class="fa fa-youtube text-right pull-right"></i></a>
               </a>
             </h2>
             <p class="dark-text">
-              Berlin, March 2015
+              Amsterdam, March 2014
             </p>
           </div>
            <div class="press-item">            
@@ -178,7 +203,7 @@
       </main>
     
     <div class="press-kit">
-      <a class="btn btn-grey-outline" href=""><span>Browse our Brand Assets <i class="fa fa-arrow-right"></i></span></a>
+      <a class="btn btn-grey-outline" href="/brand"><span>Browse our Brand Assets <i class="fa fa-arrow-right"></i></span></a>
     </div>   
     <? include 'footer.php'; ?>
   </body>

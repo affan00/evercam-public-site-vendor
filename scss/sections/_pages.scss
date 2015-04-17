@@ -128,6 +128,9 @@
 	section h3 {
 		margin-bottom: 45px;	
 	}
+	h6 {
+		height: 42px;
+	}
 }
 .press-kit {
 	padding: 60px 0px;
@@ -149,11 +152,12 @@
 @extend .row;
 }
 .press-card {
-	@extend .col-md-3;
-	margin-bottom: 50px;
+	padding-bottom: 40px;
 }
 .press-item {
-	@extend .col-md-12;
+	.fa-arrow-right {
+		font-size:12px;
+	}
 }
 .press-item {
 	.btn {
@@ -163,8 +167,16 @@
 .speaker-card {
 	@extend .col-md-4;
 	margin-bottom: 50px;
+		.fa-arrow-right {
+		font-size:12px;
+	}
 }
-
+.featured {
+	@extend .col-md-4;
+}
+.list {
+	@extend .col-md-8;
+}
 /*brand guidelines*/
 .logos {
 	@extend .row;
