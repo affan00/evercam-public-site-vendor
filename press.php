@@ -71,15 +71,115 @@
               TechCrunch, May 2014
             </p>
           </div>
+
+
+          <div class="press-item">
+            <h2>
+              <a href="http://startupireland.ie/easy-way-integrate-camera-platform/" target="_blank">
+              The easy way to integrate a camera into any platform
+              </a>
+            </h2>
+            <p class="dark-text">
+             Startup Ireland, February 2015
+            </p>
+          </div>
+          <div class="press-item">
+            <h2>
+              <a href="http://www.hybridtp.ie/herbst-insight-erp-system-integrates-cameras-using-evercam/" target="_blank">
+              Herbst Insight ERP System Integrates Cameras Using Evercam
+              </a>
+            </h2>
+            <p class="dark-text">
+             Hybrid Technology Partners, December 2014
+            </p>
+          </div>
+          <div class="press-item">
+            <h2>
+              <a href="http://www.programmableweb.com/news/today-apis-evercams-api-brings-new-control-over-surveillance-cameras-and-data/brief/2014/08/04" target="_blank">
+              Today in APIs: Evercam's API Brings New Control Over Surveillance Cameras and Data
+              </a>
+            </h2>
+            <p class="dark-text">
+             Programmable Web, August 2014
+            </p>
+          </div>
+          <div class="press-item">
+            <h2>
+              <a href="http://apievangelist.com/2014/04/07/adding-evercamio-to-the-api-commons/" target="_blank">
+              Adding Evercam.io To The API Commons
+              </a>
+            </h2>
+            <p class="dark-text">
+             API Evangelist, April 2014
+            </p>
+          </div>
+          <div class="press-item">
+            <h2>
+              <a href="http://www.verifyrecruitment.com/blog/index.php/evercam-kinesense-cloud-camera-action/" target="_blank">
+              Evercam &amp; Kinesense - Cloud, Camera Action!
+              </a>
+            </h2>
+            <p class="dark-text">
+             Verify Recruitment, April 2014
+            </p>
+          </div>
+          
+          <div class="press-item">
+            <h2>
+              <a href="http://apievangelist.com/2014/01/21/a-world-where-every-camera-is-connected-to-the-internet-via-apis/" target="_blank">
+              A World Where Every Camera Is Connected To The Internet Via APIs
+              </a>
+            </h2>
+            <p class="dark-text">
+             API Evangelist, January 2014
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+      </div>
+      <section>
+        <h3>Speaker Events</h3>
+        <div class="in-the-press">          
+          <div class="speaker-card">
+            <img src="../img/tech-insight.jpg">
+            <h2>
+              <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
+              Cameras in Future Cities
+              </a>
+            </h2>
+            <p class="dark-text">
+              Berlin, March 2015
+            </p>
+          </div>
+          <div class="speaker-card">
+            <img src="../img/tech-insight.jpg">
+            <h2>
+              <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
+              Cameras in Future Cities
+              </a>
+            </h2>
+            <p class="dark-text">
+              Berlin, March 2015
+            </p>
+          </div>
+           <div class="press-item">            
+            <a class="btn btn-grey-outline" href="http://www.slideshare.net/MarcoHerbst/presentations" target="_blank">
+            View Presentations  <i class="fa fa-slideshare"></i>
+            </a>
+          </div>
+          
+
+
          
         </div>
       </section>
       </main>
-    </div>
-            <div class="press-kit">
-          <a class="btn btn-grey-outline" href=""><span>Download Press Kit <i class="fa fa-download"></i></span></a>
-          <p>The press kit is a neat little zip file with <br>high res versions of our logos &amp; icons. <br>It'll be ready tommorrow :)</p>
-        </div>   
+    
+    <div class="press-kit">
+      <a class="btn btn-grey-outline" href=""><span>Browse our Brand Assets <i class="fa fa-arrow-right"></i></span></a>
+    </div>   
     <? include 'footer.php'; ?>
   </body>
 </html>
