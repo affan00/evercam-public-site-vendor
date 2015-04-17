@@ -31,6 +31,11 @@ footer {
 		width: 18px;
 	}
 }
+@media only screen and (max-width: $screen-sm-min) {
+		footer li {
+			font-size: 16px;
+		}
+	}
 .footer-about {
 	@extend .col-sm-4;
 		ul {

@@ -7,7 +7,7 @@ main {
 }
 section {
 	@extend .container;
-	padding: $section-padding-60;
+	padding: 40px 15px;
 }
 
 .alt-color {
@@ -16,8 +16,8 @@ section {
 .title {
 	@extend .row;
 }
-.apps, .use-cases, .add-camera, .team, .contact, .developer-feature {
-	@extend .col-md-12;
+#contact {
+	@extend .row;
 }
 .use-card-inner {
 	@extend .col-md-3;

@@ -131,6 +131,9 @@
 	h6 {
 		height: 42px;
 	}
+	h2 {
+		margin-bottom: 2px;
+	}
 }
 .press-kit {
 	padding: 60px 0px;
@@ -170,6 +173,12 @@
 		.fa-external-link {
 		font-size:12px;
 	}
+	.fa-slideshare {
+		font-size:12px;
+	}
+	h2 {
+		margin-bottom: 8px !Important;
+	}
 }
 .featured {
 	@extend .col-md-4;
@@ -201,4 +210,16 @@
 }
 .red-dot {
 	@extend .col-md-12;
+}
+/*licence*/
+#licence section {
+	padding: 40px 15px 0px;
+}
+#licence section li {
+	font-size:16px;
+}
+#licence {
+	.alt-color{
+		padding-bottom: 80px;
+	}
 }

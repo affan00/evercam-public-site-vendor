@@ -23,7 +23,7 @@
     </header>
       <div class="alt-color">
       <section>      
-      <div class="col-md-12">
+      
 
         <h1>Evercam Logos</h1>
         <a class="btn" href="../brand-assets/brand-assets" download>Download All Assets <i class="fa fa-download"></i></a>
@@ -109,7 +109,7 @@
 
           </div>
         
-        </div>
+      
       
       </section>
 

@@ -24,7 +24,7 @@
       </div>
     </header>
     <div class="alt-color">
-      <main>
+      
       <section>
         <h3>In the Press</h3>
         <div class="in-the-press">          
@@ -169,38 +169,58 @@
           <h6>Past</h6>      
             <img src="../img/tech-insight.jpg">
             <h2>
+              <a href="http://www.slideshare.net/MarcoHerbst/techinsight-berlin-march-2015-cameras-in-smart-cities-by-evercam" target="_blank">
+              Cameras in Smart Cities <i class="fa fa-slideshare"></i>
+              </a>
+            </h2>
+            <p>
               <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
               Tech Insight <i class="fa fa-external-link"></i>
               </a>
-            </h2>
+            </p>
             <p class="dark-text">
               Berlin, March 2015
             </p>
           </div>
+          <!--<div class="speaker-card">
+          <h6>Past</h6>   
+            <img src="../img/apistrat.jpg">
+            <h2 class="dark-text">
+               <a href="http://www.slideshare.net/programmableweb/pivoting-your-business-from-product-to-platform" target="_blank">Pivoting Your Business From Product to Platform <i class="fa fa-slideshare"></i></a>
+            </h2>           
+            <p>
+             <a href="http://www.programmableweb.com/news/relive-apicon-uk-slides-and-videos/2014/10/06" target="_blank">APICon UK <i class="fa fa-external-link"></i></a>         
+
+            </p>
+            <p class="dark-text">
+              London, October 2014
+            </p>
+          </div>-->
+          
           <div class="speaker-card">
           <h6>Past</h6>   
             <img src="../img/apistrat.jpg">
             <h2>
-              <a href="http://amsterdam2014.apistrat.com/speakers.phpap" target="_blank">
-             API Strategy &amp; Practice <i class="fa fa-external-link"></i> <a href="https://www.youtube.com/watch?v=r5jUMu_p-eo"><i class="fa fa-youtube text-right pull-right"></i></a>
-              </a>
+              <a href="http://www.slideshare.net/MarcoHerbst/rules-for-success-when-developing-for-cameras" target="_blank">
+             Rules for success when developing for cameras <i class="fa fa-slideshare"></i> 
+             
             </h2>
+            <p>
+              <a href="http://amsterdam2014.apistrat.com/speakers.php" target="_blank">
+             API Strategy &amp; Practice <i class="fa fa-external-link"></i> 
+              </a>
+            </p>
             <p class="dark-text">
               Amsterdam, March 2014
             </p>
           </div>
-           <div class="press-item">            
-            <a class="btn btn-grey-outline" href="http://www.slideshare.net/MarcoHerbst/presentations" target="_blank">
-            View Presentations  <i class="fa fa-slideshare"></i>
-            </a>
-          </div>
-          
+           
 
 
          
         </div>
       </section>
-      </main>
+    
     
     <div class="press-kit">
       <a class="btn btn-grey-outline" href="/brand"><span>Browse our Brand Assets <i class="fa fa-arrow-right"></i></span></a>

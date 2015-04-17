@@ -2,7 +2,6 @@
   <div class="container">
     <div class="row">
       <div class="footer-menu">
-        <div class="row">
         <ul>
           <h3>Company</h3>
           <li><a href="/blog">Blog</a></li>
@@ -17,8 +16,9 @@
         <ul>
           <h3>Developer</h3>
           <li><a href="/develop">Develop</a></li>
-          <li><a href="https://dash.evercam.io/swagger" target="_blank">Documentation <span class="ti-arrow-top-right"></span></a></li>
+          <li><a href="https://dash.evercam.io/swagger" target="_blank">Documentation  <span class="fa fa-external-link"></span></a></li>
           <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
+          <li><a href="licence">Licence</a></li>
           <!--<li><a href="#">Pricing</a></li>-->
           <!--<li><a href="#">Help</a></li>-->     
           <h3>Manufacturer</h3>
@@ -31,7 +31,6 @@
           <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
         </ul>
         </div>
-      </div>
       <div class="footer-about">
         <div class="footer-connect">
           <h3>Connect</h3>            
@@ -56,9 +55,9 @@
           </ul>
         </div>
         </div>
+        </div>
       </div>
     </div>  
-  </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
 <script src="../js/bootstrap.min.js" async></script>
