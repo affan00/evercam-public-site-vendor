@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Evercam -  About the Evercam team.</title>
+<title>Evercam - Licences </title>
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <meta content=
-"Unleash the power of your camera. A developer platform for cameras with an app store for camera owners."
+"Evercam Licence Information"
 name="description">
 <meta content="evercam.io" name="author">
-<meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
-<meta name="description" content="About the Evercam team.">
+<meta name="keywords" content="evercam, licence, apache 2.0, AGPL, commerical">
+<meta name="description" content="Evercam Licences">
 <meta name="author" content="Evercam">
 <link href="css/main.css" rel="stylesheet">
 </head>
@@ -36,10 +36,10 @@ name="description">
     <h3>Wrappers &amp; Other Applications</h3>
     <ul>
       <li>
-        Licenced Under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>. Or read a nice <a href="https://tldrlegal.com/license/mit-license" target="_blank">Quick Summary</a>
+        Licenced Under <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>. Or read a nice <a href="https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)" target="_blank">Quick Summary</a>
       </li>
       <li>
-        Third parties have created drivers too; licenses will vary there.
+        Third parties have created wrappers too; licenses will vary there.
       </li>
     </ul>
   </section>
@@ -55,7 +55,7 @@ name="description">
   <section> 
     <h3>Commercial</h3>
     <p>
-      If the above isn’t enough to satisfy your organization’s vast legal department (some will not approve GPL in any form), please contact Evercam – commercial licenses are available including free evaluation licenses. We will try hard to make the situation work for everyone.
+      If the above isn’t enough to satisfy your organization’s legal department, please contact Evercam – commercial licenses are available including free evaluation licenses. We will try hard to make the situation work for everyone.
     </p>
   </section>
 
