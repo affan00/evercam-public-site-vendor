@@ -30,7 +30,7 @@
 #use-cases {
 	section {
 		@extend .container;
-		padding:15px 0px 60px;
+		padding:15px 15px 60px;
 		margin-bottom:40px;
 		border-bottom: 1px solid $off-white;
 	}
@@ -69,19 +69,4 @@
 	.use-case-feature {
 		@extend .col-md-6;
 	}
-}
-#manufacturers {
-	.use-case-feature {
-		@extend .col-md-8;
-	}
-	img.connect {
-		max-width: 300px;
-		margin:0px 0px 20px;
-	}
-	.circle {
-		padding-bottom: 10px;
-	}
-}
-.manufacturers section {
-		padding: 0px;
 }

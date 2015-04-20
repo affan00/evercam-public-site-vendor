@@ -18,7 +18,7 @@ header {
 	margin-top:40px;
 	margin-bottom:25px;
 }
-.manufacturers, #brand {
+#manufacturers, #brand {
 	.banner-content {
 		@extend .col-md-8;		
 	}
@@ -33,10 +33,9 @@ header {
 		@extend .col-md-12;		
 	}
 }
-#values, #press, #brand, #licence {
-	h1 {
-		font-size: 38px;
-		margin-bottom: -5px;
+#home, #app-store, #use-cases, #manufacturers  {
+	header h1 {
+		font-size: 68px;
 	}
 }
 .banner-image {

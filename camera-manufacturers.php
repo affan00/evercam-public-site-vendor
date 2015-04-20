@@ -11,7 +11,7 @@
   <!-- Bootstrap -->
   <link href="/css/main.css" rel="stylesheet">
 </head>
-<body id="use-case" class="manufacturers">
+<body id="manufacturers">
 <? include 'nav.php'; ?>
   <div class="alt-color">
     <header>
@@ -51,15 +51,13 @@
       <div class="card">
         <div class="card-inner">
           <i class="fa fa-list-ol fa-2x circle"></i>
-          
           <p>Be listed on the Evercam site as a preferred camera model</p>
           <i class="fa fa-external-link-square"></i>
         </div>
       </div>
-              <div class="card">
+        <div class="card">
         <div class="card-inner">
           <i class="fa fa-camera fa-2x circle"></i>
-          
           <p>Plug and play connectivity to the Evercam app store <a href="/apps"><strong>evercam.io/apps</strong></a></p>
           <i class="fa fa-external-link-square"></i>
         </div>

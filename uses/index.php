@@ -11,7 +11,7 @@
     <title>Evercam.io</title>
     <link href="/css/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="use-cases">
     <? include '../nav.php'; ?> 
     <div class="alt-color">
       <header>
@@ -22,8 +22,7 @@
         </div>
       </header>
     </div>
-    <div id="use-cases">
-      <section>
+    <section>
       <div class="use-cases">        
         <div class="title">       
           <div class="text-content">          
@@ -96,7 +95,7 @@
         </div>
       </div>
       </section>
-    </div>
+    
     <? include '../footer.php'; ?>
   </body>
 </html>

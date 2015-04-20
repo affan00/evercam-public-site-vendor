@@ -24,7 +24,6 @@ name="description">
   </div>
 </header>
 <div class="alt-color">
-
   <section> 
     <h3>Evercam Server &amp; Clients</h3>
     <ul>
@@ -51,24 +50,18 @@ name="description">
       </li>
     </ul>
   </section>
-
   <section> 
     <h3>Commercial</h3>
     <p>
       If the above isn’t enough to satisfy your organization’s legal department, please contact Evercam – commercial licenses are available including free evaluation licenses. We will try hard to make the situation work for everyone.
     </p>
   </section>
-
   <section> 
     <h3>Evercam Trademark Guidelines</h3>
     <p>
      Evercam and the Evercam logo are registered trademarks of Camba.tv Ltd. Your use of these trademarks is subject to the Evercam Trademark Standards for Use. For trademark use approval, or any questions you have about using these trademarks, please email marco@evercam.io.
     </p>
   </section>
-
-
-
-
 </div>
 
 <? include 'footer.php'; ?>
