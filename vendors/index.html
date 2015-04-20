@@ -43,22 +43,14 @@
       <header>
         <div class="banner">
           <a id="back" href="javascript:history.go(-1)" style="display:none"><< Back</a>
-          <h1><img id="image" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;"><span id="heading"></span></h1>
+          <h1><img id="logo" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;"><span id="heading"></span></h1>
           <h2><span id="sub-heading" style='word-wrap: break-word;'></span></h2>
         </div>
       </header>
     </div>
-    <div id="public-models">
+    <div id="public-vendors">
       <section>
-        <div id="modelDetails" style="display:none">
-          <h2>Jpg Url: <span id="jpgUrl" style="color:black;"></span></h2>
-          <h2>MJpeg Url: <span id="mjpgUrl" style="color:black;"></span></h2>
-          <h2>H264 Url: <span id="h264Url" style="color:black;"></span></h2>
-          <h2>Default Username: <span id="username" style="color:black;"></span></h2>
-          <h2>Default Password: <span id="password" style="color:black;"></span></h2>
-        </div>
-        <div id="loading" style="display:none">Loading...</div>
-        <div id="modelList" style="display:none">
+        <div id="vendorDetails" style="display:none">
           <table id="modelsTable" class="display table table-bordered" cellspacing="0" width="100%" style="display:none">
             <thead>
               <tr>
@@ -72,9 +64,21 @@
             </thead>
           </table>
         </div>
+        <div id="loading" style="display:none">Loading...</div>
+        <div id="vendorList" style="display:none">
+          <table id="vendorsTable" class="display table table-bordered" cellspacing="0" width="100%" style="display:none">
+            <thead>
+              <tr>
+                <th>Vendor</th>
+                <th>Name</th>
+                <th>MAC</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
       </section>
     </div>
-   <footer>      
+<footer>      
   <div class="container">
     <div class="row">
       <div class="footer-menu">
@@ -142,6 +146,6 @@
     <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/custom.js"></script>
-    <script src="../js/models.js"></script>
+    <script src="../js/vendors.js"></script>
   </body>
 </html>

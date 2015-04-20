@@ -18,17 +18,19 @@
           <li><a href="/develop">Develop</a></li>
           <li><a href="https://dash.evercam.io/swagger" target="_blank">Documentation  <span class="fa fa-external-link"></span></a></li>
           <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
-          <li><a href="licence">Licence</a></li>
+          <li><a href="/licence">Licence</a></li>
+          <li><a href="/vendors">Vendors</a></li>
+          <li><a href="/models">Models</a></li>
           <!--<li><a href="#">Pricing</a></li>-->
           <!--<li><a href="#">Help</a></li>-->     
-          <h3>Manufacturer</h3>
-          <li><a href="/camera-manufacturers">Why OEM Evercam? </a></li>
         </ul>
         <ul>
           <h3>Camera Owner</h3>
           <li><a href="/apps">App Store</a></li>
           <li><a href="/uses">Use Cases</a></li>
           <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
+          <h3>Manufacturer</h3>
+          <li><a href="/camera-manufacturers">Why OEM Evercam? </a></li>
         </ul>
         </div>
       <div class="footer-about">
