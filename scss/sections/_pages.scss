@@ -244,6 +244,20 @@
 .red-dot {
 	@extend .col-md-12;
 }
+/*open-source*/
+#open-source {
+	p, ul {
+		font-size:$font-size-l;
+		margin-bottom: 25px;
+		color: #888888;
+	}
+	img {
+		max-width: 100% !Important;
+	}
+	small {
+		font-size:65%;
+	}
+}
 /*licence*/
 #licence section {
 	padding: 40px 15px 0px;
