@@ -12,3 +12,17 @@ input, textarea {
 input:focus, textarea:focus{
 	outline:none;
 }
+table {
+	font-size: $font-size-l;
+	margin-bottom: 40px !important;
+	color: #888888;
+}
+th {
+color: $abbey;
+	font-weight: normal;
+	font-family:$font-stack-semibold;
+	border-top:none !important;
+}
+.table>tbody>tr>td {
+	border-top:none;
+}

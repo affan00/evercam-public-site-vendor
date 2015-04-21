@@ -37,7 +37,7 @@
         <div class="footer-connect">
           <h3>Connect</h3>            
           <div class="subscribe">
-            <p>Subscribe to our newsletter</p>
+            <li>Subscribe to our newsletter</li>
             <div class="sendgrid-subscription-widget" data-token="aC%2F8dfsfHE91irEczhV9ClBlsxsJ3bsi1DJ6HDCJdSYKMN5NOTtQKu6TO7MpLFG8">              
             </div>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://s3.amazonaws.com/subscription-cdn/0.2/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "sendgrid-subscription-widget-js");</script>
