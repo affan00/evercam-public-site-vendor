@@ -15,8 +15,6 @@
         <ul>
           <li><a href="/apps">Apps</a></li>
           <li><a href="/uses/">Use Cases</a></li>
-          <li><a href="/vendors">Vendors</a></li>
-          <li><a href="/models">Models</a></li>
           <li><a class="btn btn-grey-outline sign-in" href="http://dash.evercam.io">Sign In</a></li>
         </ul>
       </div>
