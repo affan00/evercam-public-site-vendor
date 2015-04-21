@@ -11,6 +11,10 @@
     <title>Evercam.io</title>
     <link href="/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+    <script src="https://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+    <script src="/js/bootstrap.min.js" async></script>
+    <script src="/js/custom.min.js" async></script>
   </head>
   <body>
     <?php include 'nav.php'; ?>
@@ -19,7 +23,7 @@
         <div class="banner">
           <a id="back" href="javascript:history.go(-1)" style="display:none"><< Back</a>
           <h1><img id="image" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;"><span id="heading"></span></h1>
-          <h2><span id="sub-heading" style='word-wrap: break-word;'></span></h2>
+          <h2><span id="sub-heading" style='word-wrap: break-word; '></span></h2>
         </div>
       </header>
     </div>
@@ -51,7 +55,6 @@
     </div>
     <?php include 'footer.php'; ?>
     
-    <script src="https://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js" async></script>
     <script src="/js/models.js"></script>
     <script>
       $(document).ready(function() {
