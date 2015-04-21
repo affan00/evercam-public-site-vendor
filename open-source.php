@@ -55,7 +55,6 @@ name="description">
   <section> 
     <h3>What's What</h3>
     <img src="img/whats-what.png" class="image">
-    
     <table class="table table-responsive">
     <tr>
     <th class="col-md-3">
@@ -64,20 +63,17 @@ name="description">
     </tr>
     <tr>
       <td>
-      evercam-devops
+      <a href="https://github.com/evercam/evercam-devops" target="_blank"><i class="fa fa-github"></i> evercam-devops</a>
       </td>
       <td class="col-md-4">
-
       Developer Environment / Setup Script
-
       </td>
       <td>
-
       </td>
     </tr>
     <tr>
       <td>
-      evercam-proxy
+      <a href="https://github.com/evercam/evercam-proxy" target="_blank"><i class="fa fa-github"></i> evercam-proxy</a>
       </td>
       <td>
     The Proxy (talks to the camera)
@@ -88,7 +84,7 @@ name="description">
     </tr>
     <tr>
       <td>
-      evercam-api
+      <a href="https://github.com/evercam/evercam-api" target="_blank"><i class="fa fa-github"></i> evercam-api</a>
       </td>
       <td>
     The API (between clients & proxy)
@@ -98,17 +94,16 @@ name="description">
       </td>
     </tr>
     </table>
-
     <table class="table table-responsive">
       <th class="col-md-3">
       The Clients
       </th>
       <tr>
         <td>
-        evercam-dash
+        <a href="https://github.com/evercam/evercam-dashboard" target="_blank"><i class="fa fa-github"></i> evercam-dash</a>
         </td>
         <td class="col-md-4">
-        HTML5 Dashboard
+          HTML5 Dashboard
         </td>
         <td>
         Ruby on Rails
@@ -116,7 +111,7 @@ name="description">
       </tr>
       <tr>
         <td>
-        evercam-play-android
+        <a href="https://github.com/evercam/evercam-play-android" target="_blank"><i class="fa fa-github"></i> evercam-play-android</a>
         </td>
         <td>
       Android App
@@ -127,7 +122,7 @@ name="description">
       </tr>
       <tr>
         <td>
-      evercam-play-iOS
+          <a href="https://github.com/evercam/evercam-play-ios" target="_blank"><i class="fa fa-github"></i> evercam-play-iOS</a>
         </td>
         <td>
       iOS App
@@ -138,12 +133,21 @@ name="description">
       </tr>
     </table>
     <table class="table table-responsive">
-      <th class="col-md-2">
-      The Wrappers
+      <th>
+      Wrappers
       </th>
+        
       <tr>
-        <td>
-        Ruby   Javascript    Python    Java   .NET
+        <td class="col-md-1 wrappers">
+          <a href="https://github.com/evercam/evercam-ruby" target="_blank"><i class="fa fa-github"></i> Ruby   </a>
+        
+          <a href="https://github.com/evercam/evercam.js" target="_blank"><i class="fa fa-github"></i> Javascript</a>
+            
+          <a href="https://github.com/evercam/evercam.py" target="_blank"><i class="fa fa-github"></i> Python    </a>
+        
+          <a href="https://github.com/evercam/evercam.java" target="_blank"><i class="fa fa-github"></i> Java</a>   
+        
+          <a href="https://github.com/evercam/evercam.net" target="_blank"><i class="fa fa-github"></i> .NET</a>
         </td>
       </tr>
     </table>
