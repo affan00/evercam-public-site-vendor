@@ -10,29 +10,71 @@
     <meta name="author" content="Evercam">
     <!-- Bootstrap -->
     <link href="/css/main.css" rel="stylesheet">
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
   </head>
   <body>
-    <? include '../nav.php'; ?>
-    <div class="alt-color">
-      <header>
-        <div class="banner">
-          <div class="banner-content">
-            <h1>Public Cameras</h1>
-            <h2>A list of cameras connected to Evercam and shared publically</h2>
-          </div>
+    
+  <div id="wrapper">
+    
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <div class="sidebar-nav">
+        <div class="search-container">
+          <input id="pac-input" class="controls" type="text" placeholder="Search the map for Cameras">
+          <small><a href="#">Show me cameras near my location</a></small>
         </div>
-      </header>
-    </div>
-    <div id="public-cameras">
-    <div class="sidebar">
-      
-    </div>
-      <div id="public-map">
-        
+        <div class="cameras-wrapper">
+          <div class="cameras-count">
+            <span><small># of Cameras Showing</small></span>
+          </div>
+          <div class="camera-container">
+            <img class="camera-snapshot" src="../img/stephens-green-cam.jpg">
+            <div class="camera-name">Camera Name</div>
+          </div>
+          <div class="camera-container">
+            <img class="camera-snapshot" src="../img/stephens-green-cam.jpg">
+            <div class="camera-name">Camera Name</div>
+          </div>
+          <div class="camera-container">
+            <img class="camera-snapshot" src="../img/stephens-green-cam.jpg">
+            <div class="camera-name">Camera Name</div>
+          </div>
+          <div class="camera-container">
+            <img class="camera-snapshot" src="../img/stephens-green-cam.jpg">
+            <div class="camera-name">Camera Name</div>
+          </div>
+          <div class="camera-container">
+            <img class="camera-snapshot" src="../img/stephens-green-cam.jpg">
+            <div class="camera-name">Camera Name</div>
+          </div>
+          <div class="camera-container">
+            <img class="camera-snapshot" src="../img/stephens-green-cam.jpg">
+            <div class="camera-name">Camera Name</div>
+          </div>
+          <div class="camera-container">
+            <img class="camera-snapshot" src="../img/stephens-green-cam.jpg">
+            <div class="camera-name">Camera Name</div>
+          </div>    
+        </div>                           
       </div>
     </div>
-    <? include '../footer.php'; ?>
-    <script src="../js/public-google-maps.js"></script>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+              <div id="public-map"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+  <script src="../js/bootstrap.min.js" async></script>
+  <script src="../js/public-google-maps.js"></script>
   </body>
 </html>
