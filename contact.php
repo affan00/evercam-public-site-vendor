@@ -40,6 +40,6 @@
   </div>
   </section>
  <? include 'footer.php'; ?>
- <script src="../js/google-maps.js"></script>
+ <script src="../js/contact-google-map.js"></script>
 </body>
 </html>
