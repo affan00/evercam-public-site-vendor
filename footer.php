@@ -17,10 +17,10 @@
           <h3>Developer</h3>
           <li><a href="/develop">Develop</a></li>
           <li><a href="https://dash.evercam.io/swagger" target="_blank">Documentation  <span class="fa fa-external-link"></span></a></li>
-          <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
-          <li><a href="/licence">Licence</a></li>
+          <li><a href="/open-source">Open Source</a></li>
           <li><a href="/vendors">Camera Vendors</a></li>
           <li><a href="/models">Camera Models</a></li>
+          <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
           <!--<li><a href="#">Pricing</a></li>-->
           <!--<li><a href="#">Help</a></li>-->     
         </ul>
