@@ -22,14 +22,13 @@
             <h2>Integration with SAP MII Self-Service Composite Environment</h2>
           </div>
           <div class="weighbridge-image">
-            <img class="bottom" src="/img/weighbridge-herbst-insight-invoice.jpg">
+            <img src="/img/sap-integration.jpg">
           </div>
         </div>
       </header>
     </div>
     <section id="weighbridge">
       <div class="use-case-features">
-      
         <div class="use-case-feature">
           <p>
             The latest release of SAP MII (officially  launching in January 2015) contains, amongst many other things, the ability to add 3rd party software extensions.
@@ -41,31 +40,23 @@
             The motto of MII is to give the business owner visibility into his factory floor and what better way to do this than to actually be able to see key events as they happen.
           </p>
           <p>
-            By integrating cameras, live views are made available from any Evercam connected Camera.
+            By integrating cameras, live views are made available from any Evercam connected Camera. 
           </p>
+        </div>
+        <div class="use-case-feature">
           <p>
             Full details are being made available on the SAP SDN.
           </p>
-          
-        </div>
-        <div class="use-case-feature">
           <p>
             Many thanks to Henry Costa from Neoris and Rajeev Kansal from SAP for their help and support … and best wishes for the SP03 release.
           </p>
         </div>
-        
       </div>
-    </section>
-
-    <section>
-    <div class="text-center use-case-callout">
-      <h3>
-        Get in touch
-      </h3>
-      <p>
-        Call Vinnie on +353 87 987 1869<br/> or drop us an email sales@evercam.io
-      </p>
-    </div>
+      <div class="use-case-callout">
+        <h2>
+          For more information contact marco@evercam.io
+        </h2>
+      </div>
     </section>
     <? include '../footer.php'; ?> 
   </body>

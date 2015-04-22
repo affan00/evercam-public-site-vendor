@@ -55,10 +55,10 @@
       <div class="use-cases">        
         <div class="title">       
           <div class="text-content">          
-            <h1>SAP - MII</h1>
+            <h1><a href="/uses/sap">SAP - MII</a></h1>
             <h2>MII’s simple goal is to provide a 360 degree view of your manufacturing processes. </h2>
             <h2>We’ve integrated video into the MII dashboard so that users not only have access to sensor data, but also to visual data enabling a whole new level of transparency.</h2>
-            <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->
+            <a class="btn btn-grey-outline" href="/uses/sap" role="button">View Use Case</a>
           </div>
           <div class="title-image">
             <img src="../img/sap-logo.jpg">

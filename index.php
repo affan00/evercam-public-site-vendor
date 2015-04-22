@@ -48,7 +48,6 @@
           <div class="card">
             <div class="card-inner">
               <i class="fa fa-send fa-2x circle"></i>
-
               <h3>Snapmail</h3>
               <p>Schedule email notifications from your camera</p>
               <i class="fa fa-external-link-square"></i>
@@ -85,7 +84,7 @@
             <h1><a href="/uses/construction">Construction Camera</a></h1>
             <h2>Keep an eye on your site and manage access to the camera.</h2>
             <h2>Sharing, Remote Recording, Snapmail, Timelapse..<br><i><small>..works with any camera</small></i></h2>            
-            <a class="btn btn-grey-outline pull-left" href="/uses/construction" role="button">View Use Case</a>
+            <a class="btn btn-grey-outline pull-left" href="/uses" role="button">View All Use Cases</a>
           </div>
           <div class="title-image">
             <img src="img/stephens-green-cam.jpg">
@@ -93,19 +92,19 @@
         </div>
         <div class="gallery">          
           <div class="use-case">
-            <a href="/uses/weighbridge"><h3>Weighbridge <span class="ti-arrow-right"></span></h3></a>
+            <h3><a href="/uses/weighbridge">Weighbridge </a></span></h3>
             <p>Embeded CCTV images in transaction documents from footage at a Weighbridge.</p>
           </div>
           <div class="use-case">
-            <h3>SAP MII <!--<span class="ti-arrow-right"></span>--></h3>
+            <h3><a href="/uses/sap">SAP MII </a></h3>
             <p>Integration with SAP Manufacturing </p>
           </div>
           <div class="use-case">
-            <h3>Community CCTV <!--<span class="ti-arrow-right"></span>--></h3>
+            <h3>Community CCTV</h3>
             <p>Allow multiple people to securely share cameras</p>
           </div>
         </div>
-        <a class="btn btn-grey-outline pull-right" href="/uses" role="button">View All Use Cases</a>
+        
       </div>
     </section>
     <div id="add-camera" class="alt-color">
