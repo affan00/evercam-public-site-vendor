@@ -54,13 +54,16 @@
             </div>
           </div>
           </a>        
+          <a href="/uses/cloud-cctv">
           <div class="card">
             <div class="card-inner">
               <i class="fa fa-cloud-download fa-2x circle"></i>
-              <h3>Remote Storage</h3>
+              <h3>Cloud Storage</h3>
               <p>Camera footage is safely stored and easy to access</p>
+              <i class="fa fa-arrow-right"></i>
             </div>
           </div>    
+          </a>
           <a href="http://timelapse.evercam.io/" target="_blank">
           <div class="card">
             <div class="card-inner">
@@ -72,7 +75,7 @@
           </div>
           </a>
         </div>
-        <a class="pull-right btn btn-grey-outline" href="/apps" role="button">View all our Apps</a>
+        <a class="btn btn-grey-outline" href="/apps" role="button">View all our Apps</a>
       </div>
     </section>
   </div>
@@ -137,6 +140,7 @@
       </section>
     </div>
     <div class="create-account">
+    <h3 class="text-center">Get more from your Cameras</h3>
       <a class="btn btn-grey-outline" href="https://dash.evercam.io/v1/users/signup">Create a Free Account</a>
     </div>
     <? include 'footer.php'; ?>

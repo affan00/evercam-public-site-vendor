@@ -87,7 +87,6 @@
             <h1>The Zipyard</h1>
             <h2>The Zipyard have over 40 Franchises all over Ireland. A number of their franchises have connected to Evercam to make use of <a href="http://snapmail.evercam.io/login.html" target="_blank">Snapmail</a>, a simple yet powerful tool that emails a snapshot of each franchise at opening and closing time. </h2>
             <h2>Managers have visibility that all shops are operating consistently and that everything is as it should be. </h2>
-            
           </div>
           <div class="title-image">
             <img src="../img/the-zipyard.jpg">
@@ -95,7 +94,10 @@
         </div>
       </div>
       </section>
-    
+      <div class="create-account alt-color">
+        <h3 class="text-center">Get more from your Cameras</h3>
+        <a class="btn btn-grey-outline" href="https://dash.evercam.io/v1/users/signup">Create a Free Account</a>
+      </div>
     <? include '../footer.php'; ?>
   </body>
 </html>
