@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Evercam - Licences </title>
+<title>Evercam - Open Source </title>
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <meta content=
-"Evercam Licence Information"
+"Evercam Open Source Information"
 name="description">
 <meta content="evercam.io" name="author">
-<meta name="keywords" content="evercam, licence, apache 2.0, AGPL, commerical">
+<meta name="keywords" content="evercam,open scource, licence, apache 2.0, AGPL, commerical">
 <meta name="description" content="Evercam Licences">
 <meta name="author" content="Evercam">
 <link href="css/main.css" rel="stylesheet">

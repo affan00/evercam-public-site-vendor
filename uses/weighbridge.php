@@ -30,7 +30,7 @@
     </div>
     <section id="weighbridge">
       <div class="use-case-features">
-      <div class="row">
+      
         <div class="use-case-feature">
           <h3>
             How it works
@@ -38,19 +38,22 @@
           <p>
             Herbst Insight is a powerful ERP system popular in industries such as distribution, logistics, oil, quarries and agricultural produce which has integrated cameras into critical control points within the software.</p>
           <p>
+            Each customer was using Herbst Insight, a windows client product built in Delphi. Using Evercam, the software vendor was able to implement an Evercam integration that allows an image from ANY connected camera to be added to ANY transaction via their existing custom reporting module.
+          </p>
+          <p>
             By making use of Evercam, Herbst Insight customers can now have a visual verification of every event.
           </p>
         </div>
-      </div>
-        <div class="row">
-          <div class="col-md-6">
+      <div class="use-case-feature">
+      
             <p>
               A user can quickly move from any event to the video of that event as it happened:
             </p>
             <img src="../img/weighbridge-event.jpg">
           </div>
-        </div>
+      
       </div>
+     
     </section>
     <div class="alt-color">
       <section>
