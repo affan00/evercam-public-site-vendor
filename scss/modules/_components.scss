@@ -11,15 +11,13 @@
 		@extend .col-md-4;
 	}
 	.card {
-		@extend .col-md-3;
+		@extend .col-md-4;
 		@extend .col-sm-6;
 		@extend .col-xs-12;
 		text-align: center;
 		margin-bottom: 30px;
 		cursor:pointer;
-		.fa-external-link-square {
-			color:white !important;
-		}
+
 		i.circle{
 		 	border-radius: 60px;
 		  border: 2px solid $primary-blue;
@@ -46,11 +44,14 @@
 	padding:40px 20px 0px;
 	box-shadow:0 1px 0 rgba(0,0,0,.05);
 	@include transition(all, 0.3s, ease-in-out);
-	min-height: 280px;
+	min-height: 288px;
 }
-.card:hover .fa-external-link-square {
+.card	.fa-external-link-square, .card	.fa-arrow-right {
+	color:#ffffff;
+}
+.card:hover .fa-external-link-square, .card:hover	.fa-arrow-right {
 		@include transition(all, 0.3s, ease-in-out);
-		color:$grey;
+		color:$grey !important;
 }
 .card:hover {
 	.card-inner {
@@ -101,6 +102,10 @@ i.fa.fa-github.fa-2x.circle {
 }
 i.fa.fa-file-image-o.fa-2x.circle {
 padding: 20px 24px;	
+}
+i.fa.fa-mobile.fa-2x.circle {
+	  padding: 16px 29px;
+  font-size: 43px;
 }
 span.circle-icon.fa.fa-facebook-f {
 	padding: 10px 13px;
