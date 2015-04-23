@@ -144,5 +144,8 @@
       <a class="btn btn-grey-outline" href="https://dash.evercam.io/v1/users/signup">Create a Free Account</a>
     </div>
     <? include 'footer.php'; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+    <script src="/js/bootstrap.min.js" async></script>
+    <script src="/js/custom.min.js" async></script>
   </body>
 </html>

@@ -8,7 +8,6 @@
   <meta name="description" content="Unleash the power of your camera. A developer platform for cameras with an app store for camera owners.">
   <meta name="author" content="Evercam">
   <title>Evercam.io</title>
-  <!-- Bootstrap -->
   <link href="/css/main.css" rel="stylesheet">
 </head>
 <body id="manufacturers" class="manufacturers">
@@ -66,14 +65,14 @@
       </div>
     </div>
   </section>
-  
     <div class="use-case-callout text-center">
       <h2>
         For more information contact marco@evercam.io
       </h2>
     </div>
-  
-
   <? include 'footer.php'; ?>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+    <script src="/js/bootstrap.min.js" async></script>
+    <script src="/js/custom.min.js" async></script>
 </body>
 </html>
