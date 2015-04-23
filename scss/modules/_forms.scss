@@ -26,3 +26,18 @@ color: $abbey;
 .table>tbody>tr>td {
 	border-top:none;
 }
+table.dataTable.no-footer, table.dataTable thead th, table.dataTable thead td {
+	border-bottom: 1px solid #e5e5e5;
+}
+/*datatable overright*/
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+	background: none !important;
+	border-radius: 50%;	
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover, .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+	background: none;
+	color:#428bca !important;
+	border:1px solid transparent;
+	border-radius: 50%;
+	box-shadow: none;
+}
