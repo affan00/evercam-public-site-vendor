@@ -136,26 +136,19 @@ name="description">
       <th>
       Wrappers
       </th>
-        
       <tr>
         <td class="col-md-1 wrappers">
           <a href="https://github.com/evercam/evercam-ruby" target="_blank"><i class="fa fa-github"></i> Ruby   </a>
-        
           <a href="https://github.com/evercam/evercam.js" target="_blank"><i class="fa fa-github"></i> Javascript</a>
-            
           <a href="https://github.com/evercam/evercam.py" target="_blank"><i class="fa fa-github"></i> Python    </a>
-        
           <a href="https://github.com/evercam/evercam.java" target="_blank"><i class="fa fa-github"></i> Java</a>   
-        
           <a href="https://github.com/evercam/evercam.net" target="_blank"><i class="fa fa-github"></i> .NET</a>
         </td>
       </tr>
     </table>
   </section>
-  
   <section> 
     <h3>Licences</h3>
- 
     <h2>Evercam Server &amp; Clients</h2>
     <ul>
     <li>Free Software Foundation’s <a href="http://www.gnu.org/licenses/agpl-3.0.html" target="_blank">GNU AGPL v3.0.</a> Or read a nice <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)" target="_blank">Quick Summary</a> </li>
@@ -185,22 +178,18 @@ name="description">
      Evercam and the Evercam logo are registered trademarks of Camba.tv Ltd. Your use of these trademarks is subject to the Evercam Trademark Standards for Use. For trademark use approval, or any questions you have about using these trademarks, please email marco@evercam.io.
     </p>
   </section>
-
   <section> 
     <h3>Contributions</h3>
     <p>
      We would love to hear your ideas and/or pull requests. We’re putting in place a CLA, most likely based on the Harmony Docs.
     </p>
   </section>
-
   <section> 
     <h3>Security Issues</h3>
     <p>
      If you spot a security related issue, please contact us directly on marco@evercam.io 
     </p>
   </section>
-
-
 <? include 'footer.php'; ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
 <script src="/js/bootstrap.min.js" async></script>
