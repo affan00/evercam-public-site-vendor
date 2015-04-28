@@ -14,6 +14,41 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
     <script src="/js/bootstrap.min.js" async></script>
     <script src="/js/custom.min.js" async></script>
+    <style>
+      .camera-thumbnail {
+        border: 10px solid white !important;
+        width: 150px;
+        height: auto;
+      }
+      .camera-info-name {
+        display: block;
+        position:absolute;
+        font-size: 12px;
+        font-weight: bold;
+        bottom:0;
+        color:#fff;
+        padding:15px 15px;
+      }
+      .gm-style-iw .camera-info {
+        width: 153px !important;
+        height: auto;
+        top: 0 !important;
+        left: 0 !important;
+        background-color: #fff;
+        box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+        border: none;
+      }
+      #markerLayer img {
+        border: 2px solid white !important;
+        width: 50px !important;
+        height: auto !important;
+        box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+      }
+      .gmnoprint {
+        max-width: 50px !important;
+        max-height: 50px !important;
+      }
+    </style>
   </head>
   <body>
     
@@ -47,7 +82,7 @@
   <!-- /#wrapper -->
 
   <script src="/js/public-google-maps.js"></script>
-  <script src="/js/public-cameras.js"></script>
+  <script src="/js/markerclusterer.js"></script>
   <script>
     $(document).ready(function() {
       //initPublicCameras();
