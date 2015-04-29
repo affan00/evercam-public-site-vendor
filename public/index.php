@@ -15,6 +15,9 @@
     <script src="/js/bootstrap.min.js" async></script>
     <script src="/js/custom.min.js" async></script>
     <style>
+      .camera {
+        cursor: pointer;
+      }
       .camera-thumbnail {
         border: 10px solid white !important;
         width: 150px;

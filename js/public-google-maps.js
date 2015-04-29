@@ -1,8 +1,9 @@
 var map;
 var place;
-var searchBox;
 var autocomplete;
+var infosList = [];
 var markers = [];
+var markersList = {};
 var camera_count;
 var userLat = 0;
 var userLng = 0;
@@ -38,7 +39,7 @@ function initialize() {
 
   // Create the search box and link it to the UI element.
   var input = document.getElementById('pac-input');  
-  searchBox = new google.maps.places.SearchBox(input);
+  //searchBox = new google.maps.places.SearchBox(input);
   autocomplete = new google.maps.places.Autocomplete(input);
   autocomplete.bindTo('bounds', map);
 
@@ -60,14 +61,6 @@ function initialize() {
     
     showMap(place, true);
     loadCameras();
-  });
-
-
-  // Bias the SearchBox results towards places that are within the bounds of the
-  // current map's viewport.
-  google.maps.event.addListener(map, 'bounds_changed', function() {
-    var bounds = map.getBounds();
-    searchBox.setBounds(bounds);
   });
 
   // handles user click on 'show cameras near me' link
@@ -100,25 +93,10 @@ function showMap(place, panTo) {
 
   clearMarkers();
 
-  // adds marker to user current location
-  // if (place) {
-  //   var marker = new google.maps.Marker({
-  //     map: map,
-  //     title: place.name,
-  //     animation: google.maps.Animation.DROP,
-  //     place: {
-  //       placeId: place.place_id,
-  //       location: place.geometry.location
-  //     }
-  //   });
-
-  //   if (place.photos) {
-  //     console.log("Place Photo: " + place.photos[0].getUrl());
-  //     marker.setIcon(place.photos[0].getUrl({'maxWidth': 50, 'maxHeight': 50}));
-  //   }
-
-  //   markers.push(marker);
-  // }
+  if (place) {
+    //// adds marker to given current location
+    //addMarker(place);
+  }
 
   if (!place) {
     var request = { location: pos, radius: '1' };
@@ -127,25 +105,9 @@ function showMap(place, panTo) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
         place = places[0];
         $("#pac-input").val(place.name)
-        searchBox.setBounds(map.getBounds());
-
-        // adds marker to user current location
-        // var marker = new google.maps.Marker({
-        //   map: map,
-        //   title: place.name,
-        //   animation: google.maps.Animation.DROP,
-        //   place: {
-        //     placeId: place.place_id,
-        //     location: place.geometry.location
-        //   }
-        // });
-
-        // if (place.photos) {
-        //   console.log("Place Photo: " + place.photos[0].getUrl());
-        //   marker.setIcon(place.photos[0].getUrl({'maxWidth': 50, 'maxHeight': 50}));
-        // }
         
-        // markers.push(marker);
+        //// adds marker to user current location
+        //addMarker(place);
       }
     });
   }
@@ -170,7 +132,10 @@ function loadCameras() {
           camera_container = $("<div class='camera-container' />");
           var marker;
           if (response.cameras[i].thumbnail) {
-            camera_container.append("<img class='camera-snapshot' src='" + response.cameras[i].thumbnail + "'>"); 
+            camera_container.append("<div id='" + response.cameras[i].id + "' class='camera'><img class='camera-snapshot' src='" + response.cameras[i].thumbnail + "'></div>");
+            camera_container.on('click', "#" + response.cameras[i].id, function(e) {
+              google.maps.event.trigger(markersList["marker_" + this.id], 'click');
+            });
             marker = new google.maps.Marker({
               position: new google.maps.LatLng(response.cameras[i].location.lat, response.cameras[i].location.lng),
               map: map,
@@ -198,6 +163,7 @@ function loadCameras() {
           addInfoWindow(marker, response.cameras[i].id, response.cameras[i].name, response.cameras[i].thumbnail);
 
           markers.push(marker);
+          markersList["marker_" + response.cameras[i].id] = marker;
 
           bounds.extend(new google.maps.LatLng(marker.position.lat(), marker.position.lng()));
           //map.panToBounds(bounds);
@@ -215,6 +181,7 @@ function loadCameras() {
   });
 }
 
+// add infowindow to given marker
 function addInfoWindow(marker, cameraId, cameraName, cameraThumbnail) {
   (function (marker) {
     var infowindow = new google.maps.InfoWindow({
@@ -227,13 +194,54 @@ function addInfoWindow(marker, cameraId, cameraName, cameraThumbnail) {
         iwOuter.next().css({'display' : 'none'});
         iwOuter.parent().parent().css({left: '-75px', top: '35px'});
       });
+      closeInfos();
       infowindow.open(map, marker);
     });
 
     google.maps.event.addListener(marker, 'mouseout', function() {
       infowindow.close();
     });
+
+    google.maps.event.addListener(marker, 'click', function() {
+      closeInfos();
+      google.maps.event.addListener(infowindow, 'domready', function() {
+        var iwOuter = $('.camera-info').parent().parent().parent();
+        iwOuter.prev().css({'display' : 'none'});
+        iwOuter.next().css({'display' : 'none'});
+        iwOuter.parent().parent().css({left: '-75px', top: '35px'});
+      });
+      infowindow.open(map, marker);
+    });
+
+    infosList.push(infowindow);
   })(marker);
+}
+
+// add marker on given place
+function addMarker(place) {
+  var marker = new google.maps.Marker({
+    map: map,
+    title: place.name,
+    animation: google.maps.Animation.DROP,
+    place: {
+      placeId: place.place_id,
+      location: place.geometry.location
+    }
+  });
+
+  if (place.photos) {
+    console.log("Place Photo: " + place.photos[0].getUrl());
+    marker.setIcon(place.photos[0].getUrl({'maxWidth': 50, 'maxHeight': 50}));
+  }
+  
+  markers.push(marker);
+}
+
+// close all open infowidows
+function closeInfos() {
+  for (i = 0; i < infosList.length; i++) {
+    infosList[i].close();
+  }
 }
 
 // clear all markers from map
@@ -242,8 +250,12 @@ function clearMarkers() {
     for (m in markers) {
       markers[m].setMap(null);
     }
+    markers = [];
     markers.length = 0;
+    markersList = {};
+    markersList.length = 0;
   }
 }
 
+// bind initialize event with page load
 google.maps.event.addDomListener(window, 'load', initialize);
