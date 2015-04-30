@@ -7,6 +7,8 @@ var markersList = {};
 var camera_count;
 var userLat = 0;
 var userLng = 0;
+var markerClusterer;
+var DEFAULT_ZOOM = 14;
 
 function initialize() {
   camera_count = $("<div class='cameras-count' />");
@@ -14,9 +16,10 @@ function initialize() {
   // initialize map
   map = new google.maps.Map(document.getElementById('public-map'), {
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    zoom: 14
+    zoom: DEFAULT_ZOOM
   });
-  
+  markerClusterer = new MarkerClusterer(map);
+
   // try getting user's geo location
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function( position ) {
@@ -91,13 +94,6 @@ function showMap(place, panTo) {
   else
     map.setCenter(pos);
 
-  clearMarkers();
-
-  if (place) {
-    //// adds marker to given current location
-    //addMarker(place);
-  }
-
   if (!place) {
     var request = { location: pos, radius: '1' };
     var service = new google.maps.places.PlacesService(map);
@@ -105,9 +101,6 @@ function showMap(place, panTo) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
         place = places[0];
         $("#pac-input").val(place.name)
-        
-        //// adds marker to user current location
-        //addMarker(place);
       }
     });
   }
@@ -120,12 +113,13 @@ function loadCameras() {
   camera_count.html("<span><small>Looking for public cameras</small></span>");
   $(".cameras-wrapper").append(camera_count);
   
+  clearMarkers();
+
   $.ajax({
     type: 'GET',
     url: "https://api.evercam.io/v1/public/cameras?thumbnail=true&is_near_to=" + userLat + "," + userLng,
     success: function(response) {
       camera_count.html("<span><small><strong>" + response.cameras.length + "</strong> cameras showing</small></span>");
-
       var bounds = new google.maps.LatLngBounds();
       for (var i = 0; i < response.cameras.length; i++) {
         if (response.cameras[i].location && response.cameras[i].location.lat != "0" && response.cameras[i].location.lng != "0") {
@@ -157,23 +151,22 @@ function loadCameras() {
               optimized:false
             });
           }
-          marker.set("marker_id", "marker_" + response.cameras[i].id);
 
           // process multiple info windows
           addInfoWindow(marker, response.cameras[i].id, response.cameras[i].name, response.cameras[i].thumbnail);
 
           markers.push(marker);
+          markerClusterer.addMarker(marker, true);
           markersList["marker_" + response.cameras[i].id] = marker;
 
           bounds.extend(new google.maps.LatLng(marker.position.lat(), marker.position.lng()));
-          //map.panToBounds(bounds);
-          map.fitBounds(bounds);
+          map.setZoom(DEFAULT_ZOOM);
+          //map.fitBounds(bounds);
 
           camera_container.append("<div class='camera-name'>" + response.cameras[i].name + "</div>");
           $(".cameras-wrapper").append(camera_container);
         }
       }
-      //var markerCluster = new MarkerClusterer(map, markers);
     },
     error: function(response){
       console.log("LoadCameras Err: " + response.message);
@@ -217,26 +210,6 @@ function addInfoWindow(marker, cameraId, cameraName, cameraThumbnail) {
   })(marker);
 }
 
-// add marker on given place
-function addMarker(place) {
-  var marker = new google.maps.Marker({
-    map: map,
-    title: place.name,
-    animation: google.maps.Animation.DROP,
-    place: {
-      placeId: place.place_id,
-      location: place.geometry.location
-    }
-  });
-
-  if (place.photos) {
-    console.log("Place Photo: " + place.photos[0].getUrl());
-    marker.setIcon(place.photos[0].getUrl({'maxWidth': 50, 'maxHeight': 50}));
-  }
-  
-  markers.push(marker);
-}
-
 // close all open infowidows
 function closeInfos() {
   for (i = 0; i < infosList.length; i++) {
@@ -254,6 +227,7 @@ function clearMarkers() {
     markers.length = 0;
     markersList = {};
     markersList.length = 0;
+    markerClusterer.clearMarkers();
   }
 }
 
