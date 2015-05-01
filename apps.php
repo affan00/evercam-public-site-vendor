@@ -34,7 +34,7 @@
                   <img class="app-logo" src="img/evercam-play.svg">
                   <h3>Evercam Play</h3>
                   <p>Access to all your IP Cameras from anywhere.</p>
-                  <span class="ti-arrow-top-right"></span>
+                  <span class="fa fa-external-link-square"></span>
                 </div>
               </div>
             </a>
@@ -44,7 +44,7 @@
                 <img class="app-logo" src="img/evercam-capture.svg">
                 <h3>Evercam Capture</h3>
                 <p>Turn your mobile device into an IP camera</p>
-                <span class="ti-arrow-top-right"></span>
+                <span class="fa fa-external-link-square"></span>
               </div>
             </div>
             </a>
@@ -54,7 +54,7 @@
                 <img class="app-logo" src="img/big-red-button.png">
                 <h3>Big Red Button</h3>
                 <p>Capture snapshots from Evercam connected cameras</p>
-                <span class="ti-arrow-top-right"></span>
+                <span class="fa fa-external-link-square"></span>
               </div>
             </div>
             </a>
@@ -64,7 +64,7 @@
                 <img class="app-logo" src="img/evercam-discover.svg">
                 <h3>Evercam Discover</h3>
                 <p>Discover your cameras in the local network</p>
-                <span class="ti-arrow-top-right"></span>
+                <span class="fa fa-external-link-square"></span>
               </div>
             </div>
             </a>
@@ -74,7 +74,7 @@
                 <img class="app-logo" src="img/snapmail.png">
                 <h3>Snapmail</h3>
                 <p>Schedule email notifications from your camera</p>
-                <span class="ti-arrow-top-right"></span>
+                <span class="fa fa-external-link-square"></span>
               </div>
             </div>
             </a>
@@ -84,7 +84,7 @@
                 <img class="app-logo" src="img/hash-cam.png">
                 <h3>#cam</h3>
                 <p>Setup your camera to reply to a tweet with an image</p>
-                <span class="ti-arrow-top-right"></span>
+                <span class="fa fa-external-link-square"></span>
               </div>
             </div>
             </a>
@@ -94,7 +94,17 @@
                 <i class="fa fa-history fa-2x circle"></i>
                 <h3>Timelapse</h3>
                 <p>Create and share timelapses from your camera</p>
-                <span class="ti-arrow-top-right"></span>
+                <span class="fa fa-external-link-square"></span>
+              </div>
+            </div>
+            </a>
+            <a href="https://dash.evercam.io/widgets-new" target="_blank">
+            <div class="card">
+              <div class="card-inner">
+                <i class="fa fa-youtube-play fa-2x circle"></i>
+                <h3>ReStreaming</h3>
+                <p>Restream your camera on any webpage with our embed code</p>
+                <span class="fa fa-external-link-square"></span>
               </div>
             </div>
             </a>
