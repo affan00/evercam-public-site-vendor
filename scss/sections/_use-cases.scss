@@ -17,6 +17,9 @@
 	.btn-grey-outline {
 		margin-top: 30px;
 	}
+	.square-image img {
+		max-height: 294px;
+	}
 }
 .gallery {
 	@extend .row;
