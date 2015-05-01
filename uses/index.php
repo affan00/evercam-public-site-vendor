@@ -70,6 +70,22 @@
       <div class="use-cases">        
         <div class="title">       
           <div class="text-content">          
+            <h1>Cloud CCTV</h1>
+            <h2>Connect your cameras directly and securely to Evercam and extend your conventional CCTV solution into the cloud.
+                Store your footage for as long as you want, share your camera with others and access your cameras from anywhere ...and it works with any camera.
+              </h2>
+            <a class="btn btn-grey-outline" href="/uses/cloud-cctv" role="button">View Use Case</a>
+          </div>
+          <div class="title-image square-image">
+            <img src="../img/connected-camera.svg">
+          </div>      
+        </div>
+      </div>
+      </section>
+      <section>
+      <div class="use-cases">        
+        <div class="title">       
+          <div class="text-content">          
             <h1>Carroll’s Irish Gifts</h1>
             <h2>Carroll’s Irish Gifts wanted an original social media campaign. Evercam hooked them up with <a href="http://selfies.evercam.io/login.html" target="_blank">Twittercam</a>. Customers can take a selfie via twitter at the statue in the Westmoreland St. store.</h2>
             <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->

@@ -54,12 +54,12 @@
             </div>
           </div>
           </a>        
-          <a href="/uses/cloud-cctv">
+          <a href="/apps">
           <div class="card">
             <div class="card-inner">
               <i class="fa fa-cloud-download fa-2x circle"></i>
               <h3>Cloud Storage</h3>
-              <p>Camera footage is safely stored and easy to access</p>
+              <p>Your camera footage is safely stored and easy to access</p>
               <i class="fa fa-arrow-right"></i>
             </div>
           </div>    

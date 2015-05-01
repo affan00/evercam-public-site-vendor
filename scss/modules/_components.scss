@@ -46,10 +46,10 @@
 	@include transition(all, 0.3s, ease-in-out);
 	min-height: 288px;
 }
-.card	.fa-external-link-square, .card	.fa-arrow-right {
+.card-inner	.fa-external-link-square, .card-inner	.fa-arrow-right {
 	color:#ffffff;
 }
-.card:hover .fa-external-link-square, .card:hover	.fa-arrow-right {
+.card-inner:hover .fa-external-link-square, .card:hover	.fa-arrow-right {
 		@include transition(all, 0.3s, ease-in-out);
 		color:$grey !important;
 }
