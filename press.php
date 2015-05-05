@@ -16,7 +16,7 @@
     <header>
       <div class="banner">
         <div class="banner-content">
-          <h1>Press</h1>
+          <h1>PressW</h1>
           <h2>Our latest press releases and speaker events.</h2>
           <h2>For press enquiries, speaking requests, or if your working on a story please contact marco@evercam.io.</h2>
           <h2>You can download Evercam brand assets from <a href="/brand">evercam.io/brand</a></h2>
