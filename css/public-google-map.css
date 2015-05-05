@@ -1,6 +1,3 @@
-.camera {
-  cursor: pointer;
-}
 .camera-thumbnail {
   border: 10px solid white !important;
   width: 150px;
@@ -23,6 +20,7 @@
   background-color: #fff;
   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
   border: none;
+  cursor: pointer;
 }
 #markerLayer img {
   border: 2px solid white !important;

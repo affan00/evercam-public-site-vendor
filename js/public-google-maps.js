@@ -8,7 +8,10 @@ var camera_count;
 var userLat = 0;
 var userLng = 0;
 var markerClusterer;
-var DEFAULT_ZOOM = 14;
+var place_changed = false;
+var reload_cameras = true;
+var DEFAULT_ZOOM = 15;
+var DEFAULT_DISTANCE = 1000;
 
 function initialize() {
   camera_count = $("<div class='cameras-count' />");
@@ -20,19 +23,6 @@ function initialize() {
   });
   markerClusterer = new MarkerClusterer(map);
 
-  // try getting user's geo location
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function( position ) {
-      userLat = position.coords.latitude;
-      userLng = position.coords.longitude;
-      
-      showMap(null, false);
-      loadCameras();
-    });
-  } else {
-    console.log("Geolocation is not supported by this browser");
-  }
-
   // set markers overlay id to be used in css
   var myoverlay = new google.maps.OverlayView();
   myoverlay.draw = function () {
@@ -41,10 +31,70 @@ function initialize() {
   myoverlay.setMap(map);
 
   // Create the search box and link it to the UI element.
-  var input = document.getElementById('pac-input');  
-  //searchBox = new google.maps.places.SearchBox(input);
+  var input = document.getElementById('pac-input');
   autocomplete = new google.maps.places.Autocomplete(input);
   autocomplete.bindTo('bounds', map);
+
+  // try getting user's geo location
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function( position ) {
+      userLat = position.coords.latitude;
+      userLng = position.coords.longitude;
+      
+      showMap(null, false);
+    });
+  } else {
+    console.log("Geolocation is not supported by this browser");
+  }
+
+  // handles map dragstart event and set flag as being dragged
+  google.maps.event.addListener(map, 'dragend', function() {
+    reload_cameras = true;
+  });
+
+  // handles map dragstart event and set flag as being dragged
+  google.maps.event.addListener(map, 'zoom_changed', function() {
+    reload_cameras = true;
+  });
+
+  // handles map idle event, raised after any chagnes happens in viewport
+  google.maps.event.addListener(map, 'idle', function() {
+    var bounds = map.getBounds();
+    var center = map.getCenter();
+
+    if (center) {
+      userLat = center.lat();
+      userLng = center.lng();
+      var pos = new google.maps.LatLng(userLat, userLng);
+
+      if (bounds)
+      {
+        var pos2 = new google.maps.LatLng(bounds.getNorthEast().lat(), bounds.getNorthEast().lng());
+        DEFAULT_DISTANCE = google.maps.geometry.spherical.computeDistanceBetween(pos, pos2) / 2;
+      }
+      
+      var request = { location: pos, radius: '1' };
+      var service = new google.maps.places.PlacesService(map);
+      service.nearbySearch(request, function(places, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+          place = places[0];
+
+          //// no need to update search text box if user has changed the place
+          if (place_changed) {
+            place_changed = false;
+          } else {
+            $("#pac-input").val(place.name)
+          }
+
+          if (reload_cameras) {
+            reload_cameras = false;
+
+            loadCameras();
+          }
+        }
+      });
+    }
+  });
 
   // binds autocomplete textbox place_changed event
   google.maps.event.addListener(autocomplete, 'place_changed', function() {
@@ -62,20 +112,21 @@ function initialize() {
     userLat = place.geometry.location.lat();
     userLng = place.geometry.location.lng();
     
+    place_changed = true;
+    reload_cameras = true;
     showMap(place, true);
-    loadCameras();
   });
 
   // handles user click on 'show cameras near me' link
+  // and try getting user's geo location
   $("#lnkMyLocation").click(function() {
-    // try getting user's geo location
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function( position ) {
         userLat = position.coords.latitude;
         userLng = position.coords.longitude;
 
+        reload_cameras = true;
         showMap(null, true);
-        loadCameras();
       });
     } else {
       console.log("Geolocation is not supported by this browser");
@@ -85,7 +136,6 @@ function initialize() {
 
 // show up google map at given location
 function showMap(place, panTo) {
-  console.log("Location: " + userLat + "," + userLng);
   camera_count.html("");
   
   var pos = new google.maps.LatLng(userLat, userLng);
@@ -100,7 +150,9 @@ function showMap(place, panTo) {
     service.nearbySearch(request, function(places, status) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
         place = places[0];
-        $("#pac-input").val(place.name)
+        $("#pac-input").val(place.name);
+        console.log("Place: " + place.name);
+        $("#lnkMyLocation").html("Show me cameras near my location (" + place.name + ")");
       }
     });
   }
@@ -109,16 +161,18 @@ function showMap(place, panTo) {
 // load cameras from evercam api, near given location 
 // and place markers on map for each camera
 function loadCameras() {
-  $(".cameras-wrapper").html('');
-  camera_count.html("<span><small>Looking for public cameras</small></span>");
-  $(".cameras-wrapper").append(camera_count);
-  
   clearMarkers();
+  $(".cameras-wrapper").html('');
+  $(".cameras-wrapper").append(camera_count);
+  camera_count.html("<span><small>Looking for public cameras</small></span>");
 
   $.ajax({
     type: 'GET',
-    url: "https://api.evercam.io/v1/public/cameras?thumbnail=true&is_near_to=" + userLat + "," + userLng,
+    url: "https://api.evercam.io/v1/public/cameras?thumbnail=true&limit=50&within_distance=" + DEFAULT_DISTANCE + "&is_near_to=" + userLat + "," + userLng,
     success: function(response) {
+      $(".cameras-wrapper").html('');
+      $(".cameras-wrapper").append(camera_count);
+
       camera_count.html("<span><small><strong>" + response.cameras.length + "</strong> cameras showing</small></span>");
       var bounds = new google.maps.LatLngBounds();
       for (var i = 0; i < response.cameras.length; i++) {
@@ -127,9 +181,14 @@ function loadCameras() {
           var marker;
           if (response.cameras[i].thumbnail) {
             camera_container.append("<div id='" + response.cameras[i].id + "' class='camera'><img class='camera-snapshot' src='" + response.cameras[i].thumbnail + "'></div>");
-            camera_container.on('click', "#" + response.cameras[i].id, function(e) {
-              google.maps.event.trigger(markersList["marker_" + this.id], 'click');
+
+            camera_container.on('mouseover', "#" + response.cameras[i].id, function(e) {
+              google.maps.event.trigger(markersList["marker_" + this.id], 'mouseover');
             });
+            camera_container.on('mouseout', "#" + response.cameras[i].id, function(e) {
+              google.maps.event.trigger(markersList["marker_" + this.id], 'mouseout');
+            });
+
             marker = new google.maps.Marker({
               position: new google.maps.LatLng(response.cameras[i].location.lat, response.cameras[i].location.lng),
               map: map,
@@ -156,11 +215,11 @@ function loadCameras() {
           addInfoWindow(marker, response.cameras[i].id, response.cameras[i].name, response.cameras[i].thumbnail);
 
           markers.push(marker);
-          markerClusterer.addMarker(marker, true);
           markersList["marker_" + response.cameras[i].id] = marker;
+          markerClusterer.addMarker(marker);
 
           bounds.extend(new google.maps.LatLng(marker.position.lat(), marker.position.lng()));
-          map.setZoom(DEFAULT_ZOOM);
+          //map.setZoom(DEFAULT_ZOOM);
           //map.fitBounds(bounds);
 
           camera_container.append("<div class='camera-name'>" + response.cameras[i].name + "</div>");
@@ -169,6 +228,8 @@ function loadCameras() {
       }
     },
     error: function(response){
+      $(".cameras-wrapper").html('');
+      clearMarkers();
       console.log("LoadCameras Err: " + response.message);
     },
   });
@@ -195,32 +256,26 @@ function addInfoWindow(marker, cameraId, cameraName, cameraThumbnail) {
       infowindow.close();
     });
 
-    google.maps.event.addListener(marker, 'click', function() {
-      closeInfos();
-      google.maps.event.addListener(infowindow, 'domready', function() {
-        var iwOuter = $('.camera-info').parent().parent().parent();
-        iwOuter.prev().css({'display' : 'none'});
-        iwOuter.next().css({'display' : 'none'});
-        iwOuter.parent().parent().css({left: '-75px', top: '35px'});
-      });
-      infowindow.open(map, marker);
-    });
+    // google.maps.event.addListener(marker, 'click', function() {
+    //   closeInfos();
+    //   google.maps.event.addListener(infowindow, 'domready', function() {
+    //     var iwOuter = $('.camera-info').parent().parent().parent();
+    //     iwOuter.prev().css({'display' : 'none'});
+    //     iwOuter.next().css({'display' : 'none'});
+    //     iwOuter.parent().parent().css({left: '-75px', top: '35px'});
+    //   });
+    //   infowindow.open(map, marker);
+    // });
 
     infosList.push(infowindow);
   })(marker);
 }
 
-// close all open infowidows
-function closeInfos() {
-  for (i = 0; i < infosList.length; i++) {
-    infosList[i].close();
-  }
-}
-
 // clear all markers from map
 function clearMarkers() {
+  closeInfos();
   if (markers) {
-    for (m in markers) {
+    for (var m in markers) {
       markers[m].setMap(null);
     }
     markers = [];
@@ -230,6 +285,19 @@ function clearMarkers() {
     markerClusterer.clearMarkers();
   }
 }
+
+// close all open infowidows
+function closeInfos() {
+  for (i = 0; i < infosList.length; i++) {
+    infosList[i].close();
+  }
+}
+
+//// checks if given point lies within given radius from map center
+// function withinCircle(point, radius)
+// {
+//   return (google.maps.geometry.spherical.computeDistanceBetween(point, map.getCenter()) <= radius)
+// }
 
 // bind initialize event with page load
 google.maps.event.addDomListener(window, 'load', initialize);
