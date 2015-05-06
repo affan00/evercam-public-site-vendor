@@ -16,7 +16,7 @@
     <header>
       <div class="banner">
         <div class="banner-content">
-          <h1>PressW</h1>
+          <h1>Press</h1>
           <h2>Our latest press releases and speaker events.</h2>
           <h2>For press enquiries, speaking requests, or if your working on a story please contact marco@evercam.io.</h2>
           <h2>You can download Evercam brand assets from <a href="/brand">evercam.io/brand</a></h2>
@@ -37,6 +37,16 @@
               </h2>
               <p class="dark-text">
                Startup Ireland, February 2015
+              </p>
+            </div>
+            <div class="press-item">
+              <h2>
+                <a href="http://www.entrepreneurcountryglobal.com/united-kingdom/ecosystem-economics/item/evercam-giving-eyes-to-iot-solutions" target="_blank">
+                Evercam gives Eyes to the Internet of Things <i class="fa fa-external-link"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               Entrepreneur Country Global, 12 March 2015 
               </p>
             </div>
             <div class="press-item">
