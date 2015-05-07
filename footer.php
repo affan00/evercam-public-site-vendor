@@ -29,6 +29,7 @@
           <li><a href="/apps">App Store</a></li>
           <li><a href="/uses">Use Cases</a></li>
           <li><a href="https://dash.evercam.io/v1/users/signup">Create Account</a></li>
+          <li><a href="/public">Explore Public Cameras</a></li>
           <h3>Manufacturer</h3>
           <li><a href="/camera-manufacturers">Why OEM Evercam? </a></li>
         </ul>
@@ -61,6 +62,3 @@
       </div>
     </div>  
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
-<script src="../js/bootstrap.min.js" async></script>
-<script src="../js/custom.min.js" async></script>

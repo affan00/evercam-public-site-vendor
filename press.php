@@ -41,6 +41,16 @@
             </div>
             <div class="press-item">
               <h2>
+                <a href="http://www.entrepreneurcountryglobal.com/united-kingdom/ecosystem-economics/item/evercam-giving-eyes-to-iot-solutions" target="_blank">
+                Evercam gives Eyes to the Internet of Things <i class="fa fa-external-link"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               Entrepreneur Country Global, 12 March 2015 
+              </p>
+            </div>
+            <div class="press-item">
+              <h2>
                 <a href="http://www.hybridtp.ie/herbst-insight-erp-system-integrates-cameras-using-evercam/" target="_blank">
                 Herbst Insight ERP System Integrates Cameras Using Evercam <i class="fa fa-external-link"></i>
                 </a>
@@ -226,5 +236,8 @@
       <a class="btn btn-grey-outline" href="/brand"><span>Browse our Brand Assets <i class="fa fa-arrow-right"></i></span></a>
     </div>   
     <? include 'footer.php'; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+    <script src="/js/bootstrap.min.js" async></script>
+    <script src="/js/custom.min.js" async></script>
   </body>
 </html>

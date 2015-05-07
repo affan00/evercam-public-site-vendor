@@ -55,13 +55,29 @@
       <div class="use-cases">        
         <div class="title">       
           <div class="text-content">          
-            <h1>SAP - MII</h1>
+            <h1><a href="/uses/sap">SAP - MII</a></h1>
             <h2>MII’s simple goal is to provide a 360 degree view of your manufacturing processes. </h2>
             <h2>We’ve integrated video into the MII dashboard so that users not only have access to sensor data, but also to visual data enabling a whole new level of transparency.</h2>
-            <!--<a class="btn btn-grey-outline" href="/uses/carrolls" role="button">View Use Case</a>-->
+            <a class="btn btn-grey-outline" href="/uses/sap" role="button">View Use Case</a>
           </div>
           <div class="title-image">
             <img src="../img/sap-logo.jpg">
+          </div>      
+        </div>
+      </div>
+      </section>
+      <section>
+      <div class="use-cases">        
+        <div class="title">       
+          <div class="text-content">          
+            <h1>Cloud CCTV</h1>
+            <h2>Connect your cameras directly and securely to Evercam and extend your conventional CCTV solution into the cloud.
+                Store your footage for as long as you want, share your camera with others and access your cameras from anywhere ...and it works with any camera.
+              </h2>
+            <a class="btn btn-grey-outline" href="/uses/cloud-cctv" role="button">View Use Case</a>
+          </div>
+          <div class="title-image square-image">
+            <img src="../img/connected-camera.svg">
           </div>      
         </div>
       </div>
@@ -87,7 +103,6 @@
             <h1>The Zipyard</h1>
             <h2>The Zipyard have over 40 Franchises all over Ireland. A number of their franchises have connected to Evercam to make use of <a href="http://snapmail.evercam.io/login.html" target="_blank">Snapmail</a>, a simple yet powerful tool that emails a snapshot of each franchise at opening and closing time. </h2>
             <h2>Managers have visibility that all shops are operating consistently and that everything is as it should be. </h2>
-            
           </div>
           <div class="title-image">
             <img src="../img/the-zipyard.jpg">
@@ -95,7 +110,13 @@
         </div>
       </div>
       </section>
-    
+      <div class="create-account alt-color">
+        <h3 class="text-center">Get more from your Cameras</h3>
+        <a class="btn btn-grey-outline" href="https://dash.evercam.io/v1/users/signup">Create a Free Account</a>
+      </div>
     <? include '../footer.php'; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+    <script src="/js/bootstrap.min.js" async></script>
+    <script src="/js/custom.min.js" async></script>
   </body>
 </html>

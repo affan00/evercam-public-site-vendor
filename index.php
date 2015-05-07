@@ -48,20 +48,22 @@
           <div class="card">
             <div class="card-inner">
               <i class="fa fa-send fa-2x circle"></i>
-
               <h3>Snapmail</h3>
               <p>Schedule email notifications from your camera</p>
               <i class="fa fa-external-link-square"></i>
             </div>
           </div>
           </a>        
+          <a href="/apps">
           <div class="card">
             <div class="card-inner">
               <i class="fa fa-cloud-download fa-2x circle"></i>
-              <h3>Remote Storage</h3>
-              <p>Camera footage is safely stored and easy to access</p>
+              <h3>Cloud Storage</h3>
+              <p>Your camera footage is safely stored and easy to access</p>
+              <i class="fa fa-arrow-right"></i>
             </div>
           </div>    
+          </a>
           <a href="http://timelapse.evercam.io/" target="_blank">
           <div class="card">
             <div class="card-inner">
@@ -73,7 +75,7 @@
           </div>
           </a>
         </div>
-        <a class="pull-right btn btn-grey-outline" href="/apps" role="button">View all our Apps</a>
+        <a class="btn btn-grey-outline" href="/apps" role="button">View all our Apps</a>
       </div>
     </section>
   </div>
@@ -85,7 +87,7 @@
             <h1><a href="/uses/construction">Construction Camera</a></h1>
             <h2>Keep an eye on your site and manage access to the camera.</h2>
             <h2>Sharing, Remote Recording, Snapmail, Timelapse..<br><i><small>..works with any camera</small></i></h2>            
-            <a class="btn btn-grey-outline pull-left" href="/uses/construction" role="button">View Use Case</a>
+            <a class="btn btn-grey-outline pull-left" href="/uses" role="button">View All Use Cases</a>
           </div>
           <div class="title-image">
             <img src="img/stephens-green-cam.jpg">
@@ -93,19 +95,19 @@
         </div>
         <div class="gallery">          
           <div class="use-case">
-            <a href="/uses/weighbridge"><h3>Weighbridge <span class="ti-arrow-right"></span></h3></a>
+            <h3><a href="/uses/weighbridge">Weighbridge </a></span></h3>
             <p>Embeded CCTV images in transaction documents from footage at a Weighbridge.</p>
           </div>
           <div class="use-case">
-            <h3>SAP MII <!--<span class="ti-arrow-right"></span>--></h3>
+            <h3><a href="/uses/sap">SAP MII </a></h3>
             <p>Integration with SAP Manufacturing </p>
           </div>
           <div class="use-case">
-            <h3>Community CCTV <!--<span class="ti-arrow-right"></span>--></h3>
+            <h3>Community CCTV</h3>
             <p>Allow multiple people to securely share cameras</p>
           </div>
         </div>
-        <a class="btn btn-grey-outline pull-right" href="/uses" role="button">View All Use Cases</a>
+        
       </div>
     </section>
     <div id="add-camera" class="alt-color">
@@ -138,8 +140,12 @@
       </section>
     </div>
     <div class="create-account">
+    <h3 class="text-center">Get more from your Cameras</h3>
       <a class="btn btn-grey-outline" href="https://dash.evercam.io/v1/users/signup">Create a Free Account</a>
     </div>
     <? include 'footer.php'; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+    <script src="/js/bootstrap.min.js" async></script>
+    <script src="/js/custom.min.js" async></script>
   </body>
 </html>

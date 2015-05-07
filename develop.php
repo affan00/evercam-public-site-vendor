@@ -51,6 +51,9 @@
   </section>
 </div> 
 <? include 'footer.php'; ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+<script src="/js/bootstrap.min.js" async></script>
+<script src="/js/custom.min.js" async></script>
 <script src="js/vivus.js"></script>
 <script>
 var myVivus = new Vivus('svg');
