@@ -29,7 +29,7 @@
         <div class="use-cases">        
           <div class="title">       
             <div class="text-content">       
-              <?  $url = "https://api.evercam.io/v1/public/cameras?api_id=e30d3982&api_key=b6a5709e5767079204e1d0811abf43fc";
+              <?  $url = "https://api.evercam.io/v1/public/cameras";
               $data = json_decode(file_get_contents($url));
 
               echo "<table>
