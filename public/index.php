@@ -44,11 +44,12 @@
               
               <div id="camera-single" style="display:none">
                 <div id="camera-image-container" class="row">
+                  <a id="lnkBacktoMap" href="#">< Back</a>
                   <img id="camera-image" src="">
                 </div>
-                <div class="row">
+                <div id="camera-details-container">
                   <div class="col-md-6">
-                    <table>
+                    <table class="details">
                       <tr>
                         <td>Name</td>
                         <td><span id="camera-name"></span></td>
@@ -78,16 +79,15 @@
                         <td><span id="camera-status"></span></td>
                       </tr>
                       <tr>
-                        <td>Timezones</td>
+                        <td>Timezone</td>
                         <td><span id="camera-timezone"></span></td>
                       </tr> 
                     </table>
                   </div>
                   <div class="col-md-4 pull-right">
-                    <div id="camera-map" style="border:1px #000 solid; height:250px; width:100%;"></div>
+                    <div id="camera-map"></div>
                   </div>
                 </div>
-                <div><a id="lnkBacktoMap" href="#">< Back</a></div>
               </div>
             </div>
         </div>

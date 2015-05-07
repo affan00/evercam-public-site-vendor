@@ -226,14 +226,14 @@ function loadCamera(id) {
         $("#camera-timezone").text(camera.timezone);
 
         var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
-        camera_map.setCenter(camera_position);
-        map.setCenter(camera_position);
-
         camera_marker = new google.maps.Marker({
           position: camera_position,
           map: camera_map,
           title: camera.name
         });
+        
+        camera_map.setCenter(camera_position);
+        map.setCenter(camera_position);
       }
       $( "#public-map" ).hide();
       $( "#camera-single" ).fadeIn( 'slow' );

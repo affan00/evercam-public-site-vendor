@@ -32,3 +32,30 @@
   max-width: 50px !important;
   max-height: 50px !important;
 }
+
+#camera-details-container {
+  padding: 15px;
+}
+
+#camera-map {
+  border:1px #000 solid; height:250px; width:100%;
+}
+
+a#lnkBacktoMap {
+  position: absolute;
+  top: 15px;
+  left: 11px;
+}
+
+.details {
+  font-size: 15px;
+}
+
+.details td {
+  padding-bottom: 5px;
+}
+
+.details td span {
+  color: black;
+  padding-left: 5px;
+}
