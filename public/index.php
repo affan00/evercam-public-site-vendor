@@ -27,9 +27,10 @@
           <input id="pac-input" class="controls" type="text" placeholder="Search the map for Cameras">
           <small><a id="lnkMyLocation" href="#">Show me cameras near my location</a></small>
         </div>
-        <div class="cameras-wrapper">
-             
-        </div>
+      </div>
+      <div class="cameras-wrapper">
+        <div id='cameras-count'><div class='cameras-count'></div></div>
+        <div class='cameras-containers'></div>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -38,8 +39,55 @@
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
-              <div id="public-map"></div>
-              <div id="camera-single"></div>
+              <div id="public-map" style="display:none"></div>
+              
+              <div id="camera-single" style="display:none">
+                <div id="camera-image-container" class="row">
+                  <a id="lnkBacktoMap" href="#">< Back</a>
+                  <img id="camera-image" src="">
+                </div>
+                <div id="camera-details-container">
+                  <div class="col-md-6">
+                    <table class="details">
+                      <tr>
+                        <td>Name</td>
+                        <td><span id="camera-name"></span></td>
+                      </tr> 
+                      <tr>
+                        <td>ID</td>
+                        <td><span id="camera-id"></span></td>
+                      </tr>
+                      <tr>
+                        <td>Owner</td>
+                        <td><span id="camera-owner"></span></td>
+                      </tr>
+                      <tr>
+                        <td>Vendor</td>
+                        <td><span id="camera-vendor"></span></td>
+                      </tr>
+                      <tr>
+                        <td>Model</td>
+                        <td><span id="camera-model"></span></td>
+                      </tr>
+                      <tr>
+                        <td>Created</td>
+                        <td><span id="camera-created"></span></td>
+                      </tr> 
+                      <tr>
+                        <td>Status</td>
+                        <td><span id="camera-status"></span></td>
+                      </tr>
+                      <tr>
+                        <td>Timezone</td>
+                        <td><span id="camera-timezone"></span></td>
+                      </tr> 
+                    </table>
+                  </div>
+                  <div class="col-md-4 pull-right">
+                    <div id="camera-map"></div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         <div class="home-link" style="position:absolute;right:46px;bottom:10px;"><!-- only temporary inline style-->
