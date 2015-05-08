@@ -33,12 +33,27 @@
   max-height: 50px !important;
 }
 
-#camera-details-container {
-  padding: 15px;
+#camera-single {
+  background-image: url('/img/puff.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#camera-map {
-  border:1px #000 solid; height:250px; width:100%;
+#lnkBacktoMap {
+  padding: 1px 10px;
+  border-radius: 25px;
+  background:rgba(255,255,255,0.4);
+}
+
+#camera-details-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#static-map {
+  width:100%;
+  cursor: pointer;
+  border: none;
 }
 
 a#lnkBacktoMap {

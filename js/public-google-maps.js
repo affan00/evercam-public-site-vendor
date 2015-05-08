@@ -14,9 +14,6 @@ var place_changed = false;
 var reload_cameras = true;
 var current_zoom = 15;
 
-var camera_map;
-var camera_marker;
-
 var DEFAULT_ZOOM = 15;
 var DEFAULT_DISTANCE = 1000;
 var DEFAULT_LOCATION = "Dublin, Ireland";
@@ -175,16 +172,13 @@ function initialize() {
     $( "#public-map" ).fadeIn( 'slow' );
     resetCamera();
   });
-
-  // initialize single camera map
-  camera_map = new google.maps.Map(document.getElementById('camera-map'), {
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    center: DEFAULT_POSITION,
-    zoom: DEFAULT_ZOOM
+  $("#static-map").click(function() {
+    $( "#camera-single" ).hide();
+    $( "#public-map" ).fadeIn( 'slow' );
+    resetCamera();
   });
 
   $('.cameras-containers').css('height', window.innerHeight - 145);
-  $( "#public-map" ).fadeIn( 'slow' );
 }
 
 // loads single camera details
@@ -225,14 +219,11 @@ function loadCamera(id) {
           $("#camera-status").text("Offline");
         $("#camera-timezone").text(camera.timezone);
 
+        $("#static-map").attr("src", "https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=780x350&maptype=roadmap&markers=label:C|" + camera.location.lat + ",%20" + camera.location.lng);
+
         var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
-        camera_marker = new google.maps.Marker({
-          position: camera_position,
-          map: camera_map,
-          title: camera.name
-        });
-        
-        camera_map.setCenter(camera_position);
+
+        // sets map center to selected camera location
         map.setCenter(camera_position);
       }
       $( "#public-map" ).hide();
@@ -246,6 +237,7 @@ function loadCamera(id) {
 
 // clearup single camera details
 function resetCamera() {
+  //$("#camera-image").attr("src", "/img/loading.gif");
   $("#camera-image").attr("src", "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
   $("#camera-name").text("");
   $("#camera-id").text("");
@@ -255,12 +247,6 @@ function resetCamera() {
   $("#camera-created").text("");
   $("#camera-status").text("");
   $("#camera-timezone").text("");
-
-  camera_map.setCenter(DEFAULT_POSITION);
-
-  if (camera_marker) {
-    camera_marker.setMap(null);
-  }
 }
 
 // load cameras from evercam api, near given location 
