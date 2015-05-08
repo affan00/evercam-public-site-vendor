@@ -211,3 +211,13 @@ a#lnkBacktoMap {
   padding-top: 0px;
   padding-right: 5px;
 }
+
+/* SINGLE CAMERA VIEW*/
+div#camera-image-container {
+  background: #000;
+  text-align: center;
+}
+img#camera-image {
+  height: 95vh;
+  width:auto;
+}

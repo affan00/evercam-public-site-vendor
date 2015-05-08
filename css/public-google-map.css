@@ -36,7 +36,8 @@
 #camera-single {
   background-image: url('/img/puff.svg');
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: center;
+  height: 100vh;
 }
 
 #lnkBacktoMap {
@@ -72,5 +73,6 @@ a#lnkBacktoMap {
 
 .details td span {
   color: black;
-  padding-left: 5px;
+  padding: 0px 15px 5px 0px;
+
 }
