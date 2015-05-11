@@ -75,5 +75,6 @@ a#lnkBacktoMap {
 
 .details td span {
   color: black;
-  padding-left: 5px;
+  padding: 0px 15px 5px 0px;
+
 }
