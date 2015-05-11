@@ -9,8 +9,8 @@
     <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
     <meta name="author" content="Evercam">
     <!-- Bootstrap -->
+    <link href="/css/main.css" rel="stylesheet">
     <link href="/css/public-google-map.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,geometry"></script>
     <script src="/js/bootstrap.min.js" async></script>
@@ -46,6 +46,7 @@
                 <a id="lnkBacktoMap" href="#"><i class="fa fa-arrow-left"></i> Map</a>
                 <img id="camera-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
               </div>
+
               <div id="camera-details-container">
                 <div class="col-md-6">
                   <table class="details">
