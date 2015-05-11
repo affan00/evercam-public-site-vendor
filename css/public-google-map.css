@@ -3,6 +3,9 @@
   width: 150px;
   height: auto;
 }
+.camera-snapshot {
+  cursor: pointer;
+}
 .camera-info-name {
   display: block;
   position:absolute;
@@ -76,5 +79,4 @@ a#lnkBacktoMap {
 .details td span {
   color: black;
   padding: 0px 15px 5px 0px;
-
 }

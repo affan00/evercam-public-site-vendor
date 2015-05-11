@@ -83,10 +83,7 @@ function initialize() {
 
   // handles map dragstart event and set flag as being dragged
   google.maps.event.addListener(map, 'zoom_changed', function() {
-    // reload camera only if user zoom out
-    if (current_zoom > map.getZoom()) {
-      reload_cameras = true;
-    }
+    reload_cameras = true;
     current_zoom = map.getZoom();
     closeInfos();
   });
@@ -104,7 +101,7 @@ function initialize() {
       if (bounds)
       {
         var pos2 = new google.maps.LatLng(bounds.getNorthEast().lat(), bounds.getNorthEast().lng());
-        DEFAULT_DISTANCE = google.maps.geometry.spherical.computeDistanceBetween(pos, pos2);
+        DEFAULT_DISTANCE = google.maps.geometry.spherical.computeDistanceBetween(pos, pos2) - 300;
       }
       
       var request = { location: pos, radius: '1' };
@@ -121,6 +118,7 @@ function initialize() {
           }
 
           if (reload_cameras) {
+            clearMarkers();
             reload_cameras = false;
 
             loadCameras();
@@ -178,11 +176,12 @@ function initialize() {
     resetCamera();
   });
 
-  $('.cameras-containers').css('height', window.innerHeight - 145);
+  $('.cameras-containers').css('height', window.innerHeight - 150);
 }
 
 // loads single camera details
 function loadCamera(id) {
+  window.location.hash = id;
   resetCamera();
   $.ajax({
     type: 'GET',
@@ -237,7 +236,6 @@ function loadCamera(id) {
 
 // clearup single camera details
 function resetCamera() {
-  //$("#camera-image").attr("src", "/img/loading.gif");
   $("#camera-image").attr("src", "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
   $("#camera-name").text("");
   $("#camera-id").text("");
@@ -388,5 +386,5 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 // bind resize event
 google.maps.event.addDomListener(window, 'resize', function() {
-  $('.cameras-containers').css('height', window.innerHeight - 145);
+  $('.cameras-containers').css('height', window.innerHeight - 150);
 });
