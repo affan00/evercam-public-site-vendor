@@ -296,3 +296,10 @@ a#back {
 	position: absolute;
 }
 /* move to public*/
+/*jobs */
+.job-body {
+	@extend .col-md-8;
+	p {
+		margin: 0 0 25px;
+	}
+}
