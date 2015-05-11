@@ -23,6 +23,11 @@ header {
 		@extend .col-md-8;		
 	}
 }
+#jobs  {
+	.banner-content {	
+	@extend .col-md-8;
+	}
+}
 #press {
 	.banner-content {
 		@extend .col-md-6;		
