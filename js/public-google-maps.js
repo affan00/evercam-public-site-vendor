@@ -13,10 +13,12 @@ var userPosition;
 var markerClusterer;
 var place_changed = false;
 var reload_cameras = true;
+var set_bounds = false;
+var zoom_change = false;
 var current_zoom = 15;
 
 var DEFAULT_ZOOM = 15;
-var DEFAULT_DISTANCE = 1000;
+var DEFAULT_DISTANCE = 2000;
 var DEFAULT_LOCATION = "Dublin, Ireland";
 var DEFAULT_POSITION = new google.maps.LatLng(53.3401496, -6.2611343);
 
@@ -59,7 +61,7 @@ function initialize() {
           userLocation = places[0];
           $("#pac-input").val(userLocation.name);
           $("#lnkMyLocation").html("Show me cameras near my location (" + userLocation.name + ")");
-          console.log("User location " + userLocation.name);
+          console.log("Your location is " + userLocation.name);
         }
       });
     };
@@ -85,6 +87,7 @@ function initialize() {
   // handles map dragstart event and set flag as being dragged
   google.maps.event.addListener(map, 'zoom_changed', function() {
     reload_cameras = true;
+    zoom_change = true;
     current_zoom = map.getZoom();
     closeInfos();
   });
@@ -93,6 +96,11 @@ function initialize() {
   google.maps.event.addListener(map, 'idle', function() {
     var bounds = map.getBounds();
     var center = map.getCenter();
+
+    if (set_bounds) {
+      set_bounds = false;
+      return;
+    }
 
     if (center) {
       userLat = center.lat();
@@ -226,7 +234,7 @@ function loadCamera(id) {
           $("#camera-model").text(camera.model_name);
         else
           $("#camera-model").text("Not available");
-        $("#camera-created").text(camera.created_at);
+        $("#camera-created").text(timestamp2date(camera.created_at));
         if (camera.is_online)
           $("#camera-status").text("Online");
         else
@@ -248,6 +256,20 @@ function loadCamera(id) {
       console.log("LoadCamera(" + id + ") Err: " + response.message);
     },
   });
+}
+
+// converts a unix timestamp datetime
+function timestamp2date(timestamp) {
+  var a = new Date(timestamp * 1000);
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var year = a.getFullYear();
+  var month = months[a.getMonth()];
+  var date = a.getDate();
+  var hour = a.getHours();
+  var min = a.getMinutes();
+  var sec = a.getSeconds();
+  var time = month + ' ' + date + ', ' + year + ' ' + hour + ':' + min;
+  return time;
 }
 
 // clearup single camera details
@@ -274,77 +296,118 @@ function loadCameras() {
     type: 'GET',
     url: "https://api.evercam.io/v1/public/cameras?thumbnail=true&within_distance=" + DEFAULT_DISTANCE + "&is_near_to=" + userLat + "," + userLng,
     success: function(response) {
-      $(".cameras-containers").html('');
-      
-      camera_count.html("<span><small><strong>" + response.cameras.length + "</strong> cameras showing</small></span>");
-      var bounds = new google.maps.LatLngBounds();
-      for (var i = 0; i < response.cameras.length; i++) {
-        if (response.cameras[i].location && response.cameras[i].location.lat != "0" && response.cameras[i].location.lng != "0") {
-          camera_container = $("<div class='camera-container' />");
-          var marker;
-          if (response.cameras[i].thumbnail) {
-            camera_container.append("<div id='" + response.cameras[i].id + "' class='camera'><img class='camera-snapshot' src='" + response.cameras[i].thumbnail + "'></div>");
-
-            camera_container.on('click', "#" + response.cameras[i].id, function(e) {
-              loadCamera(this.id);
-            });
-
-            camera_container.on('mouseover', "#" + response.cameras[i].id, function(e) {
-              google.maps.event.trigger(markersList["marker_" + this.id], 'mouseover');
-            });
-            camera_container.on('mouseout', "#" + response.cameras[i].id, function(e) {
-              google.maps.event.trigger(markersList["marker_" + this.id], 'mouseout');
-            });
-
-            marker = new google.maps.Marker({
-              position: new google.maps.LatLng(response.cameras[i].location.lat, response.cameras[i].location.lng),
-              map: map,
-              title: response.cameras[i].name,
-              icon: {
-                size: new google.maps.Size(220,220),
-                scaledSize: new google.maps.Size(32,32),
-                origin: new google.maps.Point(0,0),
-                url: response.cameras[i].thumbnail,
-                anchor: new google.maps.Point(16,16),
-              },
-              optimized:false
-            });
-          } else {
-            marker = new google.maps.Marker({
-              position: new google.maps.LatLng(response.cameras[i].location.lat, response.cameras[i].location.lng),
-              map: map,
-              title: response.cameras[i].name,
-              optimized:false
-            });
-          }
-
-          // process multiple info windows
-          addInfoWindow(marker, response.cameras[i].id, response.cameras[i].name, response.cameras[i].thumbnail);
-
-          markers.push(marker);
-          markersList["marker_" + response.cameras[i].id] = marker;
-          markerClusterer.addMarker(marker);
-
-          bounds.extend(new google.maps.LatLng(marker.position.lat(), marker.position.lng()));
-          //reload_cameras = false;
-          //map.setZoom(DEFAULT_ZOOM);
-          //map.fitBounds(bounds);
-
-          if (response.cameras[i].is_online)
-            camera_container.append("<div class='camera-name'>" + response.cameras[i].name + "</div>");
-          else
-            camera_container.append("<div class='camera-name off'><i class='red fa fa-chain-broken'/> " + response.cameras[i].name + "</div>");
-          
-          $(".cameras-containers").append(camera_container);
-        }
+      if (response.cameras.length > 0) {
+        mapCameras(response.cameras);
+      } else {
+        $.ajax({
+          type: 'GET',
+          url: "https://api.evercam.io/v1/public/cameras?thumbnail=true&within_distance=" + (DEFAULT_DISTANCE * 2) + "&is_near_to=" + userLat + "," + userLng,
+          success: function(response) {
+            if (response.cameras.length > 0) {
+              mapCameras(response.cameras);
+            } else {
+              $.ajax({
+                type: 'GET',
+                url: "https://api.evercam.io/v1/public/cameras?thumbnail=true&within_distance=" + (DEFAULT_DISTANCE * 4) + "&is_near_to=" + userLat + "," + userLng,
+                success: function(response) {
+                  if (response.cameras.length > 0) {
+                    mapCameras(response.cameras);
+                  } else {
+                    camera_count.html("<span><small><strong>0</strong> cameras showing</small></span>");
+                  }
+                },
+                error: function(response){
+                  $(".cameras-wrapper").html('');
+                  clearMarkers();
+                  console.log("LoadCameras Err#3: " + response.message);
+                },
+              });
+            }
+          },
+          error: function(response){
+            $(".cameras-wrapper").html('');
+            clearMarkers();
+            console.log("LoadCameras Err#2: " + response.message);
+          },
+        });
       }
     },
     error: function(response){
       $(".cameras-wrapper").html('');
       clearMarkers();
-      console.log("LoadCameras Err: " + response.message);
+      console.log("LoadCameras Err#1: " + response.message);
     },
   });
+}
+
+function mapCameras(cameras) {
+  $(".cameras-containers").html('');
+
+  camera_count.html("<span><small><strong>" + cameras.length + "</strong> cameras showing</small></span>");
+  var bounds = new google.maps.LatLngBounds();
+  for (var i = 0; i < cameras.length; i++) {
+    if (cameras[i].is_online && cameras[i].location && cameras[i].location.lat != "0" && cameras[i].location.lng != "0") {
+      camera_container = $("<div class='camera-container' />");
+      var marker;
+      if (cameras[i].thumbnail) {
+        camera_container.append("<div id='" + cameras[i].id + "' class='camera'><img class='camera-snapshot' src='" + cameras[i].thumbnail + "'></div>");
+
+        camera_container.on('click', "#" + cameras[i].id, function(e) {
+          google.maps.event.trigger(markersList["marker_" + this.id], 'click');
+        });
+        camera_container.on('mouseover', "#" + cameras[i].id, function(e) {
+          google.maps.event.trigger(markersList["marker_" + this.id], 'mouseover');
+        });
+        camera_container.on('mouseout', "#" + cameras[i].id, function(e) {
+          google.maps.event.trigger(markersList["marker_" + this.id], 'mouseout');
+        });
+
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(cameras[i].location.lat, cameras[i].location.lng),
+          map: map,
+          title: cameras[i].name,
+          icon: {
+            size: new google.maps.Size(220,220),
+            scaledSize: new google.maps.Size(32,32),
+            origin: new google.maps.Point(0,0),
+            url: cameras[i].thumbnail,
+            anchor: new google.maps.Point(16,16),
+          },
+          optimized:false
+        });
+      } else {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(cameras[i].location.lat, cameras[i].location.lng),
+          map: map,
+          title: cameras[i].name,
+          optimized:false
+        });
+      }
+
+      // process multiple info windows
+      addInfoWindow(marker, cameras[i].id, cameras[i].name, cameras[i].thumbnail);
+
+      markers.push(marker);
+      markersList["marker_" + cameras[i].id] = marker;
+      markerClusterer.addMarker(marker);
+
+      bounds.extend(new google.maps.LatLng(marker.position.lat(), marker.position.lng()));
+
+      if (cameras[i].is_online)
+        camera_container.append("<div class='camera-name'>" + cameras[i].name + "</div>");
+      else
+        camera_container.append("<div class='camera-name off'><i class='red fa fa-chain-broken'/> " + cameras[i].name + "</div>");
+      
+      $(".cameras-containers").append(camera_container);
+    }
+  }
+  set_bounds = true;
+  //map.setZoom(DEFAULT_ZOOM);
+  if (!zoom_change) {
+    zoom_change = false;
+    map.fitBounds(bounds);
+  }
+  //map.setCenter(bounds.getCenter());
 }
 
 // add infowindow to given marker
@@ -354,6 +417,7 @@ function addInfoWindow(marker, cameraId, cameraName, cameraThumbnail) {
       content: "<div id='camera-info-" + cameraId + "' class='camera-info'><img class='camera-thumbnail' src='" + cameraThumbnail + "'><span class='camera-info-name'>" + cameraName + "</span></div>"
     });
     google.maps.event.addListener(marker, 'mouseover', function () {
+      set_bounds = true;
       google.maps.event.addListener(infowindow, 'domready', function() {
         var iwOuter = $('.camera-info').parent().parent().parent();
         iwOuter.prev().css({'display' : 'none'});
@@ -361,7 +425,6 @@ function addInfoWindow(marker, cameraId, cameraName, cameraThumbnail) {
         iwOuter.parent().parent().css({left: '-75px', top: '35px'});
       });
       closeInfos();
-      
       infowindow.open(map, marker);
     });
 
