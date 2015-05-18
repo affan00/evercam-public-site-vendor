@@ -25,7 +25,7 @@
       <div class="sidebar-nav">
         <div class="search-container">
           <input id="pac-input" class="controls" type="text" placeholder="Search the map for Cameras">
-          <small><a id="lnkMyLocation" href="#">Show me cameras near my location</a></small>
+          <small><a id="lnkMyLocation" href="javascript:void(0);">Show me cameras near my location</a></small>
         </div>
       </div>
       <div class="cameras-wrapper">
@@ -42,8 +42,8 @@
             <div id="public-map"></div>
             
             <div id="camera-single" style="display:none;">
+              <a id="lnkBacktoMap" href="javascript:void(0);"><i class="fa fa-arrow-left"></i> Map</a>
               <div id="camera-image-container" class="row">
-                <a id="lnkBacktoMap" href="#"><i class="fa fa-arrow-left"></i> Map</a>
                 <img id="camera-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
               </div>
 

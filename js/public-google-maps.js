@@ -1,5 +1,6 @@
 var map;
 var place;
+var camera;
 var autocomplete;
 var infosList = [];
 var markers = [];
@@ -151,6 +152,8 @@ function initialize() {
   // handles user click on 'show cameras near me' link
   // and try getting user's geo location
   $("#lnkMyLocation").click(function() {
+    history.replaceState( {} , '/public/cameras/', '/public/' );
+
     if (userPosition && userLocation) {
       $("#pac-input").val(userLocation.name);
       reload_cameras = true;
@@ -162,44 +165,56 @@ function initialize() {
       place_changed = true;
       map.setCenter(DEFAULT_POSITION);
     }
+    
+    $( "#camera-single" ).hide();
+    $( "#public-map" ).fadeIn( 'slow' );
   });
 
   // handles user click on Back button on single camera page
   $("#lnkBacktoMap").click(function() {
+    history.replaceState( {} , '/public/cameras/', '/public/' );
+
     $( "#camera-single" ).hide();
     $( "#public-map" ).fadeIn( 'slow' );
+
     resetCamera();
   });
   $("#static-map").click(function() {
+    history.replaceState( {} , '/public/cameras/', '/public/' );
+
     $( "#camera-single" ).hide();
     $( "#public-map" ).fadeIn( 'slow' );
+
     resetCamera();
   });
-
+  
   $('.cameras-containers').css('height', window.innerHeight - 150);
+}
+
+// get url part after '/public/cameras/'
+function getCameraId() {
+  var pathArray = window.location.pathname.split( '/' );
+  if (pathArray.length && pathArray[3])
+    return pathArray[3];
 }
 
 // loads single camera details
 function loadCamera(id) {
-  window.location.hash = id;
+  history.replaceState( {} , '/public/', '/public/cameras/' + id );
   resetCamera();
   $.ajax({
     type: 'GET',
     url: "https://api.evercam.io/v1/public/cameras?id_starts_with=" + id + "&thumbnail=true",
     success: function(response) {
-      var camera = response.cameras[0];
+      camera = response.cameras[0];
       if (camera) {
-        $("#camera-image").on({
-          load: function(){
-            //$("#camera-image").show();
-          }, 
-          error: function(){
-            //$("#camera-image").hide();
-            $("#camera-image").attr("src", camera.thumbnail);
-            console.log("Error loading camera image");
-          }
-        });
-        $("#camera-image").attr("src", "https://api.evercam.io/v1/cameras/" + id + "/live/snapshot.jpg");
+        $("#camera-image").attr("src", camera.thumbnail);
+        if (camera.is_online) {
+          $("#camera-image-container").html( "<div class='live-view' id='ec-container'></div> <script src='https://dash.evercam.io/live.view.widget.js?refresh=1&camera=" + camera.id + "&private=false' async></script>" );
+        } else {
+          $("#camera-image-container").html( "<img id='camera-image' src='" + camera.thumbnail + "' />" );
+        }
+
         $("#camera-name").text(camera.name);
         $("#camera-id").text(camera.id);
         $("#camera-owner").text(camera.owner);
@@ -228,15 +243,15 @@ function loadCamera(id) {
       $( "#public-map" ).hide();
       $( "#camera-single" ).fadeIn( 'slow' );
     },
-    error: function(response){
+    error: function(response) {
+      camera = undefined;
       console.log("LoadCamera(" + id + ") Err: " + response.message);
     },
-  });  
+  });
 }
 
 // clearup single camera details
 function resetCamera() {
-  $("#camera-image").attr("src", "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
   $("#camera-name").text("");
   $("#camera-id").text("");
   $("#camera-owner").text("");
@@ -260,7 +275,7 @@ function loadCameras() {
     url: "https://api.evercam.io/v1/public/cameras?thumbnail=true&within_distance=" + DEFAULT_DISTANCE + "&is_near_to=" + userLat + "," + userLng,
     success: function(response) {
       $(".cameras-containers").html('');
-
+      
       camera_count.html("<span><small><strong>" + response.cameras.length + "</strong> cameras showing</small></span>");
       var bounds = new google.maps.LatLngBounds();
       for (var i = 0; i < response.cameras.length; i++) {
@@ -315,7 +330,11 @@ function loadCameras() {
           //map.setZoom(DEFAULT_ZOOM);
           //map.fitBounds(bounds);
 
-          camera_container.append("<div class='camera-name'>" + response.cameras[i].name + "</div>");
+          if (response.cameras[i].is_online)
+            camera_container.append("<div class='camera-name'>" + response.cameras[i].name + "</div>");
+          else
+            camera_container.append("<div class='camera-name off'><i class='red fa fa-chain-broken'/> " + response.cameras[i].name + "</div>");
+          
           $(".cameras-containers").append(camera_container);
         }
       }
