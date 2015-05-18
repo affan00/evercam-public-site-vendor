@@ -26,15 +26,15 @@
     </div>
     
     <section>  
-      <div class="wordpress-page">
+      <div class="jobs">
         <?php
-        $args = array( 'numberposts' => 10, 'post_status'=>"publish",'post_type'=>"job",'orderby'=>"post_date");
+        $args = array( 'numberposts' => 10, 'post_status'=>"publish",'post_type'=>"current_jobs",'orderby'=>"post_date");
         $postslist = get_posts( $args );
         foreach ($postslist as $post) : setup_postdata($post); ?>
            <div class="row article">
               <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-                      <p><?php the_date(); ?></p>
-                       <p><?php the_excerpt(); ?></p>
+                      <p><i><?php the_date(); ?></i></p>
+                       <p><?php the_content(); ?></p>
           </div>
         <?php endforeach; ?> 
       </div>

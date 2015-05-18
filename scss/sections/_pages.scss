@@ -297,6 +297,11 @@ a#back {
 }
 /* move to public*/
 /*jobs */
+.jobs {
+	.article {
+		margin-bottom: 30px;
+	}
+}
 .job-body {
 	@extend .col-md-8;
 	p {
