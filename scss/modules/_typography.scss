@@ -54,6 +54,10 @@ b, strong .bold {
 p {
 	color:$body-text;
 }
+i {
+	font-family: $font-stack-italic;
+	font-style: normal !important;
+}
 strong {
 	font-family: $font-stack-bold;
 	font-weight: normal;
