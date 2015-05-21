@@ -31,6 +31,16 @@
           <div class="list"> 
             <div class="press-item">
               <h2>
+                <a href="http://www.geektime.com/2015/05/21/20-irish-startups-that-will-rock-you-the-celtic-way/" target="_blank">
+                20 Irish Startups that will rock you the celtic way <i class="fa fa-external-link"></i>
+                </a>
+              </h2>
+              <p class="dark-text">
+               GeekTime, May 2015
+              </p>
+            </div>
+                        <div class="press-item">
+              <h2>
                 <a href="http://startupireland.ie/easy-way-integrate-camera-platform/" target="_blank">
                 The Easy Way to Integrate a Camera into <br>any Platform <i class="fa fa-external-link"></i>
                 </a>
