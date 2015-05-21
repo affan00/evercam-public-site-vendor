@@ -177,7 +177,7 @@
           <h6>Upcoming</h6>      
             <img src="../img/elixir-conf.jpg">
             <h2>
-              <a href="http://www.techinsight.io/event/berlin-march-2015/" target="_blank">
+              <a href="https://www.youtube.com/watch?v=h_HtO8KPvsM" target="_blank">
               Elixir Conf <i class="fa fa-external-link"></i>
               </a>
             </h2>
