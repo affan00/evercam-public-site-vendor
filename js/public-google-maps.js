@@ -331,6 +331,13 @@ function loadCamera(id) {
 
     $("#static-map").attr("src", "https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=780x350&maptype=roadmap&markers=label:C|" + camera.location.lat + ",%20" + camera.location.lng);
 
+    if (camera.id in userCamerasList) {
+      $("#lnkAddtoAccount").hide();
+    } else {
+      $("#lnkAddtoAccount").show();
+    }
+
+
     var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
 
     //// sets map center to selected camera location
@@ -513,13 +520,12 @@ function mapCameras(cameras) {
     }
   }
   camera_count.html("<span><small><strong>" + Object.keys(camerasList).length + "</strong> cameras showing</small></span>");
-  //set_bounds = true;
+  set_bounds = true;
 
   //map.setZoom(DEFAULT_ZOOM);
   if (!zoom_change) {
     zoom_change = false;
     map.fitBounds(bounds);
-    console.log("fitBounds");
   }
   //map.setCenter(bounds.getCenter());
 }
