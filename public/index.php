@@ -28,9 +28,17 @@
           <small><a id="lnkMyLocation" href="javascript:void(0);">Show me cameras near my location</a></small>
         </div>
       </div>
+      
       <div class="cameras-wrapper">
         <div id='cameras-count'><div class='cameras-count'></div></div>
         <div class='cameras-containers'></div>
+      </div>
+
+      <div class="sidebar-links">
+        <div id="user-login" style="display:none">
+          <span id="user-name"></span> | <a id="lnkLogout" href="javascript:void(0);">logout</a> | 
+        </div>
+        <a id="lnkGoToEvercam" href="https://dash.evercam.io" target='_blank'>Go to Evercam</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -42,7 +50,8 @@
             <div id="public-map"></div>
             
             <div id="camera-single" style="display:none;">
-              <a id="lnkBacktoMap" href="javascript:void(0);"><i class="fa fa-arrow-left"></i> Map</a>
+              <a id="lnkBacktoMap" href="javascript:void(0);" title="Back to Map"><i class="fa fa-arrow-left"></i> Map</a>
+              <a id="lnkAddtoAccount" class="add-to-account large" href="javascript:void(0);" title="Add to my account"><i class='fa fa-plus add-top-right large'></i></a>
               <div id="camera-image-container" class="row">
                 <img id="camera-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
               </div>
@@ -89,6 +98,57 @@
                 </div>
               </div>
             </div>
+            
+            <!-- Modal HTML -->
+            <div id="myModal" class="modal fade">
+              <div class="modal-dialog">
+                <div id="sign-in" class="modal-content col-md-8">
+                  <div id="sign-in" class="col-md-4 col-md-offset-4" style="margin-top:30px;">
+                    <h3 class="text-center">Sign in</h3>
+                  </div>
+                  <br/>
+                  <div class="modal-body">
+                    <form role="form">
+                      <div class="form-group">
+                        <div class="grey col-md-8 col-md-offset-2 text-center">
+                          <label for="username" class="control-label">Email or Username</label>
+                          <div class="input-icon right">
+                            <i class="icon-user"></i>
+                            <input type="text" class="form-control" id="username">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                          <label for="password" class="control-label">Password</label>
+                          <div class="input-icon right">
+                            <i class="icon-key"></i>
+                            <input type="password" class="form-control" id="password">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer" style="border-top:0; margin-top:60px;">
+                        <div class="col-md-8 col-md-offset-2">
+                          <div class="sign-in">
+                            <button type="button" id="singin" class="btn btn-large btn-primary col-lg-8 col-lg-offset-2">Sign in</button>
+                          </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                          <div class="grey margin-top-20">
+                            I've <a href="https://dash.evercam.io/v1/users/password-reset" target="_blank">forgotten my password</a>
+                          </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                          <div class="grey margin-top-20">
+                            Or <a href="https://dash.evercam.io/v1/users/signup" target="_blank">Create an account</a>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="home-link" style="position:absolute;right:46px;bottom:10px;"><!-- only temporary inline style-->
@@ -100,7 +160,6 @@
   </div>
   <!-- /#wrapper -->
 
-  
   <script src="/js/public-google-maps.js"></script>
   </body>
 </html>
