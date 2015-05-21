@@ -95,6 +95,7 @@ function initialize() {
   google.maps.event.addListener(map, 'zoom_changed', function() {
     reload_cameras = true;
     zoom_change = true;
+    set_bounds = false;
     closeInfos();
   });
 
@@ -104,6 +105,7 @@ function initialize() {
     var center = map.getCenter();
 
     if (set_bounds) {
+      console.log("set_bounds");
       set_bounds = false;
       return;
     }
@@ -133,12 +135,11 @@ function initialize() {
           }
 
           if (reload_cameras) {
-            clearMarkers();
+            console.log("reload_cameras");
 
             reload_cameras = false;
-
-            clearCameras();
             clearMarkers();
+            clearCameras();
 
             loadPublicCameras();
           }
@@ -186,6 +187,32 @@ function initialize() {
     
     $( "#camera-single" ).hide();
     $( "#public-map" ).fadeIn( 'slow' );
+  });
+
+  $("#lnkLogout").click(function() {
+    localStorage.removeItem("api_id");
+    localStorage.removeItem("api_key");
+    localStorage.removeItem("user_id");
+    localStorage.removeItem("user_name");
+    localStorage.removeItem("user_firstname");
+    localStorage.removeItem("user_lastname");
+    localStorage.removeItem("user_email");
+
+    $( "#camera-single" ).hide();
+    $( "#public-map" ).fadeIn( 'slow' );
+
+    $("#user-login").hide();
+    $("#user-name").text("");
+    $("#lnkGoToEvercam").attr("href", "https://dash.evercam.io/");
+
+    clearUserCameras();
+    clearCameras();
+    clearMarkers();
+    resetCamera();
+
+    reload_cameras = true;
+
+    loadPublicCameras();
   });
 
   // handles user click on Back button on single camera page
@@ -236,7 +263,7 @@ function initialize() {
           url: "https://api.evercam.io/v1/users/" + login + "?api_id=" + response.api_id + "&api_key=" + response.api_key,
           success: function(response) {
             localStorage.setItem("user_id", response.users[0].id);
-            localStorage.setItem("user_username", response.users[0].username);
+            localStorage.setItem("user_name", response.users[0].username);
             localStorage.setItem("user_firstname", response.users[0].firstname);
             localStorage.setItem("user_lastname", response.users[0].lastname);
             localStorage.setItem("user_email", response.users[0].email);
@@ -273,28 +300,7 @@ function initialize() {
     });
   });
   
-  $('.cameras-containers').css('height', window.innerHeight - 150);
-}
-
-// shares given public camera with given user id
-function shareCamera(camera_id, user_email, user_rights) {
-  return $.ajax({
-    async: false,
-    type: 'POST',
-    dataType: 'json',
-    data: { email: user_email, rights: user_rights },
-    ContentType: 'application/json',
-    url: "https://api.evercam.io/v1/cameras/" + camera_id + "/shares?api_id=" + localStorage.getItem("api_id") + "&api_key=" + localStorage.getItem("api_key"),
-  }).responseJSON;
-}
-
-// fetch camera with given id from Evercam
-function getCamera(camera_id) {
-  return $.ajax({
-    async: false,
-    type: 'GET',
-    url: "https://api.evercam.io/v1/public/cameras?id_starts_with=" + camera_id + "&thumbnail=true",
-  }).responseJSON.cameras[0];
+  $('.cameras-containers').css('height', window.innerHeight - 170);
 }
 
 // loads single camera details
@@ -354,6 +360,10 @@ function loadCamera(id) {
 
 function loadUserCameras() {
   if (localStorage.getItem("api_id") && localStorage.getItem("api_key") && localStorage.getItem("user_email")) {
+    $("#user-name").text(localStorage.getItem("user_name"));
+    $("#lnkGoToEvercam").attr("href", "https://dash.evercam.io/v1/cameras/?api_id=" + localStorage.getItem("api_id") + "&api_key=" + localStorage.getItem("api_key"));
+    $("#user-login").show();
+
     var userCameras = $.ajax({
       async: false,
       type: 'GET',
@@ -363,9 +373,11 @@ function loadUserCameras() {
     for (var i=0; i<Object.keys(userCameras).length ; i++) {
       userCamerasList[userCameras[i].id] = userCameras[i].name;
     }
-
-    //localStorage.setItem("userCameras", Object.keys(userCameras));
-    //console.log(localStorage.getItem("userCameras"));
+  } else {
+    clearUserCameras();
+    $("#user-name").text("");
+    $("#lnkGoToEvercam").attr("href", "https://dash.evercam.io/");
+    $("#user-login").hide();
   }
 }
 
@@ -445,7 +457,6 @@ function mapCameras(cameras) {
 
         //if ($.inArray(cameras[i].id, userCameras) == -1)
         if (!(cameras[i].id in userCamerasList)) {
-          console.log("Share: " + cameras[i].id);
           camera_container.append("<a class='add-to-account' id='add-" + cameras[i].id + "' camera='" + cameras[i].id + "' title='Add to my account'><i class='fa fa-plus add-top-right'></i></a>");
         }
 
@@ -522,12 +533,31 @@ function mapCameras(cameras) {
   camera_count.html("<span><small><strong>" + Object.keys(camerasList).length + "</strong> cameras showing</small></span>");
   set_bounds = true;
 
-  //map.setZoom(DEFAULT_ZOOM);
   if (!zoom_change) {
     zoom_change = false;
-    map.fitBounds(bounds);
+    //map.fitBounds(bounds);
   }
-  //map.setCenter(bounds.getCenter());
+}
+
+// shares given public camera with given user id
+function shareCamera(camera_id, user_email, user_rights) {
+  return $.ajax({
+    async: false,
+    type: 'POST',
+    dataType: 'json',
+    data: { email: user_email, rights: user_rights },
+    ContentType: 'application/json',
+    url: "https://api.evercam.io/v1/cameras/" + camera_id + "/shares?api_id=" + localStorage.getItem("api_id") + "&api_key=" + localStorage.getItem("api_key"),
+  }).responseJSON;
+}
+
+// fetch camera with given id from Evercam
+function getCamera(camera_id) {
+  return $.ajax({
+    async: false,
+    type: 'GET',
+    url: "https://api.evercam.io/v1/public/cameras?id_starts_with=" + camera_id + "&thumbnail=true",
+  }).responseJSON.cameras[0];
 }
 
 // add infowindow to given marker
@@ -563,12 +593,22 @@ function addInfoWindow(marker, cameraId, cameraName, cameraThumbnail) {
   })(marker);
 }
 
+// clear all user cameras
+function clearUserCameras() {
+  if (userCamerasList) {
+    userCamerasList = {};
+    userCamerasList.length = 0;
+  }
+}
+
 // clear all cameras
 function clearCameras() {
   console.log("Reloading cameras...");
+  if (camerasList) {
+    camerasList = {};
+    camerasList.length = 0;
+  }
   camera = undefined;
-  camerasList = {};
-  camerasList.length = 0;
 }
 
 // clear all markers from map
@@ -631,5 +671,5 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 // bind resize event
 google.maps.event.addDomListener(window, 'resize', function() {
-  $('.cameras-containers').css('height', window.innerHeight - 150);
+  $('.cameras-containers').css('height', window.innerHeight - 170);
 });

@@ -33,6 +33,13 @@
         <div id='cameras-count'><div class='cameras-count'></div></div>
         <div class='cameras-containers'></div>
       </div>
+
+      <div class="sidebar-links">
+        <div id="user-login" style="display:none">
+          <span id="user-name"></span> | <a id="lnkLogout" href="javascript:void(0);">logout</a> | 
+        </div>
+        <a id="lnkGoToEvercam" href="https://dash.evercam.io" target='_blank'>Go to Evercam</a>
+      </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
