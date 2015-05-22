@@ -41,3 +41,24 @@ table.dataTable.no-footer, table.dataTable thead th, table.dataTable thead td {
 	border-radius: 50%;
 	box-shadow: none;
 }
+label {
+	font-weight: normal;
+}
+.form-control {
+	border-radius: 2px;
+}
+#public input {
+  border: 1px solid #e5e5e5;
+  padding: 6px;
+  box-shadow: 0 0 0 50px #f9f9f9 inset !important;
+  text-fill-color: #333;
+}
+#public input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #f9f9f9 inset !important;
+  -webkit-text-fill-color: #333;
+}
+#public input:-webkit-autofill, #public textarea:-webkit-autofill, #public select:-webkit-autofill {
+  background-color: rgb(250, 255, 189);
+  background-image: none;
+  color: rgb(0, 0, 0);
+}

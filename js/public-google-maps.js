@@ -300,7 +300,7 @@ function initialize() {
     });
   });
   
-  $('.cameras-containers').css('height', window.innerHeight - 170);
+  $('.cameras-containers').css('height', window.innerHeight - 120);
 }
 
 // loads single camera details

@@ -146,3 +146,29 @@
 @media (min-width: $screen-md-min) {
   .modal-lg { width: $modal-lg; }
 }
+
+/*CUSTOM MODAL */
+
+.modal {
+  text-align: center;
+}
+
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content {
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  background-color: #fff;
+}
