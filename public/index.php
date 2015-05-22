@@ -25,7 +25,7 @@
       <div class="sidebar-nav">
         <div class="search-container">
           <input id="pac-input" class="controls" type="text" placeholder="Search the map for Cameras">
-          <small><a id="lnkMyLocation" href="javascript:void(0);">Show me cameras near my location</a></small>
+          <!--<small><a id="lnkMyLocation" href="javascript:void(0);">Show me cameras near my location</a></small>-->
         </div>
       </div>
       
@@ -36,9 +36,14 @@
 
       <div class="sidebar-links">
         <div id="user-login" style="display:none">
-          <span id="user-name"></span> | <a id="lnkLogout" href="javascript:void(0);">logout</a> | 
+          <span id="user-name"></span> | <a id="lnkLogout" href="javascript:void(0);">Logout</a>
+          <span class="pull-right">
+           <a id="lnkGoToEvercam" href="https://dash.evercam.io" target='_blank'>Camera Dashboard</a>
+            <i class="fa fa-sign-in"></i>
+          </span>
         </div>
-        <a id="lnkGoToEvercam" href="https://dash.evercam.io" target='_blank'>Go to Evercam</a>
+
+
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -99,7 +104,7 @@
               </div>
             </div>
             
-            <!-- Modal HTML -->
+            
             <div id="myModal" class="modal fade">
               <div class="modal-dialog">
                 <div id="sign-in" class="modal-content col-md-8">
@@ -120,7 +125,7 @@
                       </div>
                       <div class="form-group">
                         <div class="col-md-8 col-md-offset-2 text-center">
-                          <label for="password" class="control-label">Password</label>
+                          <label for="password" class="margin-top-15 control-label">Password</label>
                           <div class="input-icon right">
                             <i class="icon-key"></i>
                             <input type="password" class="form-control" id="password">
@@ -128,19 +133,21 @@
                         </div>
                       </div>
                       <div class="modal-footer" style="border-top:0; margin-top:60px;">
-                        <div class="col-md-8 col-md-offset-2">
-                          <div class="sign-in">
-                            <button type="button" id="singin" class="btn btn-large btn-primary col-lg-8 col-lg-offset-2">Sign in</button>
+                        <div class="row">
+                          <div class="col-md-8 col-md-offset-2">
+                            <div class="sign-in">
+                              <button type="button" id="singin" class="btn btn-grey-outline btn--inverted">Sign in</button>
+                            </div>
                           </div>
                         </div>
                         <div class="col-md-12 text-center">
                           <div class="grey margin-top-20">
-                            I've <a href="https://dash.evercam.io/v1/users/password-reset" target="_blank">forgotten my password</a>
+                            <small>I've <a href="https://dash.evercam.io/v1/users/password-reset" target="_blank">forgotten my password</a></small>
                           </div>
                         </div>
                         <div class="col-md-12 text-center">
                           <div class="grey margin-top-20">
-                            Or <a href="https://dash.evercam.io/v1/users/signup" target="_blank">Create an account</a>
+                            <small>Or <a href="https://dash.evercam.io/v1/users/signup" target="_blank">Create an account</a></small>
                           </div>
                         </div>
                       </div>
