@@ -299,7 +299,11 @@ a#back {
 /*jobs */
 .jobs {
 	.article {
-		margin-bottom: 30px;
+		margin-bottom: 100px;
+	}
+	i {
+		margin-bottom: 25px;
+		display: block;
 	}
 }
 .job-body {
