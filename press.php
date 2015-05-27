@@ -144,7 +144,7 @@
           <div class="featured">
             <div class="press-card">
             <h6>Featured</h6>      
-              <img src="http://www.evercam.io/img/carrolls-twittercam.jpg">
+              <img src="/img/carrolls-twittercam.jpg">
               <h2>
                 <a href="http://motherboard.vice.com/read/cctv-selfies-a-portrait-of-surveillance-around-dublin" target="_blank">
                 CCTV Selfies: I Turned City Surveillance into My Personal Photographer </a>
@@ -154,7 +154,7 @@
               </p>
             </div>
              <div class="press-card">
-             <img src="http://www.evercam.io/img/techcrunch.jpg">
+             <img src="/img/techcrunch.jpg">
               <h2>
                 <a href="http://techcrunch.com/2014/05/05/evercam-makes-it-easy-to-integrate-cameras-into-any-project/" target="_blank">
                 Evercam Makes It Easy To Integrate Cameras Into Any Project <i class="fa fa-external-link"></i>
@@ -175,7 +175,7 @@
         <div class="in-the-press">          
           <div class="speaker-card">
           <h6>Upcoming</h6>      
-            <img src="http://www.evercam.io/img/elixir-conf.jpg">
+            <img src="/img/elixir-conf.jpg">
             <h2>
               <a href="https://www.youtube.com/watch?v=h_HtO8KPvsM" target="_blank">
               Elixir Conf <i class="fa fa-external-link"></i>
@@ -187,7 +187,7 @@
           </div>
           <div class="speaker-card">
           <h6>Past</h6>      
-            <img src="http://www.evercam.io/img/tech-insight.jpg">
+            <img src="/img/tech-insight.jpg">
             <h2>
               <a href="http://www.slideshare.net/MarcoHerbst/techinsight-berlin-march-2015-cameras-in-smart-cities-by-evercam" target="_blank">
               Cameras in Smart Cities <i class="fa fa-slideshare"></i>
@@ -204,7 +204,7 @@
           </div>
           <!--<div class="speaker-card">
           <h6>Past</h6>   
-            <img src="http://www.evercam.io/img/apistrat.jpg">
+            <img src="/img/apistrat.jpg">
             <h2 class="dark-text">
                <a href="http://www.slideshare.net/programmableweb/pivoting-your-business-from-product-to-platform" target="_blank">Pivoting Your Business From Product to Platform <i class="fa fa-slideshare"></i></a>
             </h2>           
@@ -219,7 +219,7 @@
           
           <div class="speaker-card">
           <h6>Past</h6>   
-            <img src="http://www.evercam.io/img/apistrat.jpg">
+            <img src="/img/apistrat.jpg">
             <h2>
               <a href="http://www.slideshare.net/MarcoHerbst/rules-for-success-when-developing-for-cameras" target="_blank">
              Rules for success when developing for cameras <i class="fa fa-slideshare"></i> 
