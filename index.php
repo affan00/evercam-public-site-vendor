@@ -23,12 +23,12 @@
         <a class="btn btn-grey-outline btn--inverted" href="#add-camera" role="button">Add a Camera</a>
       </div>
       <div class="banner-image">
-        <img src="/img/browser-border.svg">          
+        <img src="img/browser-border.svg">          
       </div>
-      <div class="phone"><img src="/img/phone.jpg"></div>
+      <div class="phone"><img src="img/phone.jpg"></div>
       <div class="desktop">
         <video width="778" height="438" autoplay loop>
-        <source src="/img/dash.mp4" type="video/mp4">
+        <source src="img/dash.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video>
       </div>
@@ -90,7 +90,7 @@
             <a class="btn btn-grey-outline pull-left" href="/uses" role="button">View All Use Cases</a>
           </div>
           <div class="title-image">
-            <img src="/img/stephens-green-cam.jpg">
+            <img src="img/stephens-green-cam.jpg">
           </div>
         </div>
         <div class="gallery">          
@@ -131,7 +131,7 @@
                 <div class="row">
                   <div class="add-camera-mobile-description">
                     <p>Evercam Capture turns your phone into a camera (actually 2 cameras if you have 2 cameras on your phone) and connects them securely to your account on Evercam.</p><br>
-                    <a href="https://play.google.com/store/apps/details?id=io.evercam.capture&hl=en" target="_blank"><img src="/img/google_play_download.png" alt="Get it on Google Play"></a>
+                    <a href="https://play.google.com/store/apps/details?id=io.evercam.capture&hl=en" target="_blank"><img src="img/google_play_download.png" alt="Get it on Google Play"></a>
                   </div>
                 </div>
               </div>

@@ -20,7 +20,7 @@
           <h2>Easily add functionality to your camera with our growing range of apps.</h2>
         </div>
         <div class="app-image">
-          <img src="/img/connected-camera.svg">
+          <img src="../img/connected-camera.svg">
         </div>
       </div>
     </header>

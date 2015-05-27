@@ -54,7 +54,7 @@ name="description">
   </section> 
   <section> 
     <h3>What's What</h3>
-    <img src="/img/whats-what.png" class="image">
+    <img src="img/whats-what.png" class="image">
     <table class="table table-responsive">
     <tr>
     <th class="col-md-3">

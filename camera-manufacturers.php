@@ -27,7 +27,7 @@
         <br>
         </div>              
         <div class="manufacturers-image">
-            <img class="connect" src="/img/connected-camera.svg">
+            <img class="connect" src="../img/connected-camera.svg">
           </div>
       </div>
     </header>
