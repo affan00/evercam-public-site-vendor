@@ -17,7 +17,7 @@
       <div class="banner">
         <div class="banner-content">
           <h1>Evercam Values</h1>
-          <h2>The customer is your granny &amp; she is sitting beside you</h2>
+          <h2>The customer is your granny &amp; they are sitting beside you</h2>
         </div>
       </div>
     </header>
