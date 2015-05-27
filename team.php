@@ -58,7 +58,7 @@ name="description">
       <h4>Hustler <small>- Failed piano player</small></h4>
     </div>
     <div class="team-individual">
-      <img alt="Liuting Du" src="http://www.evercam.io/img/liuting.jpg">
+      <img alt="Liuting Du" src="/img/liuting.jpg">
       <h2>Liuting Du <a data-toggle="tooltip" href=
       "https://twitter.com/liutingdu" target="_blank" title=
       "twitter"><span class="fa fa-twitter"></span></a>
@@ -81,7 +81,7 @@ name="description">
       <h4>Engineer <small>- Johnny Five meets Cable Guy.</small></h4>
     </div>
     <div class="team-individual">
-      <img alt="Miloš Mošić" src="http://www.evercam.io/img/milos.png">
+      <img alt="Miloš Mošić" src="/img/milos.png">
       <h2>Miloš Mošić 
         <small>
      <a data-toggle="tooltip" href=
