@@ -21,7 +21,7 @@
       <a class="btn btn-grey-outline data-async btn--inverted" href="https://dash.evercam.io/v1/users/signup" role="button">Create Account</a>
     </div>
     <!--<div class="banner-image">
-      <img src="../img/header-banner.pngs">
+      <img src="http://www.evercam.io/img/header-banner.pngs">
     </div>-->
   </div>
 </header>
