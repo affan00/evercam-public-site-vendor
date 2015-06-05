@@ -58,7 +58,7 @@
           <div id="camera-single" style="display:none;">
             <a id="lnkBacktoMap" href="javascript:void(0);" title="Back to Map"><i class="fa fa-arrow-left"></i> Map</a>
             <a id="lnkAddtoAccount" class="add-to-account large" href="javascript:void(0);" title="Add to my account"><i class='fa fa-plus add-top-right large'></i></a>
-            <div id="camera-image-container" class="row" style="background-image:url('/img/logo-white.png'); background-position:center center; background-repeat:no-repeat;">
+            <div id="camera-image-container" class="row" style="background-image:url('/img/puff.svg'); background-position:center center; background-repeat:no-repeat;">
               <img id="camera-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
             </div>
 
