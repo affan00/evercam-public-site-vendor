@@ -159,7 +159,7 @@
         </div>
       </div>
       <div class="home-link" style="position:absolute;right:46px;bottom:10px;"><!-- only temporary inline style-->
-        <a class="navbar-brand" href="/"><img alt="evercam.io" src="/img/puff.svg"></a>
+        <a class="navbar-brand" href="/"><img alt="evercam.io" src="/img/evercam-logo.svg"></a>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
