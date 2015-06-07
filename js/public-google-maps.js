@@ -13,6 +13,7 @@ var userLng = 0;
 var userLocation;
 var userPosition;
 var markerClusterer;
+var load_camera = false;
 var place_changed = false;
 var reload_cameras = true;
 var set_bounds = false;
@@ -51,16 +52,18 @@ function initialize() {
 
   var id = getCameraId();
   camera = getCamera(getCameraId());
+  if (id && camera) {
+    load_camera = true;
+    MODE = "CAM";
+  }
 
   // try getting user's geo location
   if (navigator.geolocation) {
     function success(position) {
-      if (camera) {
-        console.log("camera location");
+      if (load_camera) {
         userLat = camera.location.lat;
         userLng = camera.location.lng;
       } else {
-        console.log("user location");
         userLat = position.coords.latitude;
         userLng = position.coords.longitude;
       }
@@ -68,13 +71,15 @@ function initialize() {
       
       reload_cameras = true;
       place_changed = true;
-      map.setCenter(userPosition);
+      set_bounds = load_camera;
+
       var request = { location: userPosition, radius: '1' };
       var service = new google.maps.places.PlacesService(map);
       service.nearbySearch(request, function(places, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
           userLocation = places[0];
           $("#pac-input").val(userLocation.name);
+          map.setCenter(userPosition);
         }
       });
     };
@@ -113,11 +118,19 @@ function initialize() {
     var bounds = map.getBounds();
     var center = map.getCenter();
 
+    // if id && camera is initialized on page initialize
+    if (load_camera) {
+      console.log("load_camera");
+      loadCamera(camera);
+      loadPublicCameras();
+      return;
+    }
+
     if (set_bounds) {
       console.log("set_bounds");
       set_bounds = false;
       return;
-    }
+    } 
 
     if (center) {
       userLat = center.lat();
@@ -142,19 +155,11 @@ function initialize() {
 
           if (reload_cameras) {
             reload_cameras = false;
+
             clearMarkers();
             clearCameras();
-
-            // if id && camera is initialized on page initialize
-            if (id && camera) {
-              id = 0;
-
-              userLat = camera.location.lat;
-              userLng = camera.location.lng;
-
-              loadCamera(camera);
-            }
-
+            
+            console.log("load_public");
             loadPublicCameras();
           }
         }
@@ -168,7 +173,7 @@ function initialize() {
     if (!place.geometry) {
       return;
     }
-    camera_count.html("<span><small>Looking for public cameras</small></span>");
+    //camera_count.html("<span><small>Looking for public cameras</small></span>");
     place_changed = true;
     reload_cameras = true;
 
@@ -211,6 +216,7 @@ function initialize() {
   // handles user click on Back button on single camera page
   $("#lnkBacktoMap").click(function() {
     MODE = "MAP";
+    load_camera = false;
     history.replaceState( {} , '/public/cameras/', '/public/cameras/' );
 
     $( "#camera-single" ).hide();
@@ -220,6 +226,7 @@ function initialize() {
   });
   $("#static-map").click(function() {
     MODE = "MAP";
+    load_camera = false;
     history.replaceState( {} , '/public/cameras/', '/public/cameras/' );
 
     $( "#camera-single" ).hide();
@@ -365,9 +372,11 @@ function loadCamera(camera) {
       $("#lnkAddtoAccount").show();
     }
 
-    var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
-    map.setCenter(camera_position);
+    //var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
+    //set_bounds = true;
+    //map.setCenter(camera_position);
 
+    load_camera = false;
     $( "#public-map" ).hide();
     $( "#camera-single" ).fadeIn( 'slow' );
   } else {
@@ -416,10 +425,13 @@ function loadCameraId(id) {
       $("#lnkAddtoAccount").show();
     }
 
+    if (MODE === "CAM") {
+      set_bounds = true;
+    }
+    //var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
+    //map.setCenter(camera_position);
 
-    var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
-    map.setCenter(camera_position);
-
+    load_camera = false;
     $( "#public-map" ).hide();
     $( "#camera-single" ).fadeIn( 'slow' );
   } else {
@@ -458,7 +470,7 @@ function loadPublicCameras() {
   camera_count.html("<span><small>Looking for public cameras</small></span>");
 
   $.ajax({
-    async: false,
+    //async: false,
     type: 'GET',
     url: "https://api.evercam.io/v1/public/cameras?thumbnail=true&within_distance=" + DEFAULT_DISTANCE + "&is_near_to=" + userLat + "," + userLng,
     success: function(response) {
@@ -606,8 +618,8 @@ function mapCameras(cameras) {
   }
 
   if (place_changed) {
+    console.log("place_changed");
     place_changed = false;
-    map.fitBounds(bounds);
   }
 }
 
