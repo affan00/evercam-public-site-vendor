@@ -18,7 +18,13 @@
   max-width: 50px !important;
   max-height: 50px !important;
 }
-
+.camera {
+  background-color: #eeeeee;
+  background-image: url('/img/puff.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  min-height: 45px;
+}
 .camera-thumbnail {
   border: 10px solid white !important;
   width: 150px;
@@ -37,7 +43,6 @@
 }
 .camera-wrap {
   margin-bottom: 5px;
-
 }
 .add-to-account {
   font-size: 23px;
