@@ -216,10 +216,6 @@ function initialize() {
     $( "#public-map" ).fadeIn( 'slow' );
 
     resetCamera();
-    
-    initMap();
-
-    map.setCenter(new google.maps.LatLng(userLat, userLng));
   });
   $("#static-map").click(function() {
     MODE = "MAP";
@@ -232,10 +228,6 @@ function initialize() {
     $( "#public-map" ).fadeIn( 'slow' );
 
     resetCamera();
-    
-    initMap();
-    
-    map.setCenter(new google.maps.LatLng(userLat, userLng));
   });
 
   // handles add camera to user account
@@ -406,9 +398,11 @@ function loadCamera(camera) {
       $("#lnkAddtoAccount").show();
     }
 
-    //var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
-    //set_bounds = true;
-    //map.setCenter(camera_position);
+    // if (MODE === "CAM") {
+    //   set_bounds = true;
+    // }
+    // var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
+    // map.setCenter(camera_position);
 
     load_camera = false;
     $( "#public-map" ).hide();
@@ -459,11 +453,11 @@ function loadCameraId(id) {
       $("#lnkAddtoAccount").show();
     }
 
-    if (MODE === "CAM") {
-      set_bounds = true;
-    }
-    //var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
-    //map.setCenter(camera_position);
+    // if (MODE === "CAM") {
+    //   set_bounds = true;
+    // }
+    // var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
+    // map.setCenter(camera_position);
 
     load_camera = false;
     $( "#public-map" ).hide();
