@@ -1,4 +1,5 @@
 var map;
+var myoverlay;
 var place;
 var camera;
 var autocomplete;
@@ -28,22 +29,10 @@ var EVERCAM_DASHBOARD = "https://dash.evercam.io/";
 
 function initialize() {
   camera_count = $(".cameras-count");
+  Notification.init(".bb-alert");
+  //Notify("Testing <strong>my</strong> message.", "warning");
 
-  // initialize map
-  map = new google.maps.Map(document.getElementById('public-map'), {
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    zoom: DEFAULT_ZOOM
-  });
-  markerClusterer = new MarkerClusterer(map);
-  
-  $(".home-link").prepend("<div id='login-user'></div>");
-
-  // set markers overlay id to be used in css
-  var myoverlay = new google.maps.OverlayView();
-  myoverlay.draw = function () {
-    this.getPanes().markerLayer.id='markerLayer';
-  };
-  myoverlay.setMap(map);
+  initMap();
 
   // Create the search box and link it to the UI element.
   var input = document.getElementById('pac-input');
@@ -85,14 +74,15 @@ function initialize() {
     };
     function error() {
       reload_cameras = true;
-      place_changed = true;
+      place_changed = false;
       map.setCenter(DEFAULT_POSITION);
       $("#pac-input").val(DEFAULT_LOCATION);
-      console.log("Unable to retrieve your location");
+      Notify("Failed to retrieve your Geolocation.", "danger");
+      console.log("Failed to retrieve your Geolocation");
     };
-
     navigator.geolocation.getCurrentPosition(success, error);
   } else {
+    Notify("Geolocation is not supported by your browser.", "warning");
     console.log("Geolocation is not supported by your browser");
   }
 
@@ -149,7 +139,7 @@ function initialize() {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
           place = places[0];
 
-          if (reload_cameras) {
+          if (!place_changed && reload_cameras) {
             $("#pac-input").val(place.name)
           }
 
@@ -173,9 +163,10 @@ function initialize() {
     if (!place.geometry) {
       return;
     }
-    //camera_count.html("<span><small>Looking for public cameras</small></span>");
+
     place_changed = true;
     reload_cameras = true;
+    set_bounds = false;
 
     userLat = place.geometry.location.lat();
     userLng = place.geometry.location.lng();
@@ -217,35 +208,51 @@ function initialize() {
   $("#lnkBacktoMap").click(function() {
     MODE = "MAP";
     load_camera = false;
+    set_bounds = false;
+    reload_cameras = false;
     history.replaceState( {} , '/public/cameras/', '/public/cameras/' );
 
     $( "#camera-single" ).hide();
     $( "#public-map" ).fadeIn( 'slow' );
 
     resetCamera();
+    
+    initMap();
+
+    map.setCenter(new google.maps.LatLng(userLat, userLng));
   });
   $("#static-map").click(function() {
     MODE = "MAP";
     load_camera = false;
+    set_bounds = false;
+    reload_cameras = false;
     history.replaceState( {} , '/public/cameras/', '/public/cameras/' );
 
     $( "#camera-single" ).hide();
     $( "#public-map" ).fadeIn( 'slow' );
 
     resetCamera();
+    
+    initMap();
+    
+    map.setCenter(new google.maps.LatLng(userLat, userLng));
   });
 
   // handles add camera to user account
   $("#lnkAddtoAccount").click(function() {
     if (localStorage.getItem("api_id") && localStorage.getItem("api_key") && localStorage.getItem("user_email")) {
-      var result = shareCamera(camera_id, localStorage.getItem("user_email"), MINIMAL_RIGHTS);
-      var result = shareCamera(camera.id, response.users[0].email, MINIMAL_RIGHTS);
-      if (result.shares)
-        alert("Camera '" + camera.id + "' is now shared with you.");
-      else if (result.code === "duplicate_share_error")
-        alert("Camera '" + camera.id + "' is already shared with you.");
-      else 
-        alert("Could not share camera '" + camera.id + "' with you.");
+      var result = shareCamera(camera.id, localStorage.getItem("user_email"), MINIMAL_RIGHTS);
+      if (result.shares) {
+        $("#lnkAddtoAccount").hide();
+        Notify("Camera <strong>" + camera.id + "</strong> is now shared with you.", "info");
+      }
+      else if (result.code === "duplicate_share_error") {
+        $("#lnkAddtoAccount").hide();
+        Notify("Camera <strong>" + camera.id + "</strong> is already shared with you.", "warning");
+      }
+      else {
+        Notify("Camera <strong>" + camera.id + "</strong> could not be shared with you.", "danger");
+      }
     } else {
       $("#myModal").modal('show');
     }
@@ -255,6 +262,7 @@ function initialize() {
   $("#singin").click(function() {
     var login = $("#username").val();
     var password = $("#password").val();
+    $("#singin").attr('disabled','disabled');
     $.ajax({
       type: 'GET',
       url: "https://api.evercam.io/v1/users/" + login + "/credentials?password=" + password,
@@ -275,13 +283,22 @@ function initialize() {
             // sets new user email on login area
             $("#login-user").html(localStorage.getItem("user_email"));
 
+            $("#singin").removeAttr('disabled');
+            // hides login dialog
+            $("#myModal").modal('hide');
+
             var result = shareCamera(camera.id, response.users[0].email, MINIMAL_RIGHTS);
-            if (result.shares)
-              alert("Camera '" + camera.id + "' is now shared with you.");
-            else if (result.code === "duplicate_share_error")
-              alert("Camera '" + camera.id + "' is already shared with you.");
-            else 
-              alert("Could not share camera '" + camera.id + "' with you.");
+            if (result.shares) {
+              $("#lnkAddtoAccount").hide();
+              Notify("Camera <strong>" + camera.id + "</strong> is now shared with you.", "info");
+            }
+            else if (result.code === "duplicate_share_error") {
+              $("#lnkAddtoAccount").hide();
+              Notify("Camera <strong>" + camera.id + "</strong> is already shared with you.", "warning");
+            }
+            else {
+              Notify("Camera <strong>" + camera.id + "</strong> could not be shared with you.", "danger");
+            }
 
             // load logged in user's all cameras
             loadUserCameras();
@@ -290,16 +307,16 @@ function initialize() {
             clearCameras();
             clearMarkers();
             loadPublicCameras();
-
-            $("#myModal").modal('hide');
           },
           error: function(xhr) {
-            alert("Invalid user information.");
+            $("#singin").removeAttr('disabled');
+            Notify("Invalid user information.", "danger");
           },
         });
       },
       error: function(xhr){
-        alert("Invalid user name and/or password.");
+        $("#singin").removeAttr('disabled');
+        Notify("Invalid username and/or password.", "danger");
       },
     });
   });
@@ -332,6 +349,23 @@ function initialize() {
   });
   
   $('.cameras-containers').css('height', window.innerHeight - 120);
+}
+
+// initialize google map
+function initMap() {
+  // initialize map
+  map = new google.maps.Map(document.getElementById('public-map'), {
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    zoom: DEFAULT_ZOOM
+  });
+  markerClusterer = new MarkerClusterer(map);
+
+  //set markers overlay id to be used in css
+  myoverlay = new google.maps.OverlayView();
+  myoverlay.draw = function () {
+    this.getPanes().markerLayer.id='markerLayer';
+  };
+  myoverlay.setMap(map);
 }
 
 // loads single camera details
@@ -553,14 +587,17 @@ function mapCameras(cameras) {
             if (localStorage.getItem("api_id") && localStorage.getItem("api_key") && localStorage.getItem("user_email")) {
               var result = shareCamera(camera.id, localStorage.getItem("user_email"), MINIMAL_RIGHTS);
               if (result.shares) {
+                $("#lnkAddtoAccount").hide();
                 userCamerasList[camera.id] = camera.name;
                 $("#add-" + camera.id).remove();
-                alert("Camera '" + camera.id + "' is now shared with you.");
+                Notify("Camera <strong>" + camera.id + "</strong> is now shared with you.", "info");
               }
-              else if (result.code === "duplicate_share_error")
-                alert("Camera '" + camera.id + "' is already shared with you.");
-              else 
-                alert("Could not share camera '" + camera.id + "' with you.");
+              else if (result.code === "duplicate_share_error") {
+                Notify("Camera <strong>" + camera.id + "</strong> is already shared with you.", "warning");
+              }
+              else {
+                Notify("Camera <strong>" + camera.id + "</strong> could not be shared with you.", "danger");
+              }
             } else {
               $("#myModal").modal('show');
             }
@@ -613,9 +650,9 @@ function mapCameras(cameras) {
 
   set_bounds = true;
 
-  if (!zoom_change) {
-    zoom_change = false;
-  }
+  // if (!zoom_change) {
+  //   zoom_change = false;
+  // }
 
   if (place_changed) {
     console.log("place_changed");
@@ -746,6 +783,11 @@ function timestamp2date(timestamp) {
   var sec = a.getSeconds();
   var time = month + ' ' + date + ', ' + year + ' ' + hour + ':' + min;
   return time;
+}
+
+function Notify(message, type) {
+  $(".bb-alert").removeClass("alert-warning").removeClass("alert-danger").removeClass("alert-warning").addClass("alert-" + type);
+  Notification.show(message);
 }
 
 // bind initialize event with page load
