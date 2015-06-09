@@ -10,22 +10,22 @@
     <meta name="author" content="Evercam">
     <!-- Bootstrap -->
     <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/public-google-map.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,geometry"></script>
     <script src="/js/bootstrap.min.js" async></script>
     <script src="/js/custom.min.js" async></script>
+    <script src="/js/notification.js"></script>
     <script src="/js/markerclusterer.js"></script>
   </head>
   <body id="public">
   <div id="wrapper">
-    
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
       <div class="sidebar-nav">
         <div class="search-container">
           <input id="pac-input" class="controls" type="text" placeholder="Search the map for Cameras">
-          <!--<small><a id="lnkMyLocation" href="javascript:void(0);">Show me cameras near my location</a></small>-->
         </div>
       </div>
       
@@ -42,8 +42,6 @@
             <i class="fa fa-sign-in"></i>
           </span>
         </div>
-
-
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -163,7 +161,9 @@
       </div>
     </div>
     <!-- /#page-content-wrapper -->
-
+    <div class="alert alert-info bb-alert" style="display:none">
+      <div></div>
+    </div>
   </div>
   <!-- /#wrapper -->
 
