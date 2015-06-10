@@ -15,6 +15,7 @@ var userLocation;
 var userPosition;
 var markerClusterer;
 var load_camera = false;
+var place_loaded = true;
 var place_changed = false;
 var reload_cameras = true;
 var set_bounds = false;
@@ -29,7 +30,6 @@ var EVERCAM_DASHBOARD = "https://dash.evercam.io/";
 function initialize() {
   camera_count = $(".cameras-count");
   Notification.init(".bb-alert");
-  //Notify("Testing <strong>my</strong> message.", "warning");
 
   initMap();
 
@@ -43,6 +43,7 @@ function initialize() {
     camera = getCamera(getCameraId());
     if (camera) {
       load_camera = true;
+      place_loaded = false;
       MODE = "CAM";
     }
   }
@@ -69,6 +70,7 @@ function initialize() {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
           userLocation = places[0];
           $("#pac-input").val(userLocation.name);
+          place_loaded = true;
           map.setCenter(userPosition);
         }
       });
@@ -109,8 +111,10 @@ function initialize() {
     var center = map.getCenter();
 
     // if id && camera is initialized on page initialize
-    if (load_camera) {
+    if (load_camera && place_loaded) {
       console.log("load_camera");
+      load_camera = false;
+      place_loaded = true;
       loadCamera(camera);
       loadPublicCameras();
       return;
@@ -405,7 +409,6 @@ function loadCamera(camera) {
     // var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
     // map.setCenter(camera_position);
 
-    load_camera = false;
     $( "#public-map" ).hide();
     $( "#camera-single" ).fadeIn( 'slow' );
   } else {
@@ -460,7 +463,6 @@ function loadCameraId(id) {
     // var camera_position = new google.maps.LatLng(camera.location.lat, camera.location.lng);
     // map.setCenter(camera_position);
 
-    load_camera = false;
     $( "#public-map" ).hide();
     $( "#camera-single" ).fadeIn( 'slow' );
   } else {
