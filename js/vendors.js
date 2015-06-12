@@ -91,8 +91,9 @@ function initVendors() {
       success: function(response) {
         for (var i = 0; i < response.vendors.length; i++) {
           tr = $('<tr/>');
-          tr.append("<td style='width:100px;'><a href='/vendors/" + response.vendors[i].id + "'><img src='http://evercam-public-assets.s3.amazonaws.com/" + response.vendors[i].id + "/logo.jpg' style='height:auto; max-width:100px;' alt='" + response.vendors[i].id + "' /></a></td>");
-          tr.append("<td style='width:250px;'><a href='/vendors/" + response.vendors[i].id + "'>" + response.vendors[i].name + "</a></td>");
+          tr.append("<td style='width:100px; text-align:center;'><a href='/vendors/" + response.vendors[i].id + "'><img src='http://evercam-public-assets.s3.amazonaws.com/" + response.vendors[i].id + "/logo.jpg' style='width:auto; max-height:25px; max-width:150px;' alt='" + response.vendors[i].id + "' /></a></td>");
+          tr.append("<td style='width:100px;'><a href='/vendors/" + response.vendors[i].id + "'>" + response.vendors[i].name + "</a></td>");
+          tr.append("<td style='width:50px; text-align:center;'><a href='/vendors/" + response.vendors[i].id + "'>" + response.vendors[i].total_models + "</a></td>");
           tr.append("<td style='width:auto; text-wrap:normal;'>" + response.vendors[i].known_macs + "</td>");
           
           $('#vendorsTable').append(tr);
