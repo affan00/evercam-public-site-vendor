@@ -48,8 +48,9 @@
           <table id="vendorsTable" class="display table table-bordered" cellspacing="0" width="100%" style="display:none">
             <thead>
               <tr>
-                <th>Vendor</th>
+                <th style="text-align:center;">Vendor</th>
                 <th>Name</th>
+                <th style="text-align:center;">Models</th>
                 <th>MAC</th>
               </tr>
             </thead>
