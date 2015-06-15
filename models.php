@@ -21,14 +21,14 @@
     <div class="alt-color">
       <header>
         <div class="banner">
-          <a id="back" href="javascript:history.go(-1)" style="display:none"><< Back</a>
           <h1><img id="image" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;"><span id="heading"></span></h1>
           <h2><span id="sub-heading" style='word-wrap: break-word; '></span></h2>
+          <a href="/public"><i class="fa fa-arrow-left"></i> Back</a>
         </div>
       </header>
     </div>
     <div id="public-models">
-      <section>
+      <section style="padding-top:0px;">
         <div id="modelDetails" style="display:none">
           <h2>Jpg Url: <span id="jpgUrl" style="color:black;"></span></h2>
           <h2>MJpeg Url: <span id="mjpgUrl" style="color:black;"></span></h2>

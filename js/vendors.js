@@ -12,7 +12,6 @@ function initVendors() {
   
   if (vendor_id) 
   {
-    
     $("#loading").show();
     // show vendor details
     $.ajax({
@@ -31,12 +30,13 @@ function initVendors() {
 
     // show vendor's model list
     $.ajax({
+      async: false,
       type: 'GET',
       url: 'https://api.evercam.io/v1/models?limit=500&vendor_id=' + vendor_id,
       success: function(response) {
         for (var i = 0; i < response.models.length; i++) {
           tr = $('<tr/>');
-          tr.append("<td style='width:100px;'><a href='/models/" + response.models[i].id + "'><img src='http://evercam-public-assets.s3.amazonaws.com/" + response.models[i].vendor_id + "/" + response.models[i].id + "/icon.jpg' style='height:64px; width:auto;' alt='" + response.models[i].id + "' /></a></td>");
+          tr.append("<td style='width:100px; text-align:center;'><a href='/models/" + response.models[i].id + "'><img src='http://evercam-public-assets.s3.amazonaws.com/" + response.models[i].vendor_id + "/" + response.models[i].id + "/icon.jpg' style='width:auto; max-height:64px; max-width:150px;' alt='" + response.models[i].id + "' /></a></td>");
           tr.append("<td style='width:100px;'><a href='/models/" + response.models[i].id + "'>" + response.models[i].name + "</a></td>");
           tr.append("<td style='width:auto;'><a href='/vendors/" + response.models[i].vendor_id + "'>" + response.models[i].vendor_id + "</a></td>");
           
@@ -67,12 +67,9 @@ function initVendors() {
         $("#logo").attr("src", "http://evercam-public-assets.s3.amazonaws.com/" + vendor_id + "/logo.jpg");
         $("#logo").show();
         $("#vendorDetails").show();
-
-        $("#back").show();
       },
       error: function(response){
         $("#logo").hide();
-        $("#back").hide();
         $("#loading").hide();
         console.log("LoadVendorModels Err: " + response.message);
       },
@@ -83,7 +80,6 @@ function initVendors() {
     $("#heading").html("Vendors List");
     $("#sub-heading").html("List of camera vendors supported by Evercam");
     $("#loading").show();
-    $("#back").hide();
     
     $.ajax({
       type: 'GET',
@@ -109,7 +105,7 @@ function initVendors() {
               {
                 return "<span style='word-wrap: break-word;'>" + data.replace(RegExp(",", "g"), ", ") + "</span>";
               },
-              "targets": 2
+              "targets": 3
             }
           ]
         });

@@ -21,48 +21,26 @@
     <div class="alt-color">
       <header>
         <div class="banner">
-          <h1><img id="logo" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;"><span id="heading"></span></h1>
-          <h2><span id="sub-heading" style='word-wrap: break-word; '></span></h2>
-          <a href="/public"><i class="fa fa-arrow-left"></i> Back</a>
+          <h1><img id="logo" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;">Evercam Public Assets</h1>
+          <h2><span style='word-wrap: break-word; '>Currently on Evercam, there are:</span></h2>
+          <a id="back" href="javascript:history.go(-1)" style="display:none"><i class="fa fa-arrow-left"></i> Back</a>
         </div>
       </header>
     </div>
-    <div id="public-vendors">
+    <div id="public-assets">
       <section style="padding-top:0px;">
-        <div id="vendorDetails" style="display:none">
-          <table id="modelsTable" class="display table table-bordered" cellspacing="0" width="100%" style="display:none">
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th>Name</th>
-                <th>Vendor</th>
-                <th>Jpg Url</th>
-                <th>Mjpg Url</th>
-                <th>H264 Url</th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-        <div id="loading" style="display:none">Loading...</div>
-        <div id="vendorList" style="display:none">
-          <table id="vendorsTable" class="display table table-bordered" cellspacing="0" width="100%" style="display:none">
-            <thead>
-              <tr>
-                <th style="text-align:center;">Vendor</th>
-                <th>Name</th>
-                <th style="text-align:center;">Models</th>
-                <th>MAC</th>
-              </tr>
-            </thead>
-          </table>
+        <div id="assetDetails">
+          <h2>Public Cameras: <a href="/public/cameras"><span id="totalCameras">loading...</span></a></h2>
+          <h2>Vendors: <a href="../vendors"><span id="totalVendors">loading...</span></a></h2>
+          <h2>Models: <a href="../models"><span id="totalModels">loading...</span></a></h2>
         </div>
       </section>
     </div>
     <?php include 'footer.php'; ?>
-    <script src="/js/vendors.js"></script>
+    <script src="/js/assets.js"></script>
     <script>
       $(document).ready(function() {
-        initVendors();
+        initAssets();
       });
     </script>
   </body>
