@@ -10,20 +10,16 @@
     <meta name="author" content="Evercam">
     <title>Evercam.io</title>
     <link href="/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
-    <script src="https://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
     <script src="/js/bootstrap.min.js" async></script>
     <script src="/js/custom.min.js" async></script>
   </head>
   <body>
-    <?php include 'nav.php'; ?>
+    <?php include '../nav.php'; ?>
     <div class="alt-color">
       <header>
         <div class="banner">
-          <h1><img id="logo" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;">Evercam Public Assets</h1>
+          <h1>Evercam Public Assets</h1>
           <h2><span style='word-wrap: break-word; '>Currently on Evercam, there are:</span></h2>
-          <a id="back" href="javascript:history.go(-1)" style="display:none"><i class="fa fa-arrow-left"></i> Back</a>
         </div>
       </header>
     </div>
@@ -36,7 +32,7 @@
         </div>
       </section>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include '../footer.php'; ?>
     <script src="/js/assets.js"></script>
     <script>
       $(document).ready(function() {
