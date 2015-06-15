@@ -33,12 +33,9 @@ function initModels() {
           $("#username").text(response.models[0].defaults.auth.basic.username);
           $("#password").text(response.models[0].defaults.auth.basic.password);
         }
-
-        $("#back").show();
       },
       error: function(response){
         $("#image").hide();
-        $("#back").hide();
         console.log("LoadModel Err: " + response.message);
       },
     });
@@ -51,14 +48,13 @@ function initModels() {
     $("#sub-heading").html("List of camera models supported by Evercam");
     // show all model list
     $("#loading").show();
-    $("#back").hide();
     $.ajax({
       type: 'GET',
       url: 'https://api.evercam.io/v1/models?limit=5000',
       success: function(response) {
         for (var i = 0; i < response.models.length; i++) {
           tr = $('<tr/>');
-          tr.append("<td style='width:100px;'><a href='/models/" + response.models[i].id + "'><img src='http://evercam-public-assets.s3.amazonaws.com/" + response.models[i].vendor_id + "/" + response.models[i].id + "/icon.jpg' style='height:64px; width:auto;' alt='" + response.models[i].id + "' /></a></td>");
+          tr.append("<td style='width:100px; text-align:center;'><a href='/models/" + response.models[i].id + "'><img src='http://evercam-public-assets.s3.amazonaws.com/" + response.models[i].vendor_id + "/" + response.models[i].id + "/icon.jpg' style='width:auto; max-height:64px; max-width:150px;' alt='" + response.models[i].id + "' /></a></td>");
           tr.append("<td style='width:auto;'><a href='/models/" + response.models[i].id + "'>" + response.models[i].name + "</a></td>");
           tr.append("<td style='width:auto;'><a href='/vendors/" + response.models[i].vendor_id + "'>" + response.models[i].vendor_id + "</a></td>");
           
