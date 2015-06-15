@@ -105,7 +105,7 @@ function initVendors() {
               {
                 return "<span style='word-wrap: break-word;'>" + data.replace(RegExp(",", "g"), ", ") + "</span>";
               },
-              "targets": 2
+              "targets": 3
             }
           ]
         });
