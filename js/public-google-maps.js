@@ -28,8 +28,49 @@ var DEFAULT_POSITION = new google.maps.LatLng(53.3401496, -6.2611343);
 var EVERCAM_DASHBOARD = "https://dash.evercam.io/";
 
 function initialize() {
-  camera_count = $(".cameras-count");
   Notification.init(".bb-alert");
+  camera_count = $(".cameras-count");
+
+  var user_id = getQueryStringParam("user_id");
+  var api_id = getQueryStringParam("api_id");
+  var api_key = getQueryStringParam("api_key");
+  
+  if (user_id && api_id && api_key) {
+    localStorage.setItem("user_id", user_id);
+    localStorage.setItem("api_id", api_id);
+    localStorage.setItem("api_key", api_key);
+    
+    if (history.replaceState) {
+      window.history.replaceState({}, '', '/public/cameras/');
+    }
+    
+    $.ajax({
+      type: 'GET',
+      url: "https://api.evercam.io/v1/users/" + user_id + "?api_id=" + api_id + "&api_key=" + api_key,
+      success: function(response) {
+        localStorage.setItem("user_id", response.users[0].id);
+        localStorage.setItem("user_name", response.users[0].username);
+        localStorage.setItem("user_firstname", response.users[0].firstname);
+        localStorage.setItem("user_lastname", response.users[0].lastname);
+        localStorage.setItem("user_email", response.users[0].email);
+        
+        // sets new user email on login area
+        $("#login-user").html(localStorage.getItem("user_email"));
+
+        // load logged in user's all cameras
+        loadUserCameras();
+
+        // reload cameras list to show/hide share icon
+        clearCameras();
+        clearMarkers();
+
+        loadPublicCameras();
+      },
+      error: function(xhr) {
+        Notify("Invalid user information.", "danger");
+      }
+    });
+  }
 
   initMap();
 
@@ -40,7 +81,7 @@ function initialize() {
 
   var id = getCameraId();
   if (id) {
-    camera = getCamera(getCameraId());
+    camera = getCamera(id);
     if (camera) {
       load_camera = true;
       place_loaded = false;
@@ -303,6 +344,7 @@ function initialize() {
             // reload cameras list to show/hide share icon
             clearCameras();
             clearMarkers();
+
             loadPublicCameras();
           },
           error: function(xhr) {
@@ -314,7 +356,7 @@ function initialize() {
       error: function(xhr){
         $("#singin").removeAttr('disabled');
         Notify("Invalid username and/or password.", "danger");
-      },
+      }
     });
   });
 
@@ -750,6 +792,14 @@ function getCameraId() {
   if (pathArray.length && pathArray[3])
     return pathArray[3];
 }
+
+
+function getQueryStringParam(name) {
+  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+  results = regex.exec(location.search);
+  return results == null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
+};
 
 // clearup single camera details
 function resetCamera() {
