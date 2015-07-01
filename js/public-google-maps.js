@@ -176,15 +176,10 @@ function initialize() {
       {
         var pos2 = new google.maps.LatLng(bounds.getNorthEast().lat(), bounds.getNorthEast().lng());
         DEFAULT_DISTANCE = Math.abs(google.maps.geometry.spherical.computeDistanceBetween(pos, pos2) - 300);
-        if (bounds)
-        {
-          var pos2 = new google.maps.LatLng(bounds.getNorthEast().lat(), bounds.getNorthEast().lng());
-          DEFAULT_DISTANCE = Math.abs(google.maps.geometry.spherical.computeDistanceBetween(pos, pos2) - 300);
-          if (DEFAULT_DISTANCE > 8000) {
-            DEFAULT_DISTANCE = 8000;
-            map.setZoom(DEFAULT_ZOOM);
-          }
-        }
+      }
+      if (DEFAULT_DISTANCE > 8000) {
+        DEFAULT_DISTANCE = 8000;
+        map.setZoom(DEFAULT_ZOOM);
       }
       
       var request = { location: pos, radius: '1' };
