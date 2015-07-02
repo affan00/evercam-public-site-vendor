@@ -180,6 +180,7 @@ function initialize() {
       if (DEFAULT_DISTANCE > 8000) {
         DEFAULT_DISTANCE = 8000;
         map.setZoom(DEFAULT_ZOOM);
+        console.log(DEFAULT_DISTANCE + "-" + DEFAULT_ZOOM);
       }
       
       var request = { location: pos, radius: '1' };
