@@ -82,7 +82,7 @@ name="description">
     </div>
     <div class="team-individual">
       <img alt="Miloš Mošić" src="/img/milos.png">
-      <h2>Miloš Mošić 
+      <h2>Miloš Mošić
         <small>
      <a data-toggle="tooltip" href=
       "https://github.com/mosic" target="_blank" title=
@@ -122,7 +122,7 @@ name="description">
       "https://github.com/azharmalik3" target="_blank" title=
       "github"><span class="fa fa-github"></span></a>
       </small></h2>
-      
+
       <h4>Hacker <small>- Hardest working programmer in
       Pakistan.</small></h4>
     </div>
@@ -130,7 +130,7 @@ name="description">
       <img alt="Shakeel Anjum" src=
       "https://secure.gravatar.com/avatar/bc5816bd84db9de699f207423d55db18?s=230"
       style="border-radius:50%;">
-      <h2>Shakeel Anjum 
+      <h2>Shakeel Anjum
       <small><a data-toggle="tooltip" href=
       "https://pk.linkedin.com/pub/m-shakeel-anjum/52/858/59" target="_blank" title=
       "linkedin"><span class="fa fa-linkedin"></span></a><a data-toggle="tooltip" href=
@@ -156,11 +156,6 @@ name="description">
   </div>
 </section>
 </div>
-<section class="live-view">
-<div class="container">
-<div id='ec-container-wayra_office' style='width: 100%'></div> <script src='https://dash.evercam.io/live.view.widget.js?refresh=1&camera=wayra_office&private=false' async></script>
-</div>
-</section>
 <? include 'footer.php'; ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
 <script src="/js/bootstrap.min.js" async></script>
