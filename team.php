@@ -143,7 +143,7 @@ name="description">
       <img alt="Daniel Caffrey" src=
       "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/1d3/255/2c3c94b.jpg">
       <h2>Daniel Caffrey <a data-toggle="tooltip" href=
-      "https://twitter.com/marcoherbst" target="_blank" title=
+      "https://twitter.com/scandox" target="_blank" title=
       "twitter"><span class="fa fa-twitter"></span></a>
       <a data-toggle="tooltip" href=
       "https://ie.linkedin.com/in/caffreydaniel" target="_blank" title=
