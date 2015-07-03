@@ -9,9 +9,9 @@
     <meta name="description" content="Add remote storage, sharing, time-lapses, notifications, logs, access from any mobile device. ERP Integration - for Construction Site monitoring, Manufacturing, Weighbridge and more.">
     <meta name="author" content="Evercam">
     <title>Evercam.io</title>
-    <link href="/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
+    <link href="/css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
     <script src="/js/bootstrap.min.js" async></script>
     <script src="/js/custom.min.js" async></script>
@@ -23,7 +23,7 @@
         <div class="banner">
           <h1><img id="logo" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;"><span id="heading"></span></h1>
           <h2><span id="sub-heading" style='word-wrap: break-word; '></span></h2>
-          <a href="/public"><i class="fa fa-arrow-left"></i> Back</a>
+          <a href="/vendors"><i class="fa fa-arrow-left"></i> Back</a>
         </div>
       </header>
     </div>
