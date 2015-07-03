@@ -18,7 +18,6 @@
     <div class="banner">
       <div class="banner-content">
         <h1>Brand Assets</h1>
-        <h2></h2>
       </div>
     </div>
   </header>
