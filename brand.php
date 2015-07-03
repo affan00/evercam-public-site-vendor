@@ -64,7 +64,7 @@
   <section>
     <div class="red-dot">
       <h1>Evercam Red Dot</h1>
-      <a class="btn" href="../brand-assets/evercam_logo.eps" download>Evercam Red Dot EPS <i class="fa fa-download"></i></a>
+      <a class="btn" href="../brand-assets/evercam_red_dot.eps" download>Evercam Red Dot EPS <i class="fa fa-download"></i></a>
       <div class="row">
         <div class="logo-card">
           <a class="btn" href="../brand-assets/evercam_red_dot-500x500.png"><img alt="evercam.io" src="/brand-assets/evercam_red_dot-500x500.png" style="width:500px;"></a>
