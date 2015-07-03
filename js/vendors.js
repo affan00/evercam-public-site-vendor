@@ -19,6 +19,7 @@ function initVendors() {
         $("#heading").html(response.vendors[0].name);
         if (response.vendors[0].known_macs.length > 0 && response.vendors[0].known_macs[0] != "") {
           $("#sub-heading").html("MAC: " + response.vendors[0].known_macs[0]);
+          $('#back-btn').show()
         }
       },
       error: function(response) {

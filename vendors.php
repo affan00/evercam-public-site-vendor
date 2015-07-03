@@ -22,8 +22,8 @@
       <header>
         <div class="banner">
           <h1><img id="logo" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;"><span id="heading"></span></h1>
-          <h2><span id="sub-heading" style='word-wrap: break-word; '></span></h2>
-          <a href="/vendors"><i class="fa fa-arrow-left"></i> Back</a>
+          <h2><span id="sub-heading" style='word-wrap: break-word;'></span></h2>
+          <a href="/vendors" style="display: none;" id="back-btn"><i class="fa fa-arrow-left"></i> Back</a>
         </div>
       </header>
     </div>
