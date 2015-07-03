@@ -53,18 +53,19 @@ function initVendors() {
             tr.append("<td></td>");
 
           $('#modelsTable').append(tr);
-          $('#modelsTable').show();
+        }
 
-          $('#modelsTable').DataTable({
-            "iDisplayLength": 50,
-            "aaSorting": [1, "asc"]
-          });
+        $('#modelsTable').show();
 
-          $("#loading").hide();
-          $("#logo").attr("src", "http://evercam-public-assets.s3.amazonaws.com/" + vendor_id + "/logo.jpg");
-          $("#logo").show();
-          $("#vendorDetails").show();
-          }
+        $('#modelsTable').DataTable({
+          "iDisplayLength": 50,
+          "aaSorting": [1, "asc"]
+        });
+
+        $("#loading").hide();
+        $("#logo").attr("src", "http://evercam-public-assets.s3.amazonaws.com/" + vendor_id + "/logo.jpg");
+        $("#logo").show();
+        $("#vendorDetails").show();
       },
       error: function(response) {
         $("#logo").hide();
