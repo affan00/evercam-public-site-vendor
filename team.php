@@ -84,7 +84,7 @@
                   </a>
                 </small>
               </h2>
-              <h4>Engineer <small>- Johnny Five meets Cable Guy.</small></h4>
+              <h4>Hacker <small>- Johnny Five meets Cable Guy.</small></h4>
             </div>
 
             <div class="team-individual">
@@ -96,7 +96,7 @@
                   </a>
                 </small>
               </h2>
-              <h4>Developer <small>- Keeping afloat while working remote</small></h4>
+              <h4>Hacker <small>- Keeping afloat while working remote</small></h4>
             </div>
 
             <div class="team-individual">
