@@ -30,11 +30,27 @@
     <div id="public-models">
       <section style="padding-top:0px;">
         <div id="modelDetails" style="display:none">
-          <h2>Jpg Url: <span id="jpgUrl" style="color:black;"></span></h2>
-          <h2>MJpeg Url: <span id="mjpgUrl" style="color:black;"></span></h2>
-          <h2>H264 Url: <span id="h264Url" style="color:black;"></span></h2>
-          <h2>Default Username: <span id="username" style="color:black;"></span></h2>
-          <h2>Default Password: <span id="password" style="color:black;"></span></h2>
+          <h2 id="h2_jpgUrl" style="display:none;">Jpg Url: <span id="jpgUrl" style="color:black;"></span></h2>
+          <h2 id="h2_mjpgUrl" style="display:none;">MJpeg Url: <span id="mjpgUrl" style="color:black;"></span></h2>
+          <h2 id="h2_h264Url" style="display:none;">H264 Url: <span id="h264Url" style="color:black;"></span></h2>
+          <h2 id="h2_shape" style="display:none;">Shape: <span id="shape" style="color:black;"></span></h2>
+          <h2 id="h2_resolution" style="display:none;">Resolution: <span id="resolution" style="color:black;"></span></h2>
+          <h2 id="h2_official_url" style="display:none;">Official Url: <span id="official_url" style="color:black;"></span></h2>
+          <h2 id="h2_audio_url" style="display:none;">Audio Url: <span id="audio_url" style="color:black;"></span></h2>
+          <h2 id="h2_more_info" style="display:none;">More Info: <span id="more_info" style="color:black;"></span></h2>
+          <h2 id="h2_poe" style="display:none;">POE: <span id="poe" style="color:black;"></span></h2>
+          <h2 id="h2_wifi" style="display:none;">Wifi: <span id="wifi" style="color:black; "></span></h2>
+          <h2 id="h2_upnp" style="display:none;">UPNP: <span id="upnp" style="color:black;"></span></h2>
+          <h2 id="h2_ptz" style="display:none;">PTZ: <span id="ptz" style="color:black;"></span></h2>
+          <h2 id="h2_infrared" style="display:none;">Infrared: <span id="infrared" style="color:black;"></span></h2>
+          <h2 id="h2_varifocal" style="display:none;">Varifocal: <span id="varifocal" style="color:black;"></span></h2>
+          <h2 id="h2_sd_card" style="display:none;">SD Card: <span id="sd_card" style="color:black;"></span></h2>
+          <h2 id="h2_audio_io" style="display:none;">Audio IO: <span id="audio_io" style="color:black;"></span></h2>
+          <h2 id="h2_onvif" style="display:none;">OnVif: <span id="onvif" style="color:black;"></span></h2>
+          <h2 id="h2_psia" style="display:none;">PSIA: <span id="psia" style="color:black;"></span></h2>
+          <h2 id="h2_discontinued" style="display:none;">Discontinued: <span id="discontinued" style="color:black;"></span></h2>
+          <h2 id="h2_username" style="display:none;">Default Username: <span id="username" style="color:black;"></span></h2>
+          <h2 id="h2_password" style="display:none;">Default Password: <span id="password" style="color:black;"></span></h2>
         </div>
         <div id="loading" style="display:none">Loading...</div>
         <div id="modelList" style="display:none">
