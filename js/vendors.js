@@ -30,7 +30,7 @@ function initVendors() {
     // show vendor's model list
     $.ajax({
       type: 'GET',
-      url: 'https://api.evercam.io/v1/models?limit=500&vendor_id=' + vendor_id,
+      url: 'https://api.evercam.io/v1/models?limit=5000&vendor_id=' + vendor_id,
       success: function(response) {
         for (var i = 0; i < response.models.length; i++) {
           tr = $('<tr/>');
@@ -39,16 +39,16 @@ function initVendors() {
           tr.append("<td style='width:auto;'><a href='/vendors/" + response.models[i].vendor_id + "'>" + response.models[i].vendor_id + "</a></td>");
 
           var defaults = "";
-          if (response.models[i].defaults.snapshots.jpg)
-            tr.append("<td>" + response.models[i].defaults.snapshots.jpg + "</td>");
+          if (response.models[i].jpg_url)
+            tr.append("<td>" + response.models[i].jpg_url + "</td>");
           else
             tr.append("<td></td>");
-          if (response.models[i].defaults.snapshots.mjpg)
-            tr.append("<td>" + response.models[i].defaults.snapshots.mjpg + "</td>");
+          if (response.models[i].mjpg_url)
+            tr.append("<td>" + response.models[i].mjpg_url + "</td>");
           else
             tr.append("<td></td>");
-          if (response.models[i].defaults.snapshots.h264)
-            tr.append("<td>" + response.models[i].defaults.snapshots.h264 + "</td>");
+          if (response.models[i].h264_rul)
+            tr.append("<td>" + response.models[i].h264_rul + "</td>");
           else
             tr.append("<td></td>");
 
