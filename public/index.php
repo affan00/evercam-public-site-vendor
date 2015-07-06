@@ -29,9 +29,9 @@
     <div id="public-assets">
       <section style="padding-top:0px;">
         <div id="assetDetails">
-          <h2>Public Cameras: <a href="/public/cameras"><span id="totalCameras">loading...</span></a></h2>
-          <h2>Vendors: <a href="../vendors"><span id="totalVendors">loading...</span></a></h2>
-          <h2>Models: <a href="../models"><span id="totalModels">loading...</span></a></h2>
+          <h2>Public Cameras: <a href="/public/cameras"><span id="totalCameras">counting...</span></a></h2>
+          <h2>Vendors: <a href="../vendors"><span id="totalVendors">counting...</span></a></h2>
+          <h2>Models: <a href="../models"><span id="totalModels">counting...</span></a></h2>
         </div>
       </section>
     </div>
