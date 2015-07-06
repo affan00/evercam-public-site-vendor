@@ -24,114 +24,96 @@ function initModels() {
         $("#image").show();
 
         if (response.models[0].jpg_url) {
-          $("#h2_jpgUrl").show();
           $("#jpgUrl").text(response.models[0].jpg_url);
         } else if (response.models[0].defaults.snapshots && response.models[0].defaults.snapshots.jpg) {
-          $("#h2_jpgUrl").show();
           $("#jpgUrl").text(response.models[0].defaults.snapshots.jpg);
         }
         if (response.models[0].mjpg_url) {
-          $("#h2_mjpgUrl").show();
           $("#mjpgUrl").text(response.models[0].mjpg_url);
         } else if (response.models[0].defaults.snapshots && response.models[0].defaults.snapshots.mjpg) {
-          $("#h2_mjpgUrl").show();
           $("#mjpgUrl").text(response.models[0].defaults.snapshots.mjpg);
         }
         if (response.models[0].h264_url) {
-          $("#h2_h264Url").show();
           $("#h264Url").text(response.models[0].h264_url);
         } else if (response.models[0].defaults.snapshots && response.models[0].defaults.snapshots.h264) {
-          $("#h2_h264Url").show();
           $("#h264Url").text(response.models[0].defaults.snapshots.h264);
         }
         if (response.models[0].shape) {
-          $("#h2_shape").show();
           $("#shape").text(response.models[0].shape);
         }
         if (response.models[0].resolution) {
-          $("#h2_resolution").show();
           $("#resolution").text(response.models[0].resolution);
         }
         if (response.models[0].official_url) {
-          $("#h2_official_url").show();
           $("#official_url").text(response.models[0].official_url);
         }
         if (response.models[0].audio_url) {
-          $("#h2_audio_url").show();
           $("#audio_url").text(response.models[0].audio_url);
         }
         if (response.models[0].more_info) {
-          $("#h2_more_info").show();
           $("#more_info").text(response.models[0].more_info);
         }
         if (response.models[0].poe) {
-          $("#h2_poe").show();
-          $("#poe").text(response.models[0].poe);
+          $("#poe_no").hide();
+          $("#poe_yes").show();
         }
         if (response.models[0].wifi) {
-          $("#h2_wifi").show();
-          $("#wifi").text(response.models[0].wifi);
+          $("#wifi_no").hide();
+          $("#wifi_yes").show();
         }
         if (response.models[0].upnp) {
           $("#upnp_no").hide();
           $("#upnp_yes").show();
         }
         if (response.models[0].ptz) {
-          $("#h2_ptz").show();
-          $("#ptz").text(response.models[0].ptz);
+          $("#ptz_no").hide();
+          $("#ptz_yes").show();
         }
         if (response.models[0].infrared) {
-          $("#h2_infrared").show();
-          $("#infrared").text(response.models[0].infrared);
+          $("#infrared_no").hide();
+          $("#infrared_yes").show();
         }
         if (response.models[0].varifocal) {
-          $("#h2_varifocal").show();
-          $("#varifocal").text(response.models[0].varifocal);
+          $("#varifocal_no").hide();
+          $("#varifocal_yes").show();
         }
         if (response.models[0].sd_card) {
-          $("#h2_sd_card").show();
-          $("#sd_card").text(response.models[0].sd_card);
+          $("#sd_card_no").hide();
+          $("#sd_card_yes").show();
         }
         if (response.models[0].audio_io) {
-          $("#h2_audio_io").show();
-          $("#audio_io").text(response.models[0].audio_io);
+          $("#audio_io_no").hide();
+          $("#audio_io_yes").show();
         }
         if (response.models[0].onvif) {
-          $("#h2_onvif").show();
-          $("#onvif").text(response.models[0].onvif);
+          $("#onvif_no").hide();
+          $("#onvif_yes").show();
         }
         if (response.models[0].psia) {
-          $("#h2_psia").show();
-          $("#psia").text(response.models[0].psia);
+          $("#psia_no").hide();
+          $("#psia_yes").show();
         }
         if (response.models[0].discontinued) {
-          $("#h2_discontinued").show();
-          $("#discontinued").text(response.models[0].discontinued);
+          $("#discontinued_no").hide();
+          $("#discontinued_yes").show();
         }
         if (response.models[0].default_username) {
-          $("#h2_username").show();
           $("#username").text(response.models[0].default_username);
         } else if (response.models[0].defaults && response.models[0].defaults.auth && response.models[0].defaults.auth.basic && response.models[0].defaults.auth.basic.username) {
-          $("#h2_username").show();
           $("#username").text(response.models[0].defaults.auth.basic.username);
         }
         if (response.models[0].default_password) {
-          $("#h2_password").show();
           $("#password").text(response.models[0].default_password);
         } else if (response.models[0].defaults && response.models[0].defaults.auth && response.models[0].defaults.auth.basic && response.models[0].defaults.auth.basic.password) {
-          $("#h2_password").show();
           $("#password").text(response.models[0].defaults.auth.basic.password);
         }
         if (response.models[0].original_image) {
-          $("#h2_original").show();
           $("#original_image").text(response.models[0].original_image);
         }
         if (response.models[0].thumbnail_image) {
-          $("#h2_thumbnail").show();
           $("#thumbnail_image").text(response.models[0].thumbnail_image);
         }
         if (response.models[0].icon_image) {
-          $("#h2_icon").show();
           $("#icon_image").text(response.models[0].icon_image);
         }
         $("#loading").hide();
