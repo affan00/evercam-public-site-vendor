@@ -23,34 +23,112 @@
         <div class="banner">
           <h1><img id="image" style="display:none; width:200px; height:auto; margin-right:20px; margin-top:-20px;"><span id="heading"></span></h1>
           <h2><span id="sub-heading" style='word-wrap: break-word; '></span></h2>
-          <a href="/public"><i class="fa fa-arrow-left"></i> Back</a>
+          <a id="lnkBack" href="/public"><i class="fa fa-arrow-left"></i> Back</a>
         </div>
       </header>
     </div>
     <div id="public-models">
       <section style="padding-top:0px;">
+        <div id="loading" style="display:none">Loading...<br /><br /></div>
         <div id="modelDetails" style="display:none">
-          <h2 id="h2_jpgUrl" style="display:none;">Jpg Url: <span id="jpgUrl" style="color:black;"></span></h2>
-          <h2 id="h2_mjpgUrl" style="display:none;">MJpeg Url: <span id="mjpgUrl" style="color:black;"></span></h2>
-          <h2 id="h2_h264Url" style="display:none;">H264 Url: <span id="h264Url" style="color:black;"></span></h2>
-          <h2 id="h2_shape" style="display:none;">Shape: <span id="shape" style="color:black;"></span></h2>
-          <h2 id="h2_resolution" style="display:none;">Resolution: <span id="resolution" style="color:black;"></span></h2>
-          <h2 id="h2_official_url" style="display:none;">Official Url: <span id="official_url" style="color:black;"></span></h2>
-          <h2 id="h2_audio_url" style="display:none;">Audio Url: <span id="audio_url" style="color:black;"></span></h2>
-          <h2 id="h2_more_info" style="display:none;">More Info: <span id="more_info" style="color:black;"></span></h2>
-          <h2 id="h2_poe" style="display:none;">POE: <span id="poe" style="color:black;"></span></h2>
-          <h2 id="h2_wifi" style="display:none;">Wifi: <span id="wifi" style="color:black; "></span></h2>
-          <h2 id="h2_upnp" style="display:none;">UPNP: <span id="upnp" style="color:black;"></span></h2>
-          <h2 id="h2_ptz" style="display:none;">PTZ: <span id="ptz" style="color:black;"></span></h2>
-          <h2 id="h2_infrared" style="display:none;">Infrared: <span id="infrared" style="color:black;"></span></h2>
-          <h2 id="h2_varifocal" style="display:none;">Varifocal: <span id="varifocal" style="color:black;"></span></h2>
-          <h2 id="h2_sd_card" style="display:none;">SD Card: <span id="sd_card" style="color:black;"></span></h2>
-          <h2 id="h2_audio_io" style="display:none;">Audio IO: <span id="audio_io" style="color:black;"></span></h2>
-          <h2 id="h2_onvif" style="display:none;">OnVif: <span id="onvif" style="color:black;"></span></h2>
-          <h2 id="h2_psia" style="display:none;">PSIA: <span id="psia" style="color:black;"></span></h2>
-          <h2 id="h2_discontinued" style="display:none;">Discontinued: <span id="discontinued" style="color:black;"></span></h2>
-          <h2 id="h2_username" style="display:none;">Default Username: <span id="username" style="color:black;"></span></h2>
-          <h2 id="h2_password" style="display:none;">Default Password: <span id="password" style="color:black;"></span></h2>
+          <table class="display table table-bordered dataTable">
+            <tr id="tr_jpg">
+              <td style="width:20%;">Jpg Url</td>
+              <td><span id="jpgUrl" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_mjpg">
+              <td>MJpeg Url</td>
+              <td><span id="mjpgUrl" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_h264">
+              <td>H264 Url</td>
+              <td><span id="h264Url" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_shape">
+              <td>Shape</td>
+              <td><span id="shape" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_resolution">
+              <td>Resolution</td>
+              <td><span id="resolution" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_official_url">
+              <td>Official Url</td>
+              <td><span id="official_url" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_audio_url">
+              <td>Audio Url</td>
+              <td><span id="audio_url" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_more_info">
+              <td>More Info</td>
+              <td><span id="more_info" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_poe">
+              <td>POE</td>
+              <td><img id="poe_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="poe_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_wifi">
+              <td>Wifi</td>
+              <td><img id="wifi_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="wifi_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_upnp">
+              <td>UPNP</td>
+              <td><img id="upnp_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="upnp_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_ptz">
+              <td>PTZ</td>
+              <td><img id="ptz_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="ptz_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_infrared">
+              <td>Infrared</td>
+              <td><img id="infrared_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="infrared_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_varifocal">
+              <td>Varifocal</td>
+              <td><img id="varifocal_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="varifocal_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_sd_card">
+              <td>SD Card:</td>
+              <td><img id="sd_card_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="sd_card_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_audio_io">
+              <td>Audio I/O</td>
+              <td><img id="audio_io_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="audio_io_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_onvif">
+              <td>OnVif</td>
+              <td><img id="onvif_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="onvif_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_psia">
+              <td>PSIA</td>
+              <td><img id="psia_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="psia_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_discontinued">
+              <td>Discontinued</td>
+              <td><img id="discontinued_yes" src="/img/yes.png" style="display:none; width:26px;"><img id="discontinued_no" src="/img/no.png" style=" width:26px;"></td>
+            </tr>
+            <tr id="tr_username">
+              <td>Default Username</td>
+              <td><span id="username" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_password">
+              <td>Default Password</td>
+              <td><span id="password" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_original">
+              <td>Original Image</td>
+              <td><span id="original_image" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_thumbnail">
+              <td>Original Image</td>
+              <td><span id="thumbnail_image" style="color:black;">-</span></td>
+            </tr>
+            <tr id="tr_original">
+              <td>Icon Image</td>
+              <td><span id="icon_image" style="color:black;">-</span></td>
+            </tr>
+          </table>
         </div>
         <div id="loading" style="display:none">Loading...</div>
         <div id="modelList" style="display:none">

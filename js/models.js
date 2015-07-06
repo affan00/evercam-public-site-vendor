@@ -10,12 +10,13 @@ function getLastParam()
 function initModels() {
   var model_id = getLastParam();
 
-  if (model_id) {
-    // show model details
+  if (model_id) {   // show model details
+    $("#loading").show();
     $.ajax({
       type: 'GET',
       url: 'https://api.evercam.io/v1/models/' + model_id,
       success: function(response) {
+        $("#lnkBack").attr("href", "/vendors/" + response.models[0].vendor_id);
         $("#heading").html(response.models[0].name);
         $("#sub-heading").html("Vendor: <a href='/vendors/" + response.models[0].vendor_id + "'>" + response.models[0].vendor_id + "</a>");
         
@@ -25,14 +26,23 @@ function initModels() {
         if (response.models[0].jpg_url) {
           $("#h2_jpgUrl").show();
           $("#jpgUrl").text(response.models[0].jpg_url);
+        } else if (response.models[0].defaults.snapshots && response.models[0].defaults.snapshots.jpg) {
+          $("#h2_jpgUrl").show();
+          $("#jpgUrl").text(response.models[0].defaults.snapshots.jpg);
         }
         if (response.models[0].mjpg_url) {
           $("#h2_mjpgUrl").show();
           $("#mjpgUrl").text(response.models[0].mjpg_url);
+        } else if (response.models[0].defaults.snapshots && response.models[0].defaults.snapshots.mjpg) {
+          $("#h2_mjpgUrl").show();
+          $("#mjpgUrl").text(response.models[0].defaults.snapshots.mjpg);
         }
         if (response.models[0].h264_url) {
           $("#h2_h264Url").show();
           $("#h264Url").text(response.models[0].h264_url);
+        } else if (response.models[0].defaults.snapshots && response.models[0].defaults.snapshots.h264) {
+          $("#h2_h264Url").show();
+          $("#h264Url").text(response.models[0].defaults.snapshots.h264);
         }
         if (response.models[0].shape) {
           $("#h2_shape").show();
@@ -63,8 +73,8 @@ function initModels() {
           $("#wifi").text(response.models[0].wifi);
         }
         if (response.models[0].upnp) {
-          $("#h2_upnp").show();
-          $("#upnp").text(response.models[0].upnp);
+          $("#upnp_no").hide();
+          $("#upnp_yes").show();
         }
         if (response.models[0].ptz) {
           $("#h2_ptz").show();
@@ -101,14 +111,34 @@ function initModels() {
         if (response.models[0].default_username) {
           $("#h2_username").show();
           $("#username").text(response.models[0].default_username);
+        } else if (response.models[0].defaults && response.models[0].defaults.auth && response.models[0].defaults.auth.basic && response.models[0].defaults.auth.basic.username) {
+          $("#h2_username").show();
+          $("#username").text(response.models[0].defaults.auth.basic.username);
         }
         if (response.models[0].default_password) {
           $("#h2_password").show();
           $("#password").text(response.models[0].default_password);
+        } else if (response.models[0].defaults && response.models[0].defaults.auth && response.models[0].defaults.auth.basic && response.models[0].defaults.auth.basic.password) {
+          $("#h2_password").show();
+          $("#password").text(response.models[0].defaults.auth.basic.password);
         }
+        if (response.models[0].original_image) {
+          $("#h2_original").show();
+          $("#original_image").text(response.models[0].original_image);
+        }
+        if (response.models[0].thumbnail_image) {
+          $("#h2_thumbnail").show();
+          $("#thumbnail_image").text(response.models[0].thumbnail_image);
+        }
+        if (response.models[0].icon_image) {
+          $("#h2_icon").show();
+          $("#icon_image").text(response.models[0].icon_image);
+        }
+        $("#loading").hide();
       },
       error: function(response){
         $("#image").hide();
+        $("#loading").hide();
         console.log("LoadModel Err: " + response.message);
       },
     });

@@ -10,16 +10,17 @@ function initVendors() {
   var vendor_id = getLastParam();
 
   if (vendor_id) {
+    $("#lnkBack").attr("href", "/vendors");
     $("#loading").show();
     // show vendor details
     $.ajax({
       type: 'GET',
       url: 'https://api.evercam.io/v1/vendors/' + vendor_id,
       success: function(response) {
+        $("#lnkBack").show();
         $("#heading").html(response.vendors[0].name);
         if (response.vendors[0].known_macs.length > 0 && response.vendors[0].known_macs[0] != "") {
           $("#sub-heading").html("MAC: " + response.vendors[0].known_macs[0]);
-          $('#back-btn').show()
         }
       },
       error: function(response) {
@@ -32,6 +33,7 @@ function initVendors() {
       type: 'GET',
       url: 'https://api.evercam.io/v1/models?limit=5000&vendor_id=' + vendor_id,
       success: function(response) {
+
         for (var i = 0; i < response.models.length; i++) {
           tr = $('<tr/>');
           tr.append("<td style='width:100px; text-align:center;'><a href='/models/" + response.models[i].id + "'><img src='http://evercam-public-assets.s3.amazonaws.com/" + response.models[i].vendor_id + "/" + response.models[i].id + "/icon.jpg' style='width:auto; max-height:64px; max-width:150px;' alt='" + response.models[i].id + "' /></a></td>");
