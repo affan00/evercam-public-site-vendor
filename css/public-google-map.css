@@ -106,7 +106,7 @@
 
 .live-view {
   background-color: #000;
-  min-height: 40vh;
+  min-height: 65px;
 }
 
 .live-view img {
@@ -135,7 +135,6 @@ a#lnkBacktoMap {
   position: absolute;
   top: 15px;
   left: 11px;
-  color: #fff;
 }
 
 .details {
