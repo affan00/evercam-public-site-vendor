@@ -111,6 +111,11 @@ function initialize() {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
           userLocation = places[0];
           $("#pac-input").val(userLocation.name);
+
+          if (userLocation.name) {
+            document.title = "Evercam -  Webcams, Public CCTV cameras in " + $("#pac-input").val();
+          }
+          
           place_loaded = true;
           map.setCenter(userPosition);
         }
@@ -191,6 +196,10 @@ function initialize() {
 
           if (!place_changed && reload_cameras) {
             $("#pac-input").val(place.name)
+
+            if (place.name) {
+              document.title = "Evercam -  Webcams, Public CCTV cameras in " + $("#pac-input").val();
+            }
           }
 
           if (reload_cameras) {
@@ -213,6 +222,10 @@ function initialize() {
     place = autocomplete.getPlace();
     if (!place.geometry) {
       return;
+    }
+
+    if (place.name) {
+      document.title = "Evercam -  Webcams, Public CCTV cameras in " + $("#pac-input").val();
     }
 
     place_changed = true;
@@ -264,6 +277,8 @@ function initialize() {
     reload_cameras = false;
     history.replaceState( {} , '/public/cameras/', '/public/cameras/' );
 
+    document.title = "Evercam -  Webcams, Public CCTV cameras in " + $("#pac-input").val();
+
     $( "#camera-single" ).hide();
     $( "#public-map" ).fadeIn( 'slow' );
 
@@ -275,6 +290,8 @@ function initialize() {
     set_bounds = false;
     reload_cameras = false;
     history.replaceState( {} , '/public/cameras/', '/public/cameras/' );
+
+    document.title = "Evercam -  Webcams, Public CCTV cameras in " + $("#pac-input").val();
 
     $( "#camera-single" ).hide();
     $( "#public-map" ).fadeIn( 'slow' );
@@ -418,6 +435,8 @@ function loadCamera(camera) {
   MODE = "CAM";
   resetCamera();
   if (camera) {
+    document.title = "Evercam -  Webcams, Public CCTV cameras - " + $("#pac-input").val() + " - " + camera.name;
+
     $("#camera-image").attr("src", camera.thumbnail_url);
     if (camera.is_online) {
       $("#camera-image-container").html( "<div class='live-view' id='ec-container'></div> <script src='" + EVERCAM_DASHBOARD + "live.view.widget.js?refresh=1&camera=" + camera.id + "&private=false' async></script>" );
@@ -472,6 +491,8 @@ function loadCameraId(id) {
 
   camera = camerasList[id];
   if (camera) {
+    document.title = "Evercam -  Webcams, Public CCTV cameras - " + $("#pac-input").val() + " - " + camera.name;
+
     $("#camera-image").attr("src", camera.thumbnail_url);
     if (camera.is_online) {
       $("#camera-image-container").html( "<div class='live-view' id='ec-container'></div> <script src='" + EVERCAM_DASHBOARD + "live.view.widget.js?refresh=1&camera=" + camera.id + "&private=false' async></script>" );
@@ -843,5 +864,5 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 // bind resize event
 google.maps.event.addDomListener(window, 'resize', function() {
-  $('.cameras-containers').css('height', window.innerHeight - 170);
+  $('.cameras-containers').css('height', window.innerHeight - 120);
 });

@@ -93,24 +93,25 @@
   background-image: url('/img/puff.svg');
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: auto;
 }
 
 #camera-image-container {
-  height: 95vh;
+  height: auto;
 }
 
 #camera-image {
-  height: 95vh;
+  height: auto;
 }
 
 .live-view {
   background-color: #000;
+  min-height: 40vh;
 }
 
 .live-view img {
-  height: 95vh;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 
 #lnkBacktoMap {
