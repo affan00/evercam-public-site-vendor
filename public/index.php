@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Evercam -  Apps for IP Cameras. Get more from your camera.</title>
+    <title>Evercam -  Public cameras, vendors and models</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="cameras, apps, integration, recording, remote storage, sharing, api, developer platform">
