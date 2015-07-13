@@ -17,6 +17,7 @@ var markerClusterer;
 var load_camera = false;
 var place_loaded = true;
 var place_changed = false;
+var zoom_changed = false;
 var reload_cameras = true;
 var set_bounds = false;
 var MODE = "MAP";
@@ -148,6 +149,7 @@ function initialize() {
   google.maps.event.addListener(map, 'zoom_changed', function() {
     reload_cameras = true;
     set_bounds = false;
+    zoom_changed = true;
     closeInfos();
   });
 
@@ -158,7 +160,7 @@ function initialize() {
 
     // if id && camera is initialized on page initialize
     if (load_camera && place_loaded) {
-      console.log("load_camera");
+      //console.log("load_camera");
       load_camera = false;
       place_loaded = true;
       loadCamera(camera);
@@ -167,10 +169,10 @@ function initialize() {
     }
 
     if (set_bounds) {
-      console.log("set_bounds");
+      //console.log("set_bounds");
       set_bounds = false;
       return;
-    } 
+    }
 
     if (center) {
       userLat = center.lat();
@@ -182,7 +184,7 @@ function initialize() {
         var pos2 = new google.maps.LatLng(bounds.getNorthEast().lat(), bounds.getNorthEast().lng());
         DEFAULT_DISTANCE = Math.abs(google.maps.geometry.spherical.computeDistanceBetween(pos, pos2) - 300);
       }
-      if (DEFAULT_DISTANCE > 8000) {
+      if (!zoom_changed && DEFAULT_DISTANCE > 8000) {
         DEFAULT_DISTANCE = 8000;
         map.setZoom(DEFAULT_ZOOM);
         console.log(DEFAULT_DISTANCE + "-" + DEFAULT_ZOOM);
@@ -208,11 +210,16 @@ function initialize() {
             clearMarkers();
             clearCameras();
             
-            console.log("load_public");
+            //console.log("load_public");
             loadPublicCameras();
           }
         }
       });
+    }
+
+    if (zoom_changed) {
+      //console.log("zoom_changed");
+      zoom_changed = false;
     }
   });
 
@@ -716,7 +723,7 @@ function mapCameras(cameras) {
   set_bounds = true;
 
   if (place_changed) {
-    console.log("place_changed");
+    //console.log("place_changed");
     place_changed = false;
   }
 }
