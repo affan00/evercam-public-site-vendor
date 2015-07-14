@@ -14,9 +14,9 @@ function initAssets() {
   });
   $.ajax({
     type: 'GET',
-    url: 'https://api.evercam.io/v1/public/cameras?limit=1000',
+    url: 'https://api.evercam.io/v1/public/cameras',
     success: function(response) {
-      $("#totalCameras").text(response.cameras.length);
+      $("#totalCameras").text(response.records);
     },
     error: function(response){
       console.log("LoadCameras Err: " + response.message);
@@ -24,9 +24,9 @@ function initAssets() {
   });
   $.ajax({
     type: 'GET',
-    url: 'https://api.evercam.io/v1/models?limit=5000',
+    url: 'https://api.evercam.io/v1/models',
     success: function(response) {
-      $("#totalModels").text(response.models.length);
+      $("#totalModels").text(response.records);
     },
     error: function(response){
       console.log("LoadModels Err: " + response.message);
