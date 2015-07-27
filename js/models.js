@@ -152,8 +152,8 @@ function initModels() {
             tr.append("<td>" + response.models[i].mjpg_url + "</td>");
           else
             tr.append("<td></td>");
-          if (response.models[i].h264_rul)
-            tr.append("<td>" + response.models[i].h264_rul + "</td>");
+          if (response.models[i].h264_url)
+            tr.append("<td>" + response.models[i].h264_url + "</td>");
           else
             tr.append("<td></td>");
 
