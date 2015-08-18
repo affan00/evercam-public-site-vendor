@@ -141,7 +141,7 @@
                   <a data-toggle="tooltip" href="https://pk.linkedin.com/pub/m-shakeel-anjum/52/858/59" target="_blank" title="linkedin">
                     <span class="fa fa-linkedin"></span>
                   </a>
-                  <a data-toggle="tooltip" href="https://github.com/mshakeelanjum" target="_blank" title="github">
+                  <a data-toggle="tooltip" href="https://github.com/shakeelanjum" target="_blank" title="github">
                     <span class="fa fa-github"></span>
                   </a>
                 </small>
