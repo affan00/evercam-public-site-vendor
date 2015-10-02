@@ -11,6 +11,23 @@
     <link href="css/main.css" rel="stylesheet">
     <meta property="twitter:account_id" content="4503599630778866" />
     <script type="text/javascript" src="../js/hotjar-tracking.js" async></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dash.evercam.io/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://dash.evercam.io/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://dash.evercam.io/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://dash.evercam.io/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://dash.evercam.io/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://dash.evercam.io/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://dash.evercam.io/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://dash.evercam.io/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dash.evercam.io/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://dash.evercam.io/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dash.evercam.io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://dash.evercam.io/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://dash.evercam.io/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://dash.evercam.io/manifest.json">
+    <meta name="msapplication-TileColor" content="#dc4c3f">
+    <meta name="msapplication-TileImage" content="https://dash.evercam.io/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body id="home">
   <? include 'nav.php'; ?>
@@ -19,11 +36,11 @@
       <div class="banner-content">
         <h1>Apps for Cameras</h1>
         <h2>Get more from your CCTV system with our Apps and Developer tools.</h2>
-        <h2>Check out our <a href="/uses">Use Cases</a></h2>        
+        <h2>Check out our <a href="/uses">Use Cases</a></h2>
         <a class="btn btn-grey-outline btn--inverted" href="#add-camera" role="button">Add a Camera</a>
       </div>
       <div class="banner-image">
-        <img src="img/browser-border.svg">          
+        <img src="img/browser-border.svg">
       </div>
       <div class="phone"><img src="img/phone.jpg"></div>
       <div class="desktop">
@@ -44,7 +61,7 @@
           </div>
         </div>
         <div class="cards">
-          <a href="http://snapmail.evercam.io" target="_blank">  
+          <a href="http://snapmail.evercam.io" target="_blank">
           <div class="card">
             <div class="card-inner">
               <i class="fa fa-send fa-2x circle"></i>
@@ -53,7 +70,7 @@
               <i class="fa fa-external-link-square"></i>
             </div>
           </div>
-          </a>        
+          </a>
           <a href="/apps">
           <div class="card">
             <div class="card-inner">
@@ -62,7 +79,7 @@
               <p>Your camera footage is safely stored and easy to access</p>
               <i class="fa fa-arrow-right"></i>
             </div>
-          </div>    
+          </div>
           </a>
           <a href="http://timelapse.evercam.io/" target="_blank">
           <div class="card">
@@ -80,20 +97,20 @@
     </section>
   </div>
     <section>
-      <div class="use-cases">        
+      <div class="use-cases">
         <div class="title">
           <div class="text-content">
             <h6>Use Case</h6>
             <h1><a href="/uses/construction">Construction Camera</a></h1>
             <h2>Keep an eye on your site and manage access to the camera.</h2>
-            <h2>Sharing, Remote Recording, Snapmail, Timelapse..<br><i><small>..works with any camera</small></i></h2>            
+            <h2>Sharing, Remote Recording, Snapmail, Timelapse..<br><i><small>..works with any camera</small></i></h2>
             <a class="btn btn-grey-outline pull-left" href="/uses" role="button">View All Use Cases</a>
           </div>
           <div class="title-image">
             <img src="img/stephens-green-cam.jpg">
           </div>
         </div>
-        <div class="gallery">          
+        <div class="gallery">
           <div class="use-case">
             <h3><a href="/uses/weighbridge">Weighbridge </a></span></h3>
             <p>Embeded CCTV images in transaction documents from footage at a Weighbridge.</p>
@@ -107,12 +124,12 @@
             <p>Allow multiple people to securely share cameras</p>
           </div>
         </div>
-        
+
       </div>
     </section>
     <div id="add-camera" class="alt-color">
       <section>
-        <div class="add-camera">        
+        <div class="add-camera">
           <div class="text-content">
             <h1>Add your Camera</h1>
           </div>
@@ -135,7 +152,7 @@
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
       </section>
     </div>
