@@ -10,8 +10,25 @@
     <meta name="author" content="Evercam">
     <link href="css/main.css" rel="stylesheet">
     <meta property="twitter:account_id" content="4503599630778866" />
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dash.evercam.io/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://dash.evercam.io/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://dash.evercam.io/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://dash.evercam.io/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://dash.evercam.io/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://dash.evercam.io/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://dash.evercam.io/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://dash.evercam.io/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dash.evercam.io/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://dash.evercam.io/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dash.evercam.io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://dash.evercam.io/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://dash.evercam.io/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://dash.evercam.io/manifest.json">
+    <meta name="msapplication-TileColor" content="#dc4c3f">
+    <meta name="msapplication-TileImage" content="https://dash.evercam.io/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
-  <body id="press">  
+  <body id="press">
   <? include 'nav.php'; ?>
     <header>
       <div class="banner">
@@ -24,11 +41,11 @@
       </div>
     </header>
     <div class="alt-color">
-      
+
       <section>
         <h3>In the Press</h3>
-        <div class="in-the-press">          
-          <div class="list"> 
+        <div class="in-the-press">
+          <div class="list">
             <div class="press-item">
               <h2>
                 <a href="http://www.geektime.com/2015/05/21/20-irish-startups-that-will-rock-you-the-celtic-way/" target="_blank">
@@ -56,7 +73,7 @@
                 </a>
               </h2>
               <p class="dark-text">
-               Entrepreneur Country Global, 12 March 2015 
+               Entrepreneur Country Global, 12 March 2015
               </p>
             </div>
             <div class="press-item">
@@ -99,7 +116,7 @@
                 TechCrunch, May 2014
               </p>
             </div>
-            <div class="press-item">            
+            <div class="press-item">
               <h2>
                 <a href="http://techcrunch.com/video/evercam-lets-you-put-cameras-to-work/518220489/" target="_blank">
                 Evercam Lets You Put Cameras to Work <i class="fa fa-external-link"></i>
@@ -129,7 +146,7 @@
                Verify Recruitment, April 2014
               </p>
             </div>
-            
+
             <div class="press-item">
               <h2>
                 <a href="http://apievangelist.com/2014/01/21/a-world-where-every-camera-is-connected-to-the-internet-via-apis/" target="_blank">
@@ -143,7 +160,7 @@
           </div>
           <div class="featured">
             <div class="press-card">
-            <h6>Featured</h6>      
+            <h6>Featured</h6>
               <img src="../img/carrolls-twittercam.jpg">
               <h2>
                 <a href="http://motherboard.vice.com/read/cctv-selfies-a-portrait-of-surveillance-around-dublin" target="_blank">
@@ -172,9 +189,9 @@
       </div>
       <section>
         <h3>Speaker Events</h3>
-        <div class="in-the-press">          
+        <div class="in-the-press">
           <div class="speaker-card">
-          <h6>Upcoming</h6>      
+          <h6>Upcoming</h6>
             <img src="../img/elixir-conf.jpg">
             <h2>
               <a href="https://www.youtube.com/watch?v=h_HtO8KPvsM" target="_blank">
@@ -186,7 +203,7 @@
             </p>
           </div>
           <div class="speaker-card">
-          <h6>Past</h6>      
+          <h6>Past</h6>
             <img src="../img/tech-insight.jpg">
             <h2>
               <a href="http://www.slideshare.net/MarcoHerbst/techinsight-berlin-march-2015-cameras-in-smart-cities-by-evercam" target="_blank">
@@ -203,48 +220,48 @@
             </p>
           </div>
           <!--<div class="speaker-card">
-          <h6>Past</h6>   
+          <h6>Past</h6>
             <img src="../img/apistrat.jpg">
             <h2 class="dark-text">
                <a href="http://www.slideshare.net/programmableweb/pivoting-your-business-from-product-to-platform" target="_blank">Pivoting Your Business From Product to Platform <i class="fa fa-slideshare"></i></a>
-            </h2>           
+            </h2>
             <p>
-             <a href="http://www.programmableweb.com/news/relive-apicon-uk-slides-and-videos/2014/10/06" target="_blank">APICon UK <i class="fa fa-external-link"></i></a>         
+             <a href="http://www.programmableweb.com/news/relive-apicon-uk-slides-and-videos/2014/10/06" target="_blank">APICon UK <i class="fa fa-external-link"></i></a>
 
             </p>
             <p class="dark-text">
               London, October 2014
             </p>
           </div>-->
-          
+
           <div class="speaker-card">
-          <h6>Past</h6>   
+          <h6>Past</h6>
             <img src="../img/apistrat.jpg">
             <h2>
               <a href="http://www.slideshare.net/MarcoHerbst/rules-for-success-when-developing-for-cameras" target="_blank">
-             Rules for success when developing for cameras <i class="fa fa-slideshare"></i> 
-             
+             Rules for success when developing for cameras <i class="fa fa-slideshare"></i>
+
             </h2>
             <p>
               <a href="http://amsterdam2014.apistrat.com/speakers.php" target="_blank">
-             API Strategy &amp; Practice <i class="fa fa-external-link"></i> 
+             API Strategy &amp; Practice <i class="fa fa-external-link"></i>
               </a>
             </p>
             <p class="dark-text">
               Amsterdam, March 2014
             </p>
           </div>
-           
 
 
-         
+
+
         </div>
       </section>
-    
-    
+
+
     <div class="press-kit">
       <a class="btn btn-grey-outline" href="/brand"><span>Browse our Brand Assets <i class="fa fa-arrow-right"></i></span></a>
-    </div>   
+    </div>
     <? include 'footer.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" async></script>
     <script src="/js/bootstrap.min.js" async></script>
