@@ -16,7 +16,7 @@
 <header>
   <div class="banner">
     <div class="banner-content">
-      <h1>An API for Cameras</h1>
+      <h1>A RESTful API for Cameras</h1>
       <h2>Write Software using our API and we guarantee it will work with any camera connectable to the internet.</h2>
       <a class="btn btn-grey-outline data-async btn--inverted" href="https://dash.evercam.io/v1/users/signup" role="button">Create Account</a>
     </div>

@@ -17,6 +17,7 @@
         <ul>
           <h3>Developer</h3>
           <li><a href="/develop">Develop</a></li>
+          <li><a href="https://dash.evercam.io/swagger" target="_blank">Documentation  <span class="fa fa-external-link"></span></a></li>
           <li><a href="https://evercam.github.io/">Open Source</a></li>
           <li><a href="/vendors">Camera Vendors</a></li>
           <li><a href="/models">Camera Models</a></li>
