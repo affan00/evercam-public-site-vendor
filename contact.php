@@ -47,15 +47,7 @@
         <p>hello@evercam.io</p>
         <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/evrcm" target="_blank">@evrcm</a></p>
       </div>
-      <div class="contact-form">
-        <form accept-charset="UTF-8" action="https://formkeep.com/f/3295d2de6a4c" method="POST">
-          <input type="hidden" name="utf8" value="✓">
-          <input type="text" name="name" placeholder="Your Name">
-          <input type="email" name="email" placeholder="Your Email">
-          <textarea type="textarea" rows="4" name="message" placeholder="Your message"></textarea>
-          <button class="btn btn-grey-outline" type="submit">Submit</button>
-        </form>
-      </div>
+    
     </div>
   </section>
   <? include 'footer.php'; ?>
