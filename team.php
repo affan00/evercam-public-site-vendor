@@ -91,6 +91,7 @@
               <h4>Hacker <small>- Beijing's candidate for Rose of Tralee.</small></h4>
             </div>
           </div>
+
           <div class="row">
             <div class="team-individual">
               <img alt="Vinnie O'Farrell" src="https://secure.gravatar.com/avatar/f264f6540152ad362bbcb3e60d413765?s=230">
@@ -181,6 +182,7 @@
               </h2>
               <h4>Hacker <small>- Admires Jordan Mechner</small></h4>
             </div>
+            </div>
 
             <div class="row">
                          <div class="team-individual">
@@ -237,7 +239,7 @@
                                        </small>
                                     </h4>
                             </div>
-                            
+
           </div>
         </div>
       </section>
