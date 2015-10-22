@@ -186,7 +186,7 @@
 
             <div class="row">
                          <div class="team-individual">
-                           <img alt="Faisal Shahzad" src="/img/faisal.jpg">
+                           <img alt="Faisal Shahzad" src="https://avatars0.githubusercontent.com/u/13760392?v=3&s=400">
                             <h2>Faisal Shahzad
                               <small>
                                 <a data-toggle="tooltip" href="https://github.com/faisal2472" target="_blank" title="github">
@@ -213,7 +213,7 @@
                           </div>
 
                            <div class="team-individual">
-                            <img alt="Muneeb Ur Rehman" src="/img/muneeb.jpg">
+                            <img alt="Muneeb Ur Rehman" src="https://avatars2.githubusercontent.com/u/6482077?v=3&s=400">
                               <h2>Muneeb Ur Rehman
                                   <small>
                                     <a data-toggle="tooltip" href="https://github.com/muneeb2542" target="_blank" title="github">
