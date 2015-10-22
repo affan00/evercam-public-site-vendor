@@ -181,6 +181,63 @@
               </h2>
               <h4>Hacker <small>- Admires Jordan Mechner</small></h4>
             </div>
+
+            <div class="row">
+                         <div class="team-individual">
+                           <img alt="Faisal Shahzad" src="/img/faisal.jpg">
+                            <h2>Faisal Shahzad
+                              <small>
+                                <a data-toggle="tooltip" href="https://github.com/faisal2472" target="_blank" title="github">
+                                  <span class="fa fa-github"></span>
+                                 </a>
+                                 </small>
+                                </h2>
+                              <h4>Hacker <small>- love to adventure and explore new things </small></h4>
+                         </div>
+
+                          <div class="team-individual">
+                           <img alt="M. Affan Qureshi" src="https://avatars3.githubusercontent.com/u/14149453?v=3&s=400">
+                             <h2>Affan Qureshi
+                                <small>
+                                  <a data-toggle="tooltip" href="https://twitter.com/AFFAN_AQ" target="_blank" title="twitter">
+                                    <span class="fa fa-twitter"></span>
+                                  </a>
+                                   <a data-toggle="tooltip" href="https://github.com/affan00" target="_blank" title="github">
+                                      <span class="fa fa-github"></span>
+                                   </a>
+                                </small>
+                              </h2>
+                                <h4>Hacker <small>- As long as I am breathing, in my eyes, I am just beginning.</small></h4>
+                          </div>
+
+                           <div class="team-individual">
+                            <img alt="Muneeb Ur Rehman" src="/img/muneeb.jpg">
+                              <h2>Muneeb Ur Rehman
+                                  <small>
+                                    <a data-toggle="tooltip" href="https://github.com/muneeb2542" target="_blank" title="github">
+                                     <span class="fa fa-github"></span>
+                                    </a>
+                                   </small>
+                               </h2>
+                             <h4>Hacker <small>- Convention over Configuration</small></h4>
+                            </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="team-individual">
+                                   <img alt="Shankar" src="https://avatars1.githubusercontent.com/u/2011812?v=3&s=400">
+                                     <h2>Shankar Dhanasekaran
+                                       <small>
+                                        <a data-toggle="tooltip" href="https://github.com/shankardevy" target="_blank" title="github">
+                                          <span class="fa fa-github"></span>
+                                        </a>
+                                        </small>
+                                     </h2>
+                                    <h4>Hacker <small>- Hard work keeps the wrinkles out of the mind and spirit.
+                                       </small>
+                                    </h4>
+                            </div>
+                            
           </div>
         </div>
       </section>
