@@ -109,6 +109,12 @@
               <img alt="Miloš Mošić" src="/img/milos.png">
               <h2>Miloš Mošić
                 <small>
+                  <a data-toggle="tooltip" href="https://milosmosic.com/" target="_blank" title="website">
+                    <span class="fa fa-globe"></span>
+                  </a>
+                  <a data-toggle="tooltip" href="https://twitter.com/mosic" target="_blank" title="twitter">
+                    <span class="fa fa-twitter"></span>
+                  </a>
                   <a data-toggle="tooltip" href="https://github.com/mosic" target="_blank" title="github">
                     <span class="fa fa-github"></span>
                   </a>
