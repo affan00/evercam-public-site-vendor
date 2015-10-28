@@ -113,7 +113,7 @@
                   </tr>
                 </table>
               </div>
-              <div id="static-map-container" class="col-md-5 pull-right" >
+              <div id="static-map-container" class="col-md-5 pull-right pull-right-space" >
                 <img id="static-map" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
               </div>
             </div>
@@ -173,7 +173,7 @@
         </div>
       </div>
       <div class="home-link" style="position:absolute;right:46px;bottom:10px;"><!-- only temporary inline style-->
-        <a class="navbar-brand" href="/"><img alt="evercam.io" src="/img/evercam-logo.svg"></a>
+        <a class="navbar-brand navbar-brand-space" href="/"><img alt="evercam.io" src="/img/evercam-logo.svg"></a>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
