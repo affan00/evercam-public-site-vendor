@@ -149,6 +149,7 @@ a#lnkBacktoMap {
 .details td span {
   color: black;
   padding: 0px 15px 5px 0px;
+  margin-left: 10px;
 }
 
 button#singin {
@@ -169,4 +170,11 @@ button#singin {
   width: 315px;
   text-align: center;
   margin-left: -142px;
+}
+.pull-right-space{
+  float: right!important;
+  padding-right: 8px;
+}
+.navbar-brand-space{
+  height: 42px;
 }
