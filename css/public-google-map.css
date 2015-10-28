@@ -107,7 +107,7 @@
 .live-view {
   background-color: #fff;
   min-height: 66px;
-  border-bottom: 1px solid #e5e5e5 !important;
+  #border-bottom: 1px solid #e5e5e5 !important;
 }
 
 .live-view img {
